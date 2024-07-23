@@ -1,0 +1,14 @@
+{
+	"format_version": "1.12",
+	"minecraft:recipe_furnace": {
+		"description": {
+			"identifier": "terra:malachite_fragment"
+		},
+		"tags": [
+			"furnace",
+			"blast_furnace"
+		],
+		"input": "terra:raw_malachite",
+		"output": "terra:malachite_fragment"
+	}
+}

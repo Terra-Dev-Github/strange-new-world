@@ -1,0 +1,27 @@
+// This file was made, modified and compiled by Heavenly (@heavenly7493) for TERRA.
+// Do not distribute without permission.
+{
+	"format_version": "1.20.30",
+	"minecraft:item": {
+		"description": {
+			"identifier": "terra:vial_radioactive",
+			"menu_category": {
+				"category": "items",
+				"group": "itemGroup.name.none"
+			}
+		},
+		"components": {
+			"minecraft:glint": true,
+			"minecraft:icon": {
+				"texture": "vial_radioactive"
+			},
+			"minecraft:hand_equipped": false,
+			"minecraft:display_name": {
+				"value": "item.terra:vial_radioactive"
+			},
+			"minecraft:block_placer": {
+				"block": "terra:vial_rod_radioactive"
+			}
+		}
+	}
+}

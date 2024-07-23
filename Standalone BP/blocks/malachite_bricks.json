@@ -1,0 +1,28 @@
+// This file was made, modified and compiled by Heavenly (@heavenly7493) for TERRA.
+// Do not distribute without permission.
+{
+	"format_version": "1.20.80",
+	"minecraft:block": {
+		"description": {
+			"identifier": "terra:malachite_bricks",
+			"menu_category": {
+				"category": "construction",
+				"group": "itemGroup.name.stoneBrick"
+			}
+		},
+		"components": {
+			"minecraft:geometry": "minecraft:geometry.full_block",
+			"minecraft:material_instances": {
+				"*": {
+					"texture": "malachite_bricks",
+					"render_method": "opaque"
+				}
+			},
+			"minecraft:destructible_by_mining": {
+				"seconds_to_destroy": 2.5
+			},
+			"minecraft:loot": "loot_tables/blocks/malachite_bricks.json",
+			"minecraft:map_color": "#2F6145"
+		}
+	}
+}

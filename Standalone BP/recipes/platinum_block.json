@@ -1,0 +1,27 @@
+{
+	"format_version": "1.16.100",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "terra:platinum_block"
+		},
+		"tags": [
+			"crafting_table"
+		],
+		"pattern": [
+			"XXX",
+			"XXX",
+			"XXX"
+		],
+		"key": {
+			"X": {
+				"item": "terra:platinum_ingot"
+			}
+		},
+		"result": [
+			{
+				"item": "terra:platinum_block",
+				"count": 1
+			}
+		]
+	}
+}

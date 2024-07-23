@@ -1,0 +1,251 @@
+{
+	"format_version": [
+		1,
+		1,
+		0
+	],
+	"terra:autonetic_station": {
+		"textures": {
+			"up": "autonetic_station_top",
+			"down": "autonetic_station_bottom",
+			"north": "autonetic_station_front",
+			"south": "autonetic_station_front",
+			"east": "autonetic_station_side2",
+			"west": "autonetic_station_side"
+		},
+		"sound": "metal"
+	},
+	"terra:brittle_outsider_metal": {
+		"textures": "brittle_outsider_metal",
+		"sound": "metal"
+	},
+	"terra:chiseled_malachite_block": {
+		"textures": "chiseled_malachite",
+		"sound": "stone"
+	},
+	"terra:chiseled_outsider_metal": {
+		"textures": "chiseled_outsider_metal",
+		"sound": "metal"
+	},
+	"terra:cut_malachite_block": {
+		"textures": "cut_polished_malachite",
+		"sound": "stone"
+	},
+	"terra:cut_outsider_metal": {
+		"textures": "cut_outsider_metal",
+		"sound": "metal"
+	},
+	"terra:deepslate_platinum_ore": {
+		"textures": "deepslate_platinum_ore",
+		"sound": "deepslate"
+	},
+	"terra:deepslate_ruby_ore": {
+		"textures": "deepslate_ruby_ore",
+		"sound": "deepslate"
+	},
+	"terra:deepslate_tanzanite_ore": {
+		"textures": "deepslate_tanzanite_ore",
+		"sound": "deepslate"
+	},
+	"terra:hazard_block": {
+		"textures": "hazard_block",
+		"sound": "metal"
+	},
+	"terra:hazard_pillar": {
+		// skipping textures so it doesn't glitch out
+		"sound": "metal"
+	},
+	"terra:hazardous_outsider_metal": {
+		"textures": {
+			"side": "hazardous_outsider_metal",
+			"up": "outsider_metal_block",
+			"down": "outsider_metal_block"
+		},
+		"sound": "metal"
+	},
+	"terra:laboratory_trapdoor": {
+		// skipping textures so it doesn't glitch out
+		"sound": "metal"
+	},
+	"terra:lemon_crop": {
+		"textures": "lemon_crop_2",
+		"sound": "grass"
+	},
+	"terra:malachite_block": {
+		"textures": "malachite_block",
+		"sound": "stone"
+	},
+	"terra:malachite_bricks": {
+		"textures": "malachite_bricks",
+		"sound": "stone"
+	},
+	"terra:malachite_ore": {
+		"textures": "malachite_ore",
+		"sound": "stone"
+	},
+	"terra:nethersteel_block": {
+		"textures": "nethersteel_block",
+		"sound": "metal"
+	},
+	"terra:orange_crop": {
+		"textures": "orange_crop_2",
+		"sound": "grass"
+	},
+	"terra:outsider_metal_block": {
+		"textures": "outsider_metal_block",
+		"sound": "metal"
+	},
+	"terra:outsider_metal_pillar": {
+		// skipping textures so it doesn't glitch out
+		"sound": "metal"
+	},
+	"terra:outsider_metal_slab": {
+		"textures": {
+			"side": "outsider_metal_slab_side",
+			"up": "outsider_metal_block",
+			"down": "outsider_metal_block"
+		},
+		"sound": "metal"
+	},
+	"terra:polished_malachite_block": {
+		"textures": "polished_malachite_block",
+		"sound": "stone"
+	},
+	"terra:polished_malachite_bricks": {
+		"textures": "polished_malachite_bricks",
+		"sound": "stone"
+	},
+	"terra:polished_malachite_slab": {
+		"textures": {
+			"side": "polished_malachite_slab_side",
+			"up": "polished_malachite_block",
+			"down": "polished_malachite_block"
+		},
+		"sound": "stone"
+	},
+	"terra:poplar_log": {
+		// skipping textures so it doesn't glitch out
+		"sound": "wood"
+	},
+	"terra:poplar_log_stripped": {
+		// skipping textures so it doesn't glitch out
+		"sound": "wood"
+	},
+	"terra:poplar_planks": {
+		"textures": "poplar_planks",
+		"sound": "wood"
+	},
+	"terra:poplar_slab": {
+		"textures": "poplar_planks",
+		"sound": "wood"
+	},
+	"terra:poplar_trapdoor": {
+		"textures": "poplar_trapdoor",
+		"sound": "wood"
+	},
+	"terra:poplar_wood": {
+		// skipping textures so it doesn't glitch out
+		"sound": "wood"
+	},
+	"terra:poplar_wood_stripped": {
+		// skipping textures so it doesn't glitch out
+		"sound": "wood"
+	},
+	"terra:platinum_block": {
+		"textures": "platinum_block",
+		"sound": "stone"
+	},
+	"terra:platinum_ore": {
+		"textures": "platinum_ore",
+		"sound": "stone"
+	},
+	"terra:raw_malachite_block": {
+		"textures": "raw_malachite_block",
+		"sound": "stone"
+	},
+	"terra:raw_platinum_block": {
+		"textures": "raw_platinum_block",
+		"sound": "stone"
+	},
+	"terra:reinforced_nethersteel_block": {
+		"textures": "reinforced_nethersteel_block",
+		"sound": "metal"
+	},
+	"terra:ruby_block": {
+		"textures": "ruby_block",
+		"sound": "metal"
+	},
+	"terra:ruby_ore": {
+		"textures": "ruby_ore",
+		"sound": "stone"
+	},
+	"terra:salt_block": {
+		"textures": "salt_block",
+		"sound": "gravel"
+	},
+	"terra:salt_dust": {
+		"textures": "salt_dust_single",
+		"sound": "sand"
+	},
+	"terra:salt_ore": {
+		"textures": "salt_ore",
+		"sound": "stone"
+	},
+	"terra:steel_block": {
+		"textures": "steel_block",
+		"sound": "metal"
+	},
+	"terra:steel_grate_block": {
+		"textures": "steel_grate_frame",
+		"sound": "metal"
+	},
+	"terra:steel_grate_panel": {
+		"textures": "steel_grate_panel",
+		"sound": "metal"
+	},
+	"terra:steel_lattice_block": {
+		"textures": "steel_lattice_frame",
+		"sound": "metal"
+	},
+	"terra:steel_lattice_panel": {
+		"textures": "steel_lattice_panel",
+		"sound": "metal"
+	},
+	"terra:steel_rod": {
+		"textures": "steel_rod",
+		"sound": "metal"
+	},
+	"terra:tanzanite_block": {
+		"textures": "tanzanite_block",
+		"sound": "metal"
+	},
+	"terra:tanzanite_ore": {
+		"textures": "tanzanite_ore",
+		"sound": "stone"
+	},
+	"terra:tomato_crop": {
+		"textures": "tomato_crop_5",
+		"sound": "grass"
+	},
+	"terra:vial_rod_empty": {
+		"textures": "vial_rod_empty",
+		"sound": "metal"
+	},
+	"terra:vial_rod_shimmering": {
+		"textures": "vial_rod_shimmering",
+		"sound": "metal"
+	},
+	"terra:vial_rod_radioactive": {
+		"textures": "vial_rod_radioactive",
+		"sound": "metal"
+	},
+	"terra:wired_outsider_metal": {
+		"textures": "wired_outsider_metal",
+		"sound": "metal"
+	},
+	//Miank
+	"mian:soil": {
+		"textures": "soil",
+		"sound": "gravel"
+	}
+}

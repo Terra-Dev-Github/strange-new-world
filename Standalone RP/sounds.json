@@ -1,0 +1,47 @@
+{
+    "block_sounds": {
+        "outsider_metal": {
+            "events": {
+                "default": {},
+                "break": {
+                    "pitch": [
+                        0.80,
+                        1.0
+                    ],
+                    "sound": "dig.outsider_metal",
+                    "volume": 1.0
+                },
+                "place": {
+                    "pitch": [
+                        0.80,
+                        1.0
+                    ],
+                    "sound": "dig.outsider_metal",
+                    "volume": 1.0
+                },
+                "fall": {
+                    "sound": "step.outsider_metal",
+                    "volume": 0.40
+                },
+                "jump": {
+                    "sound": "step.outsider_metal",
+                    "volume": 0.120
+                },
+                "land": {
+                    "sound": "step.outsider_metal",
+                    "volume": 0.220
+                },
+                "hit": {
+                    "sound": "step.outsider_metal",
+                    "volume": 0.220
+                },
+                "step": {
+                    "sound": "step.outsider_metal",
+                    "volume": 0.350
+                }
+            },
+            "pitch": 1.50,
+            "volume": 1.0
+        }
+    }
+}

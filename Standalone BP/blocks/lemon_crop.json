@@ -1,0 +1,132 @@
+// This file was made, modified and compiled by Heavenly (@heavenly7493) for TERRA.
+// Do not distribute without permission.
+{
+	"format_version": "1.20.80",
+	"minecraft:block": {
+		"description": {
+			"identifier": "terra:lemon_crop",
+			"states": {
+				"terra:crop_age": [
+					0,
+					1,
+					2
+				]
+			}
+		},
+		"components": {
+			"minecraft:custom_components": [
+				"terra:crop_grow"
+			],
+			"tag:minecraft:crop": {},
+			"minecraft:geometry": "geometry.crop.cross",
+			"minecraft:collision_box": false,
+			"minecraft:selection_box": {
+				"origin": [
+					-8,
+					0,
+					-8
+				],
+				"size": [
+					16,
+					16,
+					16
+				]
+			},
+			// "minecraft:breathability": "air",
+			"minecraft:destructible_by_mining": {
+				"seconds_to_destroy": 0.5
+			},
+			"minecraft:friction": 0.2,
+			"minecraft:map_color": "#000000",
+			"minecraft:light_dampening": 0,
+			"minecraft:loot": "loot_tables/blocks/lemon_seeds.json",
+			"minecraft:placement_filter": {
+				"conditions": [
+					{
+						"allowed_faces": [
+							"up"
+						],
+						"block_filter": [
+							"farmland",
+							"podzol"
+						]
+					}
+				]
+			}
+		},
+		"permutations": [
+			{
+				"condition": "query.block_state('terra:crop_age') == 0",
+				"components": {
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "lemon_crop_0",
+							"render_method": "alpha_test"
+						}
+					},
+					"minecraft:selection_box": {
+						"origin": [
+							-5,
+							0,
+							-5
+						],
+						"size": [
+							10,
+							5,
+							10
+						]
+					},
+					"minecraft:loot": "loot_tables/blocks/lemon_seeds.json"
+				}
+			},
+			{
+				"condition": "query.block_state('terra:crop_age') == 1",
+				"components": {
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "lemon_crop_1",
+							"render_method": "alpha_test"
+						}
+					},
+					"minecraft:selection_box": {
+						"origin": [
+							-5,
+							0,
+							-5
+						],
+						"size": [
+							10,
+							5,
+							10
+						]
+					},
+					"minecraft:loot": "loot_tables/blocks/lemon_seeds.json"
+				}
+			},
+			{
+				"condition": "query.block_state('terra:crop_age') == 2",
+				"components": {
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "lemon_crop_2",
+							"render_method": "alpha_test"
+						}
+					},
+					"minecraft:selection_box": {
+						"origin": [
+							-8,
+							0,
+							-8
+						],
+						"size": [
+							16,
+							16,
+							16
+						]
+					},
+					"minecraft:loot": "loot_tables/blocks/lemon_crop.json"
+				}
+			}
+		]
+	}
+}

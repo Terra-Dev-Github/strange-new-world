@@ -1,0 +1,108 @@
+## This file was made, modified and compiled by Heavenly (@heavenly7493) for TERRA.
+## Do not distribute without permission.
+pack.name=TERRA! Brave New World - Recursos
+pack.description=Por Heavenly7493 | © 2025, TERRA
+
+terra.version.beta=TERRA! Brave New World v1.0.0 [INFDEV]
+
+tile.mian:soil.name=Fango
+
+## Item Descriptions
+item.terra:record_wtb_rupture.desc=Henderson - War-Torn Born (roto)
+item.terra:record_wtb_siren.desc=Henderson - War-Torn Born (sirena musical)
+item.terra:nethersteel_upgrade_smithing_template.desc= Mejora de acero inefable
+## Items
+## item.terra:grapes=Uvas
+item.terra:handgun=Pistola
+item.terra:lemon_seeds=Semillas de limón
+item.terra:lemon=Limón
+item.terra:malachite_fragment=Fragmento de malaquita
+item.terra:nethersteel_boots=Botas de acero inefable
+item.terra:nethersteel_chestplate=Coraza de acero inefable
+item.terra:nethersteel_helmet=Casco de acero inefable
+item.terra:nethersteel_ingot=Lingote de acero inefable
+item.terra:nethersteel_leggings=Mallas de acero inefable
+item.terra:nethersteel_upgrade_smithing_template= Plantilla de mejora de acero inefable
+item.terra:orange=Naranja
+item.terra:orange_seeds=Semillas de naranja
+item.terra:outsider_metal_ingot=Lingote de metal forastero
+item.terra:outsider_metal_scrap=Pedazo de metal forastero
+item.terra:platinum_ingot=Lingote de platino
+item.terra:purified_malachite=Malaquita purificada
+item.terra:raw_malachite=Malaquita cruda
+item.terra:raw_platinum=Platino crudo
+item.terra:ruby=Rubí
+item.terra:salt=Sal
+item.terra:salt_bottle=Botella de sal
+item.terra:steel_ingot=Lingote de acero
+item.terra:steel_nugget=Pepita de acero
+item.terra:tanzanite=Tanzanita
+item.terra:vial_empty=Frasco
+item.terra:vial_pure=Frasco puro
+item.terra:vial_radioactive=Frasco radioactivo
+item.terra:vial_shimmering=Frasco resplandeciente
+item.terra:vial_waste=Frasco de residuos
+
+## Blocks
+
+tile.terra:autonetic_station.name=Estación autonética
+tile.terra:brittle_outsider_metal.name=Metal forastero frágil
+tile.terra:chiseled_malachite_block.name=Malaquita cincelada
+tile.terra:chiseled_outsider_metal.name=Metal forastero cincelado
+tile.terra:cut_malachite_block.name=Malaquita pulida cortada
+tile.terra:cut_outsider_metal.name=Metal forastero cortado
+tile.terra:deepslate_platinum_ore.name=Mineral de platino de pizarra abismal
+tile.terra:deepslate_ruby_ore.name=Mineral de rubí de pizarra abismal
+tile.terra:deepslate_tanzanite_ore.name=Mineral de tanzanita de pizarra abismal
+tile.terra:hazard_block.name=Bloque de peligro
+tile.terra:hazard_pillar.name=Pilar de peligro
+tile.terra:hazardous_outsider_metal.name=Metal forastero con marca de peligro
+tile.terra:laboratory_trapdoor.name=Escotilla de laboratorio
+tile.terra:lemon_crop.name=Cultivo de limón
+tile.terra:malachite_block.name=Bloque de malaquita
+tile.terra:malachite_bricks.name=Ladrillos de malaquita
+tile.terra:malachite_ore.name=Mineral de malaquita
+tile.terra:nethersteel_block.name=Bloque de acero inefable
+tile.terra:orange_crop.name=Cultivo de naranja
+tile.terra:outsider_metal_block.name=Bloque de metal forastero
+tile.terra:outsider_metal_pillar.name=Pilar de metal forastero
+tile.terra:outsider_metal_slab.name=Losa de metal forastero
+tile.terra:platinum_ore.name=Mineral de platino
+tile.terra:polished_malachite_block.name=Malaquita pulida
+tile.terra:polished_malachite_bricks.name=Ladrillos de malaquita pulida
+tile.terra:polished_malachite_slab.name=Losa de malaquita pulida
+tile.terra:poplar_log.name=Tronco de álamo de tulipan
+tile.terra:poplar_log_stripped.name=Tronco descortezado de álamo de tulipan
+tile.terra:poplar_planks.name=Tablones de álamo de tulipan
+tile.terra:poplar_slab.name=Losa de álamo de tulipan
+tile.terra:poplar_trapdoor.name=Escotilla de álamo de tulipan
+tile.terra:poplar_wood.name=Madera de álamo de tulipan
+tile.terra:poplar_wood_stripped.name=Madera descortezada de álamo de tulipan
+tile.terra:platinum_block.name=Bloque de platino
+tile.terra:raw_malachite_block.name=Bloque de malaquita cruda
+tile.terra:raw_platinum_block.name=Bloque de platino crudo
+tile.terra:reinforced_nethersteel_block.name=Bloque de acero inefable reforzado
+tile.terra:ruby_block.name=Bloque de rubí
+tile.terra:ruby_ore.name=Mineral de rubí
+tile.terra:salt_block.name=Bloque de sal
+tile.terra:salt_dust.name=Polvo de sal
+tile.terra:salt_ore.name=Mineral de sal
+tile.terra:steel_block.name=Bloque de acero
+tile.terra:steel_grate_block.name=Bloque de enrejado de acero
+## tile.terra:steel_grate_panel.name=Panel de enrejado de acero
+tile.terra:steel_lattice_block.name=Bloque de celosía de acero
+## tile.terra:steel_lattice_panel.name=Panel de celosía de acero
+tile.terra:steel_rod.name=Barra de acero
+tile.terra:tanzanite_block.name=Bloque de tanzanita
+tile.terra:tanzanite_ore.name=Mineral de tanzanita
+tile.terra:tomato_crop.name=Cultivo de tomate
+tile.terra:vial_rod_empty.name=Columna de vial
+tile.terra:vial_rod_radioactive.name=Columna de vial radioactiva
+tile.terra:vial_rod_shimmering.name=Columna de vial resplandeciente
+tile.terra:wired_outsider_metal.name=Metal forastero cableado
+
+## Entities
+entity.terra:possum.name=Zarigüeya
+item.spawn_egg.entity.terra:possum.name=Generador de zarigüeya
+entity.terra:outsider.name=Invasor
+item.spawn_egg.entity.terra:outsider.name=Generador de invasor

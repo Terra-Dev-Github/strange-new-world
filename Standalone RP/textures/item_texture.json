@@ -1,0 +1,167 @@
+{
+	"resource_pack_name": "vanilla",
+	"texture_name": "atlas.items",
+	"texture_data": {
+		"placeholder": {
+			"textures": [
+				"textures/items/missing_item"
+			]
+		},
+		//
+		"grapes": {
+			"textures": [
+				"textures/items/grapes"
+			]
+		},
+		"lemon": {
+			"textures": [
+				"textures/items/lemon"
+			]
+		},
+		"lemon_seeds": {
+			"textures": [
+				"textures/items/lemon_seeds"
+			]
+		},
+		"malachite_fragment": {
+			"textures": [
+				"textures/items/malachite_fragment"
+			]
+		},
+		"nethersteel_boots": {
+			"textures": [
+				"textures/items/nethersteel_boots"
+			]
+		},
+		"nethersteel_chestplate": {
+			"textures": [
+				"textures/items/nethersteel_chestplate"
+			]
+		},
+		"nethersteel_helmet": {
+			"textures": [
+				"textures/items/nethersteel_helmet"
+			]
+		},
+		"nethersteel_ingot": {
+			"textures": [
+				"textures/items/nethersteel_ingot"
+			]
+		},
+		"nethersteel_leggings": {
+			"textures": [
+				"textures/items/nethersteel_leggings"
+			]
+		},
+		"nethersteel_upgrade_smithing_template": {
+			"textures": [
+				"textures/items/nethersteel_upgrade_smithing_template"
+			]
+		},
+		"orange": {
+			"textures": [
+				"textures/items/orange"
+			]
+		},
+		"orange_seeds": {
+			"textures": [
+				"textures/items/orange_seeds"
+			]
+		},
+		"outsider_metal_ingot": {
+			"textures": [
+				"textures/items/outsider_metal_ingot"
+			]
+		},
+		"outsider_metal_scrap": {
+			"textures": [
+				"textures/items/outsider_metal_scrap"
+			]
+		},
+		"platinum_ingot": {
+			"textures": [
+				"textures/items/platinum_ingot"
+			]
+		},
+		"purified_malachite": {
+			"textures": [
+				"textures/items/purified_malachite"
+			]
+		},
+		"raw_malachite": {
+			"textures": [
+				"textures/items/raw_malachite"
+			]
+		},
+		"raw_platinum": {
+			"textures": [
+				"textures/items/raw_platinum"
+			]
+		},
+		"ruby": {
+			"textures": [
+				"textures/items/ruby"
+			]
+		},
+		"salt": {
+			"textures": [
+				"textures/items/salt"
+			]
+		},
+		"salt_bottle": {
+			"textures": [
+				"textures/items/salt_bottle"
+			]
+		},
+		"steel_ingot": {
+			"textures": [
+				"textures/items/steel_ingot"
+			]
+		},
+		"steel_nugget": {
+			"textures": [
+				"textures/items/steel_nugget"
+			]
+		},
+		"tanzanite": {
+			"textures": [
+				"textures/items/tanzanite"
+			]
+		},
+		"tomato": {
+			"textures": [
+				"textures/items/tomato"
+			]
+		},
+		"tomato_seeds": {
+			"textures": [
+				"textures/items/tomato_seeds"
+			]
+		},
+		"vial_empty": {
+			"textures": [
+				"textures/items/vial_empty"
+			]
+		},
+		"vial_pure": {
+			"textures": [
+				"textures/items/vial_pure"
+			]
+		},
+		"vial_shimmering": {
+			"textures": [
+				"textures/items/vial_shimmering"
+			]
+		},
+		"vial_waste": {
+			"textures": [
+				"textures/items/vial_waste"
+			]
+		},
+		"vial_radioactive": {
+			"textures": [
+				"textures/items/vial_radioactive"
+			]
+		}
+	}
+}

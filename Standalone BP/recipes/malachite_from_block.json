@@ -1,0 +1,23 @@
+{
+	"format_version": "1.12",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "terra:malachite_from_block"
+		},
+		"tags": [
+			"crafting_table"
+		],
+		"pattern": [
+			"B"
+		],
+		"key": {
+			"B": {
+				"item": "terra:malachite_block"
+			}
+		},
+		"result": {
+			"item": "terra:malachite_fragment",
+			"count": 9
+		}
+	}
+}

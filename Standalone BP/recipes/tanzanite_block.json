@@ -1,0 +1,26 @@
+{
+	"format_version": "1.12",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "terra:tanzanite_block"
+		},
+		"tags": [
+			"crafting_table"
+		],
+		"pattern": [
+			"###",
+			"###",
+			"###"
+		],
+		"key": {
+			"#": {
+				"item": "terra:tanzanite"
+			}
+		},
+		"result": [
+			{
+				"item": "terra:tanzanite_block"
+			}
+		]
+	}
+}

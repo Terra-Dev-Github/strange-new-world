@@ -1,0 +1,59 @@
+// This file was made, modified and compiled by Heavenly (@heavenly7493) for TERRA.
+// Do not distribute without permission.
+{
+	"format_version": "1.20.80",
+	"minecraft:block": {
+		"description": {
+			"identifier": "terra:autonetic_station",
+			"menu_category": {
+				"category": "items",
+				"group": "itemGroup.name.none"
+			}
+		},
+		"components": {
+			"minecraft:geometry": "minecraft:geometry.full_block",
+			"minecraft:crafting_table": {
+				"table_name": "tile.terra:autonetic_station.name",
+				"crafting_tags": [
+					"autonetic_station"
+				],
+				"grid_size": 3
+			},
+			"minecraft:material_instances": {
+				"up": {
+					"texture": "autonetic_station_top",
+					"render_method": "opaque"
+				},
+				"down": {
+					"texture": "autonetic_station_bottom",
+					"render_method": "opaque"
+				},
+				"north": {
+					"texture": "autonetic_station_front",
+					"render_method": "opaque"
+				},
+				"south": {
+					"texture": "autonetic_station_front",
+					"render_method": "opaque"
+				},
+				"east": {
+					"texture": "autonetic_station_side2",
+					"render_method": "opaque"
+				},
+				"west": {
+					"texture": "autonetic_station_side",
+					"render_method": "opaque"
+				}
+			},
+			"minecraft:destructible_by_mining": {
+				"seconds_to_destroy": 2.5
+			},
+			"minecraft:destructible_by_explosion": {
+				"explosion_resistance": 3
+			},
+			// single loot table since all of em will drop scraps unless you got silk touch
+			"minecraft:loot": "loot_tables/blocks/outsider_metal_scraps.json",
+			"minecraft:map_color": "#8499B0"
+		}
+	}
+}

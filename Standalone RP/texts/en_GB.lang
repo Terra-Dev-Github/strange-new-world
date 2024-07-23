@@ -1,0 +1,112 @@
+## This file was made, modified and compiled by Heavenly (@heavenly7493) for TERRA.
+## Do not distribute without permission.
+pack.name=TERRA! Brave New World - Resources
+pack.description=By Heavenly7493 | © 2024, TERRA
+
+terra.version.beta=TERRA! Brave New World v1.0.0 [INFDEV]
+
+tile.mian:soil.name=Soil
+
+## US > GB
+## Chiseled > Chiselled
+
+## Item Descriptions
+item.terra:record_wtb_rupture.desc=Henderson - War-Torn Born (Rupture)
+item.terra:record_wtb_siren.desc=Henderson - War-Torn Born (Music Siren)
+item.terra:nethersteel_upgrade_smithing_template.desc= Nethersteel Upgrade
+
+## Items
+## item.terra:grapes=Grapes
+item.terra:handgun=Handgun
+item.terra:lemon_seeds=Lemon Seeds
+item.terra:lemon=Lemon
+item.terra:malachite_fragment=Malachite Fragment
+item.terra:nethersteel_boots=Nethersteel Boots
+item.terra:nethersteel_chestplate=Nethersteel Chestplate
+item.terra:nethersteel_helmet=Nethersteel Helmet
+item.terra:nethersteel_ingot=Nethersteel Ingot
+item.terra:nethersteel_leggings=Nethersteel Leggings
+item.terra:nethersteel_upgrade_smithing_template=Nethersteel Upgrade Smithing Template
+item.terra:orange=Orange
+item.terra:orange_seeds=Orange Seeds
+item.terra:outsider_metal_ingot=Outsider Metal Ingot
+item.terra:outsider_metal_scrap=Outsider Metal Scrap
+item.terra:platinum_ingot=Platinum Ingot
+item.terra:purified_malachite=Purified Malachite
+item.terra:raw_malachite=Raw Malachite
+item.terra:raw_platinum=Raw Platinum
+item.terra:ruby=Ruby
+item.terra:salt=Salt
+item.terra:salt_bottle=Salt Bottle
+item.terra:steel_ingot=Steel Ingot
+item.terra:steel_nugget=Steel Nugget
+item.terra:tanzanite=Tanzanite
+item.terra:vial_empty=Vial
+item.terra:vial_pure=Pure Vial
+item.terra:vial_radioactive=Radioactive Vial
+item.terra:vial_shimmering=Shimmering Vial
+item.terra:vial_waste=Waste Vial
+
+## Blocks
+
+tile.terra:autonetic_station.name=Autonetic Station
+tile.terra:brittle_outsider_metal.name=Brittle Outsider Metal
+tile.terra:chiseled_malachite_block.name=Chiselled Malachite
+tile.terra:chiseled_outsider_metal.name=Chiselled Outsider Metal
+tile.terra:cut_malachite_block.name=Cut Polished Malachite
+tile.terra:cut_outsider_metal.name=Cut Outsider Metal
+tile.terra:deepslate_platinum_ore.name=Deepslate Platinum Ore
+tile.terra:deepslate_ruby_ore.name=Deepslate Ruby Ore
+tile.terra:deepslate_tanzanite_ore.name=Deepslate Tanzanite Ore
+tile.terra:hazard_block.name=Hazard Block
+tile.terra:hazard_pillar.name=Hazard Pillar
+tile.terra:hazardous_outsider_metal.name=Hazardous Outsider Metal
+tile.terra:laboratory_trapdoor.name=Laboratory Trapdoor
+tile.terra:lemon_crop.name=Lemon Crop
+tile.terra:malachite_block.name=Block of Malachite
+tile.terra:malachite_bricks.name=Malachite Bricks
+tile.terra:malachite_ore.name=Malachite Ore
+tile.terra:nethersteel_block.name=Block of Nethersteel
+tile.terra:orange_crop.name=Orange Crop
+tile.terra:outsider_metal_block.name=Outsider Metal Block
+tile.terra:outsider_metal_pillar.name=Outsider Metal Pillar
+tile.terra:outsider_metal_slab.name=Outsider Metal Slab
+tile.terra:platinum_ore.name=Platinum Ore
+tile.terra:polished_malachite_block.name=Polished Malachite
+tile.terra:polished_malachite_bricks.name=Polished Malachite Bricks
+tile.terra:polished_malachite_slab.name=Polished Malachite Slab
+tile.terra:poplar_log.name=Poplar Log
+tile.terra:poplar_log_stripped.name=Stripped Poplar Log
+tile.terra:poplar_planks.name=Poplar Planks
+tile.terra:poplar_slab.name=Poplar Slab
+tile.terra:poplar_trapdoor.name=Poplar Trapdoor
+tile.terra:poplar_wood.name=Poplar Wood
+tile.terra:poplar_wood_stripped.name=Stripped Poplar Wood
+tile.terra:platinum_block.name=Block of Platinum
+tile.terra:raw_malachite_block.name=Block of Raw Malachite
+tile.terra:raw_platinum_block.name=Block of Raw Platinum
+tile.terra:reinforced_nethersteel_block.name=Reinforced Nethersteel Block
+tile.terra:ruby_block.name=Block of Ruby
+tile.terra:ruby_ore.name=Ruby Ore
+tile.terra:salt_block.name=Salt Block
+tile.terra:salt_dust.name=Salt Dust
+tile.terra:salt_ore.name=Salt Ore
+tile.terra:steel_block.name=Block of Steel
+tile.terra:steel_grate_block.name=Steel Grate Block
+## tile.terra:steel_grate_panel.name=Steel Grate Panel
+tile.terra:steel_lattice_block.name=Steel Lattice
+## tile.terra:steel_lattice_panel.name=Steel Lattice Panel
+tile.terra:steel_rod.name=Steel Rod
+tile.terra:tanzanite_block.name=Block of Tanzanite
+tile.terra:tanzanite_ore.name=Tanzanite Ore
+tile.terra:tomato_crop.name=Tomato Crop
+tile.terra:vial_rod_empty.name=Vial Rod
+tile.terra:vial_rod_radioactive.name=Radioactive Vial Rod
+tile.terra:vial_rod_shimmering.name=Shimmering Vial Rod
+tile.terra:wired_outsider_metal.name=Wired Outsider Metal
+
+## Entities
+entity.terra:possum.name=Possum
+item.spawn_egg.entity.terra:possum.name=Spawn Possum
+entity.terra:outsider.name=Outsider
+item.spawn_egg.entity.terra:outsider.name=Spawn Outsider

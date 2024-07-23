@@ -1,0 +1,24 @@
+{
+	"format_version": "1.16.100",
+	"minecraft:item": {
+		"description": {
+			"identifier": "terra:salt",
+			"category": "items"
+		},
+		"components": {
+			"minecraft:creative_category": {
+				"parent": "itemGroup.name.nature"
+			},
+			"minecraft:icon": {
+				"texture": "salt"
+			},
+			"minecraft:hand_equipped": false,
+			"minecraft:display_name": {
+				"value": "item.terra:salt"
+			},
+			"minecraft:block_placer": {
+				"block": "terra:salt_dust"
+			}
+		}
+	}
+}

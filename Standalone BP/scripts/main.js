@@ -1,0 +1,2 @@
+import 'onInteractSlab'
+import 'onInteractTrapdoor'

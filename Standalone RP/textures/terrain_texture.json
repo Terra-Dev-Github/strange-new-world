@@ -1,0 +1,419 @@
+{
+	"resource_pack_name": "vanilla",
+	"texture_name": "atlas.terrain",
+	"padding": 8,
+	"num_mip_levels": 4,
+	"texture_data": {
+		"autonetic_station_bottom": {
+			"textures": [
+				"textures/blocks/autonetic_station_bottom"
+			]
+		},
+		"autonetic_station_front": {
+			"textures": [
+				"textures/blocks/autonetic_station_front"
+			]
+		},
+		"autonetic_station_side": {
+			"textures": [
+				"textures/blocks/autonetic_station_side"
+			]
+		},
+		"autonetic_station_side2": {
+			"textures": [
+				"textures/blocks/autonetic_station_side2"
+			]
+		},
+		"autonetic_station_top": {
+			"textures": [
+				"textures/blocks/autonetic_station_top"
+			]
+		},
+		"brittle_outsider_metal": {
+			"textures": [
+				"textures/blocks/brittle_outsider_metal"
+			]
+		},
+		"chiseled_malachite": {
+			"textures": [
+				"textures/blocks/chiseled_malachite"
+			]
+		},
+		"chiseled_outsider_metal": {
+			"textures": [
+				"textures/blocks/chiseled_outsider_metal"
+			]
+		},
+		"cut_outsider_metal": {
+			"textures": [
+				"textures/blocks/cut_outsider_metal"
+			]
+		},
+		"cut_polished_malachite": {
+			"textures": [
+				"textures/blocks/cut_polished_malachite"
+			]
+		},
+		"deepslate_platinum_ore": {
+			"textures": [
+				"textures/blocks/deepslate_platinum_ore"
+			]
+		},
+		"deepslate_ruby_ore": {
+			"textures": [
+				"textures/blocks/deepslate_ruby_ore"
+			]
+		},
+		"deepslate_tanzanite_ore": {
+			"textures": [
+				"textures/blocks/deepslate_tanzanite_ore"
+			]
+		},
+		"hazard_block": {
+			"textures": [
+				"textures/blocks/hazard_block"
+			]
+		},
+		"hazard_pillar_side": {
+			"textures": [
+				"textures/blocks/hazard_pillar_side"
+			]
+		},
+		"hazard_pillar_top": {
+			"textures": [
+				"textures/blocks/hazard_pillar_top"
+			]
+		},
+		"hazardous_outsider_metal": {
+			"textures": [
+				"textures/blocks/hazardous_outsider_metal"
+			]
+		},
+		"lab_door_channels": {
+			"textures": [
+				"textures/blocks/lab_door_channels"
+			]
+		},
+		"laboratory_trapdoor": {
+			"textures": [
+				"textures/blocks/laboratory_trapdoor"
+			]
+		},
+		"lemon_crop_0": {
+			"textures": [
+				"textures/blocks/crops/lemon_stage_0"
+			]
+		},
+		"lemon_crop_1": {
+			"textures": [
+				"textures/blocks/crops/lemon_stage_1"
+			]
+		},
+		"lemon_crop_2": {
+			"textures": [
+				"textures/blocks/crops/lemon_stage_2"
+			]
+		},
+		"malachite_block": {
+			"textures": [
+				"textures/blocks/malachite_block"
+			]
+		},
+		"malachite_bricks": {
+			"textures": [
+				"textures/blocks/malachite_bricks"
+			]
+		},
+		"malachite_ore": {
+			"textures": [
+				"textures/blocks/malachite_ore"
+			]
+		},
+		"nethersteel_block": {
+			"textures": [
+				"textures/blocks/nethersteel_block"
+			]
+		},
+		"orange_crop_0": {
+			"textures": [
+				"textures/blocks/crops/orange_stage_0"
+			]
+		},
+		"orange_crop_1": {
+			"textures": [
+				"textures/blocks/crops/orange_stage_1"
+			]
+		},
+		"orange_crop_2": {
+			"textures": [
+				"textures/blocks/crops/orange_stage_2"
+			]
+		},
+		"outsider_metal_block": {
+			"textures": [
+				"textures/blocks/outsider_metal_block"
+			]
+		},
+		"outsider_metal_pillar_side": {
+			"textures": [
+				"textures/blocks/outsider_metal_pillar_side"
+			]
+		},
+		"outsider_metal_pillar_top": {
+			"textures": [
+				"textures/blocks/outsider_metal_pillar_top"
+			]
+		},
+		"outsider_metal_slab_side": {
+			"textures": [
+				"textures/blocks/outsider_metal_slab_side"
+			]
+		},
+		"platinum_block": {
+			"textures": [
+				"textures/blocks/platinum_block"
+			]
+		},
+		"platinum_ore": {
+			"textures": [
+				"textures/blocks/platinum_ore"
+			]
+		},
+		"polished_malachite_block": {
+			"textures": [
+				"textures/blocks/polished_malachite_block"
+			]
+		},
+		"polished_malachite_bricks": {
+			"textures": [
+				"textures/blocks/polished_malachite_bricks"
+			]
+		},
+		"polished_malachite_slab_side": {
+			"textures": [
+				"textures/blocks/polished_malachite_slab_side"
+			]
+		},
+		"poplar_log_side": {
+			"textures": [
+				"textures/blocks/poplar_log_side"
+			]
+		},
+		"poplar_log_top": {
+			"textures": [
+				"textures/blocks/poplar_log_top"
+			]
+		},
+		"poplar_planks": {
+			"textures": [
+				"textures/blocks/poplar_planks"
+			]
+		},
+		"poplar_trapdoor": {
+			"textures": [
+				"textures/blocks/poplar_trapdoor"
+			]
+		},
+		"raw_malachite_block": {
+			"textures": [
+				"textures/blocks/raw_malachite_block"
+			]
+		},
+		"raw_platinum_block": {
+			"textures": [
+				"textures/blocks/raw_platinum_block"
+			]
+		},
+		"reinforced_nethersteel_block": {
+			"textures": [
+				"textures/blocks/reinforced_nethersteel_block"
+			]
+		},
+		"ruby_block": {
+			"textures": [
+				"textures/blocks/ruby_block"
+			]
+		},
+		"ruby_ore": {
+			"textures": [
+				"textures/blocks/ruby_ore"
+			]
+		},
+		"salt_block": {
+			"textures": [
+				"textures/blocks/salt_block"
+			]
+		},
+		"salt_dust_cross": {
+			"textures": [
+				"textures/blocks/salt_dust_cross"
+			]
+		},
+		"salt_dust_horizontal": {
+			"textures": [
+				"textures/blocks/salt_dust_horizontal"
+			]
+		},
+		"salt_dust_ne": {
+			"textures": [
+				"textures/blocks/salt_dust_ne"
+			]
+		},
+		"salt_dust_new": {
+			"textures": [
+				"textures/blocks/salt_dust_new"
+			]
+		},
+		"salt_dust_nse": {
+			"textures": [
+				"textures/blocks/salt_dust_nse"
+			]
+		},
+		"salt_dust_nsw": {
+			"textures": [
+				"textures/blocks/salt_dust_nsw"
+			]
+		},
+		"salt_dust_nw": {
+			"textures": [
+				"textures/blocks/salt_dust_nw"
+			]
+		},
+		"salt_dust_se": {
+			"textures": [
+				"textures/blocks/salt_dust_se"
+			]
+		},
+		"salt_dust_sew": {
+			"textures": [
+				"textures/blocks/salt_dust_sew"
+			]
+		},
+		"salt_dust_single": {
+			"textures": [
+				"textures/blocks/salt_dust_single"
+			]
+		},
+		"salt_dust_sw": {
+			"textures": [
+				"textures/blocks/salt_dust_sw"
+			]
+		},
+		"salt_dust_vertical": {
+			"textures": [
+				"textures/blocks/salt_dust_vertical"
+			]
+		},
+		"salt_ore": {
+			"textures": [
+				"textures/blocks/salt_ore"
+			]
+		},
+		"steel_block": {
+			"textures": [
+				"textures/blocks/steel_block"
+			]
+		},
+		"steel_grate_frame": {
+			"textures": [
+				"textures/blocks/steel_grate_frame"
+			]
+		},
+		"steel_grate_panel": {
+			"textures": [
+				"textures/blocks/steel_grate_panel"
+			]
+		},
+		"steel_lattice_frame": {
+			"textures": [
+				"textures/blocks/steel_lattice_frame"
+			]
+		},
+		"steel_lattice_panel": {
+			"textures": [
+				"textures/blocks/steel_lattice_panel"
+			]
+		},
+		"steel_rod": {
+			"textures": [
+				"textures/blocks/steel_rod"
+			]
+		},
+		"stripped_poplar_log_side": {
+			"textures": [
+				"textures/blocks/stripped_poplar_log_side"
+			]
+		},
+		"stripped_poplar_log_top": {
+			"textures": [
+				"textures/blocks/stripped_poplar_log_top"
+			]
+		},
+		"tanzanite_block": {
+			"textures": [
+				"textures/blocks/tanzanite_block"
+			]
+		},
+		"tanzanite_ore": {
+			"textures": [
+				"textures/blocks/tanzanite_ore"
+			]
+		},
+		"tomato_crop_0": {
+			"textures": [
+				"textures/blocks/crops/tomato_stage_0"
+			]
+		},
+		"tomato_crop_1": {
+			"textures": [
+				"textures/blocks/crops/tomato_stage_1"
+			]
+		},
+		"tomato_crop_2": {
+			"textures": [
+				"textures/blocks/crops/tomato_stage_2"
+			]
+		},
+		"tomato_crop_3": {
+			"textures": [
+				"textures/blocks/crops/tomato_stage_3"
+			]
+		},
+		"tomato_crop_4": {
+			"textures": [
+				"textures/blocks/crops/tomato_stage_4"
+			]
+		},
+		"tomato_crop_5": {
+			"textures": [
+				"textures/blocks/crops/tomato_stage_5"
+			]
+		},
+		"vial_rod_empty": {
+			"textures": [
+				"textures/blocks/vial_rod_empty"
+			]
+		},
+		"vial_rod_shimmering": {
+			"textures": [
+				"textures/blocks/vial_rod_shimmering"
+			]
+		},
+		"vial_rod_radioactive": {
+			"textures": [
+				"textures/blocks/vial_rod_radioactive"
+			]
+		},
+		"wired_outsider_metal": {
+			"textures": [
+				"textures/blocks/wired_outsider_metal"
+			]
+		},
+		//Miank
+		"soil": {
+			"textures": [
+				"textures/blocks/soil"
+			]
+		}
+	}
+}

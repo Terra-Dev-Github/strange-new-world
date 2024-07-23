@@ -1,0 +1,24 @@
+{
+	"format_version": "1.12",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "terra:nethersteel_boots"
+		},
+		"tags": [
+			"crafting_table"
+		],
+		"pattern": [
+			"B B",
+			"B B"
+		],
+		"key": {
+			"B": {
+				"item": "terra:nethersteel_ingot"
+			}
+		},
+		"result": {
+			"item": "terra:nethersteel_boots",
+			"count": 1
+		}
+	}
+}

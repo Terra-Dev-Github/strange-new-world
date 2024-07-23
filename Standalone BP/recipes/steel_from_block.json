@@ -1,0 +1,23 @@
+{
+	"format_version": "1.12",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "terra:steel_from_block"
+		},
+		"tags": [
+			"crafting_table"
+		],
+		"pattern": [
+			"B"
+		],
+		"key": {
+			"B": {
+				"item": "terra:steel_block"
+			}
+		},
+		"result": {
+			"item": "terra:steel_ingot",
+			"count": 9
+		}
+	}
+}

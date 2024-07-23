@@ -1,0 +1,22 @@
+{
+	"format_version": "1.16.100",
+	"minecraft:item": {
+		"description": {
+			"identifier": "terra:salt_bottle",
+			"category": "items"
+		},
+		"components": {
+			"minecraft:creative_category": {
+				"parent": "itemGroup.name.none"
+			},
+			"minecraft:max_stack_size": 16,
+			"minecraft:icon": {
+				"texture": "salt_bottle"
+			},
+			"minecraft:hand_equipped": false,
+			"minecraft:display_name": {
+				"value": "item.terra:salt_bottle"
+			}
+		}
+	}
+}

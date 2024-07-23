@@ -1,0 +1,175 @@
+{
+	"format_version": "1.16.100",
+	"minecraft:block": {
+		"description": {
+			"identifier": "terra:orange_crop",
+			"properties": {
+				"terra:growth_stage": [
+					0,
+					1,
+					2
+				]
+			}
+		},
+		"components": {
+			"minecraft:geometry": "geometry.crop.cross",
+			"minecraft:entity_collision": false,
+			"minecraft:aim_collision": {
+				"origin": [
+					-8,
+					0,
+					-8
+				],
+				"size": [
+					16,
+					16,
+					16
+				]
+			},
+			"minecraft:breathability": "air",
+			"minecraft:destroy_time": 0.5,
+			"minecraft:friction": 0.2,
+			"minecraft:map_color": "#000000",
+			"minecraft:block_light_absorption": 0,
+			"minecraft:loot": "loot_tables/blocks/orange_seeds.json",
+			"minecraft:on_interact": {
+				"event": "meal",
+				"condition": "query.get_equipped_item_name('main_hand')=='bone_meal'"
+			},
+			"minecraft:random_ticking": {
+				"on_tick": {
+					"event": "grow_stage"
+				}
+			},
+			"minecraft:placement_filter": {
+				"conditions": [
+					{
+						"allowed_faces": [
+							"up"
+						],
+						"block_filter": [
+							"farmland",
+							"podzol"
+						]
+					}
+				]
+			}
+		},
+		"events": {
+			"grow_stage": {
+				"randomize": [
+					{
+						"weight": 1
+					},
+					{
+						"weight": 1,
+						"set_block_property": {
+							"terra:growth_stage": "(query.block_property('terra:growth_stage')<5) ? query.block_property('terra:growth_stage') + 1 : 5"
+						}
+					}
+				]
+			},
+			"final_drop": {
+				"spawn_loot": {
+					"table": "loot_tables/blocks/orange_crop.json"
+				},
+				"set_block": {
+					"block_type": "terra:orange_crop"
+				}
+			},
+			"meal": {
+				"sequence": [
+					{
+						"decrement_stack": {}
+					},
+					{
+						"run_command": {
+							"command": [
+								"particle minecraft:crop_growth_emitter ~~~"
+							]
+						}
+					},
+					{
+						"trigger": {
+							"event": "grow_stage"
+						}
+					}
+				]
+			}
+		},
+		"permutations": [
+			{
+				"condition": "query.block_property('terra:growth_stage') == 0",
+				"components": {
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "orange_crop_0",
+							"render_method": "alpha_test"
+						}
+					},
+					"minecraft:aim_collision": {
+						"origin": [
+							-5,
+							0,
+							-5
+						],
+						"size": [
+							10,
+							5,
+							10
+						]
+					},
+					"minecraft:loot": "loot_tables/blocks/orange_seeds.json"
+				}
+			},
+			{
+				"condition": "query.block_property('terra:growth_stage') == 1",
+				"components": {
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "orange_crop_1",
+							"render_method": "alpha_test"
+						}
+					},
+					"minecraft:aim_collision": {
+						"origin": [
+							-5,
+							0,
+							-5
+						],
+						"size": [
+							10,
+							5,
+							10
+						]
+					},
+					"minecraft:loot": "loot_tables/blocks/orange_seeds.json"
+				}
+			},
+			{
+				"condition": "query.block_property('terra:growth_stage') == 2",
+				"components": {
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "orange_crop_2",
+							"render_method": "alpha_test"
+						}
+					},
+					"minecraft:aim_collision": {
+						"origin": [
+							-8,
+							0,
+							-8
+						],
+						"size": [
+							16,
+							16,
+							16
+						]
+					},
+					"minecraft:loot": "loot_tables/blocks/orange_crop.json"
+				}
+			}
+		]
+	}
+}

@@ -1,0 +1,25 @@
+{
+	"format_version": "1.12",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "terra:nethersteel_leggings"
+		},
+		"tags": [
+			"crafting_table"
+		],
+		"pattern": [
+			"AAA",
+			"A A",
+			"A A"
+		],
+		"key": {
+			"A": {
+				"item": "terra:nethersteel_ingot"
+			}
+		},
+		"result": {
+			"item": "terra:nethersteel_leggings",
+			"count": 1
+		}
+	}
+}

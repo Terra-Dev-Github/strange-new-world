@@ -1,0 +1,22 @@
+{
+	"format_version": "1.16.100",
+	"minecraft:recipe_shapeless": {
+		"description": {
+			"identifier": "terra:raw_platinum_from_block"
+		},
+		"tags": [
+			"crafting_table"
+		],
+		"ingredients": [
+			{
+				"item": "terra:raw_platinum_block"
+			}
+		],
+		"result": [
+			{
+				"item": "terra:raw_platinum",
+				"count": 9
+			}
+		]
+	}
+}

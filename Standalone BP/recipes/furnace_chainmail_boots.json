@@ -1,0 +1,13 @@
+{
+	"format_version": "1.12",
+	"minecraft:recipe_furnace": {
+		"description": {
+			"identifier": "minecraft:furnace_chainmail_boots"
+		},
+		"tags": [
+			"furnace"
+		],
+		"input": "minecraft:chainmail_boots",
+		"output": "terra:steel_nugget"
+	}
+}

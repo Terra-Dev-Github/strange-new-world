@@ -1,0 +1,14 @@
+{
+	"format_version": "1.12",
+	"minecraft:recipe_brewing_mix": {
+		"description": {
+			"identifier": "terra:vial_shimmering"
+		},
+		"tags": [
+			"brewing_stand"
+		],
+		"input": "terra:vial_pure",
+		"reagent": "minecraft:glowstone_block",
+		"output": "terra:vial_shimmering"
+	}
+}

@@ -1,0 +1,25 @@
+{
+	"format_version": "1.12",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "terra:nethersteel_chestplate"
+		},
+		"tags": [
+			"crafting_table"
+		],
+		"pattern": [
+			"A A",
+			"AAA",
+			"AAA"
+		],
+		"key": {
+			"A": {
+				"item": "terra:nethersteel_ingot"
+			}
+		},
+		"result": {
+			"item": "terra:nethersteel_chestplate",
+			"count": 1
+		}
+	}
+}

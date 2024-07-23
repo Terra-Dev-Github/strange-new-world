@@ -1,0 +1,28 @@
+// This file was made, modified and compiled by Heavenly (@heavenly7493) for TERRA.
+// Do not distribute without permission.
+{
+	"format_version": "1.20.80",
+	"minecraft:block": {
+		"description": {
+			"identifier": "terra:raw_malachite_block",
+			"menu_category": {
+				"category": "construction",
+				"group": "itemGroup.name.none"
+			}
+		},
+		"components": {
+			"minecraft:geometry": "minecraft:geometry.full_block",
+			"minecraft:material_instances": {
+				"*": {
+					"texture": "raw_malachite_block",
+					"render_method": "opaque"
+				}
+			},
+			"minecraft:destructible_by_mining": {
+				"seconds_to_destroy": 2.5
+			},
+			"minecraft:loot": "loot_tables/blocks/raw_malachite_block.json",
+			"minecraft:map_color": "#415738"
+		}
+	}
+}
