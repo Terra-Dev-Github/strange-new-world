@@ -5,8 +5,13 @@
 	"minecraft:block": {
 		"description": {
 			"identifier": "terra:lemon_crop",
+			"menu_category": {
+				// block is placed with seeds
+				"category": "commands",
+				"group": "none"
+			},
 			"states": {
-				"terra:crop_age": [
+				"terra:growth_stage": [
 					0,
 					1,
 					2
@@ -14,8 +19,9 @@
 			}
 		},
 		"components": {
+			// adds block functionality
 			"minecraft:custom_components": [
-				"terra:crop_grow"
+				"terra:crop_properties"
 			],
 			"tag:minecraft:crop": {},
 			"minecraft:geometry": "geometry.crop.cross",
@@ -34,10 +40,9 @@
 			},
 			// "minecraft:breathability": "air",
 			"minecraft:destructible_by_mining": {
-				"seconds_to_destroy": 0.5
+				"seconds_to_destroy": 1
 			},
-			"minecraft:friction": 0.2,
-			"minecraft:map_color": "#000000",
+			// "minecraft:map_color": "#000000",
 			"minecraft:light_dampening": 0,
 			"minecraft:loot": "loot_tables/blocks/lemon_seeds.json",
 			"minecraft:placement_filter": {
@@ -56,7 +61,7 @@
 		},
 		"permutations": [
 			{
-				"condition": "query.block_state('terra:crop_age') == 0",
+				"condition": "query.block_state('terra:growth_stage') == 0",
 				"components": {
 					"minecraft:material_instances": {
 						"*": {
@@ -80,7 +85,7 @@
 				}
 			},
 			{
-				"condition": "query.block_state('terra:crop_age') == 1",
+				"condition": "query.block_state('terra:growth_stage') == 1",
 				"components": {
 					"minecraft:material_instances": {
 						"*": {
@@ -104,7 +109,7 @@
 				}
 			},
 			{
-				"condition": "query.block_state('terra:crop_age') == 2",
+				"condition": "query.block_state('terra:growth_stage') == 2",
 				"components": {
 					"minecraft:material_instances": {
 						"*": {

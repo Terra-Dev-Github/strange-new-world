@@ -1,131 +1,38 @@
 // This file was made, modified and compiled by Heavenly (@heavenly7493) for TERRA.
 // Do not distribute without permission.
 {
-	"format_version": "1.16.100",
+	"format_version": "1.20.80",
 	"minecraft:block": {
 		"description": {
 			"identifier": "terra:salt_dust",
-			"properties": {
-				"terra:dust_connecting": [
-					0, // single
-					1, // vertical
-					2, // horizontal
-					3, // north-east (ne)
-					4, // north-west (nw)
-					5, // south-east (se)
-					6, // south-west (sw)
-					7, // north-east-west (new)
-					8, // south-east-west (sew)
-					9, // north-south-west (nsw)
-					10, // north-south-east (nse)
-					11 // cross
-				]
-			}
-		},
-		"events": {
-			"terra:set_block_properties": {
-				// default (single)
-				"set_block_property": {
-					"terra:dust_connecting": 0
-				}
+			"menu_category": {
+				// block is placed with the salt dust item
+				"category": "commands",
+				"group": "none"
 			},
-			"terra:update_connecting": {
-				"sequence": [
-					{
-						// if none at sides, then single
-						"condition": "!q.block_neighbor_has_all_tags(1,0,0,'salt_dust') && !q.block_neighbor_has_all_tags(-1,0,0,'salt_dust') && !q.block_neighbor_has_all_tags(0,0,1,'salt_dust') && !q.block_neighbor_has_all_tags(0,0,-1,'salt_dust')",
-						"set_block_property": {
-							"terra:dust_connecting": 0
-						}
-					},
-					{
-						// if dust at either north and south or both, then vertical
-						"condition": "(q.block_neighbor_has_all_tags(0,0,1,'salt_dust') || q.block_neighbor_has_all_tags(0,0,-1,'salt_dust'))",
-						"set_block_property": {
-							"terra:dust_connecting": 1
-						}
-					},
-					{
-						// if dust at either east and west or both, then horizontal
-						"condition": "(q.block_neighbor_has_all_tags(1,0,0,'salt_dust') || q.block_neighbor_has_all_tags(-1,0,0,'salt_dust'))",
-						"set_block_property": {
-							"terra:dust_connecting": 2
-						}
-					},
-					{
-						// if dust at north and east, then north-east
-						"condition": "q.block_neighbor_has_all_tags(0,0,-1,'salt_dust') && q.block_neighbor_has_all_tags(1,0,0,'salt_dust')",
-						"set_block_property": {
-							"terra:dust_connecting": 3
-						}
-					},
-					{
-						// if dust at north and west, then north-west
-						"condition": "q.block_neighbor_has_all_tags(0,0,-1,'salt_dust') && q.block_neighbor_has_all_tags(-1,0,0,'salt_dust')",
-						"set_block_property": {
-							"terra:dust_connecting": 4
-						}
-					},
-					{
-						// if dust at south and east, then south-east
-						"condition": "q.block_neighbor_has_all_tags(0,0,1,'salt_dust') && q.block_neighbor_has_all_tags(1,0,0,'salt_dust')",
-						"set_block_property": {
-							"terra:dust_connecting": 5
-						}
-					},
-					{
-						// if dust at south and west, then south-west
-						"condition": "q.block_neighbor_has_all_tags(0,0,1,'salt_dust') && q.block_neighbor_has_all_tags(-1,0,0,'salt_dust')",
-						"set_block_property": {
-							"terra:dust_connecting": 6
-						}
-					},
-					{
-						// if dust at all sides except north, then south-east-west
-						"condition": "!q.block_neighbor_has_all_tags(0,0,-1,'salt_dust') && q.block_neighbor_has_all_tags(0,0,1,'salt_dust') && q.block_neighbor_has_all_tags(1,0,0,'salt_dust') && q.block_neighbor_has_all_tags(-1,0,0,'salt_dust')",
-						"set_block_property": {
-							"terra:dust_connecting": 8
-						}
-					},
-					{
-						// if dust at all sides except south, then north-east-west
-						"condition": "!q.block_neighbor_has_all_tags(0,0,1,'salt_dust') && q.block_neighbor_has_all_tags(0,0,-1,'salt_dust') && q.block_neighbor_has_all_tags(1,0,0,'salt_dust') && q.block_neighbor_has_all_tags(-1,0,0,'salt_dust')",
-						"set_block_property": {
-							"terra:dust_connecting": 7
-						}
-					},
-					{
-						// if dust at all sides except east, then north-south-west
-						"condition": "!q.block_neighbor_has_all_tags(1,0,0,'salt_dust') && q.block_neighbor_has_all_tags(0,0,1,'salt_dust') && q.block_neighbor_has_all_tags(0,0,-1,'salt_dust') && q.block_neighbor_has_all_tags(-1,0,0,'salt_dust')",
-						"set_block_property": {
-							"terra:dust_connecting": 9
-						}
-					},
-					{
-						// if dust at all sides except west, then north-south-east
-						"condition": "!q.block_neighbor_has_all_tags(-1,0,0,'salt_dust') && q.block_neighbor_has_all_tags(0,0,1,'salt_dust') && q.block_neighbor_has_all_tags(0,0,-1,'salt_dust') && q.block_neighbor_has_all_tags(1,0,0,'salt_dust')",
-						"set_block_property": {
-							"terra:dust_connecting": 10
-						}
-					},
-					{
-						// if dust at all sides, then cross
-						"condition": "q.block_neighbor_has_all_tags(1,0,0,'salt_dust') &&q.block_neighbor_has_all_tags(-1,0,0,'salt_dust') &&q.block_neighbor_has_all_tags(0,0,1,'salt_dust') &&q.block_neighbor_has_all_tags(0,0,-1,'salt_dust')",
-						"set_block_property": {
-							"terra:dust_connecting": 11
-						}
-					}
+			"states": {
+				"terra:north_connect": [
+					0,
+					1
+				],
+				"terra:south_connect": [
+					0,
+					1
+				],
+				"terra:east_connect": [
+					0,
+					1
+				],
+				"terra:west_connect": [
+					0,
+					1
 				]
 			}
 		},
 		"components": {
-			"tag:salt_dust": {},
-			"minecraft:block_light_absorption": 0,
-			"minecraft:creative_category": {
-				"category": "commands",
-				"group": "none"
-			},
-			"minecraft:pick_collision": {
+			"tag:dust_salt": {},
+			"minecraft:light_dampening": 0,
+			"minecraft:selection_box": {
 				"origin": [
 					-8,
 					0,
@@ -137,7 +44,7 @@
 					16
 				]
 			},
-			"minecraft:entity_collision": false,
+			"minecraft:collision_box": false,
 			"minecraft:placement_filter": {
 				"conditions": [
 					{
@@ -152,16 +59,15 @@
 					}
 				]
 			},
+			"minecraft:destructible_by_mining": {
+				"seconds_to_destroy": 0.25
+			},
 			"minecraft:geometry": "geometry.flat",
 			"minecraft:loot": "loot_tables/blocks/salt_dust.json",
-			"minecraft:ticking": {
-				"on_tick": {
-					"event": "terra:update_connecting"
-				},
-				"looping": true,
-				"range": [
-					0,
-					5
+			"minecraft:tick": {
+				"interval_range": [
+					3,
+					3
 				]
 			},
 			"minecraft:material_instances": {
@@ -170,18 +76,15 @@
 					"render_method": "alpha_test"
 				}
 			},
-			"minecraft:on_player_placing": {
-				"event": "terra:set_block_properties"
-			},
-			"minecraft:on_player_destroyed": {
-				"event": "terra:update_connecting",
-				"target": "self"
-			}
+			// adds block functionality
+			"minecraft:custom_components": [
+				"terra:side_self_connect"
+			]
 		},
 		"permutations": [
-			// single
+			// default
 			{
-				"condition": "query.block_property('terra:dust_connecting') == 0",
+				"condition": "!q.block_state('terra:north_connect') && !q.block_state('terra:south_connect') && !q.block_state('terra:east_connect') && !q.block_state('terra:west_connect')",
 				"components": {
 					"minecraft:material_instances": {
 						"*": {
@@ -193,7 +96,7 @@
 			},
 			// vertical
 			{
-				"condition": "query.block_property('terra:dust_connecting') == 1",
+				"condition": "(q.block_state('terra:north_connect') || q.block_state('terra:south_connect')) && !q.block_state('terra:east_connect') && !q.block_state('terra:west_connect')",
 				"components": {
 					"minecraft:material_instances": {
 						"*": {
@@ -205,7 +108,7 @@
 			},
 			// horizontal
 			{
-				"condition": "query.block_property('terra:dust_connecting') == 2",
+				"condition": "(q.block_state('terra:east_connect') || q.block_state('terra:west_connect')) && !q.block_state('terra:north_connect') && !q.block_state('terra:south_connect')",
 				"components": {
 					"minecraft:material_instances": {
 						"*": {
@@ -217,7 +120,7 @@
 			},
 			// north-east (ne)
 			{
-				"condition": "query.block_property('terra:dust_connecting') == 3",
+				"condition": "q.block_state('terra:north_connect') && !q.block_state('terra:south_connect') && q.block_state('terra:east_connect') && !q.block_state('terra:west_connect')",
 				"components": {
 					"minecraft:material_instances": {
 						"*": {
@@ -229,7 +132,7 @@
 			},
 			// north-west (nw)
 			{
-				"condition": "query.block_property('terra:dust_connecting') == 4",
+				"condition": "q.block_state('terra:north_connect') && !q.block_state('terra:south_connect') && !q.block_state('terra:east_connect') && q.block_state('terra:west_connect')",
 				"components": {
 					"minecraft:material_instances": {
 						"*": {
@@ -241,7 +144,7 @@
 			},
 			// south-east (se)
 			{
-				"condition": "query.block_property('terra:dust_connecting') == 5",
+				"condition": "!q.block_state('terra:north_connect') && q.block_state('terra:south_connect') && q.block_state('terra:east_connect') && !q.block_state('terra:west_connect')",
 				"components": {
 					"minecraft:material_instances": {
 						"*": {
@@ -253,7 +156,7 @@
 			},
 			// south-west (sw)
 			{
-				"condition": "query.block_property('terra:dust_connecting') == 6",
+				"condition": "!q.block_state('terra:north_connect') && q.block_state('terra:south_connect') && !q.block_state('terra:east_connect') && q.block_state('terra:west_connect')",
 				"components": {
 					"minecraft:material_instances": {
 						"*": {
@@ -265,7 +168,7 @@
 			},
 			// north-east-west (new)
 			{
-				"condition": "query.block_property('terra:dust_connecting') == 7",
+				"condition": "q.block_state('terra:north_connect') && !q.block_state('terra:south_connect') && q.block_state('terra:east_connect') && q.block_state('terra:west_connect')",
 				"components": {
 					"minecraft:material_instances": {
 						"*": {
@@ -277,7 +180,7 @@
 			},
 			// south-east-west (sew)
 			{
-				"condition": "query.block_property('terra:dust_connecting') == 8",
+				"condition": "!q.block_state('terra:north_connect') && q.block_state('terra:south_connect') && q.block_state('terra:east_connect') && q.block_state('terra:west_connect')",
 				"components": {
 					"minecraft:material_instances": {
 						"*": {
@@ -289,7 +192,7 @@
 			},
 			// north-south-west (nsw)
 			{
-				"condition": "query.block_property('terra:dust_connecting') == 9",
+				"condition": "q.block_state('terra:north_connect') && q.block_state('terra:south_connect') && !q.block_state('terra:east_connect') && q.block_state('terra:west_connect')",
 				"components": {
 					"minecraft:material_instances": {
 						"*": {
@@ -301,7 +204,7 @@
 			},
 			// north-south-east (nse)
 			{
-				"condition": "query.block_property('terra:dust_connecting') == 10",
+				"condition": "q.block_state('terra:north_connect') && q.block_state('terra:south_connect') && q.block_state('terra:east_connect') && !q.block_state('terra:west_connect')",
 				"components": {
 					"minecraft:material_instances": {
 						"*": {
@@ -313,7 +216,7 @@
 			},
 			// cross
 			{
-				"condition": "query.block_property('terra:dust_connecting') == 11",
+				"condition": "q.block_state('terra:north_connect') && q.block_state('terra:south_connect') && q.block_state('terra:east_connect') && q.block_state('terra:west_connect')",
 				"components": {
 					"minecraft:material_instances": {
 						"*": {
