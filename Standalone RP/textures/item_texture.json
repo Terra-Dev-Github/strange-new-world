@@ -7,6 +7,17 @@
 				"textures/items/missing_item"
 			]
 		},
+		// item textures found in the blocks folder
+		"steel_grate_frame": {
+			"textures": [
+				"textures/blocks/steel_grate_frame"
+			]
+		},
+		"steel_lattice_frame": {
+			"textures": [
+				"textures/blocks/steel_lattice_frame"
+			]
+		},
 		//
 		"grapes": {
 			"textures": [
@@ -68,6 +79,31 @@
 				"textures/items/orange_seeds"
 			]
 		},
+		"outsider_boots": {
+			"textures": [
+				"textures/items/outsider_boots"
+			]
+		},
+		"outsider_chestplate": {
+			"textures": [
+				"textures/items/outsider_chestplate"
+			]
+		},
+		"outsider_core": {
+			"textures": [
+				"textures/items/outsider_core"
+			]
+		},
+		"outsider_greaves": {
+			"textures": [
+				"textures/items/outsider_greaves"
+			]
+		},
+		"outsider_helmet": {
+			"textures": [
+				"textures/items/outsider_helmet"
+			]
+		},
 		"outsider_metal_ingot": {
 			"textures": [
 				"textures/items/outsider_metal_ingot"
@@ -96,6 +132,11 @@
 		"raw_platinum": {
 			"textures": [
 				"textures/items/raw_platinum"
+			]
+		},
+		"reverion_dust": {
+			"textures": [
+				"textures/items/reverion_dust"
 			]
 		},
 		"ruby": {

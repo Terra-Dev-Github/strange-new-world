@@ -13,12 +13,12 @@
 						{
 							"test": "has_biome_tag",
 							"operator": "==",
-							"value": "overworld"
+							"value": "cold"
 						},
 						{
 							"test": "has_biome_tag",
 							"operator": "==",
-							"value": "overworld_generation"
+							"value": "frozen"
 						}
 					]
 				}

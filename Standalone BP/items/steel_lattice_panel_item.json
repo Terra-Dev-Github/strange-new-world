@@ -1,0 +1,26 @@
+// This file was made, modified and compiled by Heavenly (@heavenly7493) for TERRA.
+// Do not distribute without permission.
+{
+	"format_version": "1.20.30",
+	"minecraft:item": {
+		"description": {
+			"identifier": "terra:steel_lattice_panel_item",
+			"menu_category": {
+				"category": "construction",
+				"group": "itemGroup.name.glassPane"
+			}
+		},
+		"components": {
+			"minecraft:block_placer": {
+				"block": "terra:steel_lattice_panel"
+			},
+			"minecraft:icon": {
+				"texture": "steel_lattice_panel"
+			},
+			"minecraft:hand_equipped": false,
+			"minecraft:display_name": {
+				"value": "tile.terra:steel_lattice_panel.name"
+			}
+		}
+	}
+}

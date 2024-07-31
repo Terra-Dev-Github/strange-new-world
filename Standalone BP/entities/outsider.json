@@ -295,7 +295,6 @@
                 "can_walk": true
             },
             "minecraft:shareables": {
-                "singular_pickup": true,
                 "items": [
                     {
                         "item": "minecraft:trident",

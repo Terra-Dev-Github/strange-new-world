@@ -1,0 +1,8 @@
+[
+    {
+        "atlas_tile": "outsider_reactor_core",
+        "flipbook_texture": "textures/blocks/outsider_reactor_core_atlas",
+        "atlas_index": 2,
+        "ticks_per_frame": 10
+    }
+]

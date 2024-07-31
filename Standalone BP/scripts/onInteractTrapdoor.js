@@ -79,12 +79,6 @@ world.beforeEvents.worldInitialize.subscribe(eventData => {
             // Destructure event data for easier access
             const { block, player } = e;
 
-            // Get the equipment component for the player
-            const equipment = player.getComponent('equippable');
-
-            // Get the selected item from the player's mainhand
-            const selectedItem = equipment.getEquipment('Mainhand');
-
             // Get the current state of the 'terra:open' block trait
             const currentState = block.permutation.getState('terra:open');
 

@@ -2,7 +2,7 @@
 	"resource_pack_name": "vanilla",
 	"texture_name": "atlas.terrain",
 	"padding": 8,
-	"num_mip_levels": 4,
+	"num_mip_levels": 1,
 	"texture_data": {
 		"autonetic_station_bottom": {
 			"textures": [
@@ -32,6 +32,11 @@
 		"brittle_outsider_metal": {
 			"textures": [
 				"textures/blocks/brittle_outsider_metal"
+			]
+		},
+		"brittle_reverion": {
+			"textures": [
+				"textures/blocks/brittle_reverion"
 			]
 		},
 		"chiseled_malachite": {
@@ -67,6 +72,16 @@
 		"deepslate_tanzanite_ore": {
 			"textures": [
 				"textures/blocks/deepslate_tanzanite_ore"
+			]
+		},
+		"duskstone_bricks": {
+			"textures": [
+				"textures/blocks/duskstone"
+			]
+		},
+		"duskstone": {
+			"textures": [
+				"textures/blocks/duskstone"
 			]
 		},
 		"hazard_block": {
@@ -169,6 +184,12 @@
 				"textures/blocks/outsider_metal_slab_side"
 			]
 		},
+		"outsider_reactor_core": {
+			"textures": [
+				"textures/blocks/outsider_reactor_core",
+				"textures/blocks/outsider_reactor_core_atlas"
+			]
+		},
 		"platinum_block": {
 			"textures": [
 				"textures/blocks/platinum_block"
@@ -177,6 +198,11 @@
 		"platinum_ore": {
 			"textures": [
 				"textures/blocks/platinum_ore"
+			]
+		},
+		"polished_duskstone": {
+			"textures": [
+				"textures/blocks/polished_duskstone"
 			]
 		},
 		"polished_malachite_block": {
@@ -227,6 +253,16 @@
 		"reinforced_nethersteel_block": {
 			"textures": [
 				"textures/blocks/reinforced_nethersteel_block"
+			]
+		},
+		"reverion_bricks": {
+			"textures": [
+				"textures/blocks/reverion_bricks"
+			]
+		},
+		"reverion": {
+			"textures": [
+				"textures/blocks/reverion"
 			]
 		},
 		"ruby_block": {
