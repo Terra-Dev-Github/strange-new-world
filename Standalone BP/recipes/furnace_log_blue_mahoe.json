@@ -1,0 +1,11 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_furnace": {
+    "description": {
+    "identifier": "terra:furnace_log_blue_mahoe"
+    },
+    "tags": ["furnace"],
+    "input": "terra:blue_mahoe_log",
+    "output": "minecraft:coal:1"
+  }
+}

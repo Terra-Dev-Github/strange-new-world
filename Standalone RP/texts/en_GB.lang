@@ -10,12 +10,13 @@ tile.mian:soil.name=Soil
 ## US > GB
 ## Chiseled > Chiselled
 
-## Item Descriptions
+## Item Descriptionsb
 item.terra:record_wtb_rupture.desc=Henderson - War-Torn Born (Rupture)
 item.terra:record_wtb_siren.desc=Henderson - War-Torn Born (Music Siren)
 item.terra:nethersteel_upgrade_smithing_template.desc= Nethersteel Upgrade
 
 ## Items
+
 ## item.terra:grapes=Grapes
 item.terra:handgun=Handgun
 item.terra:lemon_seeds=Lemon Seeds
@@ -35,6 +36,7 @@ item.terra:platinum_ingot=Platinum Ingot
 item.terra:purified_malachite=Purified Malachite
 item.terra:raw_malachite=Raw Malachite
 item.terra:raw_platinum=Raw Platinum
+item.terra:reverion_dust=Reverion Dust
 item.terra:ruby=Ruby
 item.terra:salt=Salt
 item.terra:salt_bottle=Salt Bottle
@@ -50,7 +52,22 @@ item.terra:vial_waste=Waste Vial
 ## Blocks
 
 tile.terra:autonetic_station.name=Autonetic Station
+tile.terra:blue_mahoe_log.name=Blue Mahoe Log
+tile.terra:blue_mahoe_log_stripped.name=Blue Mahoe Log Stripped
+tile.terra:blue_mahoe_planks.name=Blue Mahoe Planks
+tile.terra:blue_mahoe_slab.name=Blue Mahoe Slab
+tile.terra:blue_mahoe_trapdoor.name=Blue Mahoe Trapdoor
+tile.terra:blue_mahoe_wood.name=Blue Mahoe Wood
+tile.terra:blue_mahoe_wood_stripped.name=Blue Mahoe Wood Stripped
+tile.terra:bulnesia_log.name=Bulnesia Log
+tile.terra:bulnesia_log_stripped.name=Bulnesia Log Stripped
+tile.terra:bulnesia_planks.name=Bulnesia Planks
+tile.terra:bulnesia_trapdoor.name=Bulnesia Trapdoor
+tile.terra:bulnesia_wood.name=Bulnesia Wood
+tile.terra:bulnesia_wood_stripped.name=Bulnesia Wood Stripped
 tile.terra:brittle_outsider_metal.name=Brittle Outsider Metal
+tile.terra:brittle_reverion_slab.name=Brittle Reverion Slab
+tile.terra:brittle_reverion.name=Brittle Reverion
 tile.terra:chiseled_malachite_block.name=Chiselled Malachite
 tile.terra:chiseled_outsider_metal.name=Chiselled Outsider Metal
 tile.terra:cut_malachite_block.name=Cut Polished Malachite
@@ -58,13 +75,19 @@ tile.terra:cut_outsider_metal.name=Cut Outsider Metal
 tile.terra:deepslate_platinum_ore.name=Deepslate Platinum Ore
 tile.terra:deepslate_ruby_ore.name=Deepslate Ruby Ore
 tile.terra:deepslate_tanzanite_ore.name=Deepslate Tanzanite Ore
+tile.terra:duskstone_brick_slab.name=Duskstone Brick Slab
+tile.terra:duskstone_bricks.name=Duskstone Bricks
+tile.terra:duskstone_slab.name=Duskstone Slab
+tile.terra:duskstone.name=Duskstone
 tile.terra:hazard_block.name=Hazard Block
 tile.terra:hazard_pillar.name=Hazard Pillar
 tile.terra:hazardous_outsider_metal.name=Hazardous Outsider Metal
 tile.terra:laboratory_trapdoor.name=Laboratory Trapdoor
 tile.terra:lemon_crop.name=Lemon Crop
 tile.terra:malachite_block.name=Block of Malachite
+tile.terra:malachite_brick_slab.name=Malachite Brick Slab
 tile.terra:malachite_bricks.name=Malachite Bricks
+tile.terra:malachite_slab.name=Malachite Slab
 tile.terra:malachite_ore.name=Malachite Ore
 tile.terra:nethersteel_block.name=Block of Nethersteel
 tile.terra:orange_crop.name=Orange Crop
@@ -72,7 +95,10 @@ tile.terra:outsider_metal_block.name=Outsider Metal Block
 tile.terra:outsider_metal_pillar.name=Outsider Metal Pillar
 tile.terra:outsider_metal_slab.name=Outsider Metal Slab
 tile.terra:platinum_ore.name=Platinum Ore
+tile.terra:polished_duskstone_slab.name=Polished Duskstone Slab
+tile.terra:polished_duskstone.name=Polished Duskstone
 tile.terra:polished_malachite_block.name=Polished Malachite
+tile.terra:polished_malachite_brick_slab.name=Polished Malachite Brick Slab
 tile.terra:polished_malachite_bricks.name=Polished Malachite Bricks
 tile.terra:polished_malachite_slab.name=Polished Malachite Slab
 tile.terra:poplar_log.name=Poplar Log
@@ -86,6 +112,9 @@ tile.terra:platinum_block.name=Block of Platinum
 tile.terra:raw_malachite_block.name=Block of Raw Malachite
 tile.terra:raw_platinum_block.name=Block of Raw Platinum
 tile.terra:reinforced_nethersteel_block.name=Reinforced Nethersteel Block
+tile.terra:reverion_brick_slab.name=Reverion Brick Slab
+tile.terra:reverion_slab.name=Reverion Slab
+tile.terra:reverion.name=Reverion
 tile.terra:ruby_block.name=Block of Ruby
 tile.terra:ruby_ore.name=Ruby Ore
 tile.terra:salt_block.name=Salt Block
@@ -93,9 +122,9 @@ tile.terra:salt_dust.name=Salt Dust
 tile.terra:salt_ore.name=Salt Ore
 tile.terra:steel_block.name=Block of Steel
 tile.terra:steel_grate_block.name=Steel Grate Block
-## tile.terra:steel_grate_panel.name=Steel Grate Panel
+tile.terra:steel_grate_panel.name=Steel Grate Panel
 tile.terra:steel_lattice_block.name=Steel Lattice
-## tile.terra:steel_lattice_panel.name=Steel Lattice Panel
+tile.terra:steel_lattice_panel.name=Steel Lattice Panel
 tile.terra:steel_rod.name=Steel Rod
 tile.terra:tanzanite_block.name=Block of Tanzanite
 tile.terra:tanzanite_ore.name=Tanzanite Ore
@@ -104,6 +133,12 @@ tile.terra:vial_rod_empty.name=Vial Rod
 tile.terra:vial_rod_radioactive.name=Radioactive Vial Rod
 tile.terra:vial_rod_shimmering.name=Shimmering Vial Rod
 tile.terra:wired_outsider_metal.name=Wired Outsider Metal
+tile.terra:yellowheart_log.name=Yellowheart Log
+tile.terra:yellowheart_log_stripped.name=Yellowheart Log Stripped
+tile.terra:yellowheart_planks.name=Yellowheart Planks
+tile.terra:yellowheart_slab.name=Yellowheart Slab
+tile.terra:yellowheart_wood.name=Yellowheart Wood
+tile.terra:yellowheart_wood_stripped.name=Yellowheart Wood Stripped
 
 ## Entities
 entity.terra:possum.name=Possum

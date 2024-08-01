@@ -1,0 +1,29 @@
+{
+    "format_version": "1.16.100",
+    "minecraft:recipe_shaped": {
+        "description": {
+            "identifier": "terra:wooden_hoe_from_bulnesia_planks"
+        },
+        "tags": [
+            "crafting_table"
+        ],
+        "pattern": [
+            "AA ",
+            " B ",
+            " B "
+        ],
+        "key": {
+            "A": {
+                "item": "terra:bulnesia_planks"
+            },
+            "B": {
+                "item": "minecraft:stick"
+            }
+        },
+        "result": {
+            "item": "minecraft:wooden_hoe",
+            "count": 1
+        },
+        "priority": 2
+    }
+}

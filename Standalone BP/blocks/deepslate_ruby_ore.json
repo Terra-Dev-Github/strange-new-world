@@ -24,7 +24,7 @@
 			"minecraft:destructible_by_explosion": {
 				"explosion_resistance": 1
 			},
-			"minecraft:map_color": "#00CFCF",
+			"minecraft:map_color": "#FFBAB7",
 			"minecraft:loot": "loot_tables/blocks/ruby_ore.json"
 		}
 	}

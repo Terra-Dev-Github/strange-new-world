@@ -1,0 +1,29 @@
+{
+    "format_version": "1.16.100",
+    "minecraft:recipe_shaped": {
+        "description": {
+            "identifier": "terra:noteblock_from_blue_mahoe_planks"
+        },
+        "tags": [
+            "crafting_table"
+        ],
+        "pattern": [
+            "AAA",
+            "ABA",
+            "AAA"
+        ],
+        "key": {
+            "A": {
+                "item": "terra:blue_mahoe_planks"
+            },
+            "B": {
+                "item": "minecraft:redstone"
+            }
+        },
+        "result": {
+            "item": "minecraft:noteblock",
+            "count": 1
+        },
+        "priority": 2
+    }
+}

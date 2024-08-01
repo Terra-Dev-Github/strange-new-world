@@ -1,0 +1,29 @@
+{
+    "format_version": "1.16.100",
+    "minecraft:recipe_shaped": {
+        "description": {
+            "identifier": "terra:grindstone_from_bulnesia_planks"
+        },
+        "tags": [ "crafting_table" ],
+        "pattern": [
+          "|_|",
+          "# #"
+        ],
+        "key": {
+          "|": {
+              "item": "minecraft:stick"
+          },
+          "#": {
+            "item": "terra:bulnesia_planks"
+          },
+          "_": {
+            "item": "minecraft:double_stone_slab4",
+            "data": 2
+          }
+        },
+        "result": {
+          "item": "minecraft:grindstone"
+        },
+        "priority": 2
+    }
+}

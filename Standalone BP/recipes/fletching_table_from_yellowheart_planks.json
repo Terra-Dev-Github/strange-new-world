@@ -1,0 +1,29 @@
+{
+    "format_version": "1.16.100",
+    "minecraft:recipe_shaped": {
+        "description": {
+            "identifier": "terra:fletching_table_from_yellowheart_planks"
+        },
+        "tags": [
+            "crafting_table"
+        ],
+        "pattern": [
+            "AA",
+            "BB",
+            "BB"
+        ],
+        "key": {
+            "A": {
+                "item": "minecraft:flint"
+            },
+            "B": {
+                "item": "terra:yellowheart_planks"
+            }
+        },
+        "result": {
+            "item": "minecraft:fletching_table",
+            "count": 1
+        },
+        "priority": 2
+    }
+}

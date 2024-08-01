@@ -1,0 +1,26 @@
+{
+    "format_version": "1.16.100",
+    "minecraft:recipe_shaped": {
+        "description": {
+            "identifier": "terra:chest_from_poplar_planks"
+        },
+        "tags": [
+            "crafting_table"
+        ],
+        "pattern": [
+            "AAA",
+            "A A",
+            "AAA"
+        ],
+        "key": {
+            "A": {
+                "item": "terra:poplar_planks"
+            }
+        },
+        "result": {
+            "item": "minecraft:chest",
+            "count": 1
+        },
+        "priority": 2
+    }
+}

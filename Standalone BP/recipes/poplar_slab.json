@@ -1,0 +1,27 @@
+{
+  "format_version": "1.20.10",
+  "minecraft:recipe_shaped": {
+    "description": {
+    "identifier": "terra:poplar_slab"
+    },
+    "tags": [ "crafting_table" ],
+    "group": "wooden_slab",
+    "pattern": [
+      "###"
+    ],
+    "key": {
+      "#": {
+        "item": "terra:poplar_planks"
+      }
+    },
+	"unlock": [
+        {
+          "item": "terra:poplar_planks"
+        }
+    ],
+    "result": {
+      "item": "terra:poplar_slab",
+      "count": 6
+    }
+  }
+}

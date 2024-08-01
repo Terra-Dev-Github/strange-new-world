@@ -64,6 +64,7 @@
 			},
 			"minecraft:geometry": "geometry.flat",
 			"minecraft:loot": "loot_tables/blocks/salt_dust.json",
+			"minecraft:map_color": "#C6C5CE",
 			"minecraft:tick": {
 				"interval_range": [
 					3,

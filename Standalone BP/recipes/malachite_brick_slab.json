@@ -1,0 +1,23 @@
+{
+	"format_version": "1.12",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "terra:malachite_brick_slab"
+		},
+		"tags": [
+			"crafting_table"
+		],
+		"pattern": [
+			"###"
+		],
+		"key": {
+			"#": {
+				"item": "terra:malachite_bricks"
+			}
+		},
+		"result": {
+			"item": "terra:malachite_brick_slab",
+			"count": 3
+		}
+	}
+}

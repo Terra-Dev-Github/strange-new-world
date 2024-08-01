@@ -1,0 +1,29 @@
+{
+    "format_version": "1.16.100",
+    "minecraft:recipe_shaped": {
+        "description": {
+            "identifier": "terra:wooden_axe_from_yellowheart_planks"
+        },
+        "tags": [
+            "crafting_table"
+        ],
+        "pattern": [
+            "AA",
+            "AB",
+            " B"
+        ],
+        "key": {
+            "A": {
+                "item": "terra:yellowheart_planks"
+            },
+            "B": {
+                "item": "minecraft:stick"
+            }
+        },
+        "result": {
+            "item": "minecraft:wooden_axe",
+            "count": 1
+        },
+        "priority": 2
+    }
+}

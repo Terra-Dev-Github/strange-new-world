@@ -7,7 +7,7 @@
 			"identifier": "terra:salt_block",
 			"menu_category": {
 				"category": "construction",
-				"group": "itemGroup.name.ore"
+				"group": "itemGroup.name.none"
 			}
 		},
 		"components": {
@@ -25,7 +25,7 @@
 				"explosion_resistance": 4
 			},
 			"minecraft:light_dampening": 7,
-			"minecraft:map_color": "#ffffff"
+			"minecraft:map_color": "#C6C5CE"
 		}
 	}
 }

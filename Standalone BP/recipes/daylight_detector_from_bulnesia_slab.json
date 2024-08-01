@@ -1,0 +1,32 @@
+{
+    "format_version": "1.16.100",
+    "minecraft:recipe_shaped": {
+        "description": {
+            "identifier": "terra:daylight_detector_from_bulnesia_slab"
+        },
+        "tags": [
+            "crafting_table"
+        ],
+        "pattern": [
+            "AAA",
+            "BBB",
+            "CCC"
+        ],
+        "key": {
+            "A": {
+                "item": "minecraft:glass"
+            },
+            "B": {
+                "item": "minecraft:quartz"
+            },
+            "C": {
+                "item": "terra:bulnesia_slab"
+            }
+        },
+        "result": {
+            "item": "minecraft:daylight_detector",
+            "count": 1
+        },
+        "priority": 2
+    }
+}

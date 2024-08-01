@@ -8,12 +8,12 @@
 			]
 		},
 		// item textures found in the blocks folder
-		"steel_grate_frame": {
+		"steel_grate_panel": {
 			"textures": [
 				"textures/blocks/steel_grate_frame"
 			]
 		},
-		"steel_lattice_frame": {
+		"steel_lattice_panel": {
 			"textures": [
 				"textures/blocks/steel_lattice_frame"
 			]

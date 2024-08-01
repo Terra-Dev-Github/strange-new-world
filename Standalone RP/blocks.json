@@ -15,9 +15,65 @@
 		},
 		"sound": "metal"
 	},
+	"terra:blue_mahoe_log": {
+		// skipping textures so it doesn't glitch out
+		"sound": "wood"
+	},
+	"terra:blue_mahoe_log_stripped": {
+		// skipping textures so it doesn't glitch out
+		"sound": "wood"
+	},
+	"terra:blue_mahoe_planks": {
+		"textures": "blue_mahoe_planks",
+		"sound": "wood"
+	},
+	"terra:blue_mahoe_slab": {
+		"textures": "blue_mahoe_planks",
+		"sound": "wood"
+	},
+	"terra:blue_mahoe_trapdoor": {
+		"textures": "blue_mahoe_trapdoor",
+		"sound": "wood"
+	},
+	"terra:blue_mahoe_wood": {
+		// skipping textures so it doesn't glitch out
+		"sound": "wood"
+	},
+	"terra:bulnesia_log": {
+		// skipping textures so it doesn't glitch out
+		"sound": "wood"
+	},
+	"terra:bulnesia_log_stripped": {
+		// skipping textures so it doesn't glitch out
+		"sound": "wood"
+	},
+	"terra:bulnesia_planks": {
+		"textures": "bulnesia_planks",
+		"sound": "wood"
+	},
+	"terra:bulnesia_slab": {
+		"textures": "bulnesia_planks",
+		"sound": "wood"
+	},
+	"terra:bulnesia_trapdoor": {
+		"textures": "bulnesia_trapdoor",
+		"sound": "wood"
+	},
+	"terra:bulnesia_wood": {
+		// skipping textures so it doesn't glitch out
+		"sound": "wood"
+	},
 	"terra:brittle_outsider_metal": {
 		"textures": "brittle_outsider_metal",
 		"sound": "metal"
+	},
+	"terra:brittle_reverion_slab": {
+		"textures": "brittle_reverion",
+		"sound": "stone"
+	},
+	"terra:brittle_reverion": {
+		"textures": "brittle_reverion",
+		"sound": "stone"
 	},
 	"terra:chiseled_malachite_block": {
 		"textures": "chiseled_malachite",
@@ -45,6 +101,22 @@
 	},
 	"terra:deepslate_tanzanite_ore": {
 		"textures": "deepslate_tanzanite_ore",
+		"sound": "deepslate"
+	},
+	"terra:duskstone_brick_slab": {
+		"textures": "duskstone_bricks",
+		"sound": "deepslate"
+	},
+	"terra:duskstone_bricks": {
+		"textures": "duskstone_bricks",
+		"sound": "deepslate"
+	},
+	"terra:duskstone_slab": {
+		"textures": "duskstone",
+		"sound": "deepslate"
+	},
+	"terra:duskstone": {
+		"textures": "duskstone",
 		"sound": "deepslate"
 	},
 	"terra:hazard_block": {
@@ -106,6 +178,14 @@
 			"down": "outsider_metal_block"
 		},
 		"sound": "metal"
+	},
+	"terra:polished_duskstone_slab": {
+		"textures": "polished_duskstone",
+		"sound": "deepslate"
+	},
+	"terra:polished_duskstone": {
+		"textures": "polished_duskstone",
+		"sound": "deepslate"
 	},
 	"terra:polished_malachite_block": {
 		"textures": "polished_malachite_block",
@@ -170,6 +250,22 @@
 	"terra:reinforced_nethersteel_block": {
 		"textures": "reinforced_nethersteel_block",
 		"sound": "metal"
+	},
+	"terra:reverion_brick_slab": {
+		"textures": "reverion_bricks",
+		"sound": "stone"
+	},
+	"terra:reverion_bricks": {
+		"textures": "reverion_bricks",
+		"sound": "stone"
+	},
+	"terra:reverion_slab": {
+		"textures": "reverion",
+		"sound": "stone"
+	},
+	"terra:reverion": {
+		"textures": "reverion",
+		"sound": "stone"
 	},
 	"terra:ruby_block": {
 		"textures": "ruby_block",
@@ -242,6 +338,30 @@
 	"terra:wired_outsider_metal": {
 		"textures": "wired_outsider_metal",
 		"sound": "metal"
+	},
+	"terra:yellowheart_log": {
+		// skipping textures so it doesn't glitch out
+		"sound": "wood"
+	},
+	"terra:yellowheart_log_stripped": {
+		// skipping textures so it doesn't glitch out
+		"sound": "wood"
+	},
+	"terra:yellowheart_planks": {
+		"textures": "yellowheart_planks",
+		"sound": "wood"
+	},
+	"terra:yellowheart_slab": {
+		"textures": "yellowheart_planks",
+		"sound": "wood"
+	},
+	"terra:yellowheart_trapdoor": {
+		"textures": "yellowheart_trapdoor",
+		"sound": "wood"
+	},
+	"terra:yellowheart_wood": {
+		// skipping textures so it doesn't glitch out
+		"sound": "wood"
 	},
 	//Miank
 	"mian:soil": {

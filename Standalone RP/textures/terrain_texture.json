@@ -29,6 +29,46 @@
 				"textures/blocks/autonetic_station_top"
 			]
 		},
+		"blue_mahoe_log_side": {
+			"textures": [
+				"textures/blocks/poplar_log_side"
+			]
+		},
+		"blue_mahoe_log_top": {
+			"textures": [
+				"textures/blocks/poplar_log_top"
+			]
+		},
+		"blue_mahoe_planks": {
+			"textures": [
+				"textures/blocks/poplar_planks"
+			]
+		},
+		"blue_mahoe_trapdoor": {
+			"textures": [
+				"textures/blocks/poplar_trapdoor"
+			]
+		},
+		"bulnesia_log_side": {
+			"textures": [
+				"textures/blocks/poplar_log_side"
+			]
+		},
+		"bulnesia_log_top": {
+			"textures": [
+				"textures/blocks/poplar_log_top"
+			]
+		},
+		"bulnesia_planks": {
+			"textures": [
+				"textures/blocks/poplar_planks"
+			]
+		},
+		"bulnesia_trapdoor": {
+			"textures": [
+				"textures/blocks/poplar_trapdoor"
+			]
+		},
 		"brittle_outsider_metal": {
 			"textures": [
 				"textures/blocks/brittle_outsider_metal"
@@ -200,6 +240,11 @@
 				"textures/blocks/platinum_ore"
 			]
 		},
+		"polished_duskstone_slab_side": {
+			"textures": [
+				"textures/blocks/polished_duskstone_slab_side"
+			]
+		},
 		"polished_duskstone": {
 			"textures": [
 				"textures/blocks/polished_duskstone"
@@ -258,6 +303,11 @@
 		"reverion_bricks": {
 			"textures": [
 				"textures/blocks/reverion_bricks"
+			]
+		},
+		"reverion_slab_side": {
+			"textures": [
+				"textures/blocks/reverion_slab_side"
 			]
 		},
 		"reverion": {
@@ -375,12 +425,42 @@
 				"textures/blocks/steel_rod"
 			]
 		},
+		"stripped_blue_mahoe_log_side": {
+			"textures": [
+				"textures/blocks/stripped_poplar_log_side"
+			]
+		},
+		"stripped_blue_mahoe_log_top": {
+			"textures": [
+				"textures/blocks/stripped_poplar_log_top"
+			]
+		},
+		"stripped_bulnesia_log_side": {
+			"textures": [
+				"textures/blocks/stripped_poplar_log_side"
+			]
+		},
+		"stripped_bulnesia_log_top": {
+			"textures": [
+				"textures/blocks/stripped_poplar_log_top"
+			]
+		},
 		"stripped_poplar_log_side": {
 			"textures": [
 				"textures/blocks/stripped_poplar_log_side"
 			]
 		},
 		"stripped_poplar_log_top": {
+			"textures": [
+				"textures/blocks/stripped_poplar_log_top"
+			]
+		},
+		"stripped_yellowheart_log_side": {
+			"textures": [
+				"textures/blocks/stripped_poplar_log_side"
+			]
+		},
+		"stripped_yellowheart_log_top": {
 			"textures": [
 				"textures/blocks/stripped_poplar_log_top"
 			]
@@ -443,6 +523,26 @@
 		"wired_outsider_metal": {
 			"textures": [
 				"textures/blocks/wired_outsider_metal"
+			]
+		},
+		"yellowheart_log_side": {
+			"textures": [
+				"textures/blocks/poplar_log_side"
+			]
+		},
+		"yellowheart_log_top": {
+			"textures": [
+				"textures/blocks/poplar_log_top"
+			]
+		},
+		"yellowheart_planks": {
+			"textures": [
+				"textures/blocks/poplar_planks"
+			]
+		},
+		"yellowheart_trapdoor": {
+			"textures": [
+				"textures/blocks/poplar_trapdoor"
 			]
 		},
 		//Miank

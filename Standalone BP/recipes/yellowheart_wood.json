@@ -1,0 +1,28 @@
+{
+  "format_version": "1.20.10",
+  "minecraft:recipe_shaped": {
+    "description": {
+    "identifier": "terra:yellowheart_wood"
+    },
+    "tags": [ "crafting_table" ],
+    "group": "wood",
+    "pattern": [
+      "##",
+  	  "##"
+    ],
+    "key": {
+      "#": {
+        "item": "terra:yellowheart_log"
+      }
+    },
+	"unlock": [
+        {
+          "item": "terra:yellowheart_log"
+        }
+    ],
+    "result": {
+      "item": "terra:yellowheart_wood",
+      "count": 3
+    }
+  }
+}

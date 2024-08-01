@@ -2,19 +2,19 @@
 	"format_version": "1.12",
 	"minecraft:recipe_shapeless": {
 		"description": {
-			"identifier": "terra:stonecutter_polished_malachite_block"
+			"identifier": "terra:stonecutter_polished_malachite_slab"
 		},
 		"tags": [
 			"stonecutter"
 		],
 		"ingredients": [
 			{
-				"item": "terra:malachite_block"
+				"item": "terra:polished_malachite_block"
 			}
 		],
 		"result": {
-			"item": "terra:polished_malachite_block",
-			"count": 1
+			"item": "terra:polished_malachite_slab",
+			"count": 2
 		}
 	}
 }

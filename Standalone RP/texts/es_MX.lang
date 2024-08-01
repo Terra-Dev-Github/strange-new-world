@@ -7,11 +7,16 @@ terra.version.beta=TERRA! Brave New World v1.0.0 [INFDEV]
 
 tile.mian:soil.name=Fango
 
+## MX > ES
+## Tronco/Madera descortezada/o > Tronco/Madera sin corteza
+
 ## Item Descriptions
 item.terra:record_wtb_rupture.desc=Henderson - War-Torn Born (roto)
 item.terra:record_wtb_siren.desc=Henderson - War-Torn Born (sirena musical)
 item.terra:nethersteel_upgrade_smithing_template.desc= Mejora de acero inefable
+
 ## Items
+
 ## item.terra:grapes=Uvas
 item.terra:handgun=Pistola
 item.terra:lemon_seeds=Semillas de limón
@@ -31,6 +36,7 @@ item.terra:platinum_ingot=Lingote de platino
 item.terra:purified_malachite=Malaquita purificada
 item.terra:raw_malachite=Malaquita cruda
 item.terra:raw_platinum=Platino crudo
+item.terra:reverion_dust=Polvo de reverion
 item.terra:ruby=Rubí
 item.terra:salt=Sal
 item.terra:salt_bottle=Botella de sal
@@ -46,7 +52,23 @@ item.terra:vial_waste=Frasco de residuos
 ## Blocks
 
 tile.terra:autonetic_station.name=Estación autonética
+tile.terra:blue_mahoe_log.name=Tronco de majó azul
+tile.terra:blue_mahoe_log_stripped.name=Tronco descortezado de majó azul
+tile.terra:blue_mahoe_planks.name=Tablones de majó azul
+tile.terra:blue_mahoe_slab.name=Losa de majó azul
+tile.terra:blue_mahoe_trapdoor.name=Escotilla de majó azul
+tile.terra:blue_mahoe_wood.name=Madera de majó azul
+tile.terra:blue_mahoe_wood_stripped.name=Madera descortezada de majó azul
+tile.terra:bulnesia_log.name=Tronco de bulnesia
+tile.terra:bulnesia_log_stripped.name=Tronco descortezado de bulnesia
+tile.terra:bulnesia_planks.name=Tablones de bulnesia
+tile.terra:bulnesia_slab.name=Losa de bulnesia
+tile.terra:bulnesia_trapdoor.name=Escotilla de bulnesia
+tile.terra:bulnesia_wood.name=Madera de bulnesia
+tile.terra:bulnesia_wood_stripped.name=Madera descortezada de bulnesia
 tile.terra:brittle_outsider_metal.name=Metal forastero frágil
+tile.terra:brittle_reverion_slab.name=Losa de reverion frágil
+tile.terra:brittle_reverion.name=Reverion frágil
 tile.terra:chiseled_malachite_block.name=Malaquita cincelada
 tile.terra:chiseled_outsider_metal.name=Metal forastero cincelado
 tile.terra:cut_malachite_block.name=Malaquita pulida cortada
@@ -54,6 +76,10 @@ tile.terra:cut_outsider_metal.name=Metal forastero cortado
 tile.terra:deepslate_platinum_ore.name=Mineral de platino de pizarra abismal
 tile.terra:deepslate_ruby_ore.name=Mineral de rubí de pizarra abismal
 tile.terra:deepslate_tanzanite_ore.name=Mineral de tanzanita de pizarra abismal
+tile.terra:duskstone_brick_slab.name=Losa de ladrillos de piedra nocturna
+tile.terra:duskstone_bricks.name=Ladrillos de piedra nocturna
+tile.terra:duskstone_slab.name=Losa de piedra nocturna
+tile.terra:duskstone.name=Piedra nocturna
 tile.terra:hazard_block.name=Bloque de peligro
 tile.terra:hazard_pillar.name=Pilar de peligro
 tile.terra:hazardous_outsider_metal.name=Metal forastero con marca de peligro
@@ -61,6 +87,8 @@ tile.terra:laboratory_trapdoor.name=Escotilla de laboratorio
 tile.terra:lemon_crop.name=Cultivo de limón
 tile.terra:malachite_block.name=Bloque de malaquita
 tile.terra:malachite_bricks.name=Ladrillos de malaquita
+tile.terra:malachite_brick_slab.name=Losa de ladrillos de malaquita
+tile.terra:malachite_slab.name=Losa de malaquita
 tile.terra:malachite_ore.name=Mineral de malaquita
 tile.terra:nethersteel_block.name=Bloque de acero inefable
 tile.terra:orange_crop.name=Cultivo de naranja
@@ -68,7 +96,11 @@ tile.terra:outsider_metal_block.name=Bloque de metal forastero
 tile.terra:outsider_metal_pillar.name=Pilar de metal forastero
 tile.terra:outsider_metal_slab.name=Losa de metal forastero
 tile.terra:platinum_ore.name=Mineral de platino
+tile.terra:polished_duskstone_slab.name=Losa de piedra nocturna pulida
+tile.terra:polished_malachite_brick_slab.name=Losa de ladrillos de piedra nocturna pulida
+tile.terra:polished_duskstone.name=Piedra nocturna pulida
 tile.terra:polished_malachite_block.name=Malaquita pulida
+tile.terra:polished_malachite_brick_slab.name=Losa de ladrillos de malaquita pulida
 tile.terra:polished_malachite_bricks.name=Ladrillos de malaquita pulida
 tile.terra:polished_malachite_slab.name=Losa de malaquita pulida
 tile.terra:poplar_log.name=Tronco de álamo de tulipan
@@ -82,6 +114,9 @@ tile.terra:platinum_block.name=Bloque de platino
 tile.terra:raw_malachite_block.name=Bloque de malaquita cruda
 tile.terra:raw_platinum_block.name=Bloque de platino crudo
 tile.terra:reinforced_nethersteel_block.name=Bloque de acero inefable reforzado
+tile.terra:reverion_brick_slab.name=Losa de ladrillos de reverion
+tile.terra:reverion_slab.name=Losa de reverion
+tile.terra:reverion.name=Reverion
 tile.terra:ruby_block.name=Bloque de rubí
 tile.terra:ruby_ore.name=Mineral de rubí
 tile.terra:salt_block.name=Bloque de sal
@@ -89,9 +124,9 @@ tile.terra:salt_dust.name=Polvo de sal
 tile.terra:salt_ore.name=Mineral de sal
 tile.terra:steel_block.name=Bloque de acero
 tile.terra:steel_grate_block.name=Bloque de enrejado de acero
-## tile.terra:steel_grate_panel.name=Panel de enrejado de acero
+tile.terra:steel_grate_panel.name=Panel de enrejado de acero
 tile.terra:steel_lattice_block.name=Bloque de celosía de acero
-## tile.terra:steel_lattice_panel.name=Panel de celosía de acero
+tile.terra:steel_lattice_panel.name=Panel de celosía de acero
 tile.terra:steel_rod.name=Barra de acero
 tile.terra:tanzanite_block.name=Bloque de tanzanita
 tile.terra:tanzanite_ore.name=Mineral de tanzanita
@@ -100,6 +135,13 @@ tile.terra:vial_rod_empty.name=Columna de vial
 tile.terra:vial_rod_radioactive.name=Columna de vial radioactiva
 tile.terra:vial_rod_shimmering.name=Columna de vial resplandeciente
 tile.terra:wired_outsider_metal.name=Metal forastero cableado
+tile.terra:yellowheart_log.name=Tronco de palo amarillo
+tile.terra:yellowheart_log_stripped.name=Tronco descortezado de palo amarillo
+tile.terra:yellowheart_planks.name=Tablones de palo amarillo
+tile.terra:yellowheart_slab.name=Losa de palo amarillo
+tile.terra:yellowheart_trapdoor.name=Escotilla de palo amarillo
+tile.terra:yellowheart_wood.name=Madera de palo amarillo
+tile.terra:yellowheart_wood_stripped.name=Madera descortezada de palo amarillo
 
 ## Entities
 entity.terra:possum.name=Zarigüeya

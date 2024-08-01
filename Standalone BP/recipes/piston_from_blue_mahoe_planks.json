@@ -1,0 +1,36 @@
+{
+    "format_version": "1.16.100",
+    "minecraft:recipe_shaped": {
+        "description": {
+            "identifier": "terra:piston_from_blue_mahoe_planks"
+        },
+        "tags": [
+            "crafting_table"
+        ],
+        "pattern": [
+            "AAA",
+            "BCB",
+            "BDB"
+        ],
+        "key": {
+            "A": {
+                "item": "terra:blue_mahoe_planks"
+            },
+            "B": {
+                "item": "minecraft:cobblestone"
+            },
+            "C": {
+                "item": "minecraft:iron_ingot"
+            },
+            "D": {
+                "item": "minecraft:redstone"
+            }
+        },
+        "result": {
+            "item": "minecraft:piston",
+            "count": 1,
+            "data": 1
+        },
+        "priority": 2
+    }
+}

@@ -1,0 +1,27 @@
+{
+  "format_version": "1.20.10",
+  "minecraft:recipe_shaped": {
+    "description": {
+    "identifier": "terra:blue_mahoe_planks_from_stripped_log"
+    },
+    "tags": [ "crafting_table" ],
+    "group": "planks",
+    "pattern": [
+      "#"
+    ],
+    "key": {
+      "#": {
+        "item": "terra:stripped_blue_mahoe_log"
+      }
+    },
+	"unlock": [
+        {
+          "item": "terra:stripped_blue_mahoe_log"
+        }
+    ],
+    "result": {
+      "item": "terra:blue_mahoe_planks",
+      "count": 4
+    }
+  }
+}

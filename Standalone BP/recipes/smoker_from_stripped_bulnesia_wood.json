@@ -1,0 +1,29 @@
+{
+    "format_version": "1.16.100",
+    "minecraft:recipe_shaped": {
+        "description": {
+            "identifier": "terra:smoker_from_stripped_bulnesia_wood"
+        },
+        "tags": [
+            "crafting_table"
+        ],
+        "pattern": [
+            " A ",
+            "ABA",
+            " A "
+        ],
+        "key": {
+            "A": {
+                "item": "terra:stripped_bulnesia_wood"
+            },
+            "B": {
+                "item": "minecraft:furnace"
+            }
+        },
+        "result": {
+            "item": "minecraft:smoker",
+            "count": 1
+        },
+        "priority": 50
+    }
+}

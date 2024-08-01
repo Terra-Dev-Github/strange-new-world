@@ -22,7 +22,7 @@
 				"seconds_to_destroy": 2.5
 			},
 			"minecraft:loot": "loot_tables/blocks/ruby_block.json",
-			"minecraft:map_color": "#FFFFFF"
+			"minecraft:map_color": "#FFBAB7"
 		}
 	}
 }

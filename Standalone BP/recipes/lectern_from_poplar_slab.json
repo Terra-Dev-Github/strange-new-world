@@ -1,0 +1,29 @@
+{
+    "format_version": "1.16.100",
+    "minecraft:recipe_shaped": {
+        "description": {
+            "identifier": "terra:lectern_from_poplar_slab"
+        },
+        "tags": [
+            "crafting_table"
+        ],
+        "pattern": [
+            "AAA",
+            " B ",
+            " A "
+        ],
+        "key": {
+            "A": {
+                "item": "terra:poplar_slab"
+            },
+            "B": {
+                "item": "minecraft:bookshelf"
+            }
+        },
+        "result": {
+            "item": "minecraft:lectern",
+            "count": 1
+        },
+        "priority": 2
+    }
+}
