@@ -2,10 +2,12 @@
   "format_version": "1.12",
   "minecraft:recipe_furnace": {
     "description": {
-    "identifier": "terra:furnace_stripped_yellowheart_wood"
-    },    
-    "tags": ["furnace"],
-    "input": "terra:stripped_yellowheart_wood",
+      "identifier": "terra:furnace_stripped_yellowheart_wood"
+    },
+    "tags": [
+      "furnace"
+    ],
+    "input": "terra:yellowheart_wood_stripped",
     "output": "minecraft:coal:1"
   }
 }

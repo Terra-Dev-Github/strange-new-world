@@ -1,0 +1,87 @@
+// This file was made, modified and compiled by Heavenly (@heavenly7493) for TERRA.
+// Do not distribute without permission.
+{
+	"format_version": "1.20.80",
+	"minecraft:block": {
+		"description": {
+			"identifier": "terra:bulnesia_leaves",
+			"menu_category": {
+				"category": "nature",
+				"group": "itemGroup.name.leaves"
+			},
+			"states": {
+				// distance in blocks to find the log
+				"terra:decay_tier": [
+					4,
+					3,
+					2,
+					1,
+					0
+				],
+				// Used when placed by the player or with features
+				"terra:should_decay": [
+					0,
+					1
+				]
+			}
+		},
+		"components": {
+			"tag:leaves": {},
+			"minecraft:destructible_by_mining": {
+				"seconds_to_destroy": 0.3
+			},
+			"minecraft:geometry": "minecraft:geometry.full_block",
+			"minecraft:material_instances": {
+				"*": {
+					"texture": "bulnesia_leaves",
+					"render_method": "blend",
+					"ambient_occlusion": true,
+					"face_dimming": true
+				}
+			},
+			// loot is specified on the script manager
+			"minecraft:loot": "loot_tables/empty.json",
+			"minecraft:light_dampening": 0,
+			"minecraft:map_color": "#36510D",
+			"minecraft:destructible_by_explosion": {
+				"explosion_resistance": 1
+			},
+			// adds block functionality
+			"minecraft:custom_components": [
+				"terra:leaves_decay"
+			]
+		},
+		"permutations": [
+			{
+				"condition": "q.block_state('terra:decay_tier') == 0",
+				"components": {
+					"tag:decay_tier_0": {}
+				}
+			},
+			{
+				"condition": "q.block_state('terra:decay_tier') == 1",
+				"components": {
+					"tag:decay_tier_1": {}
+				}
+			},
+			{
+				"condition": "q.block_state('terra:decay_tier') == 2",
+				"components": {
+					"tag:decay_tier_2": {}
+				}
+			},
+			{
+				"condition": "q.block_state('terra:decay_tier') == 3",
+				"components": {
+					"tag:decay_tier_3": {}
+				}
+			},
+			{
+				"condition": "q.block_state('terra:decay_tier') == 4",
+				"components": {
+					"tag:decay_tier_4": {}
+				}
+			}
+		]
+	}
+}

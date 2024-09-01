@@ -12,16 +12,16 @@
     ],
     "key": {
       "#": {
-        "item": "terra:stripped_bulnesia_log"
+        "item": "terra:bulnesia_log_stripped"
       }
     },
 	"unlock": [
         {
-          "item": "terra:stripped_bulnesia_log"
+          "item": "terra:bulnesia_log_stripped"
         }
     ],
     "result": {
-      "item": "terra:stripped_bulnesia_wood",
+      "item": "terra:bulnesia_wood_stripped",
       "count": 3
     }
   }

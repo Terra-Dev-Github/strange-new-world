@@ -17,7 +17,7 @@
                 "item": "minecraft:iron_ingot"
             },
             "B": {
-                "item": "blue_mahoe_planks"
+                "item": "terra:blue_mahoe_planks"
             }
         },
         "result": {

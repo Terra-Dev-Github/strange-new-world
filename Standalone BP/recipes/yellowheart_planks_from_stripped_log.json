@@ -11,12 +11,12 @@
     ],
     "key": {
       "#": {
-        "item": "terra:stripped_yellowheart_log"
+        "item": "terra:yellowheart_log_stripped"
       }
     },
 	"unlock": [
         {
-          "item": "terra:stripped_yellowheart_log"
+          "item": "terra:yellowheart_log_stripped"
         }
     ],
     "result": {

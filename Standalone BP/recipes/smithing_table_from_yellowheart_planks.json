@@ -17,7 +17,7 @@
                 "item": "minecraft:iron_ingot"
             },
             "B": {
-                "item": "yellowheart_planks"
+                "item": "terra:yellowheart_planks"
             }
         },
         "result": {

@@ -1,0 +1,28 @@
+{
+	"format_version": "1.10.0",
+	"animation_controllers": {
+		"controller.animation.chesthound.attack": {
+			"states": {
+				"default": {
+					"transitions": [
+						{
+							"attack": "q.is_delayed_attacking"
+						}
+					],
+					"blend_transition": 0.5
+				},
+				"attack": {
+					"animations": [
+						"attack"
+					],
+					"transitions": [
+						{
+							"default": "q.all_animations_finished && !q.has_target"
+						}
+					],
+					"blend_transition": 0.5
+				}
+			}
+		}
+	}
+}

@@ -16,6 +16,7 @@
 				"texture": "vial_radioactive"
 			},
 			"minecraft:hand_equipped": false,
+			"minecraft:allow_off_hand": true,
 			"minecraft:display_name": {
 				"value": "item.terra:vial_radioactive"
 			},

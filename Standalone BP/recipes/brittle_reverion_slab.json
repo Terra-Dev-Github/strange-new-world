@@ -1,0 +1,23 @@
+{
+    "format_version": "1.12",
+    "minecraft:recipe_shaped": {
+        "description": {
+            "identifier": "terra:brittle_reverion_slab"
+        },
+        "tags": [
+            "crafting_table"
+        ],
+        "pattern": [
+            "###"
+        ],
+        "key": {
+            "#": {
+                "item": "terra:brittle_reverion"
+            }
+        },
+        "result": {
+            "item": "terra:brittle_reverion_slab",
+            "count": 6
+        }
+    }
+}

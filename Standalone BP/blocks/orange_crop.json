@@ -7,7 +7,7 @@
 			"identifier": "terra:orange_crop",
 			"menu_category": {
 				// block is placed with seeds
-				"category": "commands",
+				"category": "none",
 				"group": "none"
 			},
 			"states": {
@@ -19,6 +19,12 @@
 			}
 		},
 		"components": {
+			"minecraft:tick": {
+				"interval_range": [
+					3,
+					3
+				]
+			},
 			"minecraft:geometry": "geometry.crop.cross",
 			"minecraft:collision_box": false,
 			"minecraft:selection_box": {
@@ -48,7 +54,8 @@
 						],
 						"block_filter": [
 							"farmland",
-							"podzol"
+							"podzol",
+							"terra:soil"
 						]
 					}
 				]

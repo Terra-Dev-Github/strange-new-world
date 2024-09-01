@@ -12,16 +12,16 @@
     ],
     "key": {
       "#": {
-        "item": "terra:stripped_yellowheart_log"
+        "item": "terra:yellowheart_log_stripped"
       }
     },
 	"unlock": [
         {
-          "item": "terra:stripped_yellowheart_log"
+          "item": "terra:yellowheart_log_stripped"
         }
     ],
     "result": {
-      "item": "terra:stripped_yellowheart_wood",
+      "item": "terra:yellowheart_wood_stripped",
       "count": 3
     }
   }

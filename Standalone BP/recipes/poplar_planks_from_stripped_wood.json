@@ -11,12 +11,12 @@
     ],
     "key": {
       "#": {
-        "item": "terra:stripped_poplar_wood"
+        "item": "terra:poplar_wood_stripped"
       }
     },
 	"unlock": [
         {
-          "item": "terra:stripped_poplar_wood"
+          "item": "terra:poplar_wood_stripped"
         }
     ],
     "result": {

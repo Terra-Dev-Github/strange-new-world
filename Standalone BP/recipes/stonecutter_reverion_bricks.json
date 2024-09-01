@@ -1,0 +1,21 @@
+{
+    "format_version": "1.12",
+    "minecraft:recipe_shapeless": {
+        "description": {
+            "identifier": "terra:stonecutter_reverion_bricks"
+        },
+        "tags": [
+            "stonecutter"
+        ],
+        "priority": 1,
+        "ingredients": [
+            {
+                "item": "terra:reverion"
+            }
+        ],
+        "result": {
+            "item": "terra:reverion_bricks",
+            "count": 1
+        }
+    }
+}

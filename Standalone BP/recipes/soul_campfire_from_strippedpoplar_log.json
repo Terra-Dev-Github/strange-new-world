@@ -20,7 +20,7 @@
                 "item": "minecraft:soul_soil"
             },
             "C": {
-                "item": "terra:stripped_poplar_log"
+                "item": "terra:poplar_log_stripped"
             }
         },
         "result": {

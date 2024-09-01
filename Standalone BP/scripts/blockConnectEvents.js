@@ -7,7 +7,7 @@ import { world } from '@minecraft/server';
 // Subscribe to the 'worldInitialize' event to register custom components
 world.beforeEvents.worldInitialize.subscribe(eventData => {
     // Register a custom component named terra:side_self_connect for blocks that only connect to themselves in a horizontal plane
-    eventData.blockTypeRegistry.registerCustomComponent('terra:side_self_connect', {
+    eventData.blockComponentRegistry.registerCustomComponent('terra:side_self_connect', {
         onTick: (e) => {
             // Destructure event data for easier access
             const { block } = e;
@@ -33,7 +33,7 @@ world.beforeEvents.worldInitialize.subscribe(eventData => {
         }
     });
     // Register a custom component named 'terra:panel_connect' for wall blocks that only connect in a horizontal plane
-    eventData.blockTypeRegistry.registerCustomComponent('terra:panel_connect', {
+    eventData.blockComponentRegistry.registerCustomComponent('terra:panel_connect', {
         onTick: (e) => {
             // Destructure event data for easier access
             const { block } = e;
@@ -47,6 +47,7 @@ world.beforeEvents.worldInitialize.subscribe(eventData => {
             // Define an array of block types to exclude from connections
             const excludeBlocksArray = [
                 'minecraft:air',
+                'minecraft:snow_layer',
                 'minecraft:wooden_door',
                 'minecraft:iron_door',
                 'minecraft:acacia_door',
@@ -85,10 +86,10 @@ world.beforeEvents.worldInitialize.subscribe(eventData => {
             const westConnects = !excludeBlocksArray.includes(west?.typeId);
 
             // Update block states based on the presence of adjacent blocks
-            block.setPermutation(block.permutation.withState('kai:north', northConnects ? 1 : 0));
-            block.setPermutation(block.permutation.withState('kai:south', southConnects ? 1 : 0));
-            block.setPermutation(block.permutation.withState('kai:east', eastConnects ? 1 : 0));
-            block.setPermutation(block.permutation.withState('kai:west', westConnects ? 1 : 0));
+            block.setPermutation(block.permutation.withState('terra:north', northConnects ? 1 : 0));
+            block.setPermutation(block.permutation.withState('terra:south', southConnects ? 1 : 0));
+            block.setPermutation(block.permutation.withState('terra:east', eastConnects ? 1 : 0));
+            block.setPermutation(block.permutation.withState('terra:west', westConnects ? 1 : 0));
         }
     })
 });

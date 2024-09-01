@@ -11,12 +11,12 @@
     ],
     "key": {
       "#": {
-        "item": "terra:stripped_yellowheart_wood"
+        "item": "terra:yellowheart_wood_stripped"
       }
     },
 	"unlock": [
         {
-          "item": "terra:stripped_yellowheart_wood"
+          "item": "terra:yellowheart_wood_stripped"
         }
     ],
     "result": {

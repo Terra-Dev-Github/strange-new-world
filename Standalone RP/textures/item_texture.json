@@ -19,6 +19,26 @@
 			]
 		},
 		//
+		"anchor": {
+			"textures": [
+				"textures/items/anchor"
+			]
+		},
+		"deepslate_crate_key": {
+			"textures": [
+				"textures/items/deepslate_crate_key"
+			]
+		},
+		"handgun_item": {
+			"textures": [
+				"textures/items/handgun_item"
+			]
+		},
+		"handgun_unloaded": {
+			"textures": [
+				"textures/items/handgun_unloaded"
+			]
+		},
 		"grapes": {
 			"textures": [
 				"textures/items/grapes"
@@ -104,6 +124,11 @@
 				"textures/items/outsider_helmet"
 			]
 		},
+		"outsider_key": {
+			"textures": [
+				"textures/items/outsider_key"
+			]
+		},
 		"outsider_metal_ingot": {
 			"textures": [
 				"textures/items/outsider_metal_ingot"
@@ -134,6 +159,16 @@
 				"textures/items/raw_platinum"
 			]
 		},
+		"record_wtb": {
+			"textures": [
+				"textures/items/record_wtb"
+			]
+		},
+		"record_wtb_siren": {
+			"textures": [
+				"textures/items/record_wtb_siren"
+			]
+		},
 		"reverion_dust": {
 			"textures": [
 				"textures/items/reverion_dust"
@@ -152,6 +187,11 @@
 		"salt_bottle": {
 			"textures": [
 				"textures/items/salt_bottle"
+			]
+		},
+		"scroll": {
+			"textures": [
+				"textures/items/scroll"
 			]
 		},
 		"steel_ingot": {
@@ -202,6 +242,11 @@
 		"vial_radioactive": {
 			"textures": [
 				"textures/items/vial_radioactive"
+			]
+		},
+		"wand": {
+			"textures": [
+				"textures/items/wand"
 			]
 		}
 	}

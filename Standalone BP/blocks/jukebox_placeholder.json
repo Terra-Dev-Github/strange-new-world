@@ -1,0 +1,50 @@
+// This file was made, modified and compiled by Heavenly (@heavenly7493) for TERRA.
+// Do not distribute without permission.
+{
+    "format_version": "1.20.80",
+    "minecraft:block": {
+        "description": {
+            "identifier": "terra:jukebox_placeholder",
+            "menu_category": {
+                // unobtainable, just needed for script trickery
+                "category": "none",
+                "group": "itemGroup.name.none"
+            },
+            "states": {
+                "terra:has_disc": [
+                    0, // empty
+                    1, // wtb
+                    2 // wtb (siren)
+                ]
+            }
+        },
+        "components": {
+            "minecraft:tick": {
+                "interval_range": [
+                    3,
+                    3
+                ]
+            },
+            "minecraft:display_name": "tile.jukebox.name",
+            "minecraft:geometry": "minecraft:geometry.full_block",
+            "minecraft:material_instances": {
+                "*": {
+                    "texture": "jukebox_side",
+                    "render_method": "opaque"
+                },
+                "up": {
+                    "texture": "jukebox_top",
+                    "render_method": "opaque"
+                }
+            },
+            "minecraft:destructible_by_mining": {
+                "seconds_to_destroy": 2.5
+            },
+            // "minecraft:map_color": "#2D1A60",
+            // adds block functionality
+            "minecraft:custom_components": [
+                "terra:jukebox_properties"
+            ]
+        }
+    }
+}

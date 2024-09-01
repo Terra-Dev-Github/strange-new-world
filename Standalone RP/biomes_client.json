@@ -151,6 +151,7 @@
             ],
             "inherit_from_prior_fog": false,
             "remove_all_prior_fog": false,
+            "fog_color": "#4D7F99",
             "water_surface_color": "#4C6559",
             "water_surface_transparency": 0.650
         },

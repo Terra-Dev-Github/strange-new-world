@@ -1,0 +1,52 @@
+{
+	"format_version": "1.10.0",
+	"geometry.cobble_golem": {
+		"texturewidth": 64,
+		"textureheight": 64,
+		"visible_bounds_width": 3,
+		"visible_bounds_height": 4,
+		"visible_bounds_offset": [0, 2, 0],
+		"bones": [
+			{
+				"name": "body",
+				"pivot": [0, 8, 0],
+				"cubes": [
+					{"origin": [-8, 2, -8], "size": [16, 16, 16], "uv": [0, 0]}
+				]
+			},
+			{
+				"name": "arm0",
+				"parent": "body",
+				"pivot": [-8, 14, 0],
+				"cubes": [
+					{"origin": [-12, 3.5, -3], "size": [4, 12, 6], "uv": [20, 32]}
+				]
+			},
+			{
+				"name": "arm1",
+				"parent": "body",
+				"pivot": [8, 14, 0],
+				"cubes": [
+					{"origin": [8, 3.5, -3], "size": [4, 12, 6], "uv": [0, 32]}
+				]
+			},
+			{
+				"name": "leg0",
+				"parent": "body",
+				"pivot": [-6, 5, 0],
+				"cubes": [
+					{"origin": [-7.5, 0, -3], "size": [4, 3, 6], "uv": [40, 41]}
+				]
+			},
+			{
+				"name": "leg1",
+				"parent": "body",
+				"pivot": [6, 3, 0],
+				"mirror": true,
+				"cubes": [
+					{"origin": [3.5, 0, -3], "size": [4, 3, 6], "uv": [40, 32], "mirror": false}
+				]
+			}
+		]
+	}
+}

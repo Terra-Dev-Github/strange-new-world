@@ -1,0 +1,1 @@
+titleraw @s actionbar {"rawtext":[{"translate":"crate.is_locked.langcode"}]}

@@ -18,7 +18,7 @@
         "item": "minecraft:charcoal"
       },
       "C": {
-        "item": "terra:stripped_poplar_wood"
+        "item": "terra:poplar_wood_stripped"
       }
     },
     "result": {

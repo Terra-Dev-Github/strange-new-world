@@ -7,7 +7,7 @@ import { world } from '@minecraft/server';
 // subscribe to the 'worldInitialize' event to register custom components
 world.beforeEvents.worldInitialize.subscribe(eventData => {
     // register a custom component named 'terra:crop_properties' for the block behavior
-    eventData.blockTypeRegistry.registerCustomComponent('terra:crop_properties', {
+    eventData.blockComponentRegistry.registerCustomComponent('terra:crop_properties', {
         // grow the crop on random tick
         onRandomTick: (e) => {
             // destructure event data for easier access
@@ -22,8 +22,10 @@ world.beforeEvents.worldInitialize.subscribe(eventData => {
 
             // define crops and their growth limit (since not all will be the same)
             const crops = [
+                { id: 'terra:grape_vine', max: 2 },
                 { id: 'terra:lemon_crop', max: 2 },
-                { id: 'terra:orange_crop', max: 2 }
+                { id: 'terra:orange_crop', max: 2 },
+                { id: 'terra:tomato_crop', max: 5 }
             ];
             const cropId = crops.find(crop => crop.id === block.typeId);
             const maxStage = cropId.max
@@ -34,11 +36,10 @@ world.beforeEvents.worldInitialize.subscribe(eventData => {
             }
 
             // if a random number is less than 60, then make the crop grow
-            if (Math.floor(Math.random() * 100) < 60){
-                block.setPermutation(perm.withState("terra:growth_stage", growthStage+1));
+            if (Math.floor(Math.random() * 100) < 60) {
+                block.setPermutation(perm.withState("terra:growth_stage", growthStage + 1));
             };
         },
-
         // grow the crop when bonemealed
         onPlayerInteract: (e) => {
             // destructure event data for easier access
@@ -54,17 +55,29 @@ world.beforeEvents.worldInitialize.subscribe(eventData => {
 
             // define crops and their growth limit (since not all will be the same)
             const crops = [
+                { id: 'terra:grape_vine', max: 2 },
                 { id: 'terra:lemon_crop', max: 2 },
-                { id: 'terra:orange_crop', max: 2 }
+                { id: 'terra:orange_crop', max: 2 },
+                { id: 'terra:tomato_crop', max: 5 }
             ];
             const cropId = crops.find(crop => crop.id === block.typeId);
             const maxStage = cropId.max
+
+            // interact with vines to harvest (placed before the bonemeal usage otherwise it won't work)
+            if (block?.typeId === 'terra:grape_vine' && growthStage === maxStage) {
+                // set the block state
+                block.setPermutation(perm.withState("terra:growth_stage", 0));
+
+                // play sound effect & spawn particles
+                dimension.playSound('block.sweet_berry_bush.pick', location);
+                dimension.runCommandAsync(`loot spawn ${location.x} ${location.y} ${location.z} loot "blocks/grape_vine"`);
+            };
 
             // cap the crop growth if current stage and max stage match
             if (growthStage === maxStage) {
                 return;
             }
-            
+
             // get the selected item from the player
             const equipment = player.getComponent('equippable');
             const selectedItem = equipment.getEquipment(`Mainhand`);
@@ -81,12 +94,29 @@ world.beforeEvents.worldInitialize.subscribe(eventData => {
                     }
                 }
                 // set the block state
-                block.setPermutation(perm.withState("terra:growth_stage", growthStage+1));
+                block.setPermutation(perm.withState("terra:growth_stage", growthStage + 1));
 
                 // play sound effect & spawn particles
                 dimension.playSound('item.bone_meal.use', location);
                 dimension.runCommandAsync(`particle minecraft:crop_growth_emitter ${location.x} ${location.y} ${location.z}`);
             }
+        },
+        // small grape vine manager
+        onTick: (e) => {
+            // destructure event data for easier access
+            const { block } = e;
+            const aboveBlock = block.above();
+            const belowBlock = block.below();
+            
+            // to prevent messy code shenanigans
+            if (!block.typeId === 'terra:grape_vine') return;
+
+            // update block states based on the block below
+                if (aboveBlock?.typeId === block.typeId) block.setPermutation(block.permutation.withState('terra:vine_body_type', aboveBlock ? 1 : 0));
+                else block.setPermutation(block.permutation.withState('terra:vine_body_type', 1));
+
+                if (belowBlock?.typeId === block.typeId) block.setPermutation(block.permutation.withState('terra:vine_body_type', belowBlock ? 0 : 1));
+                else block.setPermutation(block.permutation.withState('terra:vine_body_type', 1));
         }
     });
 });

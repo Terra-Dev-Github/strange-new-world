@@ -2744,7 +2744,7 @@
     ]
   },
 
-  // ***
+ // ***
   // fancy corner text
   "debug_text": {
     "type": "stack_panel",
@@ -3105,6 +3105,9 @@
           ]
         }
       },
+      // ***
+      { "debug_text@hud.debug_text": {} },
+      // ***
       {
         "game_tip@game_tip.game_tip_factory": {}
       },

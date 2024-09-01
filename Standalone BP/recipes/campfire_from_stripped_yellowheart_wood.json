@@ -20,7 +20,7 @@
                 "item": "minecraft:coal"
             },
             "C": {
-                "item": "minecraft:stripped_yellowheart_wood"
+                "item": "terra:yellowheart_wood_stripped"
             }
         },
         "result": {

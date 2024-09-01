@@ -1,4 +1,4 @@
-// This file was made by terraōga (@terraoga5), and modified and compiled by Heavenly (@heavenly7493) for TERRA.
+// This file was made by Kaiōga (@Kaioga5), and modified and compiled by Heavenly (@heavenly7493) for TERRA.
 // Do not distribute without permission.
 
 // Import necessary modules from Minecraft server API
@@ -7,7 +7,7 @@ import { world, BlockPermutation, ItemStack } from '@minecraft/server';
 // Subscribe to the 'worldInitialize' event to register custom components
 world.beforeEvents.worldInitialize.subscribe(eventData => {
     // Register a custom component named terra:on_log_interact for log interaction
-    eventData.blockTypeRegistry.registerCustomComponent('terra:on_log_interact', {
+    eventData.blockComponentRegistry.registerCustomComponent('terra:on_log_interact', {
         // Define the behavior when a player interacts with the block
         onPlayerInteract(e) {
             // Destructure event data for easier access
@@ -24,6 +24,26 @@ world.beforeEvents.worldInitialize.subscribe(eventData => {
             const blockState = block.permutation.getState("minecraft:block_face");
             
             // If block state exists, resolve the stripped log permutation based on the block face
+            if (blockState && block?.typeId === 'terra:blue_mahoe_log') {
+                const strippedLog = BlockPermutation.resolve('terra:stripped_blue_mahoe_log', {"minecraft:block_face": blockState});
+                
+                // Set the block permutation to the stripped log
+                block.setPermutation(strippedLog);
+            };
+            if (blockState && block?.typeId === 'terra:blue_mahoe_wood') {
+                const strippedLog = BlockPermutation.resolve('terra:stripped_blue_mahoe_wood', {"minecraft:block_face": blockState});
+                block.setPermutation(strippedLog);
+            };
+            if (blockState && block?.typeId === 'terra:bulnesia_log') {
+                const strippedLog = BlockPermutation.resolve('terra:stripped_bulnesia_log', {"minecraft:block_face": blockState});
+                
+                // Set the block permutation to the stripped log
+                block.setPermutation(strippedLog);
+            };
+            if (blockState && block?.typeId === 'terra:bulnesia_wood') {
+                const strippedLog = BlockPermutation.resolve('terra:stripped_bulnesia_wood', {"minecraft:block_face": blockState});
+                block.setPermutation(strippedLog);
+            };
             if (blockState && block?.typeId === 'terra:poplar_log') {
                 const strippedLog = BlockPermutation.resolve('terra:stripped_poplar_log', {"minecraft:block_face": blockState});
                 
@@ -34,6 +54,14 @@ world.beforeEvents.worldInitialize.subscribe(eventData => {
                 const strippedLog = BlockPermutation.resolve('terra:stripped_poplar_wood', {"minecraft:block_face": blockState});
                 block.setPermutation(strippedLog);
             };
+            if (blockState && block?.typeId === 'terra:yellowheart_log') {
+                const strippedLog = BlockPermutation.resolve('terra:stripped_yellowheart_log', {"minecraft:block_face": blockState});
+                block.setPermutation(strippedLog);
+            };
+            if (blockState && block?.typeId === 'terra:yellowheart_wood') {
+                const strippedLog = BlockPermutation.resolve('terra:stripped_yellowheart_wood', {"minecraft:block_face": blockState});
+                block.setPermutation(strippedLog);
+            }
             /**
             if (blockState && block?.typeId === 'terra:new_log') {
                 const strippedLog = BlockPermutation.resolve('terra:stripped_new_log', {"minecraft:block_face": blockState});

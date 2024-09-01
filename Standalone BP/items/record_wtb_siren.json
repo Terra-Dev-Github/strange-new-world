@@ -15,7 +15,7 @@
 			"minecraft:hand_equipped": false,
 			// to make it look fancy, you can't really translate the names
 			"minecraft:display_name": {
-				"value": "§bMusic Disc\n§7Henderson - War-Torn Born (Music Siren)"
+				"value": "§bMusic Disc\n§7Henderson - War-Torn Born (Siren)"
 			},
 			"minecraft:icon": {
 				"texture": "record_wtb_siren"

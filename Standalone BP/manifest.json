@@ -7,10 +7,10 @@
 		"url": "https://discord.gg/2pVaeESEDF",
 		"generated_with": {
 			"bridge": [
-				"2.7.11"
+				"2.7.36"
 			],
 			"dash": [
-				"github:bridge-core/dash-compiler#8fa35c73292f6382747d0f411fca26431a6d2c8e"
+				"0.11.7"
 			]
 		}
 	},
@@ -20,7 +20,7 @@
 		"min_engine_version": [
 			1,
 			21,
-			0
+			20
 		],
 		"uuid": "d70ebad0-7e67-4cff-9a36-5ff835c53dcd",
 		"version": [
@@ -62,7 +62,7 @@
 		},
 		{
 			"module_name": "@minecraft/server",
-			"version": "1.12.0-beta" // Change for 1.21's new version; might be 1.11.0 or 1.12.0
+			"version": "1.14.0-beta"
 		}
 	]
 }

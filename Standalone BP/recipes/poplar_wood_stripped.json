@@ -12,16 +12,16 @@
     ],
     "key": {
       "#": {
-        "item": "terra:stripped_poplar_log"
+        "item": "terra:poplar_log_stripped"
       }
     },
 	"unlock": [
         {
-          "item": "terra:stripped_poplar_log"
+          "item": "terra:poplar_log_stripped"
         }
     ],
     "result": {
-      "item": "terra:stripped_poplar_wood",
+      "item": "terra:poplar_wood_stripped",
       "count": 3
     }
   }

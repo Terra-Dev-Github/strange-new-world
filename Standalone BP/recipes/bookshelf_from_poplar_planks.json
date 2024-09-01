@@ -14,7 +14,7 @@
         ],
         "key": {
             "A": {
-                "item": "terra::poplar_planks"
+                "item": "terra:poplar_planks"
             },
             "B": {
                 "item": "minecraft:book"

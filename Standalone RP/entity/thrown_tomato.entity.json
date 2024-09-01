@@ -1,0 +1,30 @@
+// This file was made, modified and compiled by Heavenly (@heavenly7493) for TERRA.
+// Do not distribute without permission.
+{
+    "format_version": "1.10.0",
+    "minecraft:client_entity": {
+        "description": {
+            "identifier": "terra:thrown_tomato",
+            "materials": {
+                "default": "snowball"
+            },
+            "textures": {
+                "default": "textures/items/tomato"
+            },
+            "geometry": {
+                "default": "geometry.item_sprite"
+            },
+            "render_controllers": [
+                "controller.render.item_sprite"
+            ],
+            "animations": {
+                "flying": "animation.actor.billboard"
+            },
+            "scripts": {
+                "animate": [
+                    "flying"
+                ]
+            }
+        }
+    }
+}

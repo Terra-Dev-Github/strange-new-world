@@ -1,10 +1,13 @@
+// This file was made, modified and compiled by Heavenly (@heavenly7493) for TERRA.
+// Do not distribute without permission.
 {
 	"format_version": "1.8.0",
 	"minecraft:client_entity": {
 		"description": {
 			"identifier": "terra:outsider",
 			"materials": {
-				"default": "entity_emissive_alpha"
+				"default": "skeleton",
+				"emissive": "entity_emissive_alpha"
 			},
 			"textures": {
 				"default": "textures/entity/outsider"
@@ -28,6 +31,7 @@
 				"damage_nearby_mobs": "animation.humanoid.damage_nearby_mobs",
 				"bow_and_arrow": "animation.humanoid.bow_and_arrow",
 				"swimming": "animation.humanoid.swimming",
+				"zombie_attack_bare_hand": "animation.zombie.attack_bare_hand",
 				"use_item_progress": "animation.humanoid.use_item_progress"
 			},
 			"scripts": {
@@ -76,6 +80,9 @@
 				},
 				{
 					"use_item_progress": "controller.animation.humanoid.use_item_progress"
+				},
+				{
+					"zombie_attack_bare_hand": "controller.animation.zombie.attack_bare_hand"
 				}
 			],
 			"render_controllers": [
@@ -83,8 +90,8 @@
 			],
 			"enable_attachables": false,
 			"spawn_egg": {
-				"base_color": "#fbf4ec",
-				"overlay_color": "#342928"
+				"base_color": "#566188",
+				"overlay_color": "#A1FBC8"
 			}
 		}
 	}

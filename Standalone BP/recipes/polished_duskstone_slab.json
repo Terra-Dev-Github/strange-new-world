@@ -1,0 +1,23 @@
+{
+    "format_version": "1.12",
+    "minecraft:recipe_shaped": {
+        "description": {
+            "identifier": "terra:polished_duskstone_slab"
+        },
+        "tags": [
+            "crafting_table"
+        ],
+        "pattern": [
+            "###"
+        ],
+        "key": {
+            "#": {
+                "item": "terra:polished_duskstone"
+            }
+        },
+        "result": {
+            "item": "terra:polished_duskstone_slab",
+            "count": 6
+        }
+    }
+}

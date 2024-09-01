@@ -7,7 +7,7 @@
 			"identifier": "terra:salt_dust",
 			"menu_category": {
 				// block is placed with the salt dust item
-				"category": "commands",
+				"category": "none",
 				"group": "none"
 			},
 			"states": {

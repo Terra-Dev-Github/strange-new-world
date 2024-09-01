@@ -7,7 +7,7 @@ import { world, BlockPermutation } from '@minecraft/server';
 // Subscribe to the 'worldInitialize' event to register custom components
 world.beforeEvents.worldInitialize.subscribe(eventData => {
     // Register a custom component named terra:on_trapdoor_interact for trapdoor interaction
-    eventData.blockTypeRegistry.registerCustomComponent('terra:on_trapdoor_interact', {
+    eventData.blockComponentRegistry.registerCustomComponent('terra:on_trapdoor_interact', {
         // Define the behavior when a player interacts with the trapdoor block
         onPlayerInteract(e) {
             // Destructure event data for easier access
@@ -50,13 +50,22 @@ world.beforeEvents.worldInitialize.subscribe(eventData => {
                 }
             }
 
+            // Array of trapdoors
+            const trapdoorIds = [
+                'terra:blue_mahoe_trapdoor',
+                'terra:bulnesia_trapdoor',
+                'terra:poplar_trapdoor',
+                'terra:yellowheart_trapdoor'
+            ]
+
             // Check if the block interacted is a terra:trapdoor and the player is using a water bucket
-            if (block.typeId === 'terra:trapdoor' && selectedItem?.typeId === 'minecraft:water_bucket') {
+            if (block.typeId === trapdoorIds && selectedItem?.typeId === 'minecraft:water_bucket') {
                 // Save the current block states
                 const currentStates = block.permutation.getAllStates();
 
                 // Get the structure file with our trapdoor block waterlogged
-                const structureName = 'mystructure:trapdoor';
+                const trapdoorType = block.typeId.split(':')[1];
+                const structureName = `trapdoors:${trapdoorType}`;
 
                 // Place the structure
                 const { x, y, z } = block.location;
@@ -73,7 +82,7 @@ world.beforeEvents.worldInitialize.subscribe(eventData => {
         }
     });
     // Register a separate component named terra:on_lab_trapdoor_interact for the laboratory trapdoor interaction
-    eventData.blockTypeRegistry.registerCustomComponent('terra:on_lab_trapdoor_interact', {
+    eventData.blockComponentRegistry.registerCustomComponent('terra:on_lab_trapdoor_interact', {
         // Define the behavior when a player interacts with the trapdoor block
         onPlayerInteract(e) {
             // Destructure event data for easier access

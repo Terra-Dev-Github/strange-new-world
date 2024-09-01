@@ -5,7 +5,7 @@
     "identifier": "terra:furnace_stripped_poplar_log"
     },
     "tags": ["furnace"],
-    "input": "terra:stripped_poplar_log",
+    "input": "terra:poplar_log_stripped",
     "output": "minecraft:coal:1"
   }
 }

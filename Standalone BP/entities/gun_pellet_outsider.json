@@ -1,0 +1,126 @@
+// This file was made, modified and compiled by Heavenly (@heavenly7493) for TERRA.
+// Do not distribute without permission.
+{
+	"format_version": "1.20.0",
+	"minecraft:entity": {
+		"description": {
+			"identifier": "terra:gun_pellet_outsider",
+			"is_spawnable": false,
+			"is_summonable": true,
+			"runtime_identifier": "arrow"
+		},
+		"component_groups": {
+			"despawn": {
+				"minecraft:instant_despawn": {
+					"remove_child_entities": true
+				}
+			}
+		},
+		"components": {
+			"minecraft:projectile": {
+				"on_hit": {
+					"definition_event": {
+						"event_trigger": {
+							"event": "fire_gun",
+							"target": "other"
+						}
+					},
+					"impact_damage": {
+						"damage": [
+							2,
+							6
+						],
+						"knockback": false,
+						"catch_fire": false,
+						"semi_random_diff_damage": false
+					},
+					"remove_on_hit": {}
+				},
+				"power": 4,
+				"gravity": 0,
+				"inertia": 1,
+				"anchor": 2,
+				"offset": [
+					0,
+					0.5,
+					0
+				],
+				"semi_random_diff_damage": true,
+				"uncertainty_base": 5,
+				"reflect_on_hurt": false,
+				"hit_sound": "gun.impact",
+				"liquid_inertia": 0.1,
+				"catch_fire": false
+			},
+			"minecraft:physics": {
+				"has_collision": true
+			},
+			"minecraft:environment_sensor": {
+				"triggers": [
+					{
+						"filters": {
+							"test": "in_water",
+							"value": true,
+							"subject": "self"
+						},
+						"event": "despawn"
+					}
+				]
+			},
+			"minecraft:timer": {
+				"time": [
+					3,
+					3
+				],
+				"time_down_event": {
+					"event": "despawn"
+				}
+			}
+		},
+		"events": {
+			"despawn": {
+				"add": {
+					"component_groups": [
+						"despawn"
+					]
+				}
+			},
+			"fire_gun": {
+				"sequence": [
+					{
+						"queue_command": {
+							"command": [
+								"particle terra:gun_blast_particle"
+							]
+						}
+					},
+					{
+						"randomize": [
+							{
+								"queue_command": {
+									"command": [
+										"effect @s levitation 3 2 true"
+									]
+								}
+							},
+							{
+								"queue_command": {
+									"command": [
+										"effect @s weakness 5 3 true"
+									]
+								}
+							},
+							{
+								"queue_command": {
+									"command": [
+										"effect @s slowness 5 3 true"
+									]
+								}
+							}
+						]
+					}
+				]
+			}
+		}
+	}
+}

@@ -1,0 +1,273 @@
+// This file was made, modified and compiled by Heavenly (@heavenly7493) for TERRA.
+// Do not distribute without permission.
+{
+    "format_version": "1.21.0",
+    "minecraft:entity": {
+        "description": {
+            "identifier": "terra:eyecletch",
+            "spawn_category": "monster",
+            "is_spawnable": true,
+            "is_summonable": true
+        },
+        "component_groups": {
+            "terra:eyecletch_not_riding_player": {
+                "minecraft:entity_sensor": {
+                    "relative_range": false,
+                    "subsensors": [
+                        {
+                            "range": [
+                                2,
+                                2
+                            ],
+                            "event_filters": {
+                                "all_of": [
+                                    {
+                                        "test": "is_riding",
+                                        "subject": "self",
+                                        "operator": "equals",
+                                        "value": true
+                                    },
+                                    {
+                                        "test": "has_component",
+                                        "subject": "self",
+                                        "operator": "equals",
+                                        "value": "minecraft:behavior.look_at_player"
+                                    }
+                                ]
+                            },
+                            "event": "minecraft:on_riding_player"
+                        }
+                    ]
+                },
+                "minecraft:behavior.look_at_player": {
+                    "priority": 1,
+                    "look_distance": 16.0
+                }
+            },
+            "terra:eyecletch_riding_player": {
+                "minecraft:entity_sensor": {
+                    "relative_range": false,
+                    "subsensors": [
+                        {
+                            "range": [
+                                2,
+                                2
+                            ],
+                            "event_filters": {
+                                "all_of": [
+                                    {
+                                        "test": "is_riding",
+                                        "subject": "self",
+                                        "operator": "equals",
+                                        "value": false
+                                    },
+                                    {
+                                        "test": "has_component",
+                                        "subject": "self",
+                                        "operator": "not",
+                                        "value": "minecraft:behavior.look_at_player"
+                                    }
+                                ]
+                            },
+                            "event": "minecraft:on_not_riding_player"
+                        }
+                    ]
+                },
+                "minecraft:on_hurt": {
+                    "event": "minecraft:on_not_riding_player",
+                    "target": "self"
+                },
+                "minecraft:collision_box": {
+                    "height": 1,
+                    "width": 1
+                }
+            }
+        },
+        "components": {
+            "minecraft:behavior.nearest_attackable_target": {
+                "priority": 2,
+                "must_see": true,
+                "attack_interval": 1,
+                "entity_types": [
+                    {
+                        "filters": {
+                            "any_of": [
+                                {
+                                    "test": "is_family",
+                                    "subject": "other",
+                                    "value": "player"
+                                },
+                                {
+                                    "test": "is_family",
+                                    "subject": "other",
+                                    "value": "snowgolem"
+                                },
+                                {
+                                    "test": "is_family",
+                                    "subject": "other",
+                                    "value": "irongolem"
+                                }
+                            ]
+                        },
+                        "max_dist": 16
+                    }
+                ]
+            },
+            "minecraft:behavior.leap_at_target": {
+                "priority": 4,
+                "yd": 0.4,
+                "must_be_on_ground": false
+            },
+            "minecraft:behavior.melee_box_attack": {
+                "priority": 3,
+                "track_target": true
+            },
+            "minecraft:attack": {
+                "damage": 2
+            },
+            "minecraft:is_hidden_when_invisible": {},
+            "minecraft:experience_reward": {
+                "on_death": "query.last_hit_by_player ? 5 : 0"
+            },
+            "minecraft:type_family": {
+                "family": [
+                    "monster",
+                    "arthropod",
+                    "mob"
+                ]
+            },
+            "minecraft:breathable": {
+                "total_supply": 15,
+                "suffocate_time": 0
+            },
+            "minecraft:nameable": {},
+            "minecraft:loot": {
+                "table": "loot_tables/entities/eyecletch.json"
+            },
+            "minecraft:collision_box": {
+                "width": 0.7,
+                "height": 0.5
+            },
+            "minecraft:health": {
+                "value": 12,
+                "max": 12
+            },
+            "minecraft:hurt_on_condition": {
+                "damage_conditions": [
+                    {
+                        "filters": {
+                            "test": "in_water",
+                            "subject": "self",
+                            "operator": "==",
+                            "value": true
+                        },
+                        "cause": "drowning",
+                        "damage_per_tick": 4
+                    }
+                ]
+            },
+            "minecraft:movement": {
+                "value": 1.7
+            },
+            "minecraft:navigation.climb": {
+                "can_path_over_water": false
+            },
+            "minecraft:movement.basic": {},
+            "minecraft:jump.static": {},
+            "minecraft:can_climb": {},
+            "minecraft:despawn": {
+                "despawn_from_distance": {}
+            },
+            "minecraft:behavior.avoid_mob_type": {
+                "priority": 2,
+                "entity_types": [
+                    {
+                        "filters": {
+                            "all_of": [
+                                {
+                                    "test": "is_family",
+                                    "subject": "other",
+                                    "value": "armadillo"
+                                }
+                            ]
+                        },
+                        "max_dist": 6,
+                        "sprint_speed_multiplier": 1.2
+                    }
+                ]
+            },
+            "minecraft:behavior.random_stroll": {
+                "priority": 6,
+                "speed_multiplier": 0.8
+            },
+            "minecraft:behavior.look_at_player": {
+                "priority": 7,
+                "look_distance": 6.0,
+                "probability": 0.02
+            },
+            "minecraft:behavior.find_mount": {
+                "priority": 1,
+                "within_radius": 16,
+                "avoid_water": true,
+                "start_delay": 0.1,
+                "target_needed": true,
+                "mount_distance": 1.0
+            },
+            "minecraft:behavior.random_look_around": {
+                "priority": 7
+            },
+            "minecraft:behavior.hurt_by_target": {
+                "priority": 1,
+                "entity_types": [
+                    {
+                        "filters": {
+                            "test": "is_family",
+                            "subject": "other",
+                            "operator": "!=",
+                            "value": "spider"
+                        }
+                    }
+                ]
+            },
+            "minecraft:physics": {},
+            "minecraft:pushable": {
+                "is_pushable": true,
+                "is_pushable_by_piston": true
+            },
+            "minecraft:conditional_bandwidth_optimization": {}
+        },
+        "events": {
+            "minecraft:entity_spawned": {
+                "add": {
+                    "component_groups": [
+                        "terra:eyecletch_not_riding_player"
+                    ]
+                }
+            },
+            "minecraft:on_riding_player": {
+                "remove": {
+                    "component_groups": [
+                        "terra:eyecletch_not_riding_player"
+                    ]
+                },
+                "add": {
+                    "component_groups": [
+                        "terra:eyecletch_riding_player"
+                    ]
+                }
+            },
+            "minecraft:on_not_riding_player": {
+                "remove": {
+                    "component_groups": [
+                        "terra:eyecletch_riding_player"
+                    ]
+                },
+                "add": {
+                    "component_groups": [
+                        "terra:eyecletch_not_riding_player"
+                    ]
+                }
+            }
+        }
+    }
+}

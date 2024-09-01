@@ -2,6 +2,7 @@
     "format_version": "1.16.100",
     "minecraft:fog_settings": {
         "description": {
+            // was supposed to be 'minecraft:fog_default' customized but keeps throwing errors
             "identifier": "minecraft:fog_default"
         },
         "distance": {

@@ -27,8 +27,13 @@ Art & Design
 Coding & Compiling
 - Heavenly/Henderson (@heavenly7493)
 
+Sound Mix & Music
+- Heavenly/Henderson (@heavenly7493)
+- Kevin MacLeod ('Vanes' under Creative Commons by Attribution License)
+
 Spanish Translations
 - Heavenly/Henderson (@heavenly7493)
 
 Special Thanks
 - To Kaiōga (@Kaioga5) for their curated block templates made with scripting.
+- To Poggy (@XxPoggyisLitxX) for the taxicab leaves decay script.

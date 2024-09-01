@@ -15,7 +15,7 @@
         "item": "minecraft:furnace"
       },
       "#": {
-        "item": "terra:stripped_poplar_log"
+        "item": "terra:poplar_log_stripped"
       }
     },
     "result": {

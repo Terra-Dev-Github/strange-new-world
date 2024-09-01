@@ -7,7 +7,7 @@ import { world, ItemStack } from '@minecraft/server';
 // Subscribe to the 'worldInitialize' event to register custom components
 world.beforeEvents.worldInitialize.subscribe(eventData => {
     // Register a custom component named terra:on_slab_interact for slab interaction 
-    eventData.blockTypeRegistry.registerCustomComponent('terra:on_slab_interact', {
+    eventData.blockComponentRegistry.registerCustomComponent('terra:on_slab_interact', {
         // Define the behavior when a player interacts with the slab
         onPlayerInteract(e) {
             // Destructure event data for easier access

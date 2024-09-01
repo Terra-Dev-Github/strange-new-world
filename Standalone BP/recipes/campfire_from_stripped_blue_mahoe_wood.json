@@ -20,7 +20,7 @@
                 "item": "minecraft:coal"
             },
             "C": {
-                "item": "minecraft:stripped_blue_mahoe_wood"
+                "item": "terra:blue_mahoe_wood_stripped"
             }
         },
         "result": {

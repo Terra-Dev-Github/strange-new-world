@@ -1,5 +1,10 @@
 ## Nethersteel
-execute as @a at @s unless entity @s[hasitem=[{item=terra:nethersteel_helmet, location=slot.armor.head, quantity=0}, {item=terra:nethersteel_chestplate, location=slot.armor.chest, quantity=0}, {item=terra:nethersteel_leggings, location=slot.armor.legs, quantity=0}, {item=terra:nethersteel_boots, location=slot.armor.feet, quantity=0}]] run effect @s strength 1 3 true
-execute as @a at @s unless entity @s[hasitem=[{item=terra:nethersteel_helmet, location=slot.armor.head, quantity=0}, {item=terra:nethersteel_chestplate, location=slot.armor.chest, quantity=0}, {item=terra:nethersteel_leggings, location=slot.armor.legs, quantity=0}, {item=terra:nethersteel_boots, location=slot.armor.feet, quantity=0}]] run effect @s slowness 1 2 true
-execute as @a at @s unless entity @s[hasitem=[{item=terra:nethersteel_helmet, location=slot.armor.head}, {item=terra:nethersteel_chestplate, location=slot.armor.chest}, {item=terra:nethersteel_leggings, location=slot.armor.legs}, {item=terra:nethersteel_boots, location=slot.armor.feet}]] run effect @s strength 0
-execute as @a at @s unless entity @s[hasitem=[{item=terra:nethersteel_helmet, location=slot.armor.head}, {item=terra:nethersteel_chestplate, location=slot.armor.chest}, {item=terra:nethersteel_leggings, location=slot.armor.legs}, {item=terra:nethersteel_boots, location=slot.armor.feet}]] run effect @s slowness 0
+scoreboard players set @a nethersteelArmor 0
+scoreboard players add @a[hasitem={item=terra:nethersteel_boots,location=slot.armor.feet}] nethersteelArmor 1
+scoreboard players add @a[hasitem={item=terra:nethersteel_leggings,location=slot.armor.legs}] nethersteelArmor 1
+scoreboard players add @a[hasitem={item=terra:nethersteel_chestplate,location=slot.armor.chest}] nethersteelArmor 1
+scoreboard players add @a[hasitem={item=terra:nethersteel_helmet,location=slot.armor.head}] nethersteelArmor 1
+tag @a[scores={nethersteelArmor=4}] add nethersteelSetEffect
+tag @a[scores={nethersteelArmor=..3}] remove nethersteelSetEffect
+effect @a[tag=nethersteelSetEffect] strength 1 3 true
+effect @a[tag=nethersteelSetEffect] slowness 1 2 true

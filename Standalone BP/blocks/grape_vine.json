@@ -1,0 +1,146 @@
+// This file was made, modified and compiled by Heavenly (@heavenly7493) for TERRA.
+// Do not distribute without permission.
+{
+	"format_version": "1.20.80",
+	"minecraft:block": {
+		"description": {
+			"identifier": "terra:grape_vine",
+			"menu_category": {
+				// block is placed with seeds
+				"category": "none",
+				"group": "none"
+			},
+			"states": {
+				"terra:growth_stage": [
+					0,
+					1,
+					2
+				],
+				"terra:vine_body_stage": [
+					0, // body
+					1 // head
+				]
+			}
+		},
+		"components": {
+			"minecraft:tick": {
+				"interval_range": [
+					3,
+					3
+				]
+			},
+			// adds block functionality
+			"minecraft:custom_components": [
+				"terra:crop_properties"
+			],
+			"tag:minecraft:crop": {},
+			"minecraft:material_instances": {
+				"*": {
+					"texture": "grapevine_body_stage0",
+					"render_method": "alpha_test"
+				}
+			},
+			"minecraft:geometry": "minecraft:geometry.cross",
+			"minecraft:collision_box": false,
+			// "minecraft:breathability": "air",
+			"minecraft:destructible_by_mining": {
+				"seconds_to_destroy": 1
+			},
+			// "minecraft:map_color": "#000000",
+			"minecraft:light_dampening": 0,
+			"minecraft:loot": "loot_tables/empty.json",
+			"minecraft:placement_filter": {
+				"conditions": [
+					{
+						"allowed_faces": [
+							"down"
+						],
+						"block_filter": [
+							"farmland",
+							"podzol",
+							"terra:soil",
+							"terra:grape_vine",
+							{
+								"tags": "q.any_tag('leaves', 'dirt')"
+							}
+						]
+					}
+				]
+			}
+		},
+		"permutations": [
+			{
+				"condition": "(query.block_state('terra:growth_stage') == 0) && q.block_state('terra:vine_body_stage') == 0",
+				"components": {
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "grapevine_body_stage0",
+							"render_method": "alpha_test"
+						}
+					},
+					"minecraft:loot": "loot_tables/empty.json"
+				}
+			},
+			{
+				"condition": "(query.block_state('terra:growth_stage') == 1) && q.block_state('terra:vine_body_stage') == 0",
+				"components": {
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "grapevine_body_stage1",
+							"render_method": "alpha_test"
+						}
+					},
+					"minecraft:loot": "loot_tables/empty.json"
+				}
+			},
+			{
+				"condition": "(query.block_state('terra:growth_stage') == 2) && q.block_state('terra:vine_body_stage') == 0",
+				"components": {
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "grapevine_body_stage2",
+							"render_method": "alpha_test"
+						}
+					},
+					"minecraft:loot": "loot_tables/empty.json"
+				}
+			},
+			{
+				"condition": "(query.block_state('terra:growth_stage') == 0) && q.block_state('terra:vine_body_stage') == 1",
+				"components": {
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "grapevine_head_stage0",
+							"render_method": "alpha_test"
+						}
+					},
+					"minecraft:loot": "loot_tables/empty.json"
+				}
+			},
+			{
+				"condition": "(query.block_state('terra:growth_stage') == 1) && q.block_state('terra:vine_body_stage') == 1",
+				"components": {
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "grapevine_head_stage1",
+							"render_method": "alpha_test"
+						}
+					},
+					"minecraft:loot": "loot_tables/empty.json"
+				}
+			},
+			{
+				"condition": "(query.block_state('terra:growth_stage') == 2) && q.block_state('terra:vine_body_stage') == 1",
+				"components": {
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "grapevine_head_stage2",
+							"render_method": "alpha_test"
+						}
+					},
+					"minecraft:loot": "loot_tables/blocks/grape_vine.json"
+				}
+			}
+		]
+	}
+}

@@ -7,7 +7,7 @@ import { world } from '@minecraft/server';
 // subscribe to the 'worldInitialize' event to register custom components
 world.beforeEvents.worldInitialize.subscribe(eventData => {
     // register a custom component named 'terra:sapling_properties' for the block behavior
-    eventData.blockTypeRegistry.registerCustomComponent('terra:sapling_properties', {
+    eventData.blockComponentRegistry.registerCustomComponent('terra:sapling_properties', {
         // grow the sapling on random tick
         onRandomTick: (e) => {
             // destructure event data for easier access

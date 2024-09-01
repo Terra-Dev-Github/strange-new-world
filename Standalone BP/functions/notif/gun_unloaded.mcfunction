@@ -1,0 +1,1 @@
+titleraw @s actionbar {"rawtext":[{"translate":"gun.unloaded.langcode"}]}

@@ -33,19 +33,11 @@
                                                 "test": "is_family",
                                                 "subject": "other",
                                                 "value": "irongolem"
-                                            }
-                                        ]
-                                    },
-                                    {
-                                        "any_of": [
-                                            {
-                                                "test": "in_water",
-                                                "subject": "other",
-                                                "value": true
                                             },
                                             {
-                                                "test": "is_daytime",
-                                                "value": false
+                                                "test": "is_family",
+                                                "subject": "other",
+                                                "value": "villager"
                                             }
                                         ]
                                     }
@@ -93,6 +85,7 @@
                                 ]
                             },
                             "max_dist": 24,
+                            "must_see": true,
                             "reevaluate_description": true
                         },
                         {
@@ -146,8 +139,8 @@
             },
             "terra:mode_switcher": {
                 "minecraft:target_nearby_sensor": {
-                    "inside_range": 3.0,
-                    "outside_range": 5.0,
+                    "inside_range": 12.0,
+                    "outside_range": 12.0,
                     "on_inside_range": {
                         "event": "terra:switch_to_melee",
                         "target": "self"
@@ -161,7 +154,8 @@
             "terra:ranged_mode": {
                 "minecraft:shooter": {
                     // projectile to shoot
-                    "def": "minecraft:fireball",
+                    "def": "terra:gun_pellet_outsider",
+                    // placeholder sound
                     "sound": "item.trident.throw"
                 },
                 "minecraft:behavior.ranged_attack": {
@@ -173,24 +167,16 @@
             },
             "minecraft:melee_mode": {
                 "minecraft:attack": {
-                    "damage": 6
+                    "damage": [
+                        1,
+                        4
+                    ]
                 },
                 "minecraft:behavior.melee_box_attack": {
                     "can_spread_on_fire": false,
                     "priority": 3,
                     "speed_multiplier": 1.75,
                     "track_target": true
-                }
-            },
-            "minecraft:melee_equipment": {
-                "minecraft:equipment": {
-                    "table": "loot_tables/entities/outsider_melee.json",
-                    "slot_drop_chance": [
-                        {
-                            "slot": "slot.weapon.mainhand",
-                            "drop_chance": 1.0
-                        }
-                    ]
                 }
             },
             "minecraft:hunter_mode": {
@@ -224,11 +210,9 @@
             "minecraft:nameable": {},
             "minecraft:type_family": {
                 "family": [
-                    "drowned",
-                    "zombie",
-                    "undead",
                     "monster",
-                    "mob"
+                    "mob",
+                    "settler"
                 ]
             },
             "minecraft:collision_box": {
@@ -241,13 +225,11 @@
             "minecraft:movement.generic": {},
             "minecraft:jump.static": {},
             "minecraft:can_climb": {},
-            "minecraft:can_break_doors": {
-                "minecraft:annotation.break_door": {}
-            },
+            "minecraft:annotation.break_door": {},
             // same health values as a player wearing iron armor
             "minecraft:health": {
-                "value": 20,
-                "max": 20
+                "value": 45,
+                "max": 45
             },
             "minecraft:block_sensor": {
                 "sensor_radius": 16,
@@ -575,7 +557,6 @@
                                 "add": {
                                     "component_groups": [
                                         "terra:mode_switcher",
-                                        "minecraft:melee_equipment",
                                         "minecraft:melee_mode",
                                         "terra:attack_target"
                                     ]

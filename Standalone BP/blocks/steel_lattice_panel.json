@@ -7,7 +7,7 @@
 			"identifier": "terra:steel_lattice_panel",
 			"menu_category": {
 				// block is placed with the steel lattice panel item
-				"category": "commands",
+				"category": "none",
 				"group": "none"
 			},
 			"states": {

@@ -1,0 +1,24 @@
+{
+    "format_version": "1.12",
+    "minecraft:recipe_shaped": {
+        "description": {
+            "identifier": "terra:reverion"
+        },
+        "tags": [
+            "crafting_table"
+        ],
+        "pattern": [
+            "##",
+            "##"
+        ],
+        "key": {
+            "#": {
+                "item": "terra:brittle_reverion"
+            }
+        },
+        "result": {
+            "item": "terra:reverion",
+            "count": 4
+        }
+    }
+}

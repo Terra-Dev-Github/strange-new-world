@@ -5,7 +5,7 @@
     "identifier": "terra:furnace_stripped_poplar_wood"
     },    
     "tags": ["furnace"],
-    "input": "terra:stripped_poplar_wood",
+    "input": "terra:poplar_wood_stripped",
     "output": "minecraft:coal:1"
   }
 }

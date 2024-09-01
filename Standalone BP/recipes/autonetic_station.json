@@ -1,0 +1,37 @@
+{
+    "format_version": "1.20.10",
+    "minecraft:recipe_shaped": {
+        "description": {
+            "identifier": "terra:autonetic_station"
+        },
+        "tags": [
+            "crafting_table"
+        ],
+        "pattern": [
+            "MCM",
+            "MSM",
+            "MCM"
+        ],
+        "key": {
+            "M": {
+                "item": "terra:outsider_metal_block"
+            },
+            "C": {
+                "item": "minecraft:copper_ingot"
+            },
+            "S": {
+                "item": "terra:outsider_core"
+            }
+        },
+        "result": {
+            "item": "terra:autonetic_station",
+            "count": 1
+        },
+        "unlock": [
+            {
+                "item": "terra:outsider_metal_scrap"
+            }
+        ],
+        "priority": 2
+    }
+}

@@ -8,7 +8,7 @@
 			"brewing_stand"
 		],
 		"input": "terra:vial_pure",
-		"reagent": "minecraft:glowstone_block",
+		"reagent": "minecraft:glowstone",
 		"output": "terra:vial_shimmering"
 	}
 }

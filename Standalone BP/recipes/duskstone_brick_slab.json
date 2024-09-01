@@ -1,0 +1,23 @@
+{
+    "format_version": "1.12",
+    "minecraft:recipe_shaped": {
+        "description": {
+            "identifier": "terra:duskstone_brick_slab"
+        },
+        "tags": [
+            "crafting_table"
+        ],
+        "pattern": [
+            "###"
+        ],
+        "key": {
+            "#": {
+                "item": "terra:duskstone_bricks"
+            }
+        },
+        "result": {
+            "item": "terra:duskstone_brick_slab",
+            "count": 6
+        }
+    }
+}

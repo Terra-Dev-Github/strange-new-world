@@ -7,7 +7,7 @@
 			"identifier": "terra:lemon_crop",
 			"menu_category": {
 				// block is placed with seeds
-				"category": "commands",
+				"category": "none",
 				"group": "none"
 			},
 			"states": {
@@ -19,6 +19,12 @@
 			}
 		},
 		"components": {
+			"minecraft:tick": {
+				"interval_range": [
+					3,
+					3
+				]
+			},
 			// adds block functionality
 			"minecraft:custom_components": [
 				"terra:crop_properties"
@@ -53,7 +59,8 @@
 						],
 						"block_filter": [
 							"farmland",
-							"podzol"
+							"podzol",
+							"terra:soil"
 						]
 					}
 				]

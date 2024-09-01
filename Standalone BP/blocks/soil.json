@@ -1,8 +1,10 @@
+// This file was made, modified and compiled by Heavenly (@heavenly7493) for TERRA.
+// Do not distribute without permission.
 {
 	"format_version": "1.20.80",
 	"minecraft:block": {
 		"description": {
-			"identifier": "mian:soil",
+			"identifier": "terra:soil",
 			"menu_category": {
 				"category": "nature",
 				"group": "itemGroup.name.none"
@@ -11,13 +13,16 @@
 		"components": {
 			"tag:dirt": {},
 			"minecraft:geometry": "minecraft:geometry.full_block",
-			"minecraft:map_color": "#603e25",
+			"minecraft:material_instances": {
+				"*": {
+					"texture": "soil",
+					"render_method": "opaque"
+				}
+			},
 			"minecraft:destructible_by_mining": {
 				"seconds_to_destroy": 0.15
 			},
-			"minecraft:destructible_by_explosion": {
-				"explosion_resistance": 0.5
-			}
+			"minecraft:map_color": "#4A2E0D"
 		}
 	}
 }

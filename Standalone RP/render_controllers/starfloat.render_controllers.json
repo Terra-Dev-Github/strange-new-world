@@ -1,0 +1,38 @@
+{
+    "format_version": "1.8.0",
+    "render_controllers": {
+        "controller.render.starfloat": {
+            "geometry": "Geometry.default",
+            "materials": [
+                {
+                    "*": "Material.default"
+                }
+            ],
+            "textures": [
+                "Texture.default"
+            ]
+        },
+        "controller.render.starfloat_shell": {
+            "geometry": "Geometry.shell",
+            "materials": [
+                {
+                    "*": "Material.default"
+                }
+            ],
+            "textures": [
+                "Texture.starfloat_shell"
+            ]
+        },
+        "controller.render.starfloat_emissive": {
+            "geometry": "Geometry.default",
+            "materials": [
+                {
+                    "*": "Material.emissive"
+                }
+            ],
+            "textures": [
+                "Texture.starfloat_emissive"
+            ]
+        }
+    }
+}

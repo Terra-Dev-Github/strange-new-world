@@ -5,7 +5,40 @@
             "geometry": "Geometry.default",
             "materials": [
                 {
-                    "*": "Material.default"
+                    "armor_body": "Material.default"
+                },
+                {
+                    "armor_head": "Material.default"
+                },
+                {
+                    "armor_rightArm": "Material.default"
+                },
+                {
+                    "armor_leftArm": "Material.default"
+                },
+                {
+                    "armor_rightLeg": "Material.default"
+                },
+                {
+                    "armor_leftLeg": "Material.default"
+                },
+                {
+                    "body": "Material.emissive"
+                },
+                {
+                    "head": "Material.emissive"
+                },
+                {
+                    "rightArm": "Material.emissive"
+                },
+                {
+                    "leftArm": "Material.emissive"
+                },
+                {
+                    "rightLeg": "Material.emissive"
+                },
+                {
+                    "leftLeg": "Material.emissive"
                 }
             ],
             "textures": [

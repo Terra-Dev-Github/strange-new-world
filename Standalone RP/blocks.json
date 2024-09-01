@@ -1,9 +1,18 @@
+// This file was made, modified and compiled by Heavenly (@heavenly7493) for TERRA.
+// Do not distribute without permission.
 {
 	"format_version": [
 		1,
 		1,
 		0
 	],
+	"terra:anorthosite": {
+		"textures": {
+			"side": "anorthosite_side",
+			"up": "anorthosite_top",
+			"down": "anorthosite_top"
+		}
+	},
 	"terra:autonetic_station": {
 		"textures": {
 			"up": "autonetic_station_top",
@@ -14,6 +23,10 @@
 			"west": "autonetic_station_side"
 		},
 		"sound": "metal"
+	},
+	"terra:blue_mahoe_leaves": {
+		"textures": "blue_mahoe_leaves",
+		"sound": "grass"
 	},
 	"terra:blue_mahoe_log": {
 		// skipping textures so it doesn't glitch out
@@ -38,6 +51,10 @@
 	"terra:blue_mahoe_wood": {
 		// skipping textures so it doesn't glitch out
 		"sound": "wood"
+	},
+	"terra:bulnesia_leaves": {
+		"textures": "bulnesia_leaves",
+		"sound": "grass"
 	},
 	"terra:bulnesia_log": {
 		// skipping textures so it doesn't glitch out
@@ -75,6 +92,10 @@
 		"textures": "brittle_reverion",
 		"sound": "stone"
 	},
+	"terra:chesthound_block": {
+		"textures": "chest_decorative",
+		"sound": "wood"
+	},
 	"terra:chiseled_malachite_block": {
 		"textures": "chiseled_malachite",
 		"sound": "stone"
@@ -90,6 +111,14 @@
 	"terra:cut_outsider_metal": {
 		"textures": "cut_outsider_metal",
 		"sound": "metal"
+	},
+	"terra:deepslate_crate_empty": {
+		"textures": "deepslate_crate",
+		"sound": "deepslate"
+	},
+	"terra:deepslate_crate_locked": {
+		"textures": "deepslate_crate",
+		"sound": "deepslate"
 	},
 	"terra:deepslate_platinum_ore": {
 		"textures": "deepslate_platinum_ore",
@@ -118,6 +147,10 @@
 	"terra:duskstone": {
 		"textures": "duskstone",
 		"sound": "deepslate"
+	},
+	"terra:grape_vine": {
+		"textures": "grapevine_head_stage2",
+		"sound": "grass"
 	},
 	"terra:hazard_block": {
 		"textures": "hazard_block",
@@ -163,6 +196,14 @@
 		"textures": "orange_crop_2",
 		"sound": "grass"
 	},
+	"terra:outsider_crate_empty": {
+		"textures": "outsider_crate",
+		"sound": "metal"
+	},
+	"terra:outsider_crate_locked": {
+		"textures": "outsider_crate",
+		"sound": "metal"
+	},
 	"terra:outsider_metal_block": {
 		"textures": "outsider_metal_block",
 		"sound": "metal"
@@ -202,6 +243,10 @@
 			"down": "polished_malachite_block"
 		},
 		"sound": "stone"
+	},
+	"terra:poplar_leaves": {
+		"textures": "poplar_leaves",
+		"sound": "grass"
 	},
 	"terra:poplar_log": {
 		// skipping textures so it doesn't glitch out
@@ -287,6 +332,14 @@
 		"textures": "salt_ore",
 		"sound": "stone"
 	},
+	"terra:sandy_soil": {
+		"textures": "sandy_soil",
+		"sound": "sand"
+	},
+	"terra:soil": {
+		"textures": "soil",
+		"sound": "gravel"
+	},
 	"terra:steel_block": {
 		"textures": "steel_block",
 		"sound": "metal"
@@ -339,6 +392,10 @@
 		"textures": "wired_outsider_metal",
 		"sound": "metal"
 	},
+	"terra:yellowheart_leaves": {
+		"textures": "yellowheart_leaves",
+		"sound": "grass"
+	},
 	"terra:yellowheart_log": {
 		// skipping textures so it doesn't glitch out
 		"sound": "wood"
@@ -362,10 +419,5 @@
 	"terra:yellowheart_wood": {
 		// skipping textures so it doesn't glitch out
 		"sound": "wood"
-	},
-	//Miank
-	"mian:soil": {
-		"textures": "soil",
-		"sound": "gravel"
 	}
 }

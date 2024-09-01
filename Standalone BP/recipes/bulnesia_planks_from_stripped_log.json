@@ -11,12 +11,12 @@
     ],
     "key": {
       "#": {
-        "item": "terra:stripped_bulnesia_log"
+        "item": "terra:bulnesia_log_stripped"
       }
     },
 	"unlock": [
         {
-          "item": "terra:stripped_bulnesia_log"
+          "item": "terra:bulnesia_log_stripped"
         }
     ],
     "result": {

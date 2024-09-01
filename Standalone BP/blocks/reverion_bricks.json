@@ -4,7 +4,7 @@
     "format_version": "1.20.80",
     "minecraft:block": {
         "description": {
-            "identifier": "terra:reverion",
+            "identifier": "terra:reverion_bricks",
             "menu_category": {
                 "category": "construction",
                 "group": "itemGroup.name.stoneBrick"

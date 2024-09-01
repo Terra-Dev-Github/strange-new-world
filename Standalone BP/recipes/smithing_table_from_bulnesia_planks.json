@@ -17,7 +17,7 @@
                 "item": "minecraft:iron_ingot"
             },
             "B": {
-                "item": "bulnesia_planks"
+                "item": "terra:bulnesia_planks"
             }
         },
         "result": {

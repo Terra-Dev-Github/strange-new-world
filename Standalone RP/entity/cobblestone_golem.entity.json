@@ -1,0 +1,53 @@
+// This file was made, modified and compiled by Heavenly (@heavenly7493) for TERRA.
+// Do not distribute without permission.
+{
+	"format_version": "1.8.0",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "terra:cobblestone_golem",
+			"materials": {
+				"default": "skeleton"
+			},
+			"textures": {
+				"default": "textures/entity/cobblestone_golem/cobblestone_golem_baby"
+			},
+			"geometry": {
+				"default": "geometry.cobble_golem"
+			},
+			"animations": {
+				"walk": "animation.iron_golem.walk",
+				"move": "animation.iron_golem.move",
+				"attack": "animation.iron_golem.attack",
+				"look_at_target": "animation.common.look_at_target",
+				"walk_to_target": "animation.iron_golem.walk_to_target",
+				"move_to_target": "animation.iron_golem.move_to_target",
+				"move_controller": "controller.animation.iron_golem.move",
+				"arm_controller": "controller.animation.iron_golem.arm_movement"
+			},
+			"animation_controllers": [
+				{
+					"move": "controller.animation.iron_golem.move"
+				},
+				{
+					"arm": "controller.animation.iron_golem.arm_movement"
+				}
+			],
+			"scripts": {
+				"pre_animation": [
+					"variable.modified_tcos0 = Math.clamp(((Math.cos(query.modified_distance_moved * 13.5) * Math.min(query.modified_move_speed, 0.6) / variable.gliding_speed_value) * 25.0), -12.5, 12.5);",
+					"variable.attack = Math.sin((1.0 - (1.0 - variable.attack_time) * (1.0 - variable.attack_time)) * 180.0) * 57.3;",
+					"variable.attack2 = Math.sin(variable.attack_time * 180.0) * 57.3;",
+					"variable.z_bob = Math.cos(query.life_time * 103.13244) * 2.865 + 2.865;",
+					"variable.x_bob = Math.sin(query.life_time * 76.776372) * 2.865;"
+				]
+			},
+			"render_controllers": [
+				"controller.render.default"
+			],
+			"enable_attachables": false,
+			"spawn_egg": {
+				"texture": "placeholder"
+			}
+		}
+	}
+}

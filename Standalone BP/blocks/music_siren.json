@@ -1,0 +1,125 @@
+// This file was made, modified and compiled by Heavenly (@heavenly7493) for TERRA.
+// Do not distribute without permission.
+{
+    "format_version": "1.20.80",
+    "minecraft:block": {
+        "description": {
+            "identifier": "terra:music_siren",
+            "menu_category": {
+                "category": "items",
+                "group": "itemGroup.name.none"
+            },
+            "traits": {
+                "minecraft:placement_direction": {
+                    "enabled_states": [
+                        "minecraft:cardinal_direction"
+                    ],
+                    "y_rotation_offset": 180 // face towards player
+                }
+            },
+            "states": {
+                "terra:has_disc": [
+                    0, // empty
+                    1 // wtb (converts to siren)
+                ]
+            }
+        },
+        "components": {
+            "minecraft:tick": {
+                "interval_range": [
+                    3,
+                    3
+                ]
+            },
+            "minecraft:geometry": "geometry.music_siren",
+            "minecraft:material_instances": {
+                "*": {
+                    "texture": "music_siren",
+                    "render_method": "opaque"
+                }
+            },
+            "minecraft:destructible_by_mining": {
+                "seconds_to_destroy": 2.5
+            },
+            "minecraft:selection_box": {
+                "origin": [
+                    -8,
+                    0,
+                    -6
+                ],
+                "size": [
+                    16,
+                    15,
+                    12
+                ]
+            },
+            "minecraft:collision_box": {
+                "origin": [
+                    -8,
+                    0,
+                    -6
+                ],
+                "size": [
+                    16,
+                    15,
+                    12
+                ]
+            },
+            "minecraft:map_color": "#2D1A60",
+            // adds block functionality
+            "minecraft:custom_components": [
+                "terra:jukebox_properties"
+            ]
+        },
+        "permutations": [
+            {
+                "condition": "q.block_state('minecraft:cardinal_direction') == 'north'",
+                "components": {
+                    "minecraft:transformation": {
+                        "rotation": [
+                            0,
+                            0,
+                            0
+                        ]
+                    }
+                }
+            },
+            {
+                "condition": "q.block_state('minecraft:cardinal_direction') == 'south'",
+                "components": {
+                    "minecraft:transformation": {
+                        "rotation": [
+                            0,
+                            180,
+                            0
+                        ]
+                    }
+                }
+            },
+            {
+                "condition": "q.block_state('minecraft:cardinal_direction') == 'east'",
+                "components": {
+                    "minecraft:transformation": {
+                        "rotation": [
+                            0,
+                            -90,
+                            0
+                        ]
+                    }
+                }
+            },
+            {
+                "condition": "q.block_state('minecraft:cardinal_direction') == 'west'",
+                "components": {
+                    "minecraft:transformation": {
+                        "rotation": [
+                            0,
+                            90,
+                            0
+                        ]
+                    }
+                }
+            }
+        ]
+    }
+}

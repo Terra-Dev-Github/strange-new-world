@@ -1,0 +1,56 @@
+// This file was made, modified and compiled by Heavenly (@heavenly7493) for TERRA.
+// Do not distribute without permission.
+{
+    "format_version": "1.10.0",
+    "minecraft:client_entity": {
+        "description": {
+            "identifier": "terra:chesthound",
+            "materials": {
+                "default": "skeleton"
+            },
+            "textures": {
+                "default": "textures/entity/chesthound/chesthound"
+            },
+            "geometry": {
+                "default": "geometry.chesthound"
+            },
+            "animations": {
+                "idle": "animation.pig.setup",
+                "attack_controller": "controller.animation.chesthound.attack",
+                "attack": "animation.chesthound.attack",
+                "move": "animation.spider.walk",
+                "awaken": "animation.chesthound.awaken"
+            },
+            "scripts": {
+                "pre_animation": [
+                    "variable.tcos0 = (Math.cos(query.modified_distance_moved * 38.17) * query.modified_move_speed / variable.gliding_speed_value) * 57.3;",
+                    "variable.attack = Math.sin((1.0 - (1.0 - variable.attack_time) * (1.0 - variable.attack_time)) * 180.0) * 57.3;",
+                    "variable.attack2 = Math.sin(variable.attack_time * 180.0) * 57.3;",
+                    "variable.z_bob = Math.cos(query.life_time * 103.13244) * 2.865 + 2.865;",
+                    "variable.x_bob = Math.sin(query.life_time * 76.776372) * 2.865;"
+                ],
+                "animate": [
+                    "attack_controller",
+                    "idle",
+                    {
+                        "move": "query.modified_move_speed"
+                    },
+                    {
+                        "awaken": "query.is_shaking"
+                    }
+                ]
+            },
+            "spawn_egg": {
+                "texture": "placeholder"
+            },
+            "render_controllers": [
+                "controller.render.default"
+            ],
+            "sound_effects": {
+                "idle": "random.chestopen",
+                "hurt": "random.chestopen",
+                "attack": "random.chestclosed"
+            }
+        }
+    }
+}

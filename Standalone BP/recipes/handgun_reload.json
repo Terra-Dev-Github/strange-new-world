@@ -1,0 +1,38 @@
+{
+    "format_version": "1.20.10",
+    "minecraft:recipe_shaped": {
+        "description": {
+            "identifier": "terra:handgun_reload"
+        },
+        "tags": [
+            "crafting_table"
+        ],
+        "unlock": [
+            {
+                "item": "terra:handgun_unloaded"
+            }
+        ],
+        "pattern": [
+            "V",
+            "G"
+        ],
+        "key": {
+            "G": {
+                "item": "terra:handgun_unloaded"
+            },
+            "V": {
+                "item": "terra:vial_radioactive"
+            }
+        },
+        "result": [
+            {
+                "item": "terra:handgun",
+                "count": 1
+            },
+            {
+                "item": "terra:vial_empty",
+                "count": 1
+            }
+        ]
+    }
+}

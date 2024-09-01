@@ -1,23 +1,42 @@
 // This file was made, modified and compiled by Heavenly (@heavenly7493) for TERRA.
 // Do not distribute without permission.
 {
-	"format_version": "1.20.30",
+	"format_version": "1.20.80",
 	"minecraft:item": {
 		"description": {
 			"identifier": "terra:handgun",
 			"menu_category": {
-				"category": "equipment",
+				// this is the charged variant
+				"category": "none",
 				"group": "itemGroup.name.none"
 			}
 		},
 		"components": {
 			"minecraft:icon": {
-				"texture": "placeholder"
+				"textures": {
+					"default": "handgun_item"
+				}
 			},
-			// "minecraft:hand_equipped": false,
+			"minecraft:max_stack_size": 1,
+			"minecraft:durability": {
+				"damage_chance": {
+					"max": 1,
+					"min": 0
+				},
+				"max_durability": 16
+			},
+			"minecraft:hand_equipped": true,
 			"minecraft:display_name": {
 				"value": "item.terra:handgun"
-			}
+			},
+			"minecraft:cooldown": {
+				"category": "gun",
+				"duration": 0.9
+			},
+			// adds block functionality
+			"minecraft:custom_components": [
+				"terra:gun_events"
+			]
 		}
 	}
 }

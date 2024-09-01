@@ -1,0 +1,29 @@
+{
+	"format_version": "1.12",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "terra:soil"
+		},
+		"tags": [
+			"crafting_table"
+		],
+		"pattern": [
+			"#&",
+			"&#"
+		],
+		"key": {
+			"#": {
+				"item": "minecraft:mud"
+			},
+			"&": {
+				"item": "minecraft:dirt"
+			}
+		},
+		"result": [
+			{
+				"item": "terra:soil",
+				"count": 4
+			}
+		]
+	}
+}

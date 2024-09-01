@@ -76,7 +76,7 @@
 					"render_method": "opaque"
 				},
 				"up": {
-					"texture": "stripped_oplar_log_top",
+					"texture": "stripped_blue_mahoe_log_top",
 					"render_method": "opaque"
 				},
 				"down": {
