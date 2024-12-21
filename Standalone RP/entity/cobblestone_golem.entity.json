@@ -9,10 +9,12 @@
 				"default": "skeleton"
 			},
 			"textures": {
-				"default": "textures/entity/cobblestone_golem/cobblestone_golem_baby"
+				"default": "textures/entity/cobblestone_golem/cobblestone_golem",
+				"cobblestone_golem_baby": "textures/entity/cobblestone_golem/cobblestone_golem_baby"
 			},
 			"geometry": {
-				"default": "geometry.cobble_golem"
+				"default": "geometry.cobble_golem",
+				"cobblestone_golem_baby": "geometry.cobble_golem_baby"
 			},
 			"animations": {
 				"walk": "animation.iron_golem.walk",
@@ -46,7 +48,8 @@
 			],
 			"enable_attachables": false,
 			"spawn_egg": {
-				"texture": "placeholder"
+				"base_color": "#888788",
+				"overlay_color": "#7A8F55"
 			}
 		}
 	}

@@ -13,7 +13,8 @@
         "default": "geometry.rarthrabby"
       },
       "spawn_egg": {
-        "texture": "placeholder"
+        "base_color": "#DEAB8A",
+        "overlay_color": "#A87665"
       },
       "scripts": {
         "pre_animation": [

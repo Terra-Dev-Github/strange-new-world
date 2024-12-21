@@ -21,7 +21,7 @@
 			"minecraft:display_name": {
 				"value": "item.terra:handgun"
 			},
-			// adds block functionality
+			// adds item functionality
 			"minecraft:custom_components": [
 				"terra:gun_events"
 			]

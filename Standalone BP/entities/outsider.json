@@ -236,7 +236,8 @@
                 "on_break": [
                     {
                         "block_list": [
-                            // "terra:settler_crate",
+                            "terra:vial_rod_radioactive",
+                            "terra:outsider_crate_empty",
                             "minecraft:trapped_chest"
                         ],
                         "on_block_broken": {

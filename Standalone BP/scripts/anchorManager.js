@@ -24,10 +24,10 @@ world.beforeEvents.worldInitialize.subscribe(eventData => {
                 player.runCommandAsync(`particle terra:gun_blast_particle ${location.x} ${location.y} ${location.z}`);
                 // define and get view direction and player velocuty
                 const viewDir = player.getViewDirection();
-                const velocity = player.getVelocity();
+                // const velocity = player.getVelocity();
                 // define new velocity and apply it as knockback
-                const newVelocity = Math.sqrt(velocity * velocity) * 4.0;
-                player.applyKnockback(viewDir.x,viewDir.z, newVelocity, viewDir.y > 0.0 ? newVelocity.y : velocity.y);
+                // const newVelocity = Math.sqrt(velocity * velocity) * 4.0;
+                player.applyKnockback(viewDir.x, viewDir.z, 1.5, 0.5);
             };
 
             // get the durability component and decrease it unless the player is in creative

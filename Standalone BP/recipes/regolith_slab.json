@@ -1,0 +1,23 @@
+{
+    "format_version": "1.12",
+    "minecraft:recipe_shaped": {
+        "description": {
+            "identifier": "terra:regolith_slab"
+        },
+        "tags": [
+            "crafting_table"
+        ],
+        "pattern": [
+            "###"
+        ],
+        "key": {
+            "#": {
+                "item": "terra:regolith"
+            }
+        },
+        "result": {
+            "item": "terra:regolith_slab",
+            "count": 6
+        }
+    }
+}

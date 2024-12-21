@@ -44,12 +44,6 @@
                "name": "sounds/terra_music/vanes",
                "stream": true,
                "volume": 0.25
-            },
-            {
-               "load_on_low_memory": true,
-               "name": "sounds/terra_music/citadel",
-               "stream": true,
-               "volume": 0.30
             }
          ]
       },
@@ -184,12 +178,6 @@
                "name": "sounds/music/game/yakusoku",
                "stream": true,
                "volume": 0.80
-            },
-            {
-               "load_on_low_memory": true,
-               "name": "sounds/terra_music/citadel",
-               "stream": true,
-               "volume": 0.30
             }
          ]
       },
@@ -265,7 +253,7 @@
             }
          ]
       },
-      "record.wtb_siren": {
+      "record.long_gone": {
          "__use_legacy_max_distance": "true",
          "category": "record",
          "max_distance": 64.0,
@@ -273,7 +261,7 @@
          "sounds": [
             {
                "load_on_low_memory": true,
-               "name": "sounds/terra_music/wtb_siren",
+               "name": "sounds/terra_music/long_gone",
                "stream": true,
                "volume": 0.50
             }

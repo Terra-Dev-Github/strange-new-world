@@ -33,7 +33,7 @@
 				"category": "gun",
 				"duration": 0.9
 			},
-			// adds block functionality
+			// adds item functionality
 			"minecraft:custom_components": [
 				"terra:gun_events"
 			]

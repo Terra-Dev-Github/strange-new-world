@@ -20,6 +20,11 @@
 							"default": "q.all_animations_finished && !q.has_target"
 						}
 					],
+					"sound_effects": [
+						{
+							"effect": "attack"
+						}
+					],
 					"blend_transition": 0.5
 				}
 			}

@@ -24,9 +24,29 @@
 				"textures/items/anchor"
 			]
 		},
+		"ancient_wand": {
+			"textures": [
+				"textures/items/ancient_wand"
+			]
+		},
+		"archimage_wand": {
+			"textures": [
+				"textures/items/archimage_wand"
+			]
+		},
 		"deepslate_crate_key": {
 			"textures": [
 				"textures/items/deepslate_crate_key"
+			]
+		},
+		"druidic_wand": {
+			"textures": [
+				"textures/items/druidic_wand"
+			]
+		},
+		"grapes": {
+			"textures": [
+				"textures/items/grapes"
 			]
 		},
 		"handgun_item": {
@@ -37,11 +57,6 @@
 		"handgun_unloaded": {
 			"textures": [
 				"textures/items/handgun_unloaded"
-			]
-		},
-		"grapes": {
-			"textures": [
-				"textures/items/grapes"
 			]
 		},
 		"lemon": {
@@ -139,6 +154,16 @@
 				"textures/items/outsider_metal_scrap"
 			]
 		},
+		"pineapple": {
+			"textures": [
+				"textures/items/pineapple"
+			]
+		},
+		"pineapple_seeds": {
+			"textures": [
+				"textures/items/pineapple_seeds"
+			]
+		},
 		"platinum_ingot": {
 			"textures": [
 				"textures/items/platinum_ingot"
@@ -159,14 +184,19 @@
 				"textures/items/raw_platinum"
 			]
 		},
+		"record_long_gone": {
+			"textures": [
+				"textures/items/record_long_gone"
+			]
+		},
 		"record_wtb": {
 			"textures": [
 				"textures/items/record_wtb"
 			]
 		},
-		"record_wtb_siren": {
+		"reinforced_wand": {
 			"textures": [
-				"textures/items/record_wtb_siren"
+				"textures/items/reinforced_wand"
 			]
 		},
 		"reverion_dust": {
@@ -179,6 +209,41 @@
 				"textures/items/ruby"
 			]
 		},
+		"rune_cloudscape": {
+			"textures": [
+				"textures/items/rune_cloudscape"
+			]
+		},
+		"rune_deathsong": {
+			"textures": [
+				"textures/items/rune_deathsong"
+			]
+		},
+		"rune_lunar_wrath": {
+			"textures": [
+				"textures/items/rune_lunar_wrath"
+			]
+		},
+		"rune_puffborne": {
+			"textures": [
+				"textures/items/rune_puffborne"
+			]
+		},
+		"rune_umbra": {
+			"textures": [
+				"textures/items/rune_umbra"
+			]
+		},
+		"rune_windwake": {
+			"textures": [
+				"textures/items/rune_windwake"
+			]
+		},
+		"rune": {
+			"textures": [
+				"textures/items/rune"
+			]
+		},
 		"salt": {
 			"textures": [
 				"textures/items/salt"
@@ -189,9 +254,44 @@
 				"textures/items/salt_bottle"
 			]
 		},
+		"scroll_cloudscape": {
+			"textures": [
+				"textures/items/scroll_cloudscape"
+			]
+		},
+		"scroll_deathsong": {
+			"textures": [
+				"textures/items/scroll_deathsong"
+			]
+		},
+		"scroll_lunar_wrath": {
+			"textures": [
+				"textures/items/scroll_lunar_wrath"
+			]
+		},
+		"scroll_puffborne": {
+			"textures": [
+				"textures/items/scroll_puffborne"
+			]
+		},
+		"scroll_umbra": {
+			"textures": [
+				"textures/items/scroll_umbra"
+			]
+		},
+		"scroll_windwake": {
+			"textures": [
+				"textures/items/scroll_windwake"
+			]
+		},
 		"scroll": {
 			"textures": [
 				"textures/items/scroll"
+			]
+		},
+		"starfloat_spawn": {
+			"textures": [
+				"textures/items/starfloat_spawn"
 			]
 		},
 		"steel_ingot": {
@@ -202,6 +302,11 @@
 		"steel_nugget": {
 			"textures": [
 				"textures/items/steel_nugget"
+			]
+		},
+		"supreme_wand": {
+			"textures": [
+				"textures/items/supreme_wand"
 			]
 		},
 		"tanzanite": {
@@ -217,6 +322,36 @@
 		"tomato_seeds": {
 			"textures": [
 				"textures/items/tomato_seeds"
+			]
+		},
+		"tome_cloudscape": {
+			"textures": [
+				"textures/items/tome_cloudscape"
+			]
+		},
+		"tome_deathsong": {
+			"textures": [
+				"textures/items/tome_deathsong"
+			]
+		},
+		"tome_lunar_wrath": {
+			"textures": [
+				"textures/items/tome_lunar_wrath"
+			]
+		},
+		"tome_puffborne": {
+			"textures": [
+				"textures/items/tome_puffborne"
+			]
+		},
+		"tome_umbra": {
+			"textures": [
+				"textures/items/tome_umbra"
+			]
+		},
+		"tome_windwake": {
+			"textures": [
+				"textures/items/tome_windwake"
 			]
 		},
 		"vial_empty": {
@@ -242,11 +377,6 @@
 		"vial_radioactive": {
 			"textures": [
 				"textures/items/vial_radioactive"
-			]
-		},
-		"wand": {
-			"textures": [
-				"textures/items/wand"
 			]
 		}
 	}

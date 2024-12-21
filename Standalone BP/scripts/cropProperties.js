@@ -25,6 +25,7 @@ world.beforeEvents.worldInitialize.subscribe(eventData => {
                 { id: 'terra:grape_vine', max: 2 },
                 { id: 'terra:lemon_crop', max: 2 },
                 { id: 'terra:orange_crop', max: 2 },
+                { id: 'terra:pineapple_crop', max: 5 },
                 { id: 'terra:tomato_crop', max: 5 }
             ];
             const cropId = crops.find(crop => crop.id === block.typeId);
@@ -58,6 +59,7 @@ world.beforeEvents.worldInitialize.subscribe(eventData => {
                 { id: 'terra:grape_vine', max: 2 },
                 { id: 'terra:lemon_crop', max: 2 },
                 { id: 'terra:orange_crop', max: 2 },
+                { id: 'terra:pineapple_crop', max: 5 },
                 { id: 'terra:tomato_crop', max: 5 }
             ];
             const cropId = crops.find(crop => crop.id === block.typeId);
@@ -107,16 +109,16 @@ world.beforeEvents.worldInitialize.subscribe(eventData => {
             const { block } = e;
             const aboveBlock = block.above();
             const belowBlock = block.below();
-            
+
             // to prevent messy code shenanigans
             if (!block.typeId === 'terra:grape_vine') return;
 
             // update block states based on the block below
-                if (aboveBlock?.typeId === block.typeId) block.setPermutation(block.permutation.withState('terra:vine_body_type', aboveBlock ? 1 : 0));
-                else block.setPermutation(block.permutation.withState('terra:vine_body_type', 1));
+            if (aboveBlock?.typeId === block.typeId) block.setPermutation(block.permutation.withState('terra:vine_body_type', aboveBlock ? 1 : 0));
+            else block.setPermutation(block.permutation.withState('terra:vine_body_type', 1));
 
-                if (belowBlock?.typeId === block.typeId) block.setPermutation(block.permutation.withState('terra:vine_body_type', belowBlock ? 0 : 1));
-                else block.setPermutation(block.permutation.withState('terra:vine_body_type', 1));
+            if (belowBlock?.typeId === block.typeId) block.setPermutation(block.permutation.withState('terra:vine_body_type', belowBlock ? 0 : 1));
+            else block.setPermutation(block.permutation.withState('terra:vine_body_type', 1));
         }
     });
 });

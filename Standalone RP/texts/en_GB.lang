@@ -1,9 +1,9 @@
 ## This file was made, modified and compiled by Heavenly (@heavenly7493) for TERRA.
 ## Do not distribute without permission.
-pack.name=TERRA :: Brave New World - Resources
-pack.description=By Heavenly7493 | © 2025, TERRA
+pack.name=TERRA :: Strange New World - Resources
+pack.description=By Heavenly7493 | © 2024, TERRA
 
-terra.version.beta=TERRA_Standalone/Infdev_24
+terra.version.beta=Strange New World v1.0.0 [BETA_01]
 
 ## US > GB
 ## Chiseled > Chiselled
@@ -13,16 +13,18 @@ item.spawn_egg.entity.terra:gun_pellet_outsider.name=Spawn Gun Pellet Outsider
 item.spawn_egg.entity.terra:gun_pellet.name=Spawn Gun Pellet
 item.spawn_egg.entity.terra:thrown_tomato.name=Spawn Thrown Tomato
 item.terra:handgun_unloaded=Handgun Unloaded
+item.terra:record_long_gone=Record Long Gone
 item.terra:record_wtb=Record Wtb
-item.terra:record_wtb_siren=Record Wtb Siren
 item.terra:steel_grate_panel_item=Steel Grate Panel Item
 item.terra:steel_lattice_panel_item=Steel Lattice Panel Item
 tile.terra:jukebox_placeholder.name=Jukebox Placeholder
 
-## Item Descriptions
-item.record_wtb_rupture.desc=Henderson - War-Torn Born
-item.record_wtb_siren.desc=Henderson - War-Torn Born (Siren)
-item.terra:nethersteel_upgrade_smithing_template.desc= Nethersteel Upgrade
+## Item Descriptions & Localization
+item.terra.nethersteel_upgrade.name=Nethersteel Upgrade
+item.terra.record.name=§bMusic Disc
+item.record_long_gone.desc=Louis Artell - long gone
+item.record_wtb.desc=Louis Artell - War-Torn Born
+tile.terra.reinforced_nethersteel_block.name=Reinforced Nethersteel Block
 
 crate.is_locked.langcode=:: This crate is locked! ::
 gun.unloaded.langcode=:: Out of ammo ::

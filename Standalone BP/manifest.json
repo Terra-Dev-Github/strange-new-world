@@ -7,7 +7,7 @@
 		"url": "https://discord.gg/2pVaeESEDF",
 		"generated_with": {
 			"bridge": [
-				"2.7.36"
+				"2.7.42"
 			],
 			"dash": [
 				"0.11.7"
@@ -62,7 +62,7 @@
 		},
 		{
 			"module_name": "@minecraft/server",
-			"version": "1.14.0-beta"
+			"version": "1.15.0"
 		}
 	]
 }

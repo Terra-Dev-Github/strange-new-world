@@ -131,6 +131,11 @@
 				"textures/blocks/chiseled_outsider_metal"
 			]
 		},
+		"cobbled_regolith": {
+			"textures": [
+				"textures/blocks/cobbled_regolith"
+			]
+		},
 		"cut_outsider_metal": {
 			"textures": [
 				"textures/blocks/cut_outsider_metal"
@@ -326,6 +331,36 @@
 				"textures/blocks/platinum_block"
 			]
 		},
+		"pineapple_crop_0": {
+			"textures": [
+				"textures/blocks/crops/pineapple_stage_0"
+			]
+		},
+		"pineapple_crop_1": {
+			"textures": [
+				"textures/blocks/crops/pineapple_stage_1"
+			]
+		},
+		"pineapple_crop_2": {
+			"textures": [
+				"textures/blocks/crops/pineapple_stage_2"
+			]
+		},
+		"pineapple_crop_3": {
+			"textures": [
+				"textures/blocks/crops/pineapple_stage_3"
+			]
+		},
+		"pineapple_crop_4": {
+			"textures": [
+				"textures/blocks/crops/pineapple_stage_4"
+			]
+		},
+		"pineapple_crop_5": {
+			"textures": [
+				"textures/blocks/crops/pineapple_stage_5"
+			]
+		},
 		"platinum_ore": {
 			"textures": [
 				"textures/blocks/platinum_ore"
@@ -399,6 +434,11 @@
 		"raw_platinum_block": {
 			"textures": [
 				"textures/blocks/raw_platinum_block"
+			]
+		},
+		"regolith": {
+			"textures": [
+				"textures/blocks/regolith"
 			]
 		},
 		"reinforced_nethersteel_block": {

@@ -1,25 +1,22 @@
 {
 	"format_version": "1.12",
-	"minecraft:recipe_shaped": {
+	"minecraft:recipe_shapeless": {
 		"description": {
 			"identifier": "terra:nethersteel_ingot"
 		},
 		"tags": [
 			"crafting_table"
 		],
-		"pattern": [
-			"BAB",
-			"BAB",
-			"BBB"
-		],
-		"key": {
-			"A": {
-				"item": "minecraft:netherite_ingot"
+		"ingredients": [
+			{
+				"item": "minecraft:netherite_scrap",
+				"count": 4
 			},
-			"B": {
-				"item": "terra:steel_ingot"
+			{
+				"item": "terra:steel_ingot",
+				"count": 4
 			}
-		},
+		],
 		"result": {
 			"item": "terra:nethersteel_ingot",
 			"count": 1

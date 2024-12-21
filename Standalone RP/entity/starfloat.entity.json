@@ -35,7 +35,7 @@
 				"controller.render.starfloat_emissive"
 			],
 			"spawn_egg": {
-				"texture": "placeholder"
+				"texture": "starfloat_spawn"
 			}
 		}
 	}

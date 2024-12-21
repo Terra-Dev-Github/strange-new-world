@@ -20,7 +20,7 @@ world.beforeEvents.worldInitialize.subscribe(eventData => {
 
             // run a command if the condition (i.e. item held in mainhand and offhand) is met
             if (selectedItem?.typeId === 'terra:spell_cloudscape' && offhandWand?.typeId === 'terra:wand') {
-                player.runCommandAsync(`particle terra:ring_purple ${location.x} ${location.y} ${location.z}`);
+                player.runCommandAsync(`particle terra:ring_purple ${player.location.x} ${player.location.y} ${player.location.z}`);
                 player.runCommandAsync("effect @s levitation 4 1 false");
             };
 
@@ -35,9 +35,32 @@ world.beforeEvents.worldInitialize.subscribe(eventData => {
 
             if (selectedItem?.typeId === 'terra:spell_windwake' && offhandWand?.typeId === 'terra:wand') {
                 player.clearVelocity();
-                player.runCommandAsync(`particle terra:ring_green ${location.x} ${location.y} ${location.z}`);
+                player.runCommandAsync(`particle terra:ring_green ${player.location.x} ${player.location.y} ${player.location.z}`);
                 player.applyKnockback(0, 0, 0, 3);
                 player.runCommandAsync("effect @s slow_falling 7 3 false");
+            };
+
+            if (selectedItem?.typeId === 'terra:spell_puffborne' && offhandWand?.typeId === 'terra:wand') {
+                // get all entities in a 12 block radius from the player
+                const infestingRadius = player.dimension.getEntities({location: player.location, maxDistance: 12,});
+                // define the aquatic mobs affected by the spell
+                const infestArray = [
+                    'minecraft:cod',
+                    'minecratf:drowned',
+                    'minecraft:guardian',
+                    'minecraft:glow_squid',
+                    'minecraft:salmon',
+                    'minecraft:squid',
+                    'minecraft:tropical_fish'
+                ];
+                for (const entity of infestingRadius) {
+                    if (infestArray.includes(entity?.typeId)) {
+                        // for each target, summon a pufferfish at the infested mob's location
+                        entity.runCommandAsync(`particle terra:chestlock_open ${entity.location.x} ${entity.location.y} ${entity.location.z}`);
+                        entity.dimension.spawnEntity('minecraft:pufferfish', entity.location);
+                        entity.remove() // despawn the mob
+                    }
+                }
             };
 
             // get the durability component of the wand and decrease it unless the player is in creative

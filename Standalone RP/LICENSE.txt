@@ -8,7 +8,7 @@
 // https://terra-smp.fandom.com/wiki/TERRA!_Wiki
 // https://discord.gg/2pVaeESEDF
 //
-// © 2025, TERRA
+// © 2024, TERRA
 
 :: 'Vanes' by Kevin MacLeod (incompetech.com)
 
@@ -17,6 +17,6 @@ http://creativecommons.org/licenses/by/3.0/
 
 :: All Rights Reserved
 
-Copyright (c) 2025, TERRA. All rights reserved.
+Copyright (c) 2024, TERRA. All rights reserved.
 
 This license applies to any and all files contained inside the given material and directories.

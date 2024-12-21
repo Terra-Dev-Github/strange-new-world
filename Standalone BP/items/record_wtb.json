@@ -13,9 +13,9 @@
 		"components": {
 			"minecraft:max_stack_size": 1,
 			"minecraft:hand_equipped": false,
-			// to make it look fancy, you can't really translate the names
+			// trickery to preserve localization
 			"minecraft:display_name": {
-				"value": "§bMusic Disc\n§7Henderson - War-Torn Born"
+				"value": "%item.terra.record.name\n§7%item.record_wtb.desc"
 			},
 			"minecraft:icon": {
 				"texture": "record_wtb"

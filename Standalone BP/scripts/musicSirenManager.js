@@ -2,7 +2,7 @@
 // Do not distribute without permission.
 
 // import necessary modules from Minecraft server API
-import { world } from '@minecraft/server';
+import { BlockPermutation, world } from '@minecraft/server';
 
 // subscribe to the 'worldInitialize' event to register custom components
 world.beforeEvents.worldInitialize.subscribe(eventData => {
@@ -39,35 +39,35 @@ world.beforeEvents.worldInitialize.subscribe(eventData => {
                         block.setPermutation(perm.withState("terra:has_disc", 1));
                         // play the music
                         dimension.playSound(`record.wtb`, location);
-                        player.onScreenDisplay.setActionBar({text:`§d`, translate: `record.nowPlaying`, with: `item.record_wtb_siren.desc`})
+                        player.onScreenDisplay.setActionBar({text:`§d`, translate: `record.nowPlaying`, with: `item.record_long_gone.desc`})
                     };
                 } else if (hasDisc === 1) {
                     // set the block state to empty, cancel the music
                     block.setPermutation(perm.withState("terra:has_disc", 0));
                     // does not accept value of 0, so i gotta really slim it down
-                    dimension.playSound(`record.wtb_siren`, location, { volume: 0.0000000000000000001 })
+                    dimension.playSound(`record.long_gone`, location, { volume: 0.0000000000000000001 })
                     // drop the disc
-                    dimension.runCommandAsync(`loot spawn ${location.x} ${location.y} ${location.z} loot "music_siren/wtb_siren"`);
+                    dimension.runCommandAsync(`loot spawn ${location.x} ${location.y} ${location.z} loot "music_siren/long_gone"`);
                 };
             };
 
             if (block?.typeId === 'terra:jukebox_placeholder') {
                 if (hasDisc === 0) { // is empty but i gotta get preventive
-                    dimension.runCommandAsync(`setblock ${location.x} ${location.y} ${location.z} jukebox`);
+                    block.setPermutation(BlockPermutation.resolve('minecraft:jukebox'))
                     // does not accept value of 0, so i gotta really slim it down
                     dimension.playSound(`record.wtb`, location, { volume: 0.0000000000000000001 })
                 } else if (hasDisc === 1) {
-                    dimension.runCommandAsync(`setblock ${location.x} ${location.y} ${location.z} jukebox`);
+                    block.setPermutation(BlockPermutation.resolve('minecraft:jukebox'))
                     // does not accept value of 0, so i gotta really slim it down
-                    dimension.playSound(`record.wtb_siren`, location, { volume: 0.0000000000000000001 })
+                    dimension.playSound(`record.long_gone`, location, { volume: 0.0000000000000000001 })
                     // drop the disc
                     dimension.runCommandAsync(`loot spawn ${location.x} ${location.y} ${location.z} loot "music_siren/wtb"`);
                 } else if (hasDisc === 2) {
-                    dimension.runCommandAsync(`setblock ${location.x} ${location.y} ${location.z} jukebox`);
+                    block.setPermutation(BlockPermutation.resolve('minecraft:jukebox'))
                     // does not accept value of 0, so i gotta really slim it down
-                    dimension.playSound(`record.wtb_siren`, location, { volume: 0.0000000000000000001 })
+                    dimension.playSound(`record.long_gone`, location, { volume: 0.0000000000000000001 })
                     // drop the disc
-                    dimension.runCommandAsync(`loot spawn ${location.x} ${location.y} ${location.z} loot "music_siren/wtb_siren"`);
+                    dimension.runCommandAsync(`loot spawn ${location.x} ${location.y} ${location.z} loot "music_siren/long_gone"`);
                 };
             };
         },
@@ -79,9 +79,9 @@ world.beforeEvents.worldInitialize.subscribe(eventData => {
 
             if (block?.typeId === 'terra:music_siren' && hasDisc === 1) {
                 // does not accept value of 0, so i gotta really slim it down
-                dimension.playSound(`record.wtb_siren`, location, { volume: 0.0000000000000000001 })
+                dimension.playSound(`record.long_gone`, location, { volume: 0.0000000000000000001 })
                 // drop the disc
-                dimension.runCommandAsync(`loot spawn ${location.x} ${location.y} ${location.z} loot "music_siren/wtb_siren"`);
+                dimension.runCommandAsync(`loot spawn ${location.x} ${location.y} ${location.z} loot "music_siren/long_gone"`);
             };
             if (block?.typeId === 'terra:jukebox_placeholder' && hasDisc === 1) {
                 // does not accept value of 0, so i gotta really slim it down
@@ -91,9 +91,9 @@ world.beforeEvents.worldInitialize.subscribe(eventData => {
             };
             if (block?.typeId === 'terra:jukebox_placeholder' && hasDisc === 2) {
                 // does not accept value of 0, so i gotta really slim it down
-                dimension.playSound(`record.wtb_siren`, location, { volume: 0.0000000000000000001 })
+                dimension.playSound(`record.long_gone`, location, { volume: 0.0000000000000000001 })
                 // drop the disc
-                dimension.runCommandAsync(`loot spawn ${location.x} ${location.y} ${location.z} loot "music_siren/wtb_siren"`);
+                dimension.runCommandAsync(`loot spawn ${location.x} ${location.y} ${location.z} loot "music_siren/long_gone"`);
             };
         },
         // particle manager
@@ -110,46 +110,48 @@ world.beforeEvents.worldInitialize.subscribe(eventData => {
 });
 
 // vanilla jukebox shenanigans (replaces with the placeholder on custom disc interact)
-world.beforeEvents.itemUseOn.subscribe(eventData2 => {
+world.afterEvents.itemUseOn.subscribe(eventData2 => {
     // destructure event data for easier access
     const { source: player, block, itemStack } = eventData2;
     const dimension = player.dimension
     const location = block.location;
     const equipment = player.getComponent(`equippable`);
-    const selectedItem = itemStack
 
     if (block?.typeId === 'minecraft:jukebox') {
-        if (selectedItem?.typeId === 'terra:record_wtb') {
-            // reduce the player's item count if not in creative mode
-            if (player.getGameMode() !== "creative") {
-                if (selectedItem.amount > 1) {
-                    selectedItem.amount -= 1;
-                    equipment.setEquipment(`Mainhand`, selectedItem);
-                } else if (selectedItem.amount === 1) {
-                    equipment.setEquipment(`Mainhand`, undefined); // clear the slot if only 1 item left
-                }
-            };
-            // load the temp block, set the block state to load the corresponding disc
-            dimension.runCommandAsync(`setblock ${location.x} ${location.y} ${location.z} terra:jukebox_placeholder["terra:has_disc"=1]`);
-            // play the music
-            dimension.playSound(`record.wtb`, location);
-            player.onScreenDisplay.setActionBar({text:`§d`, translate: `record.nowPlaying`, with: `item.record_wtb.desc`})
-        };
-        if (selectedItem?.typeId === 'terra:record_wtb_siren') {
-            // reduce the player's item count if not in creative mode
-            if (player.getGameMode() !== "creative") {
-                if (selectedItem.amount > 1) {
-                    selectedItem.amount -= 1;
-                    equipment.setEquipment(`Mainhand`, selectedItem);
-                } else if (selectedItem.amount === 1) {
-                    equipment.setEquipment(`Mainhand`, undefined); // clear the slot if only 1 item left
-                }
-            };
-            // load the temp block, set the block state to load the corresponding disc
-            dimension.runCommandAsync(`setblock ${location.x} ${location.y} ${location.z} terra:jukebox_placeholder["terra:has_disc"=2]`);
-            // play the music
-            dimension.playSound(`record.wtb_siren`, location);
-            player.onScreenDisplay.setActionBar({text:`§d`, translate: `record.nowPlaying`, with: `item.record_wtb_siren.desc`})
-        };
-    } else return;
+        switch (itemStack?.typeId) {
+            case 'terra:record_wtb':
+                // reduce the player's item count if not in creative mode
+                if (player.getGameMode() !== "creative") {
+                    if (itemStack.amount > 1) {
+                        itemStack.amount -= 1;
+                        equipment.setEquipment(`Mainhand`, itemStack);
+                    } else if (itemStack.amount === 1) {
+                        equipment.setEquipment(`Mainhand`, undefined); // clear the slot if only 1 item left
+                    }
+                };
+                // load the temp block, set the block state to load the corresponding disc
+                block.setPermutation(BlockPermutation.resolve('terra:jukebox_placeholder', {"terra:has_disc": 1}))
+                // play the music
+                dimension.playSound(`record.wtb`, location);
+                player.onScreenDisplay.setActionBar({text:`§d`, translate: `record.nowPlaying`, with: `item.record_wtb.desc`});
+                break;
+                
+            case 'terra:record_long_gone': 
+                // reduce the player's item count if not in creative mode
+                if (player.getGameMode() !== "creative") {
+                    if (itemStack.amount > 1) {
+                        itemStack.amount -= 1;
+                        equipment.setEquipment(`Mainhand`, itemStack);
+                    } else if (itemStack.amount === 1) {
+                        equipment.setEquipment(`Mainhand`, undefined); // clear the slot if only 1 item left
+                    }
+                };
+                // load the temp block, set the block state to load the corresponding disc
+                block.setPermutation(BlockPermutation.resolve('terra:jukebox_placeholder', {"terra:has_disc": 2}))
+                // play the music
+                dimension.playSound(`record.long_gone`, location);
+                player.onScreenDisplay.setActionBar({text:`§d`, translate: `record.nowPlaying`, with: `item.record_long_gone.desc`})
+            break;
+        }
+    }
 });

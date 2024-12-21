@@ -8,7 +8,7 @@
 // https://terra-smp.fandom.com/wiki/TERRA!_Wiki
 // https://discord.gg/2pVaeESEDF
 //
-// © 2025, TERRA
+// © 2024, TERRA
 
 :: BETA DISCLOSURE
 
@@ -28,7 +28,7 @@ Coding & Compiling
 - Heavenly/Henderson (@heavenly7493)
 
 Sound Mix & Music
-- Heavenly/Henderson (@heavenly7493)
+- Louis Artell (@heavenly7493)
 - Kevin MacLeod ('Vanes' under Creative Commons by Attribution License)
 
 Spanish Translations

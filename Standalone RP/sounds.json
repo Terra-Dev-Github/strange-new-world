@@ -58,6 +58,23 @@
                     1.2
                 ],
                 "volume": 1
+            },
+            "terra:beeper": {
+                "events": {
+                    "ambient": "mob.beeper.idle",
+                    "death": "mob.beeper.death",
+                    "beeper_alarm": {
+                        "pitch": 0.50,
+                        "sound": "mob.beeper.alarm",
+                        "volume": 1.0
+                    },
+                    "hurt": "mob.beeper.hurt"
+                },
+                "pitch": [
+                    0.8,
+                    1.2
+                ],
+                "volume": 1
             }
         }
     }

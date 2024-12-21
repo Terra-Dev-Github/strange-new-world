@@ -25,7 +25,7 @@
 				"category": "anchor",
 				"duration": 5
 			},
-			// adds block functionality
+			// adds item functionality
 			"minecraft:custom_components": [
 				"terra:anchor_events"
 			]

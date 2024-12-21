@@ -1,0 +1,23 @@
+{
+    "format_version": "1.12",
+    "minecraft:recipe_shaped": {
+        "description": {
+            "identifier": "terra:cobbled_regolith_slab"
+        },
+        "tags": [
+            "crafting_table"
+        ],
+        "pattern": [
+            "###"
+        ],
+        "key": {
+            "#": {
+                "item": "terra:cobbled_regolith"
+            }
+        },
+        "result": {
+            "item": "terra:cobbled_regolith_slab",
+            "count": 6
+        }
+    }
+}

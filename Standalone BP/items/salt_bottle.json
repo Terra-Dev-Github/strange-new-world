@@ -18,7 +18,13 @@
 			"minecraft:hand_equipped": false,
 			"minecraft:display_name": {
 				"value": "item.terra:salt_bottle"
-			}
+			},
+			"minecraft:food": {},
+			"minecraft:use_duration": 5,
+			// adds item functionality
+			"minecraft:custom_components": [
+				"terra:on_consume"
+			]
 		}
 	}
 }

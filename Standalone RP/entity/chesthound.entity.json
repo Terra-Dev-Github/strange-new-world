@@ -41,15 +41,17 @@
                 ]
             },
             "spawn_egg": {
-                "texture": "placeholder"
+                "base_color": "#A47227",
+                "overlay_color": "#392600"
             },
             "render_controllers": [
                 "controller.render.default"
             ],
             "sound_effects": {
-                "idle": "random.chestopen",
+                "ambient": "random.chestopen",
                 "hurt": "random.chestopen",
-                "attack": "random.chestclosed"
+                "attack": "random.chestclosed",
+                "death": "random.chestclosed"
             }
         }
     }

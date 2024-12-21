@@ -1,18 +1,19 @@
+// This file was made, modified and compiled by Heavenly (@heavenly7493) for TERRA.
+// Do not distribute without permission.
 {
   "format_version": "1.8.0",
   "minecraft:client_entity": {
     "description": {
       "identifier": "terra:eyecletch",
-      "min_engine_version": "1.8.0",
       "materials": {
         "default": "spider",
         "invisible": "spider_invisible"
       },
       "textures": {
-        "default": "textures/entity/spider/cave_spider"
+        "default": "textures/entity/eyecletch"
       },
       "geometry": {
-        "default": "geometry.spider.v1.8"
+        "default": "geometry.eyecletch"
       },
       "scripts": {
         "scale": "0.7"
@@ -31,7 +32,8 @@
         "controller.render.spider"
       ],
       "spawn_egg": {
-        "texture": "placeholder"
+        "base_color": "#955757",
+        "overlay_color": "#3B1D1D"
       }
     }
   }

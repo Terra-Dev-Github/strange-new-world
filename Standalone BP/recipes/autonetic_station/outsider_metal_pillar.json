@@ -1,0 +1,24 @@
+{
+    "format_version": "1.12",
+    "minecraft:recipe_shaped": {
+        "description": {
+            "identifier": "terra:outsider_metal_pillar"
+        },
+        "tags": [
+            "autonetic_table"
+        ],
+        "pattern": [
+            "#",
+            "#"
+        ],
+        "key": {
+            "#": {
+                "item": "terra:outsider_metal_block"
+            }
+        },
+        "result": {
+            "item": "terra:outsider_metal_pillar",
+            "count": 2
+        }
+    }
+}

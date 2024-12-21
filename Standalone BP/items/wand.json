@@ -22,7 +22,7 @@
 			"minecraft:display_name": {
 				"value": "item.terra:wand"
 			},
-			// adds block functionality
+			// adds item functionality
 			"minecraft:custom_components": [
 				"terra:spell_events"
 			]

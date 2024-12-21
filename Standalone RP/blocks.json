@@ -112,6 +112,14 @@
 		"textures": "cut_outsider_metal",
 		"sound": "metal"
 	},
+	"terra:cobbled_regolith_slab": {
+		"textures": "cobbled_regolith",
+		"sound": "stone"
+	},
+	"terra:cobbled_regolith": {
+		"textures": "cobbled_regolith",
+		"sound": "stone"
+	},
 	"terra:deepslate_crate_empty": {
 		"textures": "deepslate_crate",
 		"sound": "deepslate"
@@ -220,6 +228,10 @@
 		},
 		"sound": "metal"
 	},
+	"terra:pineapple_crop": {
+		"textures": "pineapple_crop_5",
+		"sound": "grass"
+	},
 	"terra:polished_duskstone_slab": {
 		"textures": "polished_duskstone",
 		"sound": "deepslate"
@@ -290,6 +302,14 @@
 	},
 	"terra:raw_platinum_block": {
 		"textures": "raw_platinum_block",
+		"sound": "stone"
+	},
+	"terra:regolith_slab": {
+		"textures": "regolith",
+		"sound": "stone"
+	},
+	"terra:regolith": {
+		"textures": "regolith",
 		"sound": "stone"
 	},
 	"terra:reinforced_nethersteel_block": {

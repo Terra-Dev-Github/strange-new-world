@@ -1,7 +1,7 @@
-// This file was made, modified and compiled by Heavenly (@heavenly7493) for TERRA.
+	// This file was made, modified and compiled by Heavenly (@heavenly7493) for TERRA.
 // Do not distribute without permission.
 {
-	"format_version": "1.20.80",
+	"format_version": "1.21.30",
 	"minecraft:block": {
 		"description": {
 			"identifier": "terra:anorthosite",
@@ -11,6 +11,8 @@
 			}
 		},
 		"components": {
+			"tag:stone": {},
+			"tag:minecraft:is_pickaxe_item_destructible": {},
 			"minecraft:geometry": "minecraft:geometry.full_block",
 			"minecraft:material_instances": {
 				"*": {
@@ -26,8 +28,12 @@
 					"render_method": "opaque"
 				}
 			},
+			// hardness: 1.5
 			"minecraft:destructible_by_mining": {
-				"seconds_to_destroy": 2.5
+				"seconds_to_destroy": 7.5
+			},
+			"minecraft:destructible_by_explosion": {
+				"explosion_resistance": 6
 			},
 			// "minecraft:loot": "loot_tables/blocks/anorthosite.json",
 			"minecraft:map_color": "#9E9876"

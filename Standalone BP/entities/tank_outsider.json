@@ -1,0 +1,405 @@
+// This file was made, modified and compiled by Heavenly (@heavenly7493) for TERRA.
+// Do not distribute without permission.
+{
+    "format_version": "1.20.10",
+    "minecraft:entity": {
+        "description": {
+            "identifier": "terra:tank_outsider",
+            "is_spawnable": true,
+            "is_summonable": true,
+            "is_experimental": false
+        },
+        "component_groups": {
+            "terra:attack_target": {
+                "minecraft:behavior.nearest_attackable_target": {
+                    "priority": 2,
+                    "reselect_targets": true,
+                    "must_see": true,
+                    "within_radius": 32.0,
+                    "must_see_forget_duration": 24.0,
+                    "persist_time": 0.5,
+                    "entity_types": [
+                        {
+                            "filters": {
+                                "all_of": [
+                                    {
+                                        "any_of": [
+                                            {
+                                                "test": "is_family",
+                                                "subject": "other",
+                                                "value": "player"
+                                            },
+                                            {
+                                                "test": "is_family",
+                                                "subject": "other",
+                                                "value": "snowgolem"
+                                            },
+                                            {
+                                                "test": "is_family",
+                                                "subject": "other",
+                                                "value": "irongolem"
+                                            },
+                                            {
+                                                "test": "is_family",
+                                                "subject": "other",
+                                                "value": "villager"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            },
+                            "max_dist": 24
+                        },
+                        {
+                            "filters": {
+                                "all_of": [
+                                    {
+                                        "any_of": [
+                                            {
+                                                "test": "is_family",
+                                                "subject": "other",
+                                                "value": "player"
+                                            },
+                                            {
+                                                "test": "is_family",
+                                                "subject": "other",
+                                                "value": "villager"
+                                            },
+                                            {
+                                                "test": "is_family",
+                                                "subject": "other",
+                                                "value": "wandering_trader"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "any_of": [
+                                            {
+                                                "test": "in_water",
+                                                "subject": "other",
+                                                "value": true
+                                            }
+                                        ]
+                                    }
+                                ]
+                            },
+                            "max_dist": 24,
+                            "must_see": false
+                        }
+                    ]
+                }
+            },
+            "terra:target_response_to_block_break": {
+                "minecraft:behavior.nearest_attackable_target": {
+                    "priority": 7,
+                    "entity_types": [
+                        {
+                            "filters": {
+                                "test": "is_family",
+                                "subject": "other",
+                                "value": "player"
+                            },
+                            "max_dist": 24
+                        }
+                    ]
+                }
+            },
+            "terra:mode_switcher": {
+                "minecraft:target_nearby_sensor": {
+                    "inside_range": 9.0,
+                    "outside_range": 9.0,
+                    "on_inside_range": {
+                        "event": "terra:switch_to_melee",
+                        "target": "self"
+                    },
+                    "on_outside_range": {
+                        "event": "terra:switch_to_ranged",
+                        "target": "self"
+                    }
+                }
+            },
+            "terra:ranged_mode": {
+                "minecraft:shooter": {
+                    // projectile to shoot
+                    "def": "terra:gun_pellet_outsider",
+                    // placeholder sound
+                    "sound": "item.trident.throw"
+                },
+                "minecraft:behavior.ranged_attack": {
+                    "priority": 3,
+                    "speed_multiplier": 1.75,
+                    "attack_interval": 0.5,
+                    "attack_radius": 24.0
+                }
+            },
+            "minecraft:melee_mode": {
+                "minecraft:attack": {
+                    "damage": [
+                        3,
+                        6
+                    ]
+                },
+                // upwards knockback
+                "minecraft:behavior.knockback_roar": {
+                    "duration": 0.2,
+                    "attack_time": 0.1,
+                    "knockback_damage": 6,
+                    "knockback_vertical_strength": 1,
+                    "knockback_horizontal_strength": 2,
+                    "knockback_range": 3,
+                    "cooldown_time": 5,
+                    "knockback_filters": {
+                        "any_of": [
+                            {
+                                "test": "is_family",
+                                "subject": "other",
+                                "value": "player"
+                            }
+                        ]
+                    },
+                    "damage_filters": {
+                        "test": "is_family",
+                        "subject": "other",
+                        "operator": "!=",
+                        "value": "settler"
+                    },
+                    "on_roar_end": {
+                        "event": "terra:switch_to_ranged"
+                    }
+                },
+                "minecraft:behavior.melee_box_attack": {
+                    "can_spread_on_fire": false,
+                    "priority": 3,
+                    "speed_multiplier": 1.75,
+                    "track_target": true
+                }
+            },
+            "minecraft:hunter_mode": {
+                "minecraft:navigation.generic": {
+                    "is_amphibious": true,
+                    "can_path_over_water": false,
+                    "can_open_doors": true,
+                    "can_break_doors": true,
+                    "can_swim": true,
+                    "can_walk": true
+                }
+            },
+            "minecraft:wander_mode": {
+                "minecraft:navigation.generic": {
+                    "is_amphibious": true,
+                    "can_path_over_water": false,
+                    "can_open_doors": true,
+                    "can_break_doors": false,
+                    "can_swim": false,
+                    "can_walk": true
+                }
+            }
+        },
+        "components": {
+            "minecraft:loot": {
+                "table": "loot_tables/entities/outsider.json"
+            },
+            "minecraft:experience_reward": {
+                "on_death": "query.last_hit_by_player ? 5 + (query.equipment_count * Math.Random(1,3)) : 0"
+            },
+            "minecraft:nameable": {},
+            "minecraft:type_family": {
+                "family": [
+                    "monster",
+                    "mob",
+                    "settler"
+                ]
+            },
+            "minecraft:collision_box": {
+                "width": 0.6,
+                "height": 1.9
+            },
+            "minecraft:underwater_movement": {
+                "value": 0.1
+            },
+            "minecraft:movement.generic": {},
+            "minecraft:jump.static": {},
+            "minecraft:can_climb": {},
+            "minecraft:annotation.break_door": {},
+            // same health values as a player wearing iron armor
+            "minecraft:health": {
+                "value": 100,
+                "max": 100
+            },
+            "minecraft:block_sensor": {
+                "sensor_radius": 16,
+                "on_break": [
+                    {
+                        "block_list": [
+                            "terra:vial_rod_radioactive",
+                            "terra:outsider_crate_empty",
+                            "minecraft:trapped_chest"
+                        ],
+                        "on_block_broken": {
+                            "event": "terra:important_block_destroyed_event"
+                        }
+                    }
+                ]
+            },
+            "minecraft:hurt_on_condition": {
+                "damage_conditions": [
+                    {
+                        "filters": {
+                            "test": "in_lava",
+                            "subject": "self",
+                            "operator": "==",
+                            "value": true
+                        },
+                        "cause": "lava",
+                        "damage_per_tick": 4
+                    }
+                ]
+            },
+            "minecraft:movement": {
+                "value": 0.4
+            },
+            "minecraft:breathable": {
+                "total_supply": 20,
+                "suffocate_time": 5,
+                "breathes_air": true,
+                "breathes_water": false
+            },
+            "minecraft:navigation.generic": {
+                "is_amphibious": true,
+                "can_path_over_water": false,
+                "can_break_doors": true,
+                "can_open_doors": true,
+                "can_swim": true,
+                "can_walk": true
+            },
+            "minecraft:despawn": {
+                "despawn_from_distance": {}
+            },
+            "minecraft:behavior.random_stroll": {
+                "priority": 7,
+                "speed_multiplier": 1
+            },
+            "minecraft:behavior.look_at_player": {
+                "priority": 8,
+                "look_distance": 12,
+                "probability": 0.08
+            },
+            "minecraft:behavior.random_look_around": {
+                "priority": 9
+            },
+            "minecraft:behavior.hurt_by_target": {
+                "priority": 1
+            },
+            "minecraft:physics": {},
+            "minecraft:pushable": {
+                "is_pushable": true,
+                "is_pushable_by_piston": true
+            },
+            "minecraft:on_target_acquired": {
+                "event": "minecraft:has_target",
+                "target": "self"
+            },
+            "minecraft:on_target_escape": {
+                "event": "minecraft:lost_target",
+                "target": "self"
+            },
+            "minecraft:conditional_bandwidth_optimization": {}
+        },
+        "events": {
+            "minecraft:entity_spawned": {
+                "sequence": [
+                    {
+                        "randomize": [
+                            // ranged
+                            {
+                                "weight": 15,
+                                "remove": {},
+                                "add": {
+                                    "component_groups": [
+                                        "terra:mode_switcher",
+                                        "terra:ranged_mode",
+                                        "terra:attack_target"
+                                    ]
+                                }
+                            },
+                            // melee
+                            {
+                                "weight": 85,
+                                "remove": {},
+                                "add": {
+                                    "component_groups": [
+                                        "terra:mode_switcher",
+                                        "minecraft:melee_mode",
+                                        "terra:attack_target"
+                                    ]
+                                }
+                            }
+                        ]
+                    }
+                ]
+            },
+            "terra:switch_to_melee": {
+                "remove": {
+                    "component_groups": [
+                        "terra:ranged_mode"
+                    ]
+                },
+                "add": {
+                    "component_groups": [
+                        "minecraft:melee_mode"
+                    ]
+                }
+            },
+            "terra:switch_to_ranged": {
+                "remove": {
+                    "component_groups": [
+                        "minecraft:melee_mode"
+                    ]
+                },
+                "add": {
+                    "component_groups": [
+                        "terra:ranged_mode"
+                    ]
+                }
+            },
+            "terra:important_block_destroyed_event": {
+                "remove": {
+                    "component_groups": [
+                        "terra:attack_target"
+                    ]
+                },
+                "add": {
+                    "component_groups": [
+                        "terra:target_response_to_block_break"
+                    ]
+                }
+            },
+            "minecraft:has_target": {
+                "remove": {
+                    "component_groups": [
+                        "minecraft:wander_mode"
+                    ]
+                },
+                "add": {
+                    "component_groups": [
+                        "minecraft:hunter_mode"
+                    ]
+                }
+            },
+            "minecraft:lost_target": {
+                "remove": {
+                    "component_groups": [
+                        "minecraft:hunter_mode",
+                        "terra:target_response_to_block_break"
+                    ]
+                },
+                "add": {
+                    "component_groups": [
+                        "minecraft:wander_mode",
+                        "terra:attack_target"
+                    ]
+                }
+            }
+        }
+    }
+}

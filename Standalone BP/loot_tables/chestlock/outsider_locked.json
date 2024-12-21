@@ -1,1 +1,157 @@
-{}
+{
+    "pools": [
+        {
+            "rolls": {
+                "min": 0,
+                "max": 1
+            },
+            "entries": [
+                {
+                    "type": "item",
+                    "name": "terra:handgun_unloaded"
+                }
+            ]
+        },
+        {
+            "rolls": {
+                "min": 1,
+                "max": 3
+            },
+            "entries": [
+                {
+                    "type": "item",
+                    "name": "terra:reverion_dust",
+                    "weight": 1,
+                    "functions": [
+                        {
+                            "function": "set_count",
+                            "count": {
+                                "min": 2,
+                                "max": 3
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "rolls": {
+                "min": 2,
+                "max": 3
+            },
+            "entries": [
+                {
+                    "type": "item",
+                    "weight": 7,
+                    "name": "minecraft:experience_bottle"
+                },
+                {
+                    "type": "item",
+                    "weight": 4,
+                    "functions": [
+                        {
+                            "function": "set_count",
+                            "count": {
+                                "min": 1,
+                                "max": 6
+                            }
+                        }
+                    ],
+                    "name": "minecraft:iron_ingot"
+                },
+                {
+                    "type": "item",
+                    "weight": 4,
+                    "functions": [
+                        {
+                            "function": "set_count",
+                            "count": {
+                                "min": 2,
+                                "max": 7
+                            }
+                        }
+                    ],
+                    "name": "terra:outsider_core"
+                },
+                {
+                    "type": "item",
+                    "weight": 3,
+                    "functions": [
+                        {
+                            "function": "set_count",
+                            "count": {
+                                "min": 1,
+                                "max": 3
+                            }
+                        }
+                    ],
+                    "name": "minecraft:tripwire_hook"
+                },
+                {
+                    "type": "item",
+                    "weight": 3,
+                    "functions": [
+                        {
+                            "function": "set_count",
+                            "count": {
+                                "min": 1,
+                                "max": 3
+                            }
+                        }
+                    ],
+                    "name": "terra:outsider_metal_ingot"
+                },
+                {
+                    "type": "item",
+                    "functions": [
+                        {
+                            "function": "minecraft:enchant_randomly"
+                        }
+                    ],
+                    "name": "minecraft:book"
+                }
+            ]
+        },
+        {
+            "rolls": {
+                "min": 0,
+                "max": 1
+            },
+            "entries": [
+                {
+                    "type": "item",
+                    "name": "terra:record_wtb",
+                    "functions": [
+                        {
+                            "function": "set_data",
+                            "data": {
+                                "min": 0,
+                                "max": 1
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "empty",
+                    "weight": 3
+                },
+                {
+                    "type": "item",
+                    "name": "terra:nethersteel_upgrade_smithing_template",
+                    "weight": 1,
+                    "functions": [
+                        {
+                            "function": "set_count",
+                            "count": 2
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

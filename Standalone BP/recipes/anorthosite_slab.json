@@ -1,0 +1,23 @@
+{
+    "format_version": "1.12",
+    "minecraft:recipe_shaped": {
+        "description": {
+            "identifier": "terra:anorthosite_slab"
+        },
+        "tags": [
+            "crafting_table"
+        ],
+        "pattern": [
+            "###"
+        ],
+        "key": {
+            "#": {
+                "item": "terra:anorthosite"
+            }
+        },
+        "result": {
+            "item": "terra:anorthosite_slab",
+            "count": 6
+        }
+    }
+}
