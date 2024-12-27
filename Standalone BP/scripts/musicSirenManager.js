@@ -39,16 +39,17 @@ world.beforeEvents.worldInitialize.subscribe(eventData => {
                         block.setPermutation(perm.withState("terra:has_disc", 1));
                         // play the music
                         dimension.playSound(`record.wtb`, location);
-                        player.onScreenDisplay.setActionBar({text:`§d`, translate: `record.nowPlaying`, with: `item.record_long_gone.desc`})
-                    };
-                } else if (hasDisc === 1) {
+                        player.onScreenDisplay.setActionBar({ text: `§d`, translate: `record.nowPlaying`, with: `item.record_long_gone.desc` })
+                    }
+                };
+                if (hasDisc === 1) {
                     // set the block state to empty, cancel the music
                     block.setPermutation(perm.withState("terra:has_disc", 0));
                     // does not accept value of 0, so i gotta really slim it down
                     dimension.playSound(`record.long_gone`, location, { volume: 0.0000000000000000001 })
                     // drop the disc
                     dimension.runCommandAsync(`loot spawn ${location.x} ${location.y} ${location.z} loot "music_siren/long_gone"`);
-                };
+                }
             };
 
             if (block?.typeId === 'terra:jukebox_placeholder') {
@@ -56,19 +57,21 @@ world.beforeEvents.worldInitialize.subscribe(eventData => {
                     block.setPermutation(BlockPermutation.resolve('minecraft:jukebox'))
                     // does not accept value of 0, so i gotta really slim it down
                     dimension.playSound(`record.wtb`, location, { volume: 0.0000000000000000001 })
-                } else if (hasDisc === 1) {
+                };
+                if (hasDisc === 1) {
                     block.setPermutation(BlockPermutation.resolve('minecraft:jukebox'))
                     // does not accept value of 0, so i gotta really slim it down
                     dimension.playSound(`record.long_gone`, location, { volume: 0.0000000000000000001 })
                     // drop the disc
                     dimension.runCommandAsync(`loot spawn ${location.x} ${location.y} ${location.z} loot "music_siren/wtb"`);
-                } else if (hasDisc === 2) {
+                };
+                if (hasDisc === 2) {
                     block.setPermutation(BlockPermutation.resolve('minecraft:jukebox'))
                     // does not accept value of 0, so i gotta really slim it down
                     dimension.playSound(`record.long_gone`, location, { volume: 0.0000000000000000001 })
                     // drop the disc
                     dimension.runCommandAsync(`loot spawn ${location.x} ${location.y} ${location.z} loot "music_siren/long_gone"`);
-                };
+                }
             };
         },
         // spawns the loot
@@ -130,13 +133,13 @@ world.afterEvents.itemUseOn.subscribe(eventData2 => {
                     }
                 };
                 // load the temp block, set the block state to load the corresponding disc
-                block.setPermutation(BlockPermutation.resolve('terra:jukebox_placeholder', {"terra:has_disc": 1}))
+                block.setPermutation(BlockPermutation.resolve('terra:jukebox_placeholder', { "terra:has_disc": 1 }))
                 // play the music
                 dimension.playSound(`record.wtb`, location);
-                player.onScreenDisplay.setActionBar({text:`§d`, translate: `record.nowPlaying`, with: `item.record_wtb.desc`});
+                player.onScreenDisplay.setActionBar({ text: `§d`, translate: `record.nowPlaying`, with: `item.record_wtb.desc` });
                 break;
-                
-            case 'terra:record_long_gone': 
+
+            case 'terra:record_long_gone':
                 // reduce the player's item count if not in creative mode
                 if (player.getGameMode() !== "creative") {
                     if (itemStack.amount > 1) {
@@ -147,11 +150,11 @@ world.afterEvents.itemUseOn.subscribe(eventData2 => {
                     }
                 };
                 // load the temp block, set the block state to load the corresponding disc
-                block.setPermutation(BlockPermutation.resolve('terra:jukebox_placeholder', {"terra:has_disc": 2}))
+                block.setPermutation(BlockPermutation.resolve('terra:jukebox_placeholder', { "terra:has_disc": 2 }))
                 // play the music
                 dimension.playSound(`record.long_gone`, location);
-                player.onScreenDisplay.setActionBar({text:`§d`, translate: `record.nowPlaying`, with: `item.record_long_gone.desc`})
-            break;
+                player.onScreenDisplay.setActionBar({ text: `§d`, translate: `record.nowPlaying`, with: `item.record_long_gone.desc` })
+                break;
         }
     }
 });

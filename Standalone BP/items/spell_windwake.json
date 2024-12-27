@@ -19,7 +19,7 @@
 			"minecraft:max_stack_size": 1,
 			"minecraft:hand_equipped": true,
 			"minecraft:display_name": {
-				"value": "item.terra:spell_windwake"
+				"value": "%item.terra.scroll.name\n§7%terra.windwake.name"
 			},
 			// adds item functionality
 			"minecraft:custom_components": [

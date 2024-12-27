@@ -1,0 +1,20 @@
+{
+	"format_version": "1.12",
+	"minecraft:recipe_shapeless": {
+		"description": {
+			"identifier": "terra:stonecutter_outsider_metal_slab"
+		},
+		"tags": [
+			"stonecutter"
+		],
+		"ingredients": [
+			{
+				"item": "terra:outsider_metal_block"
+			}
+		],
+		"result": {
+			"item": "terra:outsider_metal_slab",
+			"count": 2
+		}
+	}
+}

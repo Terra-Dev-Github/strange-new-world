@@ -1,0 +1,27 @@
+{
+    "format_version": "1.20.10",
+    "minecraft:recipe_shaped": {
+        "description": {
+            "identifier": "terra:laboratory_trapdoor"
+        },
+        "tags": [
+            "autonetic_table"
+        ],
+        "pattern": [
+            "#G#",
+            "###"
+        ],
+        "key": {
+            "#": {
+                "item": "terra:outsider_metal_block"
+            },
+            "G": {
+                "item": "minecraft:glass"
+            }
+        },
+        "result": {
+            "item": "terra:laboratory_trapdoor",
+            "count": 2
+        }
+    }
+}

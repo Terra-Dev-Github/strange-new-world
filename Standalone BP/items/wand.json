@@ -13,7 +13,7 @@
 		"components": {
 			"minecraft:icon": {
 				"textures": {
-					"default": "wand"
+					"default": "druidic_wand"
 				}
 			},
 			"minecraft:allow_off_hand": true,

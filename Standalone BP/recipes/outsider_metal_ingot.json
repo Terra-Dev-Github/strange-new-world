@@ -1,0 +1,25 @@
+{
+	"format_version": "1.16.100",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "terra:outsider_metal_ingot"
+		},
+		"tags": [
+			"crafting_table"
+		],
+		"pattern": [
+			"AA",
+			"AA"
+		],
+		"key": {
+			"A": {
+				"item": "terra:outsider_metal_scrap"
+			}
+		},
+		"result": {
+			"item": "minecraft:outsider_metal_ingot",
+			"count": 1
+		},
+		"priority": 2
+	}
+}

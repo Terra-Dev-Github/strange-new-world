@@ -1,0 +1,37 @@
+{
+    "format_version": "1.12",
+    "minecraft:recipe_shaped": {
+        "description": {
+            "identifier": "terra:handgun_unloaded"
+        },
+        "tags": [
+            "crafting_table"
+        ],
+        "pattern": [
+            "#BC",
+            "#OC",
+            "II "
+        ],
+        "key": {
+            "#": {
+                "item": "minecraft:redstone"
+            },
+            "B": {
+                "item": "terra:outsider_core"
+            },
+            "C": {
+                "item": "minecraft:copper_ingot"
+            },
+            "O": {
+                "item": "terra:outsider_metal_block"
+            },
+            "I": {
+                "item": "terra:outsider_metal_ingot"
+            }
+        },
+        "result": {
+            "item": "terra:handgun_unloaded",
+            "count": 1
+        }
+    }
+}

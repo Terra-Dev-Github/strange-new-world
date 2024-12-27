@@ -27,7 +27,9 @@ world.beforeEvents.worldInitialize.subscribe(eventData => {
                 // const velocity = player.getVelocity();
                 // define new velocity and apply it as knockback
                 // const newVelocity = Math.sqrt(velocity * velocity) * 4.0;
-                player.applyKnockback(viewDir.x, viewDir.z, 1.5, 0.5);
+                if (player.isSprinting) {
+                    player.applyKnockback(viewDir.x, viewDir.z, 3, 0.5)
+                } else player.applyKnockback(viewDir.x, viewDir.z, 1.5, 0.25)
             };
 
             // get the durability component and decrease it unless the player is in creative

@@ -34,7 +34,6 @@ world.beforeEvents.worldInitialize.subscribe(eventData => {
             };
 
             if (selectedItem?.typeId === 'terra:spell_windwake' && offhandWand?.typeId === 'terra:wand') {
-                player.clearVelocity();
                 player.runCommandAsync(`particle terra:ring_green ${player.location.x} ${player.location.y} ${player.location.z}`);
                 player.applyKnockback(0, 0, 0, 3);
                 player.runCommandAsync("effect @s slow_falling 7 3 false");
@@ -42,7 +41,7 @@ world.beforeEvents.worldInitialize.subscribe(eventData => {
 
             if (selectedItem?.typeId === 'terra:spell_puffborne' && offhandWand?.typeId === 'terra:wand') {
                 // get all entities in a 12 block radius from the player
-                const infestingRadius = player.dimension.getEntities({location: player.location, maxDistance: 12,});
+                const infestingRadius = player.dimension.getEntities({ location: player.location, maxDistance: 12, });
                 // define the aquatic mobs affected by the spell
                 const infestArray = [
                     'minecraft:cod',
