@@ -69,6 +69,7 @@
 		],
 		"components": {
 			"tag:wood": {},
+            "tag:minecraft:is_axe_item_destructible": {},
 			"minecraft:geometry": "minecraft:geometry.full_block",
 			"minecraft:material_instances": {
 				"*": {
@@ -84,11 +85,12 @@
 					"render_method": "opaque"
 				}
 			},
+			// hardness: 2
 			"minecraft:destructible_by_mining": {
-				"seconds_to_destroy": 2
+				"seconds_to_destroy": 3
 			},
 			"minecraft:destructible_by_explosion": {
-				"explosion_resistance": 3
+				"explosion_resistance": 2
 			},
 			// "minecraft:loot": "loot_tables/blocks/poplar_log.json",
 			"minecraft:map_color": "#8A9457",

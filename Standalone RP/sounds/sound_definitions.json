@@ -1,271 +1,2129 @@
 {
-   "format_version": "1.16.100",
-   "sound_definitions": {
-      "dig.outsider_metal": {
-         "category": "block",
-         "sounds": [
-            {
-               "load_on_low_memory": true,
-               "name": "sounds/dig/outermetal1"
-            },
-            "sounds/dig/outermetal2",
-            "sounds/dig/outermetal3",
-            "sounds/dig/outermetal4"
-         ]
-      },
-      "step.outsider_metal": {
-         "category": "block",
-         "sounds": [
-            "sounds/step/outermetal1",
-            "sounds/step/outermetal2",
-            {
-               "load_on_low_memory": true,
-               "name": "sounds/step/outermetal3"
-            },
-            "sounds/step/outermetal4",
-            "sounds/step/outermetal5",
-            "sounds/step/outermetal6"
-         ]
-      },
-      "music.menu": {
-         "__use_legacy_max_distance": "true",
-         "category": "music",
-         "max_distance": null,
-         "min_distance": null,
-         "sounds": [
-            {
-               "load_on_low_memory": true,
-               "name": "sounds/terra_music/main_theme",
-               "stream": true,
-               "volume": 0.30
-            },
-            {
-               "load_on_low_memory": true,
-               "name": "sounds/terra_music/vanes",
-               "stream": true,
-               "volume": 0.25
-            }
-         ]
-      },
-      "music.game": {
-         "__use_legacy_max_distance": "true",
-         "category": "music",
-         "max_distance": null,
-         "min_distance": null,
-         "sounds": [
-            {
-               "load_on_low_memory": true,
-               "name": "sounds/music/game/calm1",
-               "stream": true,
-               "volume": 0.20
-            },
-            {
-               "load_on_low_memory": true,
-               "name": "sounds/music/game/calm2",
-               "stream": true,
-               "volume": 0.20
-            },
-            {
-               "load_on_low_memory": true,
-               "name": "sounds/music/game/calm3",
-               "stream": true,
-               "volume": 0.20
-            },
-            {
-               "load_on_low_memory": true,
-               "name": "sounds/music/game/hal1",
-               "stream": true,
-               "volume": 0.10
-            },
-            {
-               "load_on_low_memory": true,
-               "name": "sounds/music/game/hal2",
-               "stream": true,
-               "volume": 0.20
-            },
-            {
-               "load_on_low_memory": true,
-               "name": "sounds/music/game/hal3",
-               "stream": true,
-               "volume": 0.10
-            },
-            {
-               "load_on_low_memory": true,
-               "name": "sounds/music/game/hal4",
-               "stream": true,
-               "volume": 0.20
-            },
-            {
-               "load_on_low_memory": true,
-               "name": "sounds/music/game/nuance1",
-               "stream": true,
-               "volume": 0.30
-            },
-            {
-               "load_on_low_memory": true,
-               "name": "sounds/music/game/nuance2",
-               "stream": true,
-               "volume": 0.30
-            },
-            {
-               "load_on_low_memory": true,
-               "name": "sounds/music/game/piano1",
-               "stream": true,
-               "volume": 0.20
-            },
-            {
-               "load_on_low_memory": true,
-               "name": "sounds/music/game/piano2",
-               "stream": true,
-               "volume": 0.20
-            },
-            {
-               "load_on_low_memory": true,
-               "name": "sounds/music/game/piano3",
-               "stream": true,
-               "volume": 0.20
-            },
-            {
-               "load_on_low_memory": true,
-               "name": "sounds/music/game/one_more_day",
-               "stream": true,
-               "volume": 0.40
-            },
-            {
-               "load_on_low_memory": true,
-               "name": "sounds/music/game/floating_dream",
-               "stream": true,
-               "volume": 0.40
-            },
-            {
-               "load_on_low_memory": true,
-               "name": "sounds/music/game/left_to_bloom",
-               "stream": true,
-               "volume": 0.40
-            },
-            {
-               "load_on_low_memory": true,
-               "name": "sounds/music/game/comforting_memories",
-               "stream": true,
-               "volume": 0.40
-            },
-            {
-               "load_on_low_memory": true,
-               "name": "sounds/music/game/featherfall",
-               "stream": true,
-               "volume": 0.40
-            },
-            {
-               "load_on_low_memory": true,
-               "name": "sounds/music/game/komorebi",
-               "stream": true,
-               "volume": 0.80
-            },
-            {
-               "load_on_low_memory": true,
-               "name": "sounds/music/game/puzzlebox",
-               "stream": true,
-               "volume": 0.40
-            },
-            {
-               "load_on_low_memory": true,
-               "name": "sounds/music/game/watcher",
-               "stream": true,
-               "volume": 0.40
-            },
-            {
-               "load_on_low_memory": true,
-               "name": "sounds/music/game/yakusoku",
-               "stream": true,
-               "volume": 0.80
-            }
-         ]
-      },
-      "music.game.nether": {
-         "__use_legacy_max_distance": "true",
-         "category": "music",
-         "max_distance": null,
-         "min_distance": null,
-         "sounds": [
-            {
-               "load_on_low_memory": true,
-               "name": "sounds/music/game/nether/nether1",
-               "stream": true,
-               "volume": 0.150
-            },
-            {
-               "load_on_low_memory": true,
-               "name": "sounds/music/game/nether/nether2",
-               "stream": true,
-               "volume": 0.150
-            },
-            {
-               "load_on_low_memory": true,
-               "name": "sounds/music/game/nether/nether3",
-               "stream": true,
-               "volume": 0.150
-            },
-            {
-               "load_on_low_memory": true,
-               "name": "sounds/music/game/nether/nether4",
-               "stream": true,
-               "volume": 0.150
-            },
-            {
-               "load_on_low_memory": true,
-               "name": "sounds/terra_music/vanes",
-               "stream": true,
-               "volume": 0.40
-            }
-         ]
-      },
-      "music.game.end": {
-         "__use_legacy_max_distance": "true",
-         "category": "music",
-         "max_distance": null,
-         "min_distance": null,
-         "sounds": [
-            {
-               "load_on_low_memory": true,
-               "name": "sounds/music/game/end/end",
-               "stream": true,
-               "volume": 0.20
-            },
-            {
-               "load_on_low_memory": true,
-               "name": "sounds/terra_music/vanes",
-               "stream": true,
-               "volume": 0.40
-            }
-         ]
-      },
-      "record.wtb": {
-         "__use_legacy_max_distance": "true",
-         "category": "record",
-         "max_distance": 64.0,
-         "min_distance": null,
-         "sounds": [
-            {
-               "load_on_low_memory": true,
-               "name": "sounds/terra_music/wtb",
-               "stream": true,
-               "volume": 0.50
-            }
-         ]
-      },
-      "record.long_gone": {
-         "__use_legacy_max_distance": "true",
-         "category": "record",
-         "max_distance": 64.0,
-         "min_distance": null,
-         "sounds": [
-            {
-               "load_on_low_memory": true,
-               "name": "sounds/terra_music/long_gone",
-               "stream": true,
-               "volume": 0.50
-            }
-         ]
-      }
-   }
+    "format_version": "1.20.20",
+    "sound_definitions": {
+        "item.blaster.recharge": {
+            "category": "player",
+            "sounds": [
+                {
+                    "load_on_low_memory": true,
+                    "name": "sounds/item/blaster/recharge"
+                }
+            ]
+        },
+        "item.blaster.shoot": {
+            "category": "player",
+            "sounds": [
+                {
+                    "load_on_low_memory": true,
+                    "name": "sounds/item/blaster/shoot1"
+                },
+                "sounds/item/blaster/shoot2"
+            ]
+        },
+        "item.blaster.unloaded": {
+            "category": "player",
+            "sounds": [
+                {
+                    "load_on_low_memory": true,
+                    "name": "sounds/item/blaster/unloaded"
+                }
+            ]
+        },
+        "music.menu": {
+            "__use_legacy_max_distance": "true",
+            "category": "music",
+            "max_distance": null,
+            "min_distance": null,
+            "sounds": [
+                {
+                    "load_on_low_memory": true,
+                    "name": "sounds/terra_music/ursprung",
+                    "stream": true,
+                    "volume": 0.30
+                },
+                // 'vanes' to be removed upon stable release
+                {
+                    "load_on_low_memory": true,
+                    "name": "sounds/terra_music/vanes",
+                    "stream": true,
+                    "volume": 0.25
+                }
+            ]
+        },
+        "music.game": {
+            "__use_legacy_max_distance": "true",
+            "category": "music",
+            "max_distance": null,
+            "min_distance": null,
+            "sounds": [
+                {
+                    "load_on_low_memory": true,
+                    "name": "sounds/music/game/calm1",
+                    "stream": true,
+                    "volume": 0.20
+                },
+                {
+                    "load_on_low_memory": true,
+                    "name": "sounds/music/game/calm2",
+                    "stream": true,
+                    "volume": 0.20
+                },
+                {
+                    "load_on_low_memory": true,
+                    "name": "sounds/music/game/calm3",
+                    "stream": true,
+                    "volume": 0.20
+                },
+                {
+                    "load_on_low_memory": true,
+                    "name": "sounds/music/game/hal1",
+                    "stream": true,
+                    "volume": 0.10
+                },
+                {
+                    "load_on_low_memory": true,
+                    "name": "sounds/music/game/hal2",
+                    "stream": true,
+                    "volume": 0.20
+                },
+                {
+                    "load_on_low_memory": true,
+                    "name": "sounds/music/game/hal3",
+                    "stream": true,
+                    "volume": 0.10
+                },
+                {
+                    "load_on_low_memory": true,
+                    "name": "sounds/music/game/hal4",
+                    "stream": true,
+                    "volume": 0.20
+                },
+                {
+                    "load_on_low_memory": true,
+                    "name": "sounds/music/game/nuance1",
+                    "stream": true,
+                    "volume": 0.30
+                },
+                {
+                    "load_on_low_memory": true,
+                    "name": "sounds/music/game/nuance2",
+                    "stream": true,
+                    "volume": 0.30
+                },
+                {
+                    "load_on_low_memory": true,
+                    "name": "sounds/music/game/piano1",
+                    "stream": true,
+                    "volume": 0.20
+                },
+                {
+                    "load_on_low_memory": true,
+                    "name": "sounds/music/game/piano2",
+                    "stream": true,
+                    "volume": 0.20
+                },
+                {
+                    "load_on_low_memory": true,
+                    "name": "sounds/music/game/piano3",
+                    "stream": true,
+                    "volume": 0.20
+                },
+                {
+                    "load_on_low_memory": true,
+                    "name": "sounds/music/game/one_more_day",
+                    "stream": true,
+                    "volume": 0.40
+                },
+                {
+                    "load_on_low_memory": true,
+                    "name": "sounds/music/game/floating_dream",
+                    "stream": true,
+                    "volume": 0.40
+                },
+                {
+                    "load_on_low_memory": true,
+                    "name": "sounds/music/game/left_to_bloom",
+                    "stream": true,
+                    "volume": 0.40
+                },
+                {
+                    "load_on_low_memory": true,
+                    "name": "sounds/music/game/comforting_memories",
+                    "stream": true,
+                    "volume": 0.40
+                },
+                {
+                    "load_on_low_memory": true,
+                    "name": "sounds/music/game/a_familiar_room",
+                    "stream": true,
+                    "volume": 0.40
+                },
+                {
+                    "load_on_low_memory": true,
+                    "name": "sounds/music/game/featherfall",
+                    "stream": true,
+                    "volume": 0.40
+                },
+                {
+                    "load_on_low_memory": true,
+                    "name": "sounds/music/game/komorebi",
+                    "stream": true,
+                    "volume": 0.80
+                },
+                {
+                    "load_on_low_memory": true,
+                    "name": "sounds/music/game/puzzlebox",
+                    "stream": true,
+                    "volume": 0.40
+                },
+                {
+                    "load_on_low_memory": true,
+                    "name": "sounds/music/game/watcher",
+                    "stream": true,
+                    "volume": 0.40
+                },
+                {
+                    "load_on_low_memory": true,
+                    "name": "sounds/music/game/yakusoku",
+                    "stream": true,
+                    "volume": 0.80
+                }
+            ]
+        },
+        "music.game.basalt_deltas": {
+            "category": "music",
+            "max_distance": null,
+            "min_distance": null,
+            "sounds": [
+                {
+                    "load_on_low_memory": true,
+                    "name": "sounds/terra_music/ursprung",
+                    "stream": true,
+                    "volume": 0.30,
+                    "weight": 7
+                },
+                {
+                    "load_on_low_memory": true,
+                    "name": "sounds/music/game/nether/so_below",
+                    "stream": true,
+                    "volume": 0.50,
+                    "weight": 7
+                },
+                {
+                    "load_on_low_memory": true,
+                    "name": "sounds/music/game/nether/nether1",
+                    "stream": true,
+                    "weight": 1
+                },
+                {
+                    "load_on_low_memory": true,
+                    "name": "sounds/music/game/nether/nether2",
+                    "stream": true,
+                    "weight": 1
+                },
+                {
+                    "load_on_low_memory": true,
+                    "name": "sounds/music/game/nether/nether3",
+                    "stream": true,
+                    "weight": 1
+                },
+                {
+                    "load_on_low_memory": true,
+                    "name": "sounds/music/game/nether/nether4",
+                    "stream": true,
+                    "weight": 1
+                }
+            ]
+        },
+        "music.game.creative": {
+            "__use_legacy_max_distance": "true",
+            "category": "music",
+            "max_distance": null,
+            "min_distance": null,
+            "sounds": [
+                {
+                    "load_on_low_memory": true,
+                    "name": "sounds/music/game/creative/creative1",
+                    "stream": true,
+                    "volume": 0.10
+                },
+                {
+                    "load_on_low_memory": true,
+                    "name": "sounds/music/game/creative/creative2",
+                    "stream": true,
+                    "volume": 0.10
+                },
+                {
+                    "load_on_low_memory": true,
+                    "name": "sounds/music/game/creative/creative3",
+                    "stream": true,
+                    "volume": 0.10
+                },
+                {
+                    "load_on_low_memory": true,
+                    "name": "sounds/music/game/creative/creative4",
+                    "stream": true,
+                    "volume": 0.10
+                },
+                {
+                    "load_on_low_memory": true,
+                    "name": "sounds/music/game/creative/creative5",
+                    "stream": true,
+                    "volume": 0.10
+                },
+                {
+                    "load_on_low_memory": true,
+                    "name": "sounds/music/game/creative/creative6",
+                    "stream": true,
+                    "volume": 0.10
+                },
+                {
+                    "name": "sounds/music/menu/menu1",
+                    "stream": true,
+                    "volume": 0.30
+                },
+                {
+                    "name": "sounds/music/menu/menu2",
+                    "stream": true,
+                    "volume": 0.30
+                },
+                {
+                    "name": "sounds/music/menu/menu3",
+                    "stream": true,
+                    "volume": 0.30
+                },
+                {
+                    "name": "sounds/music/menu/menu4",
+                    "stream": true,
+                    "volume": 0.30
+                }
+            ]
+        },
+        "music.game.credits": {
+            "__use_legacy_max_distance": "true",
+            "category": "music",
+            "max_distance": null,
+            "min_distance": null,
+            "sounds": [
+                {
+                    "load_on_low_memory": true,
+                    "name": "sounds/music/game/end/credits",
+                    "stream": true,
+                    "volume": 0.10
+                }
+            ]
+        },
+        "music.game.crimson_forest": {
+            "category": "music",
+            "max_distance": null,
+            "min_distance": null,
+            "sounds": [
+                {
+                    "load_on_low_memory": true,
+                    "name": "sounds/music/game/nether/chrysopoeia",
+                    "stream": true,
+                    "volume": 0.50,
+                    "weight": 7
+                },
+                {
+                    "load_on_low_memory": true,
+                    "name": "sounds/music/game/nether/nether1",
+                    "stream": true,
+                    "weight": 1
+                },
+                {
+                    "load_on_low_memory": true,
+                    "name": "sounds/music/game/nether/nether2",
+                    "stream": true,
+                    "weight": 1
+                },
+                {
+                    "load_on_low_memory": true,
+                    "name": "sounds/music/game/nether/nether3",
+                    "stream": true,
+                    "weight": 1
+                },
+                {
+                    "load_on_low_memory": true,
+                    "name": "sounds/music/game/nether/nether4",
+                    "stream": true,
+                    "weight": 1
+                }
+            ]
+        },
+        "music.game.deep_dark": {
+            "category": "music",
+            "max_distance": null,
+            "min_distance": null,
+            "sounds": [
+                {
+                    "load_on_low_memory": true,
+                    "name": "sounds/terra_music/ursprung",
+                    "stream": true,
+                    "volume": 0.30,
+                    "weight": 1
+                },
+                {
+                    "name": "sounds/music/game/ancestry",
+                    "stream": true,
+                    "weight": 1
+                }
+            ]
+        },
+        "music.game.dripstone_caves": {
+            "category": "music",
+            "max_distance": null,
+            "min_distance": null,
+            "sounds": [
+                {
+                    "load_on_low_memory": true,
+                    "name": "sounds/terra_music/ursprung",
+                    "stream": true,
+                    "volume": 0.30,
+                    "weight": 3
+                },
+                {
+                    "load_on_low_memory": true,
+                    "name": "sounds/music/game/wending",
+                    "stream": true,
+                    "volume": 0.40,
+                    "weight": 2
+                },
+                {
+                    "load_on_low_memory": true,
+                    "name": "sounds/music/game/infinite_amethyst",
+                    "stream": true,
+                    "volume": 0.40,
+                    "weight": 1
+                },
+                {
+                    "load_on_low_memory": true,
+                    "name": "sounds/music/game/an_ordinary_day",
+                    "stream": true,
+                    "weight": 1
+                },
+                {
+                    "load_on_low_memory": true,
+                    "name": "sounds/music/game/hal1",
+                    "stream": true,
+                    "weight": 1
+                },
+                {
+                    "load_on_low_memory": true,
+                    "name": "sounds/music/game/hal4",
+                    "stream": true,
+                    "weight": 1
+                },
+                {
+                    "load_on_low_memory": true,
+                    "name": "sounds/music/game/nuance1",
+                    "stream": true,
+                    "weight": 1
+                },
+                {
+                    "load_on_low_memory": true,
+                    "name": "sounds/music/game/nuance2",
+                    "stream": true,
+                    "weight": 1
+                }
+            ]
+        },
+        "music.game.end": {
+            "__use_legacy_max_distance": "true",
+            "category": "music",
+            "max_distance": null,
+            "min_distance": null,
+            "sounds": [
+                {
+                    "load_on_low_memory": true,
+                    "name": "sounds/terra_music/ursprung",
+                    "stream": true,
+                    "volume": 0.30
+                },
+                {
+                    "load_on_low_memory": true,
+                    "name": "sounds/music/game/end/end",
+                    "stream": true,
+                    "volume": 0.20
+                }
+            ]
+        },
+        "music.game.endboss": {
+            "__use_legacy_max_distance": "true",
+            "category": "music",
+            "max_distance": null,
+            "min_distance": null,
+            "sounds": [
+                {
+                    "load_on_low_memory": true,
+                    "name": "sounds/music/game/end/boss",
+                    "stream": true,
+                    "volume": 0.30
+                }
+            ]
+        },
+        "music.game.frozen_peaks": {
+            "category": "music",
+            "max_distance": null,
+            "min_distance": null,
+            "sounds": [
+                {
+                    "load_on_low_memory": true,
+                    "name": "sounds/music/game/stand_tall",
+                    "stream": true,
+                    "volume": 0.40,
+                    "weight": 2
+                },
+                {
+                    "load_on_low_memory": true,
+                    "name": "sounds/music/game/one_more_day",
+                    "stream": true,
+                    "volume": 0.40,
+                    "weight": 1
+                },
+                {
+                    "load_on_low_memory": true,
+                    "name": "sounds/music/game/piano1",
+                    "stream": true,
+                    "weight": 1
+                },
+                {
+                    "load_on_low_memory": true,
+                    "name": "sounds/music/game/piano2",
+                    "stream": true,
+                    "weight": 1
+                },
+                {
+                    "load_on_low_memory": true,
+                    "name": "sounds/music/game/piano3",
+                    "stream": true,
+                    "weight": 1
+                },
+                {
+                    "load_on_low_memory": true,
+                    "name": "sounds/music/game/hal1",
+                    "stream": true,
+                    "weight": 1
+                },
+                {
+                    "load_on_low_memory": true,
+                    "name": "sounds/music/game/hal2",
+                    "stream": true,
+                    "weight": 1
+                },
+                {
+                    "load_on_low_memory": true,
+                    "name": "sounds/music/game/hal3",
+                    "stream": true,
+                    "weight": 1
+                },
+                {
+                    "load_on_low_memory": true,
+                    "name": "sounds/music/game/hal4",
+                    "stream": true,
+                    "weight": 1
+                }
+            ]
+        },
+        "music.game.grove": {
+            "category": "music",
+            "max_distance": null,
+            "min_distance": null,
+            "sounds": [
+                {
+                    "load_on_low_memory": true,
+                    "name": "sounds/music/game/comforting_memories",
+                    "stream": true,
+                    "volume": 0.40,
+                    "weight": 1
+                },
+                {
+                    "load_on_low_memory": true,
+                    "name": "sounds/music/game/infinite_amethyst",
+                    "stream": true,
+                    "volume": 0.40,
+                    "weight": 1
+                },
+                {
+                    "load_on_low_memory": true,
+                    "name": "sounds/music/game/wending",
+                    "stream": true,
+                    "volume": 0.40,
+                    "weight": 1
+                },
+                {
+                    "load_on_low_memory": true,
+                    "name": "sounds/music/game/piano3",
+                    "stream": true,
+                    "weight": 1
+                },
+                {
+                    "load_on_low_memory": true,
+                    "name": "sounds/music/game/calm1",
+                    "stream": true,
+                    "weight": 1
+                },
+                {
+                    "load_on_low_memory": true,
+                    "name": "sounds/music/game/calm2",
+                    "stream": true,
+                    "weight": 1
+                },
+                {
+                    "load_on_low_memory": true,
+                    "name": "sounds/music/game/calm3",
+                    "stream": true,
+                    "weight": 1
+                },
+                {
+                    "load_on_low_memory": true,
+                    "name": "sounds/music/game/nuance1",
+                    "stream": true,
+                    "weight": 1
+                },
+                {
+                    "load_on_low_memory": true,
+                    "name": "sounds/music/game/nuance2",
+                    "stream": true,
+                    "weight": 1
+                }
+            ]
+        },
+        "music.game.jagged_peaks": {
+            "category": "music",
+            "max_distance": null,
+            "min_distance": null,
+            "sounds": [
+                {
+                    "load_on_low_memory": true,
+                    "name": "sounds/music/game/floating_dream",
+                    "stream": true,
+                    "volume": 0.40
+                },
+                {
+                    "load_on_low_memory": true,
+                    "name": "sounds/music/game/stand_tall",
+                    "stream": true,
+                    "volume": 0.40
+                },
+                {
+                    "load_on_low_memory": true,
+                    "name": "sounds/music/game/wending",
+                    "stream": true,
+                    "volume": 0.40
+                },
+                {
+                    "load_on_low_memory": true,
+                    "name": "sounds/music/game/piano1",
+                    "stream": true
+                },
+                {
+                    "load_on_low_memory": true,
+                    "name": "sounds/music/game/piano2",
+                    "stream": true
+                },
+                {
+                    "load_on_low_memory": true,
+                    "name": "sounds/music/game/piano3",
+                    "stream": true
+                },
+                {
+                    "load_on_low_memory": true,
+                    "name": "sounds/music/game/nuance1",
+                    "stream": true
+                },
+                {
+                    "load_on_low_memory": true,
+                    "name": "sounds/music/game/nuance2",
+                    "stream": true
+                },
+                {
+                    "load_on_low_memory": true,
+                    "name": "sounds/music/game/hal1",
+                    "stream": true
+                },
+                {
+                    "load_on_low_memory": true,
+                    "name": "sounds/music/game/hal2",
+                    "stream": true
+                }
+            ]
+        },
+        "music.game.lush_caves": {
+            "category": "music",
+            "max_distance": null,
+            "min_distance": null,
+            "sounds": [
+                {
+                    "name": "sounds/music/game/an_ordinary_day",
+                    "stream": true,
+                    "volume": 0.40,
+                    "weight": 2
+                },
+                {
+                    "name": "sounds/music/game/left_to_bloom",
+                    "stream": true,
+                    "volume": 0.40,
+                    "weight": 4
+                },
+                {
+                    "name": "sounds/music/game/one_more_day",
+                    "stream": true,
+                    "volume": 0.40,
+                    "weight": 2
+                },
+                {
+                    "name": "sounds/music/game/floating_dream",
+                    "stream": true,
+                    "volume": 0.40,
+                    "weight": 2
+                },
+                {
+                    "name": "sounds/music/game/piano3",
+                    "stream": true,
+                    "weight": 2
+                },
+                {
+                    "name": "sounds/music/game/calm1",
+                    "stream": true,
+                    "weight": 2
+                },
+                {
+                    "name": "sounds/music/game/calm2",
+                    "stream": true,
+                    "weight": 2
+                },
+                {
+                    "name": "sounds/music/game/calm3",
+                    "stream": true,
+                    "weight": 2
+                },
+                {
+                    "name": "sounds/music/game/aerie",
+                    "stream": true,
+                    "volume": 0.40
+                },
+                {
+                    "name": "sounds/music/game/firebugs",
+                    "stream": true,
+                    "volume": 0.40
+                },
+                {
+                    "name": "sounds/music/game/labyrinthine",
+                    "stream": true,
+                    "volume": 0.40
+                }
+            ]
+        },
+        "music.game.meadow": {
+            "category": "music",
+            "max_distance": null,
+            "min_distance": null,
+            "sounds": [
+                {
+                    "load_on_low_memory": true,
+                    "name": "sounds/music/game/one_more_day",
+                    "stream": true,
+                    "volume": 0.40,
+                    "weight": 2
+                },
+                {
+                    "load_on_low_memory": true,
+                    "name": "sounds/music/game/left_to_bloom",
+                    "stream": true,
+                    "volume": 0.40,
+                    "weight": 1
+                },
+                {
+                    "load_on_low_memory": true,
+                    "name": "sounds/music/game/hal1",
+                    "stream": true,
+                    "weight": 1
+                },
+                {
+                    "load_on_low_memory": true,
+                    "name": "sounds/music/game/hal2",
+                    "stream": true,
+                    "weight": 1
+                },
+                {
+                    "load_on_low_memory": true,
+                    "name": "sounds/music/game/hal3",
+                    "stream": true,
+                    "weight": 1
+                },
+                {
+                    "load_on_low_memory": true,
+                    "name": "sounds/music/game/hal4",
+                    "stream": true,
+                    "weight": 1
+                }
+            ]
+        },
+        "music.game.nether": {
+            "__use_legacy_max_distance": "true",
+            "category": "music",
+            "max_distance": null,
+            "min_distance": null,
+            "sounds": [
+                {
+                    "load_on_low_memory": true,
+                    "name": "sounds/terra_music/ursprung",
+                    "stream": true,
+                    "volume": 0.30
+                },
+                {
+                    "load_on_low_memory": true,
+                    "name": "sounds/music/game/nether/nether1",
+                    "stream": true,
+                    "volume": 0.150
+                },
+                {
+                    "load_on_low_memory": true,
+                    "name": "sounds/music/game/nether/nether2",
+                    "stream": true,
+                    "volume": 0.150
+                },
+                {
+                    "load_on_low_memory": true,
+                    "name": "sounds/music/game/nether/nether3",
+                    "stream": true,
+                    "volume": 0.150
+                },
+                {
+                    "load_on_low_memory": true,
+                    "name": "sounds/music/game/nether/nether4",
+                    "stream": true,
+                    "volume": 0.150
+                }
+            ]
+        },
+        "music.game.nether_wastes": {
+            "category": "music",
+            "max_distance": null,
+            "min_distance": null,
+            "sounds": [
+                {
+                    "load_on_low_memory": true,
+                    "name": "sounds/terra_music/ursprung",
+                    "stream": true,
+                    "volume": 0.30,
+                    "weight": 6
+                },
+                {
+                    "load_on_low_memory": true,
+                    "name": "sounds/music/game/nether/rubedo",
+                    "stream": true,
+                    "volume": 0.50,
+                    "weight": 6
+                },
+                {
+                    "load_on_low_memory": true,
+                    "name": "sounds/music/game/nether/nether1",
+                    "stream": true,
+                    "weight": 1
+                },
+                {
+                    "load_on_low_memory": true,
+                    "name": "sounds/music/game/nether/nether2",
+                    "stream": true,
+                    "weight": 1
+                },
+                {
+                    "load_on_low_memory": true,
+                    "name": "sounds/music/game/nether/nether3",
+                    "stream": true,
+                    "weight": 1
+                },
+                {
+                    "load_on_low_memory": true,
+                    "name": "sounds/music/game/nether/nether4",
+                    "stream": true,
+                    "weight": 1
+                }
+            ]
+        },
+        "music.game.snowy_slopes": {
+            "category": "music",
+            "max_distance": null,
+            "min_distance": null,
+            "sounds": [
+                {
+                    "load_on_low_memory": true,
+                    "name": "sounds/music/game/an_ordinary_day",
+                    "stream": true,
+                    "volume": 0.40,
+                    "weight": 1
+                },
+                {
+                    "load_on_low_memory": true,
+                    "name": "sounds/music/game/stand_tall",
+                    "stream": true,
+                    "volume": 0.40,
+                    "weight": 1
+                },
+                {
+                    "load_on_low_memory": true,
+                    "name": "sounds/music/game/one_more_day",
+                    "stream": true,
+                    "volume": 0.40,
+                    "weight": 1
+                },
+                {
+                    "load_on_low_memory": true,
+                    "name": "sounds/music/game/hal1",
+                    "stream": true,
+                    "weight": 1
+                },
+                {
+                    "load_on_low_memory": true,
+                    "name": "sounds/music/game/hal2",
+                    "stream": true,
+                    "weight": 1
+                },
+                {
+                    "load_on_low_memory": true,
+                    "name": "sounds/music/game/hal3",
+                    "stream": true,
+                    "weight": 1
+                }
+            ]
+        },
+        "music.game.soul_sand_valley": {
+            "category": "music",
+            "max_distance": null,
+            "min_distance": null,
+            "sounds": [
+                {
+                    "load_on_low_memory": true,
+                    "name": "sounds/terra_music/ursprung",
+                    "stream": true,
+                    "volume": 0.30,
+                    "weight": 7
+                },
+                {
+                    "load_on_low_memory": true,
+                    "name": "sounds/music/game/nether/so_below",
+                    "stream": true,
+                    "volume": 0.50,
+                    "weight": 7
+                },
+                {
+                    "load_on_low_memory": true,
+                    "name": "sounds/music/game/nether/nether1",
+                    "stream": true,
+                    "weight": 1
+                },
+                {
+                    "load_on_low_memory": true,
+                    "name": "sounds/music/game/nether/nether2",
+                    "stream": true,
+                    "weight": 1
+                },
+                {
+                    "load_on_low_memory": true,
+                    "name": "sounds/music/game/nether/nether3",
+                    "stream": true,
+                    "weight": 1
+                },
+                {
+                    "load_on_low_memory": true,
+                    "name": "sounds/music/game/nether/nether4",
+                    "stream": true,
+                    "weight": 1
+                }
+            ]
+        },
+        "music.game.soulsand_valley": {
+            "category": "music",
+            "max_distance": null,
+            "min_distance": null,
+            "sounds": [
+                {
+                    "load_on_low_memory": true,
+                    "name": "sounds/terra_music/ursprung",
+                    "stream": true,
+                    "volume": 0.30
+                },
+                {
+                    "load_on_low_memory": true,
+                    "name": "sounds/music/game/nether/so_below",
+                    "stream": true,
+                    "volume": 0.150
+                }
+            ]
+        },
+        "music.game.stony_peaks": {
+            "category": "music",
+            "max_distance": null,
+            "min_distance": null,
+            "sounds": [
+                {
+                    "load_on_low_memory": true,
+                    "name": "sounds/music/game/stand_tall",
+                    "stream": true,
+                    "volume": 0.40,
+                    "weight": 2
+                },
+                {
+                    "load_on_low_memory": true,
+                    "name": "sounds/music/game/wending",
+                    "stream": true,
+                    "volume": 0.40,
+                    "weight": 1
+                },
+                {
+                    "load_on_low_memory": true,
+                    "name": "sounds/music/game/piano1",
+                    "stream": true,
+                    "weight": 1
+                },
+                {
+                    "load_on_low_memory": true,
+                    "name": "sounds/music/game/piano2",
+                    "stream": true,
+                    "weight": 1
+                },
+                {
+                    "load_on_low_memory": true,
+                    "name": "sounds/music/game/piano3",
+                    "stream": true,
+                    "weight": 1
+                },
+                {
+                    "load_on_low_memory": true,
+                    "name": "sounds/music/game/hal1",
+                    "stream": true,
+                    "weight": 1
+                },
+                {
+                    "load_on_low_memory": true,
+                    "name": "sounds/music/game/hal2",
+                    "stream": true,
+                    "weight": 1
+                },
+                {
+                    "load_on_low_memory": true,
+                    "name": "sounds/music/game/hal3",
+                    "stream": true,
+                    "weight": 1
+                },
+                {
+                    "load_on_low_memory": true,
+                    "name": "sounds/music/game/hal4",
+                    "stream": true,
+                    "weight": 1
+                }
+            ]
+        },
+        "music.game.swamp_music": {
+            "category": "music",
+            "max_distance": null,
+            "min_distance": null,
+            "sounds": [
+                {
+                    "name": "sounds/music/game/aerie",
+                    "stream": true
+                },
+                {
+                    "name": "sounds/music/game/firebugs",
+                    "stream": true
+                },
+                {
+                    "name": "sounds/music/game/labyrinthine",
+                    "stream": true
+                }
+            ]
+        },
+        "music.game.warped_forest": {
+            "category": "music",
+            "max_distance": null,
+            "min_distance": null,
+            "sounds": []
+        },
+        "music.game.water": {
+            "__use_legacy_max_distance": "true",
+            "category": "music",
+            "max_distance": null,
+            "min_distance": null,
+            "sounds": [
+                {
+                    "load_on_low_memory": true,
+                    "name": "sounds/music/game/water/axolotl",
+                    "stream": true,
+                    "volume": 0.20
+                },
+                {
+                    "load_on_low_memory": true,
+                    "name": "sounds/music/game/water/dragon_fish",
+                    "stream": true,
+                    "volume": 0.20
+                },
+                {
+                    "load_on_low_memory": true,
+                    "name": "sounds/music/game/water/shuniji",
+                    "stream": true,
+                    "volume": 0.20
+                }
+            ]
+        },
+        "music.game_and_wild_equal_chance": {
+            "category": "music",
+            "max_distance": null,
+            "min_distance": null,
+            "sounds": [
+                {
+                    "name": "sounds/music/game/calm1",
+                    "stream": true,
+                    "volume": 0.20
+                },
+                {
+                    "name": "sounds/music/game/calm2",
+                    "stream": true,
+                    "volume": 0.20
+                },
+                {
+                    "name": "sounds/music/game/calm3",
+                    "stream": true,
+                    "volume": 0.20
+                },
+                {
+                    "name": "sounds/music/game/hal1",
+                    "stream": true,
+                    "volume": 0.10
+                },
+                {
+                    "name": "sounds/music/game/hal2",
+                    "stream": true,
+                    "volume": 0.20
+                },
+                {
+                    "name": "sounds/music/game/hal3",
+                    "stream": true,
+                    "volume": 0.10
+                },
+                {
+                    "name": "sounds/music/game/hal4",
+                    "stream": true,
+                    "volume": 0.20
+                },
+                {
+                    "name": "sounds/music/game/nuance1",
+                    "stream": true,
+                    "volume": 0.30
+                },
+                {
+                    "name": "sounds/music/game/nuance2",
+                    "stream": true,
+                    "volume": 0.30
+                },
+                {
+                    "name": "sounds/music/game/piano1",
+                    "stream": true,
+                    "volume": 0.20
+                },
+                {
+                    "name": "sounds/music/game/piano2",
+                    "stream": true,
+                    "volume": 0.20
+                },
+                {
+                    "name": "sounds/music/game/piano3",
+                    "stream": true,
+                    "volume": 0.20
+                },
+                {
+                    "name": "sounds/music/game/one_more_day",
+                    "stream": true,
+                    "volume": 0.40
+                },
+                {
+                    "name": "sounds/music/game/floating_dream",
+                    "stream": true,
+                    "volume": 0.40
+                },
+                {
+                    "name": "sounds/music/game/left_to_bloom",
+                    "stream": true,
+                    "volume": 0.40
+                },
+                {
+                    "name": "sounds/music/game/comforting_memories",
+                    "stream": true,
+                    "volume": 0.40
+                },
+                {
+                    "name": "sounds/music/game/aerie",
+                    "stream": true,
+                    "volume": 0.40
+                },
+                {
+                    "name": "sounds/music/game/firebugs",
+                    "stream": true,
+                    "volume": 0.40
+                },
+                {
+                    "name": "sounds/music/game/labyrinthine",
+                    "stream": true,
+                    "volume": 0.40
+                }
+            ]
+        },
+        "music.game_and_wild_favor_game": {
+            "category": "music",
+            "max_distance": null,
+            "min_distance": null,
+            "sounds": [
+                {
+                    "name": "sounds/music/game/calm1",
+                    "stream": true,
+                    "volume": 0.20,
+                    "weight": 3
+                },
+                {
+                    "name": "sounds/music/game/calm2",
+                    "stream": true,
+                    "volume": 0.20,
+                    "weight": 3
+                },
+                {
+                    "name": "sounds/music/game/calm3",
+                    "stream": true,
+                    "volume": 0.20,
+                    "weight": 3
+                },
+                {
+                    "name": "sounds/music/game/hal1",
+                    "stream": true,
+                    "volume": 0.10,
+                    "weight": 3
+                },
+                {
+                    "name": "sounds/music/game/hal2",
+                    "stream": true,
+                    "volume": 0.20,
+                    "weight": 3
+                },
+                {
+                    "name": "sounds/music/game/hal3",
+                    "stream": true,
+                    "volume": 0.10,
+                    "weight": 3
+                },
+                {
+                    "name": "sounds/music/game/hal4",
+                    "stream": true,
+                    "volume": 0.20,
+                    "weight": 3
+                },
+                {
+                    "name": "sounds/music/game/nuance1",
+                    "stream": true,
+                    "volume": 0.30,
+                    "weight": 3
+                },
+                {
+                    "name": "sounds/music/game/nuance2",
+                    "stream": true,
+                    "volume": 0.30,
+                    "weight": 3
+                },
+                {
+                    "name": "sounds/music/game/piano1",
+                    "stream": true,
+                    "volume": 0.20,
+                    "weight": 3
+                },
+                {
+                    "name": "sounds/music/game/piano2",
+                    "stream": true,
+                    "volume": 0.20,
+                    "weight": 3
+                },
+                {
+                    "name": "sounds/music/game/piano3",
+                    "stream": true,
+                    "volume": 0.20,
+                    "weight": 3
+                },
+                {
+                    "name": "sounds/music/game/one_more_day",
+                    "stream": true,
+                    "volume": 0.40,
+                    "weight": 3
+                },
+                {
+                    "name": "sounds/music/game/floating_dream",
+                    "stream": true,
+                    "volume": 0.40,
+                    "weight": 3
+                },
+                {
+                    "name": "sounds/music/game/left_to_bloom",
+                    "stream": true,
+                    "volume": 0.40,
+                    "weight": 3
+                },
+                {
+                    "name": "sounds/music/game/comforting_memories",
+                    "stream": true,
+                    "volume": 0.40,
+                    "weight": 3
+                },
+                {
+                    "name": "sounds/music/game/aerie",
+                    "stream": true,
+                    "volume": 0.40
+                },
+                {
+                    "name": "sounds/music/game/firebugs",
+                    "stream": true,
+                    "volume": 0.40
+                },
+                {
+                    "name": "sounds/music/game/labyrinthine",
+                    "stream": true,
+                    "volume": 0.40
+                }
+            ]
+        },
+        "music.overworld.bamboo_jungle": {
+            "category": "music",
+            "max_distance": null,
+            "min_distance": null,
+            "sounds": [
+                {
+                    "name": "music/game/bromeliad",
+                    "stream": true,
+                    "volume": 0.40,
+                    "weight": 2
+                },
+                {
+                    "name": "music/game/hal1",
+                    "stream": true
+                },
+                {
+                    "name": "music/game/hal2",
+                    "stream": true
+                },
+                {
+                    "name": "music/game/hal3",
+                    "stream": true
+                },
+                {
+                    "name": "music/game/hal4",
+                    "stream": true
+                },
+                {
+                    "name": "music/game/left_to_bloom",
+                    "stream": true,
+                    "volume": 0.40
+                },
+                {
+                    "name": "music/game/nuance1",
+                    "stream": true
+                },
+                {
+                    "name": "music/game/nuance2",
+                    "stream": true
+                },
+                {
+                    "name": "music/game/piano1",
+                    "stream": true
+                },
+                {
+                    "name": "music/game/piano2",
+                    "stream": true
+                },
+                {
+                    "name": "music/game/piano3",
+                    "stream": true
+                }
+            ]
+        },
+        "music.overworld.cherry_grove": {
+            "category": "music",
+            "max_distance": null,
+            "min_distance": null,
+            "sounds": [
+                {
+                    "name": "sounds/music/game/bromeliad",
+                    "stream": true,
+                    "volume": 0.40,
+                    "weight": 3
+                },
+                {
+                    "name": "sounds/music/game/calm1",
+                    "stream": true
+                },
+                {
+                    "name": "sounds/music/game/calm2",
+                    "stream": true
+                },
+                {
+                    "name": "sounds/music/game/calm3",
+                    "stream": true
+                },
+                {
+                    "name": "sounds/music/game/echo_in_the_wind",
+                    "stream": true,
+                    "volume": 0.40,
+                    "weight": 3
+                },
+                {
+                    "name": "sounds/music/game/featherfall",
+                    "stream": true,
+                    "volume": 0.40,
+                    "weight": 3
+                },
+                {
+                    "name": "sounds/music/game/left_to_bloom",
+                    "stream": true,
+                    "volume": 0.40
+                }
+            ]
+        },
+        "music.overworld.deep_dark": {
+            "category": "music",
+            "max_distance": null,
+            "min_distance": null,
+            "sounds": [
+                {
+                    "name": "sounds/music/game/ancestry",
+                    "stream": true
+                },
+                {
+                    "name": "sounds/music/game/deeper",
+                    "stream": true,
+                    "volume": 0.40
+                }
+            ]
+        },
+        "music.overworld.desert": {
+            "category": "music",
+            "max_distance": null,
+            "min_distance": null,
+            "sounds": [
+                {
+                    "name": "sounds/music/game/crescent_dunes",
+                    "stream": true,
+                    "volume": 0.40,
+                    "weight": 3
+                },
+                {
+                    "name": "sounds/music/game/hal1",
+                    "stream": true
+                },
+                {
+                    "name": "sounds/music/game/hal2",
+                    "stream": true
+                },
+                {
+                    "name": "sounds/music/game/hal3",
+                    "stream": true
+                },
+                {
+                    "name": "sounds/music/game/hal4",
+                    "stream": true
+                },
+                {
+                    "name": "sounds/music/game/nuance1",
+                    "stream": true
+                },
+                {
+                    "name": "sounds/music/game/nuance2",
+                    "stream": true
+                },
+                {
+                    "name": "sounds/music/game/one_more_day",
+                    "stream": true,
+                    "volume": 0.40
+                }
+            ]
+        },
+        "music.overworld.dripstone_caves": {
+            "category": "music",
+            "max_distance": null,
+            "min_distance": null,
+            "sounds": [
+                {
+                    "load_on_low_memory": true,
+                    "name": "sounds/music/game/wending",
+                    "stream": true,
+                    "volume": 0.40,
+                    "weight": 2
+                },
+                {
+                    "load_on_low_memory": true,
+                    "name": "sounds/music/game/infinite_amethyst",
+                    "stream": true,
+                    "volume": 0.40,
+                    "weight": 1
+                },
+                {
+                    "load_on_low_memory": true,
+                    "name": "sounds/music/game/an_ordinary_day",
+                    "stream": true,
+                    "weight": 1
+                },
+                {
+                    "load_on_low_memory": true,
+                    "name": "sounds/music/game/hal1",
+                    "stream": true,
+                    "weight": 1
+                },
+                {
+                    "load_on_low_memory": true,
+                    "name": "sounds/music/game/hal4",
+                    "stream": true,
+                    "weight": 1
+                },
+                {
+                    "load_on_low_memory": true,
+                    "name": "sounds/music/game/nuance1",
+                    "stream": true,
+                    "weight": 1
+                },
+                {
+                    "load_on_low_memory": true,
+                    "name": "sounds/music/game/nuance2",
+                    "stream": true,
+                    "weight": 1
+                },
+                {
+                    "name": "sounds/music/game/deeper",
+                    "stream": true,
+                    "volume": 0.40
+                },
+                {
+                    "name": "sounds/music/game/eld_unknown",
+                    "stream": true,
+                    "volume": 0.40,
+                    "weight": 2
+                },
+                {
+                    "name": "sounds/music/game/endless",
+                    "stream": true,
+                    "volume": 0.40,
+                    "weight": 2
+                },
+                {
+                    "name": "sounds/music/game/pokopoko",
+                    "stream": true,
+                    "volume": 0.80,
+                    "weight": 2
+                }
+            ]
+        },
+        "music.overworld.flower_forest": {
+            "category": "music",
+            "max_distance": null,
+            "min_distance": null,
+            "sounds": [
+                {
+                    "name": "sounds/music/game/bromeliad",
+                    "stream": true,
+                    "volume": 0.40
+                },
+                {
+                    "name": "sounds/music/game/echo_in_the_wind",
+                    "stream": true,
+                    "volume": 0.40
+                },
+                {
+                    "name": "sounds/music/game/featherfall",
+                    "stream": true,
+                    "volume": 0.40,
+                    "weight": 2
+                },
+                {
+                    "name": "sounds/music/game/hal1",
+                    "stream": true
+                },
+                {
+                    "name": "sounds/music/game/hal2",
+                    "stream": true
+                },
+                {
+                    "name": "sounds/music/game/hal3",
+                    "stream": true
+                },
+                {
+                    "name": "sounds/music/game/hal4",
+                    "stream": true
+                },
+                {
+                    "name": "sounds/music/game/left_to_bloom",
+                    "stream": true,
+                    "volume": 0.40
+                },
+                {
+                    "name": "sounds/music/game/nuance1",
+                    "stream": true
+                },
+                {
+                    "name": "sounds/music/game/nuance2",
+                    "stream": true
+                }
+            ]
+        },
+        "music.overworld.grove": {
+            "category": "music",
+            "max_distance": null,
+            "min_distance": null,
+            "sounds": [
+                {
+                    "load_on_low_memory": true,
+                    "name": "sounds/music/game/comforting_memories",
+                    "stream": true,
+                    "volume": 0.40,
+                    "weight": 1
+                },
+                {
+                    "load_on_low_memory": true,
+                    "name": "sounds/music/game/infinite_amethyst",
+                    "stream": true,
+                    "volume": 0.40,
+                    "weight": 1
+                },
+                {
+                    "load_on_low_memory": true,
+                    "name": "sounds/music/game/wending",
+                    "stream": true,
+                    "volume": 0.40,
+                    "weight": 1
+                },
+                {
+                    "load_on_low_memory": true,
+                    "name": "sounds/music/game/eld_unknown",
+                    "stream": true,
+                    "volume": 0.40
+                },
+                {
+                    "load_on_low_memory": true,
+                    "name": "sounds/music/game/endless",
+                    "stream": true,
+                    "volume": 0.40
+                },
+                {
+                    "load_on_low_memory": true,
+                    "name": "sounds/music/game/pokopoko",
+                    "stream": true,
+                    "volume": 0.80
+                },
+                {
+                    "load_on_low_memory": true,
+                    "name": "sounds/music/game/piano3",
+                    "stream": true,
+                    "weight": 1
+                },
+                {
+                    "load_on_low_memory": true,
+                    "name": "sounds/music/game/calm1",
+                    "stream": true,
+                    "weight": 1
+                },
+                {
+                    "load_on_low_memory": true,
+                    "name": "sounds/music/game/calm2",
+                    "stream": true,
+                    "weight": 1
+                },
+                {
+                    "load_on_low_memory": true,
+                    "name": "sounds/music/game/calm3",
+                    "stream": true,
+                    "weight": 1
+                },
+                {
+                    "load_on_low_memory": true,
+                    "name": "sounds/music/game/nuance1",
+                    "stream": true,
+                    "weight": 1
+                },
+                {
+                    "load_on_low_memory": true,
+                    "name": "sounds/music/game/nuance2",
+                    "stream": true,
+                    "weight": 1
+                }
+            ]
+        },
+        "music.overworld.jagged_peaks": {
+            "category": "music",
+            "max_distance": null,
+            "min_distance": null,
+            "sounds": [
+                {
+                    "load_on_low_memory": true,
+                    "name": "sounds/music/game/floating_dream",
+                    "stream": true,
+                    "volume": 0.40
+                },
+                {
+                    "load_on_low_memory": true,
+                    "name": "sounds/music/game/stand_tall",
+                    "stream": true,
+                    "volume": 0.40
+                },
+                {
+                    "load_on_low_memory": true,
+                    "name": "sounds/music/game/wending",
+                    "stream": true,
+                    "volume": 0.40
+                },
+                {
+                    "load_on_low_memory": true,
+                    "name": "sounds/music/game/eld_unknown",
+                    "stream": true,
+                    "volume": 0.40
+                },
+                {
+                    "load_on_low_memory": true,
+                    "name": "sounds/music/game/endless",
+                    "stream": true,
+                    "volume": 0.40
+                },
+                {
+                    "load_on_low_memory": true,
+                    "name": "sounds/music/game/pokopoko",
+                    "stream": true,
+                    "volume": 0.80
+                },
+                {
+                    "load_on_low_memory": true,
+                    "name": "sounds/music/game/piano1",
+                    "stream": true
+                },
+                {
+                    "load_on_low_memory": true,
+                    "name": "sounds/music/game/piano2",
+                    "stream": true
+                },
+                {
+                    "load_on_low_memory": true,
+                    "name": "sounds/music/game/piano3",
+                    "stream": true
+                },
+                {
+                    "load_on_low_memory": true,
+                    "name": "sounds/music/game/nuance1",
+                    "stream": true
+                },
+                {
+                    "load_on_low_memory": true,
+                    "name": "sounds/music/game/nuance2",
+                    "stream": true
+                },
+                {
+                    "load_on_low_memory": true,
+                    "name": "sounds/music/game/hal1",
+                    "stream": true
+                },
+                {
+                    "load_on_low_memory": true,
+                    "name": "sounds/music/game/hal2",
+                    "stream": true
+                }
+            ]
+        },
+        "music.overworld.jungle": {
+            "category": "music",
+            "max_distance": null,
+            "min_distance": null,
+            "sounds": [
+                {
+                    "name": "sounds/music/game/bromeliad",
+                    "stream": true,
+                    "volume": 0.40,
+                    "weight": 3
+                },
+                {
+                    "name": "sounds/music/game/hal1",
+                    "stream": true
+                },
+                {
+                    "name": "sounds/music/game/hal2",
+                    "stream": true
+                },
+                {
+                    "name": "sounds/music/game/hal3",
+                    "stream": true
+                },
+                {
+                    "name": "sounds/music/game/hal4",
+                    "stream": true
+                },
+                {
+                    "name": "sounds/music/game/left_to_bloom",
+                    "volume": 0.40
+                },
+                {
+                    "name": "sounds/music/game/nuance1",
+                    "stream": true
+                },
+                {
+                    "name": "sounds/music/game/nuance2",
+                    "stream": true
+                },
+                {
+                    "name": "sounds/music/game/piano1",
+                    "stream": true
+                },
+                {
+                    "name": "sounds/music/game/piano2",
+                    "stream": true
+                },
+                {
+                    "name": "sounds/music/game/piano3",
+                    "stream": true
+                }
+            ]
+        },
+        "music.overworld.jungle_edge": {
+            "category": "music",
+            "max_distance": null,
+            "min_distance": null,
+            "sounds": [
+                {
+                    "name": "sounds/music/game/bromeliad",
+                    "stream": true,
+                    "volume": 0.40,
+                    "weight": 2
+                },
+                {
+                    "name": "sounds/music/game/hal1",
+                    "stream": true
+                },
+                {
+                    "name": "sounds/music/game/hal2",
+                    "stream": true
+                },
+                {
+                    "name": "sounds/music/game/hal3",
+                    "stream": true
+                },
+                {
+                    "name": "sounds/music/game/hal4",
+                    "stream": true
+                },
+                {
+                    "name": "sounds/music/game/left_to_bloom",
+                    "stream": true,
+                    "volume": 0.40
+                },
+                {
+                    "name": "sounds/music/game/nuance1",
+                    "stream": true
+                },
+                {
+                    "name": "sounds/music/game/nuance2",
+                    "stream": true
+                },
+                {
+                    "name": "sounds/music/game/piano1",
+                    "stream": true
+                },
+                {
+                    "name": "sounds/music/game/piano2",
+                    "stream": true
+                },
+                {
+                    "name": "sounds/music/game/piano3",
+                    "stream": true
+                }
+            ]
+        },
+        "music.overworld.lush_caves": {
+            "category": "music",
+            "max_distance": null,
+            "min_distance": null,
+            "sounds": [
+                {
+                    "name": "sounds/music/game/an_ordinary_day",
+                    "stream": true,
+                    "volume": 0.40,
+                    "weight": 2
+                },
+                {
+                    "name": "sounds/music/game/left_to_bloom",
+                    "stream": true,
+                    "volume": 0.40,
+                    "weight": 4
+                },
+                {
+                    "name": "sounds/music/game/one_more_day",
+                    "stream": true,
+                    "volume": 0.40,
+                    "weight": 2
+                },
+                {
+                    "name": "sounds/music/game/floating_dream",
+                    "stream": true,
+                    "volume": 0.40,
+                    "weight": 2
+                },
+                {
+                    "name": "sounds/music/game/piano3",
+                    "stream": true,
+                    "weight": 2
+                },
+                {
+                    "name": "sounds/music/game/calm1",
+                    "stream": true,
+                    "weight": 2
+                },
+                {
+                    "name": "sounds/music/game/calm2",
+                    "stream": true,
+                    "weight": 2
+                },
+                {
+                    "name": "sounds/music/game/calm3",
+                    "stream": true,
+                    "weight": 2
+                },
+                {
+                    "name": "sounds/music/game/aerie",
+                    "stream": true,
+                    "volume": 0.40
+                },
+                {
+                    "name": "sounds/music/game/firebugs",
+                    "stream": true,
+                    "volume": 0.40
+                },
+                {
+                    "name": "sounds/music/game/labyrinthine",
+                    "stream": true,
+                    "volume": 0.40
+                },
+                {
+                    "name": "sounds/music/game/featherfall",
+                    "stream": true,
+                    "volume": 0.40,
+                    "weight": 2
+                }
+            ]
+        },
+        "music.overworld.mesa": {
+            "category": "music",
+            "max_distance": null,
+            "min_distance": null,
+            "sounds": [
+                {
+                    "name": "sounds/music/game/crescent_dunes",
+                    "stream": true,
+                    "volume": 0.40,
+                    "weight": 2
+                },
+                {
+                    "name": "sounds/music/game/echo_in_the_wind",
+                    "stream": true,
+                    "volume": 0.40
+                },
+                {
+                    "name": "sounds/music/game/featherfall",
+                    "stream": true,
+                    "volume": 0.40
+                },
+                {
+                    "name": "sounds/music/game/hal1",
+                    "stream": true
+                },
+                {
+                    "name": "sounds/music/game/hal2",
+                    "stream": true
+                },
+                {
+                    "name": "sounds/music/game/hal3",
+                    "stream": true
+                },
+                {
+                    "name": "sounds/music/game/hal4",
+                    "stream": true
+                },
+                {
+                    "name": "sounds/music/game/nuance1",
+                    "stream": true
+                },
+                {
+                    "name": "sounds/music/game/nuance2",
+                    "stream": true
+                },
+                {
+                    "name": "sounds/music/game/one_more_day",
+                    "stream": true,
+                    "volume": 0.40
+                },
+                {
+                    "name": "sounds/music/game/piano1",
+                    "stream": true
+                },
+                {
+                    "name": "sounds/music/game/piano2",
+                    "stream": true
+                },
+                {
+                    "name": "sounds/music/game/piano3",
+                    "stream": true
+                }
+            ]
+        },
+        "music.overworld.snowy_slopes": {
+            "category": "music",
+            "max_distance": null,
+            "min_distance": null,
+            "sounds": [
+                {
+                    "load_on_low_memory": true,
+                    "name": "sounds/music/game/an_ordinary_day",
+                    "stream": true,
+                    "volume": 0.40,
+                    "weight": 1
+                },
+                {
+                    "load_on_low_memory": true,
+                    "name": "sounds/music/game/stand_tall",
+                    "stream": true,
+                    "volume": 0.40,
+                    "weight": 1
+                },
+                {
+                    "load_on_low_memory": true,
+                    "name": "sounds/music/game/one_more_day",
+                    "stream": true,
+                    "volume": 0.40,
+                    "weight": 1
+                },
+                {
+                    "load_on_low_memory": true,
+                    "name": "sounds/music/game/hal1",
+                    "stream": true,
+                    "weight": 1
+                },
+                {
+                    "load_on_low_memory": true,
+                    "name": "sounds/music/game/hal2",
+                    "stream": true,
+                    "weight": 1
+                },
+                {
+                    "load_on_low_memory": true,
+                    "name": "sounds/music/game/hal3",
+                    "stream": true,
+                    "weight": 1
+                },
+                {
+                    "load_on_low_memory": true,
+                    "name": "sounds/music/game/pokopoko",
+                    "stream": true,
+                    "volume": 0.80
+                }
+            ]
+        },
+        "music.overworld.stony_peaks": {
+            "category": "music",
+            "max_distance": null,
+            "min_distance": null,
+            "sounds": [
+                {
+                    "load_on_low_memory": true,
+                    "name": "sounds/music/game/stand_tall",
+                    "stream": true,
+                    "volume": 0.40,
+                    "weight": 2
+                },
+                {
+                    "load_on_low_memory": true,
+                    "name": "sounds/music/game/wending",
+                    "stream": true,
+                    "volume": 0.40,
+                    "weight": 1
+                },
+                {
+                    "load_on_low_memory": true,
+                    "name": "sounds/music/game/eld_unknown",
+                    "volume": 0.40,
+                    "weight": 2
+                },
+                {
+                    "load_on_low_memory": true,
+                    "name": "sounds/music/game/endless",
+                    "stream": true,
+                    "volume": 0.40
+                },
+                {
+                    "load_on_low_memory": true,
+                    "name": "sounds/music/game/piano1",
+                    "stream": true,
+                    "weight": 1
+                },
+                {
+                    "load_on_low_memory": true,
+                    "name": "sounds/music/game/piano2",
+                    "stream": true,
+                    "weight": 1
+                },
+                {
+                    "load_on_low_memory": true,
+                    "name": "sounds/music/game/piano3",
+                    "stream": true,
+                    "weight": 1
+                },
+                {
+                    "load_on_low_memory": true,
+                    "name": "sounds/music/game/hal1",
+                    "stream": true,
+                    "weight": 1
+                },
+                {
+                    "load_on_low_memory": true,
+                    "name": "sounds/music/game/hal2",
+                    "stream": true,
+                    "weight": 1
+                },
+                {
+                    "load_on_low_memory": true,
+                    "name": "sounds/music/game/hal3",
+                    "stream": true,
+                    "weight": 1
+                },
+                {
+                    "load_on_low_memory": true,
+                    "name": "sounds/music/game/hal4",
+                    "stream": true,
+                    "weight": 1
+                }
+            ]
+        },
+        "record.wtb": {
+            "__use_legacy_max_distance": "true",
+            "category": "record",
+            "max_distance": 64.0,
+            "min_distance": null,
+            "sounds": [
+                {
+                    "load_on_low_memory": true,
+                    "name": "sounds/terra_music/wtb",
+                    "stream": true,
+                    "volume": 0.50
+                }
+            ]
+        },
+        "record.long_gone": {
+            "__use_legacy_max_distance": "true",
+            "category": "record",
+            "max_distance": 64.0,
+            "min_distance": null,
+            "sounds": [
+                {
+                    "load_on_low_memory": true,
+                    "name": "sounds/terra_music/long_gone",
+                    "stream": true,
+                    "volume": 0.50
+                }
+            ]
+        }
+    }
 }

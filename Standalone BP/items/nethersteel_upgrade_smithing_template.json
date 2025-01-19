@@ -17,7 +17,7 @@
 			"minecraft:hand_equipped": false,
 			// trickery to preserve localization
 			"minecraft:display_name": {
-				"value": "§e%item.terra.nethersteel_upgrade.name\n§5%item.smithing_template.name\n\n§5item.smithing_template.applies_to\n §9%item.smithing_template.netherite_upgrade.applies_to\n§5%item.smithing_template.ingredients\n §9%tile.terra.reinforced_nethersteel_block.name"
+				"value": "§e%item.terra.nethersteel_upgrade.name\n§7%item.smithing_template.name\n\n§7%item.smithing_template.applies_to\n §9%item.smithing_template.netherite_upgrade.applies_to\n§7%item.smithing_template.ingredients\n §9%tile.terra.reinforced_nethersteel_block.name"
 			}
 		}
 	}

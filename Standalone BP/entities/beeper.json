@@ -1,5 +1,10 @@
 // This file was made, modified and compiled by Heavenly (@heavenly7493) for TERRA.
 // Do not distribute without permission.
+// **
+// NOTE :: MISSING FEATURES
+// * DEFUSAL
+// :: SHEARING WILL TURN IT OFF AND INTO A BLOCK OR PET
+// **
 {
   "format_version": "1.20.10",
   "minecraft:entity": {

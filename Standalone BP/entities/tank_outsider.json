@@ -1,5 +1,10 @@
 // This file was made, modified and compiled by Heavenly (@heavenly7493) for TERRA.
 // Do not distribute without permission.
+// **
+// NOTE :: MISSING FEATURES
+// * RAGE ATTACK WHEN HURT/STUNNED
+// :: BEHAVIOR AKIN TO RAVAGERS
+// **
 {
     "format_version": "1.20.10",
     "minecraft:entity": {

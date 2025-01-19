@@ -1,5 +1,5 @@
 {
-    "format_version": "1.20.10",
+    "format_version": "1.20.30",
     "minecraft:recipe_shaped": {
         "description": {
             "identifier": "terra:autonetic_station"
@@ -29,7 +29,7 @@
         },
         "unlock": [
             {
-                "item": "terra:outsider_metal_scrap"
+                "item": "terra:outsider_core"
             }
         ],
         "priority": 2

@@ -1,0 +1,83 @@
+// This file was made, modified and compiled by Heavenly (@heavenly7493) for TERRA.
+// Do not distribute without permission.
+{
+	"format_version": "1.21.50",
+	"minecraft:block": {
+		"description": {
+			"identifier": "terra:bulnesia_sapling",
+			"menu_category": {
+				"category": "none",
+				"group": "none",
+				"is_hidden_in_commands": true
+			},
+			"states": {
+				"terra:growth_stage": [
+					0,
+					1,
+					2
+				]
+			}
+		},
+		"components": {
+			"minecraft:geometry": "minecraft:geometry.cross",
+			"minecraft:material_instances": {
+				"*": {
+					"texture": "bulnesia_sapling",
+					"render_method": "alpha_test",
+					"ambient_occlusion": false,
+					"face_dimming": false
+				}
+			},
+			"minecraft:light_dampening": 0,
+			"minecraft:selection_box": {
+				"origin": [
+					-5,
+					0,
+					-5
+				],
+				"size": [
+					10,
+					10,
+					10
+				]
+			},
+			"minecraft:destructible_by_mining": {
+				"seconds_to_destroy": 0.5
+			},
+			"minecraft:flammable": {
+				"destroy_chance_modifier": 45,
+				"catch_chance_modifier": 80
+			},
+			"minecraft:placement_filter": {
+				"conditions": [
+					{
+						"block_filter": [
+							"minecraft:grass_block",
+							"minecraft:dirt",
+							"minecraft:podzol",
+							"terra:soil"
+						],
+						"allowed_faces": [
+							"up"
+						]
+					}
+				]
+			},
+			"minecraft:liquid_detection": {
+				"detection_rules": [
+					{
+						"can_contain_liquid": true,
+						"liquid_type": "water",
+						"on_liquid_touches": "popped"
+					}
+				]
+			},
+			"minecraft:collision_box": false,
+			"minecraft:loot": "loot_tables/blocks/bulnesia_leaves.json",
+			"minecraft:destructible_by_explosion": true,
+			"minecraft:custom_components": [
+				"terra:sapling_properties"
+			]
+		}
+	}
+}

@@ -1,0 +1,31 @@
+{
+    "format_version": "1.20.30",
+    "minecraft:recipe_shapeless": {
+        "description": {
+            "identifier": "terra:rune_coagulate"
+        },
+        "tags": [
+            "arcane_table"
+        ],
+        "ingredients": [
+            {
+                "item": "terra:rune"
+            },
+            {
+                "item": "minecraft:rotten_flesh"
+            },
+            {
+                "item": "terra:reverion_dust"
+            }
+        ],
+        "unlock": [
+            {
+                "item": "terra:archimage_wand"
+            }
+        ],
+        "result": {
+            "item": "terra:rune_coagulate",
+            "count": 1
+        }
+    }
+}

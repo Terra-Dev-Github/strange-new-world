@@ -1,0 +1,44 @@
+{
+    "format_version": "1.20.30",
+    "minecraft:recipe_shaped": {
+        "description": {
+            "identifier": "terra:scroll_deathsong"
+        },
+        "tags": [
+            "arcane_table"
+        ],
+        "pattern": [
+            "FR0",
+            "#S#",
+            "MMM"
+        ],
+        "key": {
+            "#": {
+                "item": "terra:reverion_dust"
+            },
+            "0": {
+                "item": "minecraft:soul_torch"
+            },
+            "F": {
+                "item": "minecraft:feather"
+            },
+            "R": {
+                "item": "terra:rune_deathsong"
+            },
+            "S": {
+                "item": "terra:scroll"
+            }
+        },
+        "unlock": [
+            {
+                "item": "terra:rune_deathsong"
+            }
+        ],
+        "result": [
+            {
+                "item": "terra:scroll_deathsong",
+                "count": 1
+            }
+        ]
+    }
+}

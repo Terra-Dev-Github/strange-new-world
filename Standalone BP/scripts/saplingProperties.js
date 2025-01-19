@@ -35,19 +35,49 @@ world.beforeEvents.worldInitialize.subscribe(eventData => {
             if ((growthStage === maxStage) && aboveBlock?.typeId === 'minecraft:air') {
                 // split the block identifier and use only the part after the colon
                 const saplingStr = saplingId.split(':')[1];
-                // define tree structures, and fetch a random number between 0-3 for the variants
-                const chance = Math.floor(Math.random() * 3);
+                // define tree structures, and fetch a random number between 0-1 for the variants
+                const chance = Math.floor(Math.random() * 1);
+                const dimension = block.dimension;
                 const structureName = `trees:${saplingStr}_tree${chance}`;
                 const { x, y, z } = block;
-                world.structureManager.place(structureName, e.dimension, { x, y, z });
+                // poplar tree is exempt of any of the chance technicalities
+                if (block?.typeId === 'terra:poplar_sapling') {
+                    world.structureManager.place('trees:poplar_sapling_tree', dimension, { x: x - 1, y, z: z - 1 });
+                };
+                // specify rest of the trees' offsets
+                if (block?.typeId === 'terra:blue_mahoe_sapling') {
+                    if (chance === 0) {
+                        world.structureManager.place(structureName, dimension, { x: x - 2, y, z: z - 2 });
+                    };
+                    if (chance === 1) {
+                        world.structureManager.place(structureName, dimension, { x: x - 4, y, z: z - 5 });
+                    };
+                };
+                if (block?.typeId === 'terra:bulnesia_sapling') {
+                    if (chance === 0) {
+                        world.structureManager.place(structureName, dimension, { x: x - 4, y, z: z - 6 });
+                    };
+                    if (chance === 1) {
+                        world.structureManager.place(structureName, dimension, { x: x - 3, y, z: z - 2 }, { rotation: 180 });
+                    };
+                };
+                // yellowheart only has one tree structure
+                if (block?.typeId === 'terra:yellowheart_sapling') {
+                    if (chance === 0) {
+                        world.structureManager.place('trees:yellowheart_sapling_tree', dimension, { x: x - 2, y, z: z - 2 });
+                    };
+                    if (chance === 1) {
+                        world.structureManager.place('trees:yellowheart_sapling_tree', dimension, { x: x - 3, y, z: z - 2 }, { rotation: 180 });
+                    };
+                };
             } else if ((growthStage === maxStage) && aboveBlock?.typeId !== 'minecraft:air') {
                 // if there's a block preventing the sapling growth, return to 0
                 block.setPermutation(perm.withState("terra:growth_stage", 0));
             };
 
             // if a random number is less than 60, then make the sapling grow
-            if (Math.floor(Math.random() * 100) < 60){
-                block.setPermutation(perm.withState("terra:growth_stage", growthStage+1));
+            if (Math.floor(Math.random() * 100) < 60) {
+                block.setPermutation(perm.withState("terra:growth_stage", growthStage + 1));
             };
         },
 
@@ -79,7 +109,7 @@ world.beforeEvents.worldInitialize.subscribe(eventData => {
             if (growthStage === maxStage) {
                 return;
             }
-            
+
             // get the selected item from the player
             const equipment = player.getComponent('equippable');
             const selectedItem = equipment.getEquipment(`Mainhand`);
@@ -96,17 +126,47 @@ world.beforeEvents.worldInitialize.subscribe(eventData => {
                     }
                 }
                 // set the block state
-                block.setPermutation(perm.withState("terra:growth_stage", growthStage+1));
+                block.setPermutation(perm.withState("terra:growth_stage", growthStage + 1));
 
                 // if the sapling reaches the max stage, it gets replaced with a structure
                 if ((growthStage === maxStage) && aboveBlock?.typeId === 'minecraft:air') {
                     // split the block identifier and use only the part after the colon
                     const saplingStr = saplingId.split(':')[1];
-                    // define tree structures, and fetch a random number between 0-3 for the variants
-                    const chance = Math.floor(Math.random() * 3);
+                    // define tree structures, and fetch a random number between 0-1 for the variants
+                    const chance = Math.floor(Math.random() * 1);
+                    const dimension = block.dimension;
                     const structureName = `trees:${saplingStr}_tree${chance}`;
                     const { x, y, z } = block;
-                    world.structureManager.place(structureName, dimension, { x, y, z });
+                    // poplar tree is exempt of any of the chance technicalities
+                    if (block?.typeId === 'terra:poplar_sapling') {
+                        world.structureManager.place('trees:poplar_sapling_tree', dimension, { x: x - 1, y, z: z - 1 });
+                    };
+                    // specify rest of the trees' offsets
+                    if (block?.typeId === 'terra:blue_mahoe_sapling') {
+                        if (chance === 0) {
+                            world.structureManager.place(structureName, dimension, { x: x - 2, y, z: z - 2 });
+                        };
+                        if (chance === 1) {
+                            world.structureManager.place(structureName, dimension, { x: x - 4, y, z: z - 5 });
+                        };
+                    };
+                    // MISSING BULNESIA
+                    if (block?.typeId === 'terra:bulnesia_sapling') {
+                        if (chance === 0) {
+                            world.structureManager.place(structureName, dimension, { x: x - 5, y, z: z - 6 });
+                        };
+                        if (chance === 1) {
+                            world.structureManager.place(structureName, dimension, { x: x - 3, y, z: z - 5 }, { rotation: Rotate180 });
+                        };
+                    };
+                    if (block?.typeId === 'terra:yellowheart_sapling') {
+                        if (chance === 0) {
+                            world.structureManager.place(structureName, dimension, { x: x - 2, y, z: z - 2 });
+                        };
+                        if (chance === 1) {
+                            world.structureManager.place(structureName, dimension, { x: x - 4, y, z: z - 2 }, { rotation: Rotate180 });
+                        };
+                    };
                 } else if ((growthStage === maxStage) && aboveBlock?.typeId !== 'minecraft:air') {
                     // if there's a block preventing the sapling growth, return to 0
                     block.setPermutation(perm.withState("terra:growth_stage", 0));

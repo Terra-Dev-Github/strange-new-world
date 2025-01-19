@@ -8,27 +8,44 @@
                     "crystal": "Material.outline"
                 },
                 {
-                    "bone": "Material.default"
-                },
-                {
-                    "body": "Material.default"
-                },
-                {
-                    "leg0": "Material.default"
-                },
-                {
-                    "leg1": "Material.default"
-                },
-                {
-                    "leg2": "Material.default"
-                },
-                {
-                    "leg3": "Material.emissive"
+                    "*": "Material.default"
                 }
             ],
             "textures": [
                 "q.is_shaking ? Texture.beeper_red : Texture.default"
-            ]
+            ],
+            "part_visibility": [
+                {
+                    "*": true
+                },
+                {
+                    "crystal": false
+                }
+            ],
+            "ignore_lighting": false
+        },
+        "controller.render.beeper_outline": {
+            "geometry": "Geometry.default",
+            "materials": [
+                {
+                    "crystal": "Material.outline"
+                },
+                {
+                    "*": "Material.default"
+                }
+            ],
+            "textures": [
+                "q.is_shaking ? Texture.beeper_red : Texture.default"
+            ],
+            "part_visibility": [
+                {
+                    "*": false
+                },
+                {
+                    "crystal": true
+                }
+            ],
+            "ignore_lighting": true
         }
     }
 }

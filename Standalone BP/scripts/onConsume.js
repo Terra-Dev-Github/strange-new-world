@@ -2,7 +2,7 @@
 // Do not distribute without permission.
 
 // import necessary modules from Minecraft server API
-import { world, EquipmentSlot, ItemStack } from '@minecraft/server';
+import { world, ItemStack } from '@minecraft/server';
 
 // subscribe to the 'worldInitialize' event to register custom components
 world.beforeEvents.worldInitialize.subscribe(eventData => {
@@ -13,13 +13,13 @@ world.beforeEvents.worldInitialize.subscribe(eventData => {
             const player = e.source
 
             // define the player's equipment
-            const equipment = player?.getComponent('minecraft:equippable');
-            const selectedItem = equipment.getEquipmentSlot(EquipmentSlot.Mainhand);
+            const equipment = player.getComponent('equippable');
+            const selectedItem = equipment.getEquipment(`Mainhand`);
 
             // define what happens when a specific item is consumed
             if (selectedItem?.typeId === 'terra:salt_bottle') {
                 player.dimension.spawnItem(new ItemStack('minecraft:bottle'), player.location)
-                player.runCommandAsync("effect @s hunger 10 3 true");        
+                player.runCommandAsync("effect @s hunger 3 10 true");        
             };
         }
     });

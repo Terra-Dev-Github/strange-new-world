@@ -6,23 +6,45 @@
       "places_feature": "terra:bulnesia_tree_feature"
     },
     "conditions": {
-      // change to jungles after testing
       "placement_pass": "surface_pass",
       "minecraft:biome_filter": [
         {
-          "test": "has_biome_tag",
-          "operator": "==",
-          "value": "overworld"
-        },
-        {
-          "test": "has_biome_tag",
-          "operator": "==",
-          "value": "overworld_generation"
+          "all_of": [
+            {
+              "test": "has_biome_tag",
+              "operator": "!=",
+              "value": "ocean"
+            },
+            {
+              "test": "has_biome_tag",
+              "operator": "!=",
+              "value": "river"
+            },
+            {
+              "any_of": [
+                {
+                  "test": "has_biome_tag",
+                  "operator": "==",
+                  "value": "jungle"
+                },
+                {
+                  "test": "has_biome_tag",
+                  "operator": "==",
+                  "value": "edge"
+                },
+                {
+                  "test": "has_biome_tag",
+                  "operator": "==",
+                  "value": "bamboo"
+                }
+              ]
+            }
+          ]
         }
       ]
     },
     "distribution": {
-      "iterations": 8,
+      "iterations": 5,
       "x": {
         "distribution": "uniform",
         "extent": [
@@ -30,7 +52,7 @@
           16
         ]
       },
-      "y": "query.heightmap(variable.worldx, variable.worldz)",
+      "y": "query.heightmap(variable.worldx, variable.worldz) + -1",
       "z": {
         "distribution": "uniform",
         "extent": [

@@ -1,0 +1,42 @@
+{
+    "format_version": "1.20.30",
+    "minecraft:recipe_shaped": {
+        "description": {
+            "identifier": "terra:tome_blizzard"
+        },
+        "tags": [
+            "arcane_table"
+        ],
+        "pattern": [
+            "SS#",
+            "SLM",
+            "#MR"
+        ],
+        "key": {
+            "#": {
+                "item": "terra:reverion"
+            },
+            "M": {
+                "item": "terra:purified_malachite"
+            },
+            "R": {
+                "item": "terra:rune_blizzard"
+            },
+            "S": {
+                "item": "terra:scroll_blizzard"
+            },
+            "L": {
+                "item": "minecraft:leather"
+            }
+        },
+        "unlock": [
+            {
+                "item": "terra:rune_blizzard"
+            }
+        ],
+        "result": {
+            "item": "terra:tome_blizzard",
+            "count": 1
+        }
+    }
+}

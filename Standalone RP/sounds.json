@@ -44,6 +44,7 @@
             "volume": 1
         }
     },
+    */
     "entity_sounds": {
         "entities": {
             "terra:chesthound": {
@@ -75,6 +76,25 @@
                     1.2
                 ],
                 "volume": 1
+            }
+        }
+    },
+    "individual_event_sounds": {
+        "events": {
+            "item.blaster.recharge": {
+                "sound": "item.blaster.recharge",
+                "pitch": 1.0,
+                "volume": 1.0
+            },
+            "item.blaster.shoot": {
+                "sound": "item.blaster.shoot",
+                "pitch": 1.0,
+                "volume": 1.0
+            },
+            "item.blaster.unloaded": {
+                "sound": "item.blaster.unloaded",
+                "pitch": 1.0,
+                "volume": 1.0
             }
         }
     }

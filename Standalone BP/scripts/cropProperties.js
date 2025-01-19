@@ -114,10 +114,10 @@ world.beforeEvents.worldInitialize.subscribe(eventData => {
             if (!block.typeId === 'terra:grape_vine') return;
 
             // update block states based on the block below
-            if (aboveBlock?.typeId === block.typeId) block.setPermutation(block.permutation.withState('terra:vine_body_type', aboveBlock ? 1 : 0));
+            if (aboveBlock?.typeId === block.typeId) block.setPermutation(block.permutation.withState('terra:vine_body_stage', aboveBlock ? 1 : 0));
             else block.setPermutation(block.permutation.withState('terra:vine_body_type', 1));
 
-            if (belowBlock?.typeId === block.typeId) block.setPermutation(block.permutation.withState('terra:vine_body_type', belowBlock ? 0 : 1));
+            if (belowBlock?.typeId === block.typeId) block.setPermutation(block.permutation.withState('terra:vine_body_stage', belowBlock ? 0 : 1));
             else block.setPermutation(block.permutation.withState('terra:vine_body_type', 1));
         }
     });

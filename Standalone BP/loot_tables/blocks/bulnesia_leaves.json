@@ -5,7 +5,7 @@
             "entries": [
                 {
                     "type": "item",
-                    "name": "terra:bulnesia_sapling",
+                    "name": "terra:bulnesia_sapling_item",
                     "weight": 1,
                     "functions": [
                         {

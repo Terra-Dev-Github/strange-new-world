@@ -1,0 +1,42 @@
+{
+    "format_version": "1.20.30",
+    "minecraft:recipe_shaped": {
+        "description": {
+            "identifier": "terra:tome_umbra"
+        },
+        "tags": [
+            "arcane_table"
+        ],
+        "pattern": [
+            "SS#",
+            "SLM",
+            "#MR"
+        ],
+        "key": {
+            "#": {
+                "item": "terra:reverion"
+            },
+            "M": {
+                "item": "terra:purified_malachite"
+            },
+            "R": {
+                "item": "terra:rune_umbra"
+            },
+            "S": {
+                "item": "terra:scroll_umbra"
+            },
+            "L": {
+                "item": "minecraft:leather"
+            }
+        },
+        "unlock": [
+            {
+                "item": "terra:rune_umbra"
+            }
+        ],
+        "result": {
+            "item": "terra:tome_umbra",
+            "count": 1
+        }
+    }
+}

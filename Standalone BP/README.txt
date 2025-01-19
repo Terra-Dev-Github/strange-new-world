@@ -8,7 +8,7 @@
 // https://terra-smp.fandom.com/wiki/TERRA!_Wiki
 // https://discord.gg/2pVaeESEDF
 //
-// © 2024, TERRA
+// © 2025, TERRA
 
 :: BETA DISCLOSURE
 

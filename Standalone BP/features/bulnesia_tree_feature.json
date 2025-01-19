@@ -1,104 +1,14 @@
 {
   "format_version": "1.13.0",
-  "minecraft:tree_feature": {
+  "minecraft:structure_template_feature": {
     "description": {
       "identifier": "terra:bulnesia_tree_feature"
     },
-    "trunk_lean": {
-      "allow_diagonal_growth": true,
-      "lean_height": {
-        "range_min": 2,
-        "range_max": 3
-      },
-      "lean_steps": {
-        "range_min": 3,
-        "range_max": 4
-      },
-      "lean_length": {
-        "range_min": 1,
-        "range_max": 2
-      }
-    },
-    "mangrove_trunk": {
-      "trunk_width": 1,
-      "trunk_height": {
-        "base": 4,
-        "height_rand_a": 1,
-        "height_rand_b": 4
-      },
-      "trunk_block": {
-        "name": "terra:bulnesia_log"
-      },
-      "branches": {
-        "branch_chance": 100.0,
-        "branch_length": {
-          "range_min": 0,
-          "range_max": 1
-        },
-        "branch_steps": {
-          "range_min": 1,
-          "range_max": 4
-        }
-      }
-    },
-    "base_block": "minecraft:dirt",
-    "may_grow_on": [
-      "terra:soil",
-      "minecraft:dirt",
-      "minecraft:grass_block",
-      "minecraft:podzol",
-      "minecraft:dirt",
-      "minecraft:farmland",
-      "minecraft:dirt_with_roots",
-      "minecraft:moss_block",
-      "minecraft:clay",
-      "minecraft:mycelium",
-      "minecraft:mud",
-      "minecraft:muddy_mangrove_roots"
-    ],
-    "may_grow_through": [
-      "minecraft:dirt",
-      "minecraft:grass_block",
-      "minecraft:moss_carpet",
-      "minecraft:tall_grass",
-      "minecraft:sunflower",
-      "minecraft:lilac",
-      "minecraft:tall_grass",
-      "minecraft:large_fern",
-      "minecraft:rose_bush",
-      "minecraft:peony"
-    ],
-    "may_replace": [
-      "terra:bulnesia_leaves",
-      "minecraft:mangrove_leaves",
-      "minecraft:azalea_leaves",
-      "minecraft:azalea_leaves_flowered",
-      "minecraft:water",
-      "minecraft:flowing_water",
-      "minecraft:air",
-      "minecraft:mud",
-      "minecraft:muddy_mangrove_roots",
-      "minecraft:vine",
-      "minecraft:moss_carpet",
-      "minecraft:mangrove_propagule",
-      {
-        "name": "minecraft:oak_leaves"
-      },
-      {
-        "name": "minecraft:spruce_leaves"
-      },
-      {
-        "name": "minecraft:birch_leaves"
-      },
-      {
-        "name": "minecraft:jungle_leaves"
-      },
-      {
-        "name": "minecraft:acacia_leaves"
-      },
-      {
-        "name": "minecraft:dark_oak_leaves"
-      }
-    ]
+    "structure_name": "trees:bulnesia_sapling_tree1",
+    "adjustment_radius": 8,
+    "facing_direction": "random",
+    "constraints": {
+      "grounded": {}
+    }
   }
 }

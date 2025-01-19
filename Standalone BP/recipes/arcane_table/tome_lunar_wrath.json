@@ -1,0 +1,42 @@
+{
+    "format_version": "1.20.30",
+    "minecraft:recipe_shaped": {
+        "description": {
+            "identifier": "terra:tome_lunar_wrath"
+        },
+        "tags": [
+            "arcane_table"
+        ],
+        "pattern": [
+            "SS#",
+            "SLM",
+            "#MR"
+        ],
+        "key": {
+            "#": {
+                "item": "terra:reverion"
+            },
+            "M": {
+                "item": "terra:purified_malachite"
+            },
+            "R": {
+                "item": "terra:rune_lunar_wrath"
+            },
+            "S": {
+                "item": "terra:scroll_lunar_wrath"
+            },
+            "L": {
+                "item": "minecraft:leather"
+            }
+        },
+        "unlock": [
+            {
+                "item": "terra:rune_lunar_wrath"
+            }
+        ],
+        "result": {
+            "item": "terra:tome_lunar_wrath",
+            "count": 1
+        }
+    }
+}

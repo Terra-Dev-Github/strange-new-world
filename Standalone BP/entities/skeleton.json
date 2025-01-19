@@ -1,5 +1,10 @@
 // This file was modified and compiled by Heavenly (@heavenly7493) for TERRA.
 // Do not distribute without permission.
+// **
+// NOTE :: MISSING FEATURES
+// * 'DEATHSONG' COMP GROUP
+// :: VEXES, SKELETONS, WITHER SKELETONS, DROWNED, BOGGED, BATS, SILVERFISH
+// **
 {
   "format_version": "1.21.0",
   "minecraft:entity": {
@@ -10,6 +15,94 @@
       "is_summonable": true
     },
     "component_groups": {
+        // deathsong
+      "terra:deathsong_bound": {
+        "minecraft:type_family": {
+          "family": [
+            "undead",
+            "mob",
+            "player",
+            "villager"
+          ]
+        },
+        "minecraft:health": {
+          "value": 15,
+          "max": 15
+        },
+        "minecraft:is_tamed": {},
+        "minecraft:behavior.owner_hurt_target": {
+          "priority": 1
+        },
+        "minecraft:behavior.follow_owner": {
+          "priority": 6,
+          "speed_multiplier": 1,
+          "start_distance": 8,
+          "stop_distance": 4
+        },
+        "minecraft:behavior.owner_hurt_by_target": {
+          "priority": 1
+        },
+        "minecraft:movement": {
+          "value": 0.3
+        },
+        "minecraft:equipment": {
+          "table": "loot_tables/empty.json"
+        },
+        "minecraft:attack": {
+          "damage": 3
+        },
+        "minecraft:behavior.ranged_attack": {
+          "priority": 0,
+          "attack_interval_min": 1,
+          "attack_interval_max": 3.5,
+          "attack_radius": 20
+        },
+        "minecraft:shooter": {
+          "def": "minecraft:arrow",
+          "sound": "bow",
+          "aux_val": 23
+        },
+        "minecraft:timer": {
+          "time": [
+            60,
+            60
+          ],
+          "looping": false,
+          "time_down_event": {
+            "event": "despawn"
+          }
+        },
+        "minecraft:loot": {
+          "table": "loot_tables/entities/bogged.json"
+        },
+        "minecraft:behavior.nearest_attackable_target": {
+          "priority": 2,
+          "must_see": true,
+          "reselect_targets": true,
+          "within_radius": 25,
+          "must_see_forget_duration": 30,
+          "entity_types": [
+            {
+              "filters": {
+                "any_of": [
+                  {
+                    "test": "is_family",
+                    "subject": "other",
+                    "value": "monster"
+                  }
+                ]
+              },
+              "max_dist": 35
+            }
+          ]
+        }
+      },
+      "despawn": {
+        "minecraft:instant_despawn": {
+          "remove_child_entities": true
+        }
+      },
+      //
       "in_powder_snow": {
         "minecraft:is_shaking": {},
         "minecraft:timer": {
@@ -623,6 +716,22 @@
       "minecraft:conditional_bandwidth_optimization": {}
     },
     "events": {
+        // deathsong
+      "terra:deathsong_binding": {
+        "add": {
+          "component_groups": [
+            "terra:deathsong_bound"
+          ]
+        }
+      },
+      "despawn": {
+        "add": {
+          "component_groups": [
+            "despawn"
+          ]
+        }
+      },
+      //
       "minecraft:entity_spawned": {
         "add": {
           "component_groups": [

@@ -16,6 +16,7 @@
 				"identifier": "geometry.panel_floor"
 			},
 			"minecraft:loot": "loot_tables/blocks/steel_grate_panel.json",
+			// hardness: 2
 			"minecraft:destructible_by_mining": {
 				"seconds_to_destroy": 3
 			},

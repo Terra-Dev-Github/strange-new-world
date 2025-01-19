@@ -53,8 +53,9 @@
 					15
 				]
 			},
+			// hardness: 1.5
 			"minecraft:destructible_by_mining": {
-				"seconds_to_destroy": 2.5
+				"seconds_to_destroy": 7.5
 			},
 			"minecraft:loot": "loot_tables/chestlock/outsider_empty.json",
 			"minecraft:map_color": "#8499B0",

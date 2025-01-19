@@ -1,22 +1,58 @@
 ## This file was made, modified and compiled by Heavenly (@heavenly7493) for TERRA.
 ## Do not distribute without permission.
-pack.name=TERRA :: Strange New World - Recursos
-pack.description=Por Heavenly7493 | © 2024, TERRA
+pack.name=TERRA :: Mundo extraño - Recursos
+pack.description=Por Heavenly7493 | © 2025, TERRA
 
-terra.version.beta=Strange New World v1.0.0 [BETA_01]
+terra.version.beta=TERRA - Mundo extraño 1.0.0 [BETA_02]
 
 ## MX > ES
 ## Tronco/Madera descortezada/o > Tronco/Madera sin corteza
+## Gracílico > Mirón
+## Retoño > Brote
 
 ## Sin usar (o el pto programa suelta error)
+item.spawn_egg.entity.terra:blizzard_projectile.name=Spawn Blizzard Projectile
+item.spawn_egg.entity.terra:coagulate_projectile.name=Spawn Coagulate Projectile
 item.spawn_egg.entity.terra:gun_pellet_outsider.name=Spawn Gun Pellet Outsider
 item.spawn_egg.entity.terra:gun_pellet.name=Spawn Gun Pellet
+item.spawn_egg.entity.terra:ignis_projectile.name=Spawn Ignis Projectile
+item.spawn_egg.entity.terra:umbra_projectile.name=Spawn Umbra Projectile
 item.spawn_egg.entity.terra:thrown_tomato.name=Spawn Thrown Tomato
-item.terra:handgun_unloaded=Handgun Unloaded
+item.terra:blaster_unloaded=Blaster Unloaded
+item.terra:blue_mahoe_door=Blue Mahoe Door
+item.terra:blue_mahoe_sapling_item=Blue Mahoe Sapling Item
+item.terra:bulnesia_door=Bulnesia Door
+item.terra:bulnesia_sapling_item=Bulnesia Sapling Item
+item.terra:poplar_door=Poplar Door
+item.terra:poplar_sapling_item=Poplar Sapling Item
 item.terra:record_long_gone=Record Long Gone
 item.terra:record_wtb=Record Wtb
+item.terra:rune=Rune
+item.terra:scroll=Scroll
+item.terra:scroll_blizzard=Scroll Blizzard
+item.terra:scroll_cloudscape=Scroll Cloudscape
+item.terra:scroll_coagulate=Scroll Coagulate
+item.terra:scroll_deathsong=Scroll Deathsong
+item.terra:scroll_ignis=Scroll Ignis
+item.terra:scroll_lunar_wrath=Scroll Lunar Wrath
+item.terra:scroll_puffborne=Scroll Puffborne
+item.terra:scroll_umbra=Scroll Umbra
+item.terra:scroll_windwake=Scroll Windwake
 item.terra:steel_grate_panel_item=Steel Grate Panel Item
 item.terra:steel_lattice_panel_item=Steel Lattice Panel Item
+item.terra:tome=Tome
+item.terra:tome_blizzard=Tome Blizzard
+item.terra:tome_cloudscape=Tome Cloudscape
+item.terra:tome_coagulate=Tome Coagulate
+item.terra:tome_deathsong=Tome Deathsong
+item.terra:tome_ignis=Tome Ignis
+item.terra:tome_lunar_wrath=Tome Lunar Wrath
+item.terra:tome_puffborne=Tome Puffborne
+item.terra:tome_umbra=Tome Umbra
+item.terra:tome_windwake=Tome Windwake
+item.terra:yellowheart_door=Yellowheart Door
+item.terra:yellowheart_sapling_item=Yellowheart Sapling Item
+tile.terra:reinforced_nethersteel_block.name=Reinforced Nethersteel Block
 tile.terra:jukebox_placeholder.name=Jukebox Placeholder
 
 ## Descripciones de items y localización
@@ -24,20 +60,42 @@ item.terra.nethersteel_upgrade.name=Mejora de acero inefable
 item.terra.record.name=§bDisco
 item.record_long_gone.desc=Louis Artell - long gone
 item.record_wtb.desc=Louis Artell - War-Torn Born
-tile.terra.reinforced_nethersteel_block.name=Bloque de acero inefable reforzado
-terra.cloudscape.name=Cloudscape
-terra.lunar_wrath.name=Lunar Wrath
-terra.puffborne.name=Puffborne
-terra.windwake.name=Windwake
+terra.spell.empty= Sin hechizos asignados
+terra.blizzard.name= Ventisca
+terra.cloudscape.name= Cúmulos
+terra.coagulate.name= Hematoma
+terra.deathsong.name= Himno mortal
+terra.ignis.name= Ignis
+terra.lunar_wrath.name= Ira lunar
+terra.puffborne.name= Mutación tetraodonta
+terra.umbra.name= Umbra
+terra.windwake.name= Ramalazo
 
 crate.is_locked.langcode=:: ¡El cofre está cerrado! ::
 gun.unloaded.langcode=:: Sin munición ::
+gun.reloading.langcode=:: Recargando... ::
+
+## Íconos de hechizos
+
+## ranura de hechizo vacío =  | seleccionado (SIN USAR) = 
+## 1. ignis =  | seleccionado = 
+## 2. ventisca (blizzard) =  | seleccionado = 
+## 3. cúmulos (cloudscape) =  | seleccionado = 
+## 4. mutación tetraodonta (puffborne) =  | seleccionado = 
+## 5. ira lunar (lunar wrath) =  | seleccionado = 
+## 6. ramalazo (windwake) =  | seleccionado = 
+## 7. himno mortal (deathsong) =  | seleccionado = 
+## 8. hematoma (coagulate) =  | seleccionado = 
+## 9. umbra =  | seleccionado = 
 
 ## Items
-item.terra:grapes=Uvas
 item.terra:anchor=Ancla
+item.terra.ancient_wand=Varita antigua
+item.terra.archimage_wand=Varita de archimago
+item.terra:blaster=Bláster
 item.terra:deepslate_key=Llave de cofre de pizarra abismal
-item.terra:handgun=Pistola
+item.terra.druidic_wand=Varita druida
+item.terra:grapes=Uvas
 item.terra:lemon_seeds=Semillas de limón
 item.terra:lemon=Limón
 item.terra:malachite_fragment=Fragmento de malaquita
@@ -58,41 +116,52 @@ item.terra:outsider_key=Llave de cofre de metal forastero
 item.terra:outsider_metal_ingot=Lingote de metal forastero
 item.terra:outsider_metal_scrap=Pedazo de metal forastero
 item.terra:platinum_ingot=Lingote de platino
+item.terra:pineapple=Piña
+item.terra:pineapple_seeds=Semillas de piña
 item.terra:purified_malachite=Malaquita purificada
 item.terra:raw_malachite=Malaquita cruda
 item.terra:raw_platinum=Platino crudo
+item.terra:.einforced_wand=Varita reforzada
 item.terra:reverion_dust=Polvo de reverion
 item.terra:ruby=Rubí
+item.terra.rune=Runa
 item.terra:salt=Sal
 item.terra:salt_bottle=Botella de sal
-item.terra:scroll=Pergamino
+item.terra.scroll=Pergamino
 item.terra:steel_ingot=Lingote de acero
 item.terra:steel_nugget=Pepita de acero
+item.terra.supreme_wand=Varita suprema
 item.terra:tanzanite=Tanzanita
 item.terra:tomato_seeds=Semillas de tomate
 item.terra:tomato=Tomate
+item.terra.tome=Tomo
 item.terra:vial_empty=Frasco
 item.terra:vial_pure=Frasco puro
 item.terra:vial_radioactive=Frasco radioactivo
 item.terra:vial_shimmering=Frasco resplandeciente
 item.terra:vial_waste=Frasco de residuos
-item.terra:wand=Varita
 
 ## Bloques
+tile.terra:anorthosite_slab.name=Losa de anortosita
+tile.terra:anorthosite.name=Anortosita
 tile.terra:arcane_table.name=Mesa arcana
 tile.terra:autonetic_station.name=Estación autonética
+tile.terra:blue_mahoe_door.name=Puerta de majó azul
 tile.terra:blue_mahoe_leaves.name=Hojas de majó azul
 tile.terra:blue_mahoe_log.name=Tronco de majó azul
 tile.terra:blue_mahoe_log_stripped.name=Tronco descortezado de majó azul
 tile.terra:blue_mahoe_planks.name=Tablones de majó azul
+tile.terra:blue_mahoe_sapling.name=Retoño de majó azul
 tile.terra:blue_mahoe_slab.name=Losa de majó azul
 tile.terra:blue_mahoe_trapdoor.name=Escotilla de majó azul
 tile.terra:blue_mahoe_wood.name=Madera de majó azul
 tile.terra:blue_mahoe_wood_stripped.name=Madera descortezada de majó azul
+tile.terra:bulnesia_door.name=Puerta de bulnesia
 tile.terra:bulnesia_leaves.name=Hojas de bulnesia
 tile.terra:bulnesia_log.name=Tronco de bulnesia
 tile.terra:bulnesia_log_stripped.name=Tronco descortezado de bulnesia
 tile.terra:bulnesia_planks.name=Tablones de bulnesia
+tile.terra:bulnesia_sapling.name=Retoño de bulnesia
 tile.terra:bulnesia_slab.name=Losa de bulnesia
 tile.terra:bulnesia_trapdoor.name=Escotilla de bulnesia
 tile.terra:bulnesia_wood.name=Madera de bulnesia
@@ -103,6 +172,8 @@ tile.terra:brittle_reverion.name=Reverion frágil
 tile.terra:chesthound_block.name=Cofre mímico
 tile.terra:chiseled_malachite_block.name=Malaquita cincelada
 tile.terra:chiseled_outsider_metal.name=Metal forastero cincelado
+tile.terra:cobbled_regolith_slab.name=Losa de regolito empedrado
+tile.terra:cobbled_regolith.name=Regolito empedrado
 tile.terra:cut_malachite_block.name=Malaquita pulida cortada
 tile.terra:cut_outsider_metal.name=Metal forastero cortado
 tile.terra:deepslate_crate_empty.name=Cofre vacío de pizarra abismal
@@ -114,6 +185,7 @@ tile.terra:duskstone_brick_slab.name=Losa de ladrillos de piedra nocturna
 tile.terra:duskstone_bricks.name=Ladrillos de piedra nocturna
 tile.terra:duskstone_slab.name=Losa de piedra nocturna
 tile.terra:duskstone.name=Piedra nocturna
+tile.terra:grape_vine.name=Enredadera de uvas
 tile.terra:hazard_block.name=Bloque de peligro
 tile.terra:hazard_pillar.name=Pilar de peligro
 tile.terra:hazardous_outsider_metal.name=Metal forastero con marca de peligro
@@ -132,18 +204,22 @@ tile.terra:outsider_crate_locked.name=Cofre de metal forastero
 tile.terra:outsider_metal_block.name=Bloque de metal forastero
 tile.terra:outsider_metal_pillar.name=Pilar de metal forastero
 tile.terra:outsider_metal_slab.name=Losa de metal forastero
+tile.terra:pineapple_crop.name=Cultivo de piña
 tile.terra:platinum_ore.name=Mineral de platino
+tile.terra:polished_anorthosite_slab.name=Losa de anortosita pulida
+tile.terra:polished_anorthosite.name=Anortosita pulida
 tile.terra:polished_duskstone_slab.name=Losa de piedra nocturna pulida
-tile.terra:polished_malachite_brick_slab.name=Losa de ladrillos de piedra nocturna pulida
 tile.terra:polished_duskstone.name=Piedra nocturna pulida
 tile.terra:polished_malachite_block.name=Malaquita pulida
 tile.terra:polished_malachite_brick_slab.name=Losa de ladrillos de malaquita pulida
 tile.terra:polished_malachite_bricks.name=Ladrillos de malaquita pulida
 tile.terra:polished_malachite_slab.name=Losa de malaquita pulida
+tile.terra:poplar_door.name=Puerta de álamo de tulipan
 tile.terra:poplar_leaves.name=Hojas de álamo de tulipan
 tile.terra:poplar_log.name=Tronco de álamo de tulipan
 tile.terra:poplar_log_stripped.name=Tronco descortezado de álamo de tulipan
 tile.terra:poplar_planks.name=Tablones de álamo de tulipan
+tile.terra:poplar_sapling.name=Retoño de álamo de tulipan
 tile.terra:poplar_slab.name=Losa de álamo de tulipan
 tile.terra:poplar_trapdoor.name=Escotilla de álamo de tulipan
 tile.terra:poplar_wood.name=Madera de álamo de tulipan
@@ -151,7 +227,9 @@ tile.terra:poplar_wood_stripped.name=Madera descortezada de álamo de tulipan
 tile.terra:platinum_block.name=Bloque de platino
 tile.terra:raw_malachite_block.name=Bloque de malaquita cruda
 tile.terra:raw_platinum_block.name=Bloque de platino crudo
-tile.terra:reinforced_nethersteel_block.name=Bloque de acero inefable reforzado
+tile.terra:regolith_slab.name=Losa de regolito
+tile.terra:regolith.name=Regolito
+tile.terra.reinforced_nethersteel_block.name=Bloque de acero inefable reforzado
 tile.terra:reverion_brick_slab.name=Losa de ladrillos de reverion
 tile.terra:reverion_bricks.name=Ladrillos de reverion
 tile.terra:reverion_slab.name=Losa de reverion
@@ -162,6 +240,7 @@ tile.terra:salt_block.name=Bloque de sal
 tile.terra:salt_dust.name=Polvo de sal
 tile.terra:salt_ore.name=Mineral de sal
 tile.terra:sandy_soil.name=Fango arenoso
+tile.terra:scorched_soil.name=Fango chamuscado
 tile.terra:soil.name=Fango
 tile.terra:steel_block.name=Bloque de acero
 tile.terra:steel_grate_block.name=Bloque de enrejado de acero
@@ -176,16 +255,20 @@ tile.terra:vial_rod_empty.name=Columna de vial
 tile.terra:vial_rod_radioactive.name=Columna de vial radioactiva
 tile.terra:vial_rod_shimmering.name=Columna de vial resplandeciente
 tile.terra:wired_outsider_metal.name=Metal forastero cableado
+tile.terra:yellowheart_door.name=Puerta de palo amarillo
 tile.terra:yellowheart_leaves.name=Hojas de palo amarillo
 tile.terra:yellowheart_log.name=Tronco de palo amarillo
 tile.terra:yellowheart_log_stripped.name=Tronco descortezado de palo amarillo
 tile.terra:yellowheart_planks.name=Tablones de palo amarillo
+tile.terra:yellowheart_sapling.name=Retoño de palo amarillo
 tile.terra:yellowheart_slab.name=Losa de palo amarillo
 tile.terra:yellowheart_trapdoor.name=Escotilla de palo amarillo
 tile.terra:yellowheart_wood.name=Madera de palo amarillo
 tile.terra:yellowheart_wood_stripped.name=Madera descortezada de palo amarillo
 
 ## Entidades
+entity.terra:beeper.name=Bíper
+item.spawn_egg.entity.terra:beeper.name=Generador de bíper
 entity.terra:chesthound.name=Mímico
 item.spawn_egg.entity.terra:chesthound.name=Generador de mímico
 entity.terra:chesthound_deepslate.name=Mímico de pizarra abismal
@@ -196,12 +279,27 @@ entity.terra:cobblestone_golem.name=Gólem de adoquín
 item.spawn_egg.entity.terra:cobblestone_golem.name=Generador de gólem de adoquín
 entity.terra:eyecletch.name=Corneópodo
 item.spawn_egg.entity.terra:eyecletch.name=Generador de corneópodo
-entity.terra:gun_pellet_outsider.name=Perdigón
-entity.terra:gun_pellet.name=Perdigón
-entity.terra:possum.name=Zarigüeya
-item.spawn_egg.entity.terra:possum.name=Generador de zarigüeya
 entity.terra:outsider.name=Invasor
 item.spawn_egg.entity.terra:outsider.name=Generador de invasor
+entity.terra:possum.name=Zarigüeya
+item.spawn_egg.entity.terra:possum.name=Generador de zarigüeya
+entity.terra:rarthrabby.name=Rarthrabby
+item.spawn_egg.entity.terra:rarthrabby.name=Generador de rarthrabby
+entity.terra:sentry.name=Centinela
+item.spawn_egg.entity.terra:sentry.name=Generador de centinela
+entity.terra:stalker.name=Gracílico
+item.spawn_egg.entity.terra:stalker.name=Generador de gracílico
 entity.terra:starfloat.name=Estelar
 item.spawn_egg.entity.terra:starfloat.name=Generador de estelar
+entity.terra:tank_outsider.name=Invasor tanque
+item.spawn_egg.entity.terra:tank_outsider.name=Generador de invasor tanque
+entity.terra:warlock.name=Hechicero
+item.spawn_egg.entity.terra:warlock.name=Generador de hechicero
+
+entity.terra:blizzard_projectile.name=Proyectil de ventisca
+entity.terra:coagulate_projectile.name=Proyectil de hematoma
+entity.terra:ignis_projectile.name=Proyectil de ignis
+entity.terra:gun_pellet_outsider.name=Perdigón
+entity.terra:gun_pellet.name=Perdigón
 entity.terra:thrown_tomato.name=Tomate
+entity.terra:umbra_projectile.name=Proyectil de umbra

@@ -21,15 +21,25 @@ world.beforeEvents.worldInitialize.subscribe(eventData => {
             // behavior for anchor usage
             if (selectedItem?.typeId === 'terra:anchor') {
                 player.playSound('anchor.launch');
-                player.runCommandAsync(`particle terra:gun_blast_particle ${location.x} ${location.y} ${location.z}`);
+                player.runCommandAsync(`particle terra:chestlock_open ${location.x} ${location.y} ${location.z}`);
+                player.runCommandAsync(`particle terra:anchor_use_particle ${location.x} ${location.y} ${location.z}`);
                 // define and get view direction and player velocuty
                 const viewDir = player.getViewDirection();
-                // const velocity = player.getVelocity();
-                // define new velocity and apply it as knockback
-                // const newVelocity = Math.sqrt(velocity * velocity) * 4.0;
-                if (player.isSprinting) {
-                    player.applyKnockback(viewDir.x, viewDir.z, 3, 0.5)
-                } else player.applyKnockback(viewDir.x, viewDir.z, 1.5, 0.25)
+                const sprintMultiplier = player.isSprinting ? 4 : 1.5;
+                // apply the knockback
+                player.applyKnockback(viewDir.x, viewDir.z, sprintMultiplier, viewDir.y * 2);
+                /*
+                if (viewDir.y >= 0.5) {
+                    if (player.isSprinting) {
+                        player.applyKnockback(viewDir.x, viewDir.z, 3, 0.75)
+                    } else player.applyKnockback(viewDir.x, viewDir.z, 1.5, 0.5);
+                };
+                if (viewDir.y >= 0.5) {
+                    if (player.isSprinting) {
+                        player.applyKnockback(viewDir.x, viewDir.z, 4.5, 1.25)
+                    } else player.applyKnockback(viewDir.x, viewDir.z, 3, 0.75);
+                }
+                */
             };
 
             // get the durability component and decrease it unless the player is in creative

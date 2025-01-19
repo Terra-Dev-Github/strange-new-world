@@ -1,0 +1,46 @@
+// This file was made, modified and compiled by Heavenly (@heavenly7493) for TERRA.
+// Do not distribute without permission.
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "terra:stalker",
+      "materials": {
+        "default": "skeleton"
+      },
+      "textures": {
+        "default": "textures/entity/stalker"
+      },
+      "geometry": {
+        "default": "geometry.stalker"
+      },
+      "animations": {
+        "walk": "animation.quadruped.walk",
+        "look_at_target": "animation.stalker.look_at_target",
+        "setup": "animation.fox.setup",
+        "move": "controller.animation.fox.move",
+        "stare": "animation.stalker.stare",
+        "timid": "animation.stalker.timid",
+        "controller_general": "controller.animation.stalker.general"
+      },
+      "scripts": {
+        "animate": [
+          "setup",
+          "move",
+          {
+            "stare": "query.is_shaking"
+          },
+          "controller_general"
+        ]
+      },
+      "render_controllers": [
+        "controller.render.default"
+      ],
+      "enable_attachables": false,
+      "spawn_egg": {
+        "base_color": "#B7896C",
+        "overlay_color": "#7C9FA1"
+      }
+    }
+  }
+}

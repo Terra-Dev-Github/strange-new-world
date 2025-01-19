@@ -1,5 +1,10 @@
 // This file was made, modified and compiled by Heavenly (@heavenly7493) for TERRA.
 // Do not distribute without permission.
+// **
+// NOTE :: MISSING FEATURES
+// * SOUND-BASED GUIDANCE AND ATTACKING
+// :: RARTHRABBIES COULD BE BLIND
+// **
 {
   "format_version": "1.21.0",
   "minecraft:entity": {

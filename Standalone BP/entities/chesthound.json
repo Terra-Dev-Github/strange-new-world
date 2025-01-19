@@ -1,5 +1,10 @@
-// This file was made, modified and compiled by Heavenly (@heavenly7493) for TERRA.
+// This file was modified and compiled by Heavenly (@heavenly7493) for TERRA.
 // Do not distribute without permission.
+// **
+// NOTE :: MISSING FEATURES
+// * INACCESSIBLE INVENTORY FOR WILD CHESTHOUNDS
+// * CHESTHOUNDS STEALING RANDOM/HELD ITEMS ON ATTACK
+// **
 {
     "format_version": "1.16.0",
     "minecraft:entity": {

@@ -17,8 +17,8 @@ system.runInterval(() => {
 
         // effect manager if conditions are met
         if (helmet?.typeId === 'terra:nethersteel_helmet' && chestplate?.typeId === 'terra:nethersteel_chestplate' && leggings?.typeId === 'terra:nethersteel_leggings' && boots?.typeId === 'terra:nethersteel_boots') {
-            player.addEffect('strength', 2, { amplifier: 2, showParticles: true });
-            player.addEffect('slowness', 2, { amplifier: 2, showParticles: true });
+            player.addEffect('strength', 40, { amplifier: 2, showParticles: true });
+            player.addEffect('slowness', 40, { amplifier: 2, showParticles: true });
         }
     }
 }, 20);

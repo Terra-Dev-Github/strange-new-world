@@ -1,0 +1,42 @@
+{
+    "format_version": "1.20.30",
+    "minecraft:recipe_shaped": {
+        "description": {
+            "identifier": "terra:tome_puffborne"
+        },
+        "tags": [
+            "arcane_table"
+        ],
+        "pattern": [
+            "SS#",
+            "SLM",
+            "#MR"
+        ],
+        "key": {
+            "#": {
+                "item": "terra:reverion"
+            },
+            "M": {
+                "item": "terra:purified_malachite"
+            },
+            "R": {
+                "item": "terra:rune_puffborne"
+            },
+            "S": {
+                "item": "terra:scroll_puffborne"
+            },
+            "L": {
+                "item": "minecraft:leather"
+            }
+        },
+        "unlock": [
+            {
+                "item": "terra:rune_puffborne"
+            }
+        ],
+        "result": {
+            "item": "terra:tome_puffborne",
+            "count": 1
+        }
+    }
+}

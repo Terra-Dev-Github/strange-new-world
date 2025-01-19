@@ -1,22 +1,56 @@
 ## This file was made, modified and compiled by Heavenly (@heavenly7493) for TERRA.
 ## Do not distribute without permission.
 pack.name=TERRA :: Strange New World - Resources
-pack.description=By Heavenly7493 | © 2024, TERRA
+pack.description=By Heavenly7493 | © 2025, TERRA
 
-terra.version.beta=Strange New World v1.0.0 [BETA_01]
+terra.version.beta=TERRA - Strange New World v1.0.0 [BETA_02]
 
 ## US > GB
 ## Chiseled > Chiselled
 
 ## Unused (otherwise bridge keeps throwing errors ffs)
+item.spawn_egg.entity.terra:blizzard_projectile.name=Spawn Blizzard Projectile
+item.spawn_egg.entity.terra:coagulate_projectile.name=Spawn Coagulate Projectile
 item.spawn_egg.entity.terra:gun_pellet_outsider.name=Spawn Gun Pellet Outsider
 item.spawn_egg.entity.terra:gun_pellet.name=Spawn Gun Pellet
+item.spawn_egg.entity.terra:ignis_projectile.name=Spawn Ignis Projectile
+item.spawn_egg.entity.terra:umbra_projectile.name=Spawn Umbra Projectile
 item.spawn_egg.entity.terra:thrown_tomato.name=Spawn Thrown Tomato
-item.terra:handgun_unloaded=Handgun Unloaded
+item.terra:blaster_unloaded=Blaster Unloaded
+item.terra:blue_mahoe_door=Blue Mahoe Door
+item.terra:blue_mahoe_sapling_item=Blue Mahoe Sapling Item
+item.terra:bulnesia_door=Bulnesia Door
+item.terra:bulnesia_sapling_item=Bulnesia Sapling Item
+item.terra:poplar_door=Poplar Door
+item.terra:poplar_sapling_item=Poplar Sapling Item
 item.terra:record_long_gone=Record Long Gone
 item.terra:record_wtb=Record Wtb
+item.terra:rune=Rune
+item.terra:scroll=Scroll
+item.terra:scroll_blizzard=Scroll Blizzard
+item.terra:scroll_cloudscape=Scroll Cloudscape
+item.terra:scroll_coagulate=Scroll Coagulate
+item.terra:scroll_deathsong=Scroll Deathsong
+item.terra:scroll_ignis=Scroll Ignis
+item.terra:scroll_lunar_wrath=Scroll Lunar Wrath
+item.terra:scroll_puffborne=Scroll Puffborne
+item.terra:scroll_umbra=Scroll Umbra
+item.terra:scroll_windwake=Scroll Windwake
 item.terra:steel_grate_panel_item=Steel Grate Panel Item
 item.terra:steel_lattice_panel_item=Steel Lattice Panel Item
+item.terra:tome=Tome
+item.terra:tome_blizzard=Tome Blizzard
+item.terra:tome_cloudscape=Tome Cloudscape
+item.terra:tome_coagulate=Tome Coagulate
+item.terra:tome_deathsong=Tome Deathsong
+item.terra:tome_ignis=Tome Ignis
+item.terra:tome_lunar_wrath=Tome Lunar Wrath
+item.terra:tome_puffborne=Tome Puffborne
+item.terra:tome_umbra=Tome Umbra
+item.terra:tome_windwake=Tome Windwake
+item.terra:yellowheart_door=Yellowheart Door
+item.terra:yellowheart_sapling_item=Yellowheart Sapling Item
+tile.terra:reinforced_nethersteel_block.name=Reinforced Nethersteel Block
 tile.terra:jukebox_placeholder.name=Jukebox Placeholder
 
 ## Item Descriptions & Localization
@@ -24,20 +58,42 @@ item.terra.nethersteel_upgrade.name=Nethersteel Upgrade
 item.terra.record.name=§bMusic Disc
 item.record_long_gone.desc=Louis Artell - long gone
 item.record_wtb.desc=Louis Artell - War-Torn Born
-tile.terra.reinforced_nethersteel_block.name=Reinforced Nethersteel Block
-terra.cloudscape.name=Cloudscape
-terra.lunar_wrath.name=Lunar Wrath
-terra.puffborne.name=Puffborne
-terra.windwake.name=Windwake
+terra.spell.empty= No Spells Applied
+terra.blizzard.name= Blizzard
+terra.cloudscape.name= Cloudscape
+terra.coagulate.name= Coagulate
+terra.deathsong.name= Deathsong
+terra.ignis.name= Ignis
+terra.lunar_wrath.name= Lunar Wrath
+terra.puffborne.name= Puffborne
+terra.umbra.name= Umbra
+terra.windwake.name= Windwake
 
 crate.is_locked.langcode=:: This crate is locked! ::
 gun.unloaded.langcode=:: Out of ammo ::
+gun.reloading.langcode=:: Recharging... ::
+
+## Spell Icons
+
+## empty spell slot =  | selected (UNUSED) = 
+## 1. ignis =  | selected = 
+## 2. blizzard =  | selected = 
+## 3. cloudscape =  | selected = 
+## 4. puffborne =  | selected = 
+## 5. lunar wrath =  | selected = 
+## 6. windwake =  | selected = 
+## 7. deathsong =  | selected = 
+## 8. coagulate =  | selected = 
+## 9. umbra =  | selected = 
 
 ## Items
-item.terra:grapes=Grapes
 item.terra:anchor=Anchor
+item.terra.ancient_wand=Ancient Wand
+item.terra.archimage_wand=Archimage Wand
+item.terra:blaster=Blaster
 item.terra:deepslate_key=Deepslate Key
-item.terra:handgun=Handgun
+item.terra.druidic_wand=Druidic Wand
+item.terra:grapes=Grapes
 item.terra:lemon_seeds=Lemon Seeds
 item.terra:lemon=Lemon
 item.terra:malachite_fragment=Malachite Fragment
@@ -58,41 +114,52 @@ item.terra:outsider_key=Outsider Key
 item.terra:outsider_metal_ingot=Outsider Metal Ingot
 item.terra:outsider_metal_scrap=Outsider Metal Scrap
 item.terra:platinum_ingot=Platinum Ingot
+item.terra:pineapple=Pineapple
+item.terra:pineapple_seeds=Pineapple Seeds
 item.terra:purified_malachite=Purified Malachite
 item.terra:raw_malachite=Raw Malachite
 item.terra:raw_platinum=Raw Platinum
+item.terra.reinforced_wand=Reinforced Wand
 item.terra:reverion_dust=Reverion Dust
 item.terra:ruby=Ruby
+item.terra.rune=Rune
 item.terra:salt=Salt
 item.terra:salt_bottle=Salt Bottle
-item.terra:scroll=Scroll
+item.terra.scroll=Scroll
 item.terra:steel_ingot=Steel Ingot
 item.terra:steel_nugget=Steel Nugget
+item.terra.supreme_wand=Supreme Wand
 item.terra:tanzanite=Tanzanite
 item.terra:tomato_seeds=Tomato Seeds
 item.terra:tomato=Tomato
+item.terra.tome=Tome
 item.terra:vial_empty=Vial
 item.terra:vial_pure=Pure Vial
 item.terra:vial_radioactive=Radioactive Vial
 item.terra:vial_shimmering=Shimmering Vial
 item.terra:vial_waste=Waste Vial
-item.terra:wand=Wand
 
 ## Blocks
+tile.terra:anorthosite_slab.name=Anorthosite Slab
+tile.terra:anorthosite.name=Anorthosite
 tile.terra:arcane_table.name=Arcane Table
 tile.terra:autonetic_station.name=Autonetic Station
+tile.terra:blue_mahoe_door.name=Blue Mahoe Door
 tile.terra:blue_mahoe_leaves.name=Blue Mahoe Leaves
 tile.terra:blue_mahoe_log.name=Blue Mahoe Log
 tile.terra:blue_mahoe_log_stripped.name=Blue Mahoe Log Stripped
 tile.terra:blue_mahoe_planks.name=Blue Mahoe Planks
+tile.terra:blue_mahoe_sapling.name=Blue Mahoe Sapling
 tile.terra:blue_mahoe_slab.name=Blue Mahoe Slab
 tile.terra:blue_mahoe_trapdoor.name=Blue Mahoe Trapdoor
 tile.terra:blue_mahoe_wood.name=Blue Mahoe Wood
 tile.terra:blue_mahoe_wood_stripped.name=Blue Mahoe Wood Stripped
+tile.terra:bulnesia_door.name=Bulnesia Door
 tile.terra:bulnesia_leaves.name=Bulnesia Leaves
 tile.terra:bulnesia_log.name=Bulnesia Log
 tile.terra:bulnesia_log_stripped.name=Bulnesia Log Stripped
 tile.terra:bulnesia_planks.name=Bulnesia Planks
+tile.terra:bulnesia_sapling.name=Bulnesia Sapling
 tile.terra:bulnesia_slab.name=Bulnesia Slab
 tile.terra:bulnesia_trapdoor.name=Bulnesia Trapdoor
 tile.terra:bulnesia_wood.name=Bulnesia Wood
@@ -103,6 +170,8 @@ tile.terra:brittle_reverion.name=Brittle Reverion
 tile.terra:chesthound_block.name=Chesthound Block
 tile.terra:chiseled_malachite_block.name=Chiseled Malachite
 tile.terra:chiseled_outsider_metal.name=Chiseled Outsider Metal
+tile.terra:cobbled_regolith_slab.name=Cobbled Regolith Slab
+tile.terra:cobbled_regolith.name=Cobbled Regolith
 tile.terra:cut_malachite_block.name=Cut Polished Malachite
 tile.terra:cut_outsider_metal.name=Cut Outsider Metal
 tile.terra:deepslate_crate_empty.name=Empty Deepslate Crate
@@ -114,6 +183,7 @@ tile.terra:duskstone_brick_slab.name=Duskstone Brick Slab
 tile.terra:duskstone_bricks.name=Duskstone Bricks
 tile.terra:duskstone_slab.name=Duskstone Slab
 tile.terra:duskstone.name=Duskstone
+tile.terra:grape_vine.name=Grape Vine
 tile.terra:hazard_block.name=Hazard Block
 tile.terra:hazard_pillar.name=Hazard Pillar
 tile.terra:hazardous_outsider_metal.name=Hazardous Outsider Metal
@@ -132,17 +202,22 @@ tile.terra:outsider_crate_locked.name=Outsider Crate
 tile.terra:outsider_metal_block.name=Outsider Metal Block
 tile.terra:outsider_metal_pillar.name=Outsider Metal Pillar
 tile.terra:outsider_metal_slab.name=Outsider Metal Slab
+tile.terra:pineapple_crop.name=Pineapple Crop
 tile.terra:platinum_ore.name=Platinum Ore
+tile.terra:polished_anorthosite_slab.name=Polished Anorthosite Slab
+tile.terra:polished_anorthosite.name=Polished Anorthosite
 tile.terra:polished_duskstone_slab.name=Polished Duskstone Slab
 tile.terra:polished_duskstone.name=Polished Duskstone
 tile.terra:polished_malachite_block.name=Polished Malachite
 tile.terra:polished_malachite_brick_slab.name=Polished Malachite Brick Slab
 tile.terra:polished_malachite_bricks.name=Polished Malachite Bricks
 tile.terra:polished_malachite_slab.name=Polished Malachite Slab
+tile.terra:poplar_door.name=Poplar Door
 tile.terra:poplar_leaves.name=Poplar Leaves
 tile.terra:poplar_log.name=Poplar Log
 tile.terra:poplar_log_stripped.name=Stripped Poplar Log
 tile.terra:poplar_planks.name=Poplar Planks
+tile.terra:poplar_sapling.name=Poplar Sapling
 tile.terra:poplar_slab.name=Poplar Slab
 tile.terra:poplar_trapdoor.name=Poplar Trapdoor
 tile.terra:poplar_wood.name=Poplar Wood
@@ -150,7 +225,9 @@ tile.terra:poplar_wood_stripped.name=Stripped Poplar Wood
 tile.terra:platinum_block.name=Block of Platinum
 tile.terra:raw_malachite_block.name=Block of Raw Malachite
 tile.terra:raw_platinum_block.name=Block of Raw Platinum
-tile.terra:reinforced_nethersteel_block.name=Reinforced Nethersteel Block
+tile.terra:regolith_slab.name=Regolith Slab
+tile.terra:regolith.name=Regolith
+tile.terra.reinforced_nethersteel_block.name=Reinforced Nethersteel Block
 tile.terra:reverion_brick_slab.name=Reverion Brick Slab
 tile.terra:reverion_bricks.name=Reverion Bricks
 tile.terra:reverion_slab.name=Reverion Slab
@@ -161,6 +238,7 @@ tile.terra:salt_block.name=Salt Block
 tile.terra:salt_dust.name=Salt Dust
 tile.terra:salt_ore.name=Salt Ore
 tile.terra:sandy_soil.name=Sandy Soil
+tile.terra:scorched_soil.name=Scorched Soil
 tile.terra:soil.name=Soil
 tile.terra:steel_block.name=Block of Steel
 tile.terra:steel_grate_block.name=Steel Grate Block
@@ -175,16 +253,20 @@ tile.terra:vial_rod_empty.name=Vial Rod
 tile.terra:vial_rod_radioactive.name=Radioactive Vial Rod
 tile.terra:vial_rod_shimmering.name=Shimmering Vial Rod
 tile.terra:wired_outsider_metal.name=Wired Outsider Metal
+tile.terra:yellowheart_door.name=Yellowheart Door
 tile.terra:yellowheart_leaves.name=Yellowheart Leaves
 tile.terra:yellowheart_log.name=Yellowheart Log
 tile.terra:yellowheart_log_stripped.name=Yellowheart Log Stripped
 tile.terra:yellowheart_planks.name=Yellowheart Planks
+tile.terra:yellowheart_sapling.name=Yellowheart Sapling
 tile.terra:yellowheart_slab.name=Yellowheart Slab
 tile.terra:yellowheart_trapdoor.name=Yellowheart Trapdoor
 tile.terra:yellowheart_wood.name=Yellowheart Wood
 tile.terra:yellowheart_wood_stripped.name=Yellowheart Wood Stripped
 
 ## Entities
+entity.terra:beeper.name=Beeper
+item.spawn_egg.entity.terra:beeper.name=Spawn Beeper
 entity.terra:chesthound.name=Chesthound
 item.spawn_egg.entity.terra:chesthound.name=Spawn Chesthound
 entity.terra:chesthound_deepslate.name=Deepslate Chesthound
@@ -195,12 +277,27 @@ entity.terra:cobblestone_golem.name=Cobblestone Golem
 item.spawn_egg.entity.terra:cobblestone_golem.name=Spawn Cobblestone Golem
 entity.terra:eyecletch.name=Eyecletch
 item.spawn_egg.entity.terra:eyecletch.name=Spawn Eyecletch
-entity.terra:gun_pellet_outsider.name=Gun Pellet
-entity.terra:gun_pellet.name=Gun Pellet
-entity.terra:possum.name=Possum
-item.spawn_egg.entity.terra:possum.name=Spawn Possum
 entity.terra:outsider.name=Outsider
 item.spawn_egg.entity.terra:outsider.name=Spawn Outsider
+entity.terra:possum.name=Possum
+item.spawn_egg.entity.terra:possum.name=Spawn Possum
+entity.terra:rarthrabby.name=Rarthrabby
+item.spawn_egg.entity.terra:rarthrabby.name=Spawn Rarthrabby
+entity.terra:sentry.name=Sentry
+item.spawn_egg.entity.terra:sentry.name=Spawn Sentry
+entity.terra:stalker.name=Stalker
+item.spawn_egg.entity.terra:stalker.name=Spawn Stalker
 entity.terra:starfloat.name=Starfloat
 item.spawn_egg.entity.terra:starfloat.name=Spawn Starfloat
+entity.terra:tank_outsider.name=Tank Outsider
+item.spawn_egg.entity.terra:tank_outsider.name=Spawn Tank Outsider
+entity.terra:warlock.name=Warlock
+item.spawn_egg.entity.terra:warlock.name=Spawn Warlock
+
+entity.terra:blizzard_projectile.name=Blizzard Projectile
+entity.terra:coagulate_projectile.name=Coagulate Projectile
+entity.terra:ignis_projectile.name=Ignis Projectile
+entity.terra:gun_pellet_outsider.name=Gun Pellet
+entity.terra:gun_pellet.name=Gun Pellet
 entity.terra:thrown_tomato.name=Tomato
+entity.terra:umbra_projectile.name=Umbra Projectile

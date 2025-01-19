@@ -1,0 +1,37 @@
+{
+    "format_version": "1.20.30",
+    "minecraft:recipe_shaped": {
+        "description": {
+            "identifier": "terra:arcane_table"
+        },
+        "tags": [
+            "crafting_table"
+        ],
+        "pattern": [
+            "#R#",
+            "RMR",
+            "#R#"
+        ],
+        "key": {
+            "M": {
+                "item": "terra:polished_malachite_block"
+            },
+            "R": {
+                "item": "terra:rune"
+            },
+            "#": {
+                "item": "terra:reverion"
+            }
+        },
+        "result": {
+            "item": "terra:arcane_table",
+            "count": 1
+        },
+        "unlock": [
+            {
+                "item": "terra:reverion"
+            }
+        ],
+        "priority": 2
+    }
+}

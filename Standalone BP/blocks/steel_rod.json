@@ -69,6 +69,7 @@
         ],
         "components": {
             "tag:metal": {},
+            "tag:minecraft:is_pickaxe_item_destructible": {},
             "minecraft:geometry": "geometry.steel_rod",
             "minecraft:material_instances": {
                 "*": {
@@ -100,8 +101,9 @@
                     2
                 ]
             },
+            // hardness: 1.5
             "minecraft:destructible_by_mining": {
-                "seconds_to_destroy": 2.5
+                "seconds_to_destroy": 7.5
             },
             "minecraft:destructible_by_explosion": {
                 "explosion_resistance": 3

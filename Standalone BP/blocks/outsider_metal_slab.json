@@ -100,12 +100,14 @@
 		],
 		"components": {
 			"tag:metal": {},
-			"minecraft:destructible_by_mining": {
-				"seconds_to_destroy": 2.5
-			},
-			"minecraft:destructible_by_explosion": {
-				"explosion_resistance": 3
-			},
+            "tag:minecraft:is_pickaxe_item_destructible": {},
+			// hardness: 5
+            "minecraft:destructible_by_mining": {
+                "seconds_to_destroy": 25
+            },
+            "minecraft:destructible_by_explosion": {
+                "explosion_resistance": 6
+            },
 			"minecraft:map_color": "#8499B0",
 			"minecraft:flammable": {
 				"catch_chance_modifier": 5,

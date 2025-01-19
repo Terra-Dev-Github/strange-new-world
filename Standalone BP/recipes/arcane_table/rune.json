@@ -1,0 +1,33 @@
+{
+    "format_version": "1.20.30",
+    "minecraft:recipe_shaped": {
+        "description": {
+            "identifier": "terra:rune"
+        },
+        "tags": [
+            "arcane_table"
+        ],
+        "pattern": [
+            "MMM",
+            "MCM",
+            "MMM"
+        ],
+        "key": {
+            "M": {
+                "item": "terra:purified_malachite"
+            },
+            "C": {
+                "item": "minecraft:cobblestone"
+            }
+        },
+        "unlock": [
+            {
+                "item": "terra:arcane_table"
+            }
+        ],
+        "result": {
+            "item": "terra:rune",
+            "count": 4
+        }
+    }
+}

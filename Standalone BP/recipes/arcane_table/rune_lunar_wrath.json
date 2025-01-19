@@ -1,0 +1,31 @@
+{
+    "format_version": "1.20.30",
+    "minecraft:recipe_shapeless": {
+        "description": {
+            "identifier": "terra:rune_lunar_wrath"
+        },
+        "tags": [
+            "arcane_table"
+        ],
+        "ingredients": [
+            {
+                "item": "terra:rune"
+            },
+            {
+                "item": "minecraft:ghast_tear"
+            },
+            {
+                "item": "terra:reverion_dust"
+            }
+        ],
+        "unlock": [
+            {
+                "item": "terra:ancient_wand"
+            }
+        ],
+        "result": {
+            "item": "terra:rune_lunar_wrath",
+            "count": 1
+        }
+    }
+}

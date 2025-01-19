@@ -9,19 +9,52 @@
       "placement_pass": "surface_pass",
       "minecraft:biome_filter": [
         {
-          "test": "has_biome_tag",
-          "operator": "==",
-          "value": "birch"
-        },
-        {
-          "test": "has_biome_tag",
-          "operator": "==",
-          "value": "meadow"
+          "all_of": [
+            {
+              "test": "has_biome_tag",
+              "operator": "!=",
+              "value": "ocean"
+            },
+            {
+              "test": "has_biome_tag",
+              "operator": "!=",
+              "value": "river"
+            },
+            {
+              "any_of": [
+                {
+                  "test": "has_biome_tag",
+                  "operator": "==",
+                  "value": "birch"
+                },
+                {
+                  "test": "has_biome_tag",
+                  "operator": "==",
+                  "value": "forest"
+                },
+                {
+                  "test": "has_biome_tag",
+                  "operator": "==",
+                  "value": "flower_forest"
+                },
+                {
+                  "test": "has_biome_tag",
+                  "operator": "==",
+                  "value": "cherry_grove"
+                },
+                {
+                  "test": "has_biome_tag",
+                  "operator": "==",
+                  "value": "meadow"
+                }
+              ]
+            }
+          ]
         }
       ]
     },
     "distribution": {
-      "iterations": 3,
+      "iterations": 6,
       "x": {
         "distribution": "uniform",
         "extent": [
@@ -29,7 +62,7 @@
           16
         ]
       },
-      "y": "query.heightmap(variable.worldx, variable.worldz)",
+      "y": "query.heightmap(variable.worldx, variable.worldz) + -1",
       "z": {
         "distribution": "uniform",
         "extent": [

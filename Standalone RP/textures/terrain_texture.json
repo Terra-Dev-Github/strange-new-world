@@ -56,6 +56,16 @@
 				"textures/blocks/autonetic_station_top"
 			]
 		},
+		"blue_mahoe_door_bottom": {
+			"textures": [
+				"textures/blocks/blue_mahoe_door_bottom"
+			]
+		},
+		"blue_mahoe_door_top": {
+			"textures": [
+				"textures/blocks/blue_mahoe_door_top"
+			]
+		},
 		"blue_mahoe_leaves": {
 			"textures": [
 				"textures/blocks/blue_mahoe_leaves"
@@ -76,9 +86,24 @@
 				"textures/blocks/blue_mahoe_planks"
 			]
 		},
+		"blue_mahoe_sapling": {
+			"textures": [
+				"textures/blocks/blue_mahoe_sapling"
+			]
+		},
 		"blue_mahoe_trapdoor": {
 			"textures": [
 				"textures/blocks/blue_mahoe_trapdoor"
+			]
+		},
+		"bulnesia_door_bottom": {
+			"textures": [
+				"textures/blocks/bulnesia_door_bottom"
+			]
+		},
+		"bulnesia_door_top": {
+			"textures": [
+				"textures/blocks/bulnesia_door_top"
 			]
 		},
 		"bulnesia_leaves": {
@@ -99,6 +124,11 @@
 		"bulnesia_planks": {
 			"textures": [
 				"textures/blocks/bulnesia_planks"
+			]
+		},
+		"bulnesia_sapling": {
+			"textures": [
+				"textures/blocks/bulnesia_sapling"
 			]
 		},
 		"bulnesia_trapdoor": {
@@ -226,9 +256,19 @@
 				"textures/blocks/hazardous_outsider_metal"
 			]
 		},
+		"lab_door_bottom": {
+			"textures": [
+				"textures/blocks/lab_door_bottom"
+			]
+		},
 		"lab_door_channels": {
 			"textures": [
 				"textures/blocks/lab_door_channels"
+			]
+		},
+		"lab_door_top": {
+			"textures": [
+				"textures/blocks/lab_door_top"
 			]
 		},
 		"laboratory_trapdoor": {
@@ -401,6 +441,16 @@
 				"textures/blocks/polished_malachite_slab_side"
 			]
 		},
+		"poplar_door_bottom": {
+			"textures": [
+				"textures/blocks/poplar_door_bottom"
+			]
+		},
+		"poplar_door_top": {
+			"textures": [
+				"textures/blocks/poplar_door_top"
+			]
+		},
 		"poplar_leaves": {
 			"textures": [
 				"textures/blocks/poplar_leaves"
@@ -419,6 +469,11 @@
 		"poplar_planks": {
 			"textures": [
 				"textures/blocks/poplar_planks"
+			]
+		},
+		"poplar_sapling": {
+			"textures": [
+				"textures/blocks/poplar_sapling"
 			]
 		},
 		"poplar_trapdoor": {
@@ -686,6 +741,16 @@
 				"textures/blocks/wired_outsider_metal"
 			]
 		},
+		"yellowheart_door_bottom": {
+			"textures": [
+				"textures/blocks/yellowheart_door_bottom"
+			]
+		},
+		"yellowheart_door_top": {
+			"textures": [
+				"textures/blocks/yellowheart_door_top"
+			]
+		},
 		"yellowheart_leaves": {
 			"textures": [
 				"textures/blocks/yellowheart_leaves"
@@ -704,6 +769,11 @@
 		"yellowheart_planks": {
 			"textures": [
 				"textures/blocks/yellowheart_planks"
+			]
+		},
+		"yellowheart_sapling": {
+			"textures": [
+				"textures/blocks/yellowheart_sapling"
 			]
 		},
 		"yellowheart_trapdoor": {

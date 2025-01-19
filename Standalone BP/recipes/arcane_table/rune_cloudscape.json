@@ -1,0 +1,31 @@
+{
+    "format_version": "1.20.30",
+    "minecraft:recipe_shapeless": {
+        "description": {
+            "identifier": "terra:rune_cloudscape"
+        },
+        "tags": [
+            "arcane_table"
+        ],
+        "ingredients": [
+            {
+                "item": "terra:rune"
+            },
+            {
+                "item": "minecraft:shulker_shell"
+            },
+            {
+                "item": "terra:reverion_dust"
+            }
+        ],
+        "unlock": [
+            {
+                "item": "terra:reinforced_wand"
+            }
+        ],
+        "result": {
+            "item": "terra:rune_cloudscape",
+            "count": 1
+        }
+    }
+}

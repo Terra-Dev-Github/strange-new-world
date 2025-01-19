@@ -40,7 +40,8 @@
         ]
       },
       "render_controllers": [
-        "controller.render.beeper"
+        "controller.render.beeper",
+        "controller.render.beeper_outline"
       ],
       "spawn_egg": {
         "base_color": "#566188",
@@ -49,7 +50,7 @@
       "sound_effects": {
         "ambient": "mob.beeper.idle",
         "hurt": "mob.beeper.hurt",
-        "beeper_alarm": "mob.beeper.alarm",
+        "beeper.alarm": "mob.beeper.alarm",
         "death": "mob.beeper.death"
       }
     }

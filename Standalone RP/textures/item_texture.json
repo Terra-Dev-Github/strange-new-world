@@ -18,6 +18,26 @@
 				"textures/blocks/steel_lattice_frame"
 			]
 		},
+		"blue_mahoe_sapling": {
+			"textures": [
+				"textures/blocks/blue_mahoe_sapling"
+			]
+		},
+		"bulnesia_sapling": {
+			"textures": [
+				"textures/blocks/bulnesia_sapling"
+			]
+		},
+		"poplar_sapling": {
+			"textures": [
+				"textures/blocks/poplar_sapling"
+			]
+		},
+		"yellowheart_sapling": {
+			"textures": [
+				"textures/blocks/yellowheart_sapling"
+			]
+		},
 		//
 		"anchor": {
 			"textures": [
@@ -32,6 +52,26 @@
 		"archimage_wand": {
 			"textures": [
 				"textures/items/archimage_wand"
+			]
+		},
+		"blaster_item": {
+			"textures": [
+				"textures/items/blaster_item"
+			]
+		},
+		"blaster_unloaded": {
+			"textures": [
+				"textures/items/blaster_unloaded"
+			]
+		},
+		"blue_mahoe_door": {
+			"textures": [
+				"textures/items/blue_mahoe_door"
+			]
+		},
+		"bulnesia_door": {
+			"textures": [
+				"textures/items/bulnesia_door"
 			]
 		},
 		"deepslate_crate_key": {
@@ -49,14 +89,9 @@
 				"textures/items/grapes"
 			]
 		},
-		"handgun_item": {
+		"lab_door": {
 			"textures": [
-				"textures/items/handgun_item"
-			]
-		},
-		"handgun_unloaded": {
-			"textures": [
-				"textures/items/handgun_unloaded"
+				"textures/items/lab_door"
 			]
 		},
 		"lemon": {
@@ -169,6 +204,11 @@
 				"textures/items/platinum_ingot"
 			]
 		},
+		"poplar_door": {
+			"textures": [
+				"textures/items/poplar_door"
+			]
+		},
 		"purified_malachite": {
 			"textures": [
 				"textures/items/purified_malachite"
@@ -209,14 +249,29 @@
 				"textures/items/ruby"
 			]
 		},
+		"rune_blizzard": {
+			"textures": [
+				"textures/items/rune_blizzard"
+			]
+		},
 		"rune_cloudscape": {
 			"textures": [
 				"textures/items/rune_cloudscape"
 			]
 		},
+		"rune_coagulate": {
+			"textures": [
+				"textures/items/rune_coagulate"
+			]
+		},
 		"rune_deathsong": {
 			"textures": [
 				"textures/items/rune_deathsong"
+			]
+		},
+		"rune_ignis": {
+			"textures": [
+				"textures/items/rune_ignis"
 			]
 		},
 		"rune_lunar_wrath": {
@@ -254,14 +309,29 @@
 				"textures/items/salt_bottle"
 			]
 		},
+		"scroll_blizzard": {
+			"textures": [
+				"textures/items/scroll_blizzard"
+			]
+		},
 		"scroll_cloudscape": {
 			"textures": [
 				"textures/items/scroll_cloudscape"
 			]
 		},
+		"scroll_coagulate": {
+			"textures": [
+				"textures/items/scroll_coagulate"
+			]
+		},
 		"scroll_deathsong": {
 			"textures": [
 				"textures/items/scroll_deathsong"
+			]
+		},
+		"scroll_ignis": {
+			"textures": [
+				"textures/items/scroll_ignis"
 			]
 		},
 		"scroll_lunar_wrath": {
@@ -324,14 +394,29 @@
 				"textures/items/tomato_seeds"
 			]
 		},
+		"tome_blizzard": {
+			"textures": [
+				"textures/items/tome_blizzard"
+			]
+		},
 		"tome_cloudscape": {
 			"textures": [
 				"textures/items/tome_cloudscape"
 			]
 		},
+		"tome_coagulate": {
+			"textures": [
+				"textures/items/tome_coagulate"
+			]
+		},
 		"tome_deathsong": {
 			"textures": [
 				"textures/items/tome_deathsong"
+			]
+		},
+		"tome_ignis": {
+			"textures": [
+				"textures/items/tome_ignis"
 			]
 		},
 		"tome_lunar_wrath": {
@@ -352,6 +437,11 @@
 		"tome_windwake": {
 			"textures": [
 				"textures/items/tome_windwake"
+			]
+		},
+		"tome": {
+			"textures": [
+				"textures/items/tome"
 			]
 		},
 		"vial_empty": {
@@ -377,6 +467,11 @@
 		"vial_radioactive": {
 			"textures": [
 				"textures/items/vial_radioactive"
+			]
+		},
+		"yellowheart_door": {
+			"textures": [
+				"textures/items/yellowheart_door"
 			]
 		}
 	}

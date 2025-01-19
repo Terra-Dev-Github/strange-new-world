@@ -33,8 +33,7 @@
 						"knockback": false,
 						"catch_fire": false,
 						"semi_random_diff_damage": false
-					},
-					"remove_on_hit": {}
+					}
 				},
 				"power": 4,
 				"gravity": 0,
@@ -89,8 +88,9 @@
 				"sequence": [
 					{
 						"queue_command": {
+							"target": "other",
 							"command": [
-								"particle terra:gun_blast_particle"
+								"particle terra:gun_blast_particle ~~~"
 							]
 						}
 					},
@@ -98,6 +98,7 @@
 						"randomize": [
 							{
 								"queue_command": {
+									"target": "other",
 									"command": [
 										"effect @s levitation 3 2 true"
 									]
@@ -105,6 +106,7 @@
 							},
 							{
 								"queue_command": {
+									"target": "other",
 									"command": [
 										"effect @s weakness 5 3 true"
 									]
@@ -112,6 +114,7 @@
 							},
 							{
 								"queue_command": {
+									"target": "other",
 									"command": [
 										"effect @s slowness 5 3 true"
 									]

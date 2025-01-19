@@ -14,35 +14,62 @@ world.beforeEvents.worldInitialize.subscribe(eventData => {
             const dimension = e.source.dimension.id
 
             // define the player's equipment
-            const equipment = player.getComponent('minecraft:equippable');
+            const equipment = player.getComponent('equippable');
             const selectedItem = equipment.getEquipment(`Mainhand`);
             const offhandWand = equipment.getEquipment('Offhand');
 
             // run a command if the condition (i.e. item held in mainhand and offhand) is met
-            if (selectedItem?.typeId === 'terra:spell_cloudscape' && offhandWand?.typeId === 'terra:wand') {
-                player.runCommandAsync(`particle terra:ring_purple ${player.location.x} ${player.location.y} ${player.location.z}`);
+
+            // ignis
+            if (selectedItem?.typeId === 'terra:scroll_ignis' || (selectedItem?.typeId === 'terra:tome_ignis' && (offhandWand?.typeId === 'terra:druidic_wand' || 'terra:supreme_wand'))) {
+                player.playSound('entity.blaze.shoot');
+                // define and adjust spawn location
+                const { x, y, z } = player.getHeadLocation();
+                const spawnLoc = { x: x, y: y, z: z }
+                const viewDir = player.getViewDirection();
+                // define projectile to shoot and projectile owner (to prevent being damaged)
+                const projectile = player.dimension.spawnEntity("terra:ignis_projectile", spawnLoc);
+                const projectileCheck = projectile.getComponent("projectile");
+                projectileCheck.owner = player;
+                // shoot
+                projectileCheck?.shoot(viewDir);
+                // start cooldown
+                selectedItem.getComponent('cooldown').startCooldown(player);
+            };
+
+            // blizzard
+            if (selectedItem?.typeId === 'terra:scroll_blizzard' || (selectedItem?.typeId === 'terra:tome_blizzard' && (offhandWand?.typeId === 'terra:druidic_wand' || 'terra:supreme_wand'))) {
+                player.playSound('entity.blaze.shoot');
+                // define and adjust spawn location
+                const { x, y, z } = player.getHeadLocation();
+                const spawnLoc = { x: x, y: y, z: z }
+                const viewDir = player.getViewDirection();
+                // define projectile to shoot and projectile owner (to prevent being damaged)
+                const projectile = player.dimension.spawnEntity("terra:blizzard_projectile", spawnLoc);
+                const projectileCheck = projectile.getComponent("projectile");
+                projectileCheck.owner = player;
+                // shoot
+                projectileCheck?.shoot(viewDir);
+                // start cooldown
+                selectedItem.getComponent('cooldown').startCooldown(player);
+            };
+
+            // cloudscape
+            if (selectedItem?.typeId === 'terra:scroll_cloudscape' || (selectedItem?.typeId === 'terra:tome_cloudscape' && (offhandWand?.typeId === 'terra:reinforced_wand' || 'terra:supreme_wand'))) {
+                player.playSound('mob.enderdragon.flap');
+                player.runCommandAsync(`particle terra:cloudscape_particle ${player.location.x} ${player.location.y} ${player.location.z}`);
                 player.runCommandAsync("effect @s levitation 4 1 false");
+                // start cooldown
+                selectedItem.getComponent('cooldown').startCooldown(player);
             };
 
-            if (selectedItem?.typeId === 'terra:spell_lunar_wrath' && offhandWand?.typeId === 'terra:wand') {
-                if (dimension === 'minecraft:overworld') {
-                    if (TimeOfDay.Night || TimeOfDay.Midnight) {
-                        player.runCommandAsync("effect @s strength 300 4 false ");
-                        player.runCommandAsync("effect @s resistance 300 1 false ");
-                    }
-                }
-            };
-
-            if (selectedItem?.typeId === 'terra:spell_windwake' && offhandWand?.typeId === 'terra:wand') {
-                player.runCommandAsync(`particle terra:ring_green ${player.location.x} ${player.location.y} ${player.location.z}`);
-                player.applyKnockback(0, 0, 0, 3);
-                player.runCommandAsync("effect @s slow_falling 7 3 false");
-            };
-
-            if (selectedItem?.typeId === 'terra:spell_puffborne' && offhandWand?.typeId === 'terra:wand') {
+            // puffborne
+            if (selectedItem?.typeId === 'terra:scroll_puffborne' || (selectedItem?.typeId === 'terra:tome_puffborne' && (offhandWand?.typeId === 'terra:reinforced_wand' || 'terra:supreme_wand'))) {
+                // missing sfx
+                player.runCommandAsync(`particle terra:puffborne_player_particle ${player.location.x} ${player.location.y} ${player.location.z}`);
                 // get all entities in a 12 block radius from the player
                 const infestingRadius = player.dimension.getEntities({ location: player.location, maxDistance: 12, });
-                // define the aquatic mobs affected by the spell
+                // define the aquatic mobs affected by the tome
                 const infestArray = [
                     'minecraft:cod',
                     'minecratf:drowned',
@@ -59,11 +86,127 @@ world.beforeEvents.worldInitialize.subscribe(eventData => {
                         entity.dimension.spawnEntity('minecraft:pufferfish', entity.location);
                         entity.remove() // despawn the mob
                     }
-                }
+                };
+                // start cooldown
+                selectedItem.getComponent('cooldown').startCooldown(player);
             };
 
-            // get the durability component of the wand and decrease it unless the player is in creative
-            const durability = offhandWand.getComponent('durability');
+            // lunar wrath
+            if (selectedItem?.typeId === 'terra:scroll_lunar_wrath' || (selectedItem?.typeId === 'terra:tome_lunar_wrath' && (offhandWand?.typeId === 'terra:ancient_wand' || 'terra:supreme_wand'))) {
+                // missing sfx
+                if (dimension === 'minecraft:overworld') {
+                    if (TimeOfDay.Night || TimeOfDay.Midnight) {
+                        player.runCommandAsync("effect @s strength 4 300 false ");
+                        player.runCommandAsync("effect @s resistance 4 300 false ");
+                    } else {
+                        player.runCommandAsync("effect @s strength 1 30 false ");
+                        player.runCommandAsync("effect @s resistance 1 30 false ");
+                    }
+                };
+                if (dimension === 'minecraft:nether' || 'minecraft:the_end') {
+                    player.runCommandAsync("effect @s strength 4 300 false ");
+                        player.runCommandAsync("effect @s resistance 4 300 false ");
+                };
+                // start cooldown
+                selectedItem.getComponent('cooldown').startCooldown(player);
+            };
+
+            // windwake
+            if (selectedItem?.typeId === 'terra:scroll_windwake' || (selectedItem?.typeId === 'terra:tome_windwake' && (offhandWand?.typeId === 'terra:ancient_wand' || 'terra:supreme_wand'))) {
+                // missing sfx
+                player.runCommandAsync(`particle terra:windwake_particle ${player.location.x} ${player.location.y} ${player.location.z}`);
+                player.applyKnockback(0, 0, 0, 1.5);
+                player.runCommandAsync("effect @s slow_falling 7 3 false");
+                // start cooldown
+                selectedItem.getComponent('cooldown').startCooldown(player);
+            };
+
+            // deathsong
+            const deathsongMobs = [
+                "minecraft:bat",
+                "minecraft:bogged",
+                "minecraft:drowned",
+                "minecraft:silverfish",
+                "minecraft:skeleton",
+                "minecraft:vex",
+                "minecraft:wither_skeleton"
+            ];
+            // choose a random element from the array
+            const random = Math.floor(Math.random() * deathsongMobs.length)
+
+            if (selectedItem?.typeId === 'terra:scroll_deathsong' || (selectedItem?.typeId === 'terra:tome_deathsong' && (offhandWand?.typeId === 'terra:archimage_wand' || 'terra:supreme_wand'))) {
+                // missing sfx
+                player.runCommandAsync(`particle terra:deathsong_particle ${player.location.x} ${player.location.y} ${player.location.z}`);
+                // summon four entities on the player's dimension
+                player.dimension.spawnEntity(deathsongMobs[random], player.location).triggerEvent('terra:deathsong_binding');
+                player.dimension.spawnEntity(deathsongMobs[random], player.location).triggerEvent('terra:deathsong_binding');
+                player.dimension.spawnEntity(deathsongMobs[random], player.location).triggerEvent('terra:deathsong_binding');
+                player.dimension.spawnEntity(deathsongMobs[random], player.location).triggerEvent('terra:deathsong_binding');
+                // start cooldown
+                selectedItem.getComponent('cooldown').startCooldown(player);
+            };
+
+            // coagulate
+            if (selectedItem?.typeId === 'terra:scroll_coagulate' || (selectedItem?.typeId === 'terra:tome_coagulate' && (offhandWand?.typeId === 'terra:archimage_wand' || 'terra:supreme_wand'))) {
+                // multiple sounds to mimic blood
+                player.playSound('random.drink_honey');
+                player.playSound('random.mob.player.hurt_freeze');
+                // define and adjust spawn location
+                const { x, y, z } = player.getHeadLocation();
+                const spawnLoc = { x: x, y: y, z: z }
+                const viewDir = player.getViewDirection();
+                // define projectile to shoot and projectile owner (to prevent being damaged)
+                const projectile = player.dimension.spawnEntity("terra:coagulate_projectile", spawnLoc);
+                const projectileCheck = projectile.getComponent("projectile");
+                projectileCheck.owner = player;
+                // shoot
+                projectileCheck?.shoot(viewDir);
+                // start cooldown
+                selectedItem.getComponent('cooldown').startCooldown(player);
+            };
+
+            // umbra
+            if (selectedItem?.typeId === 'terra:scroll_umbra' || (selectedItem?.typeId === 'terra:tome_umbra' && offhandWand?.typeId === 'terra:supreme_wand')) {
+                player.playSound('item.trident.thunder');
+                // define and adjust spawn location
+                const { x, y, z } = player.getHeadLocation();
+                const spawnLoc = { x: x, y: y, z: z }
+                const viewDir = player.getViewDirection();
+                // define projectile to shoot and projectile owner (to prevent being damaged)
+                const projectile = player.dimension.spawnEntity("terra:umbra_projectile", spawnLoc);
+                const projectileCheck = projectile.getComponent("projectile");
+                projectileCheck.owner = player;
+                // shoot
+                projectileCheck?.shoot(viewDir);
+                // start cooldown
+                selectedItem.getComponent('cooldown').startCooldown(player);
+            };
+
+            // define tome and scroll arrays
+            const tomeArray = [
+                'terra:tome_blizzard',
+                'terra:tome_cloudscape',
+                'terra:tome_coagulate',
+                'terra:tome_deathsong',
+                'terra:tome_ignis',
+                'terra:tome_lunar_wrath',
+                'terra:tome_puffborne',
+                'terra:tome_umbra',
+                'terra:tome_windwake'
+            ];
+            const scrollArray = [
+                'terra:scroll_blizzard',
+                'terra:scroll_cloudscape',
+                'terra:scroll_coagulate',
+                'terra:scroll_deathsong',
+                'terra:scroll_ignis',
+                'terra:scroll_lunar_wrath',
+                'terra:scroll_puffborne',
+                'terra:scroll_umbra',
+                'terra:scroll_windwake'
+            ];
+            // get the durability component of the scroll or wand and decrease it unless the player is in creative
+            const durability = scrollArray.includes(selectedItem?.typeId) ? selectedItem.getComponent('durability') : offhandWand.getComponent('durability');
             if (player.getGameMode() !== "creative") {
                 // check if the item has a durability component and if its damage is less than the max
                 if (durability && durability.damage < durability.maxDurability) {
@@ -74,9 +217,14 @@ world.beforeEvents.worldInitialize.subscribe(eventData => {
 
                 // check if the item has a durability component and if its damage is greater than or equal to the max
                 if (durability && durability.damage >= durability.maxDurability) {
-                    // play sound effect and remove the item from the offhand
+                    // play sound effect and remove the corresponding item
                     player.playSound('random.break');
-                    equipment.setEquipment(`Offhand`, new ItemStack('minecraft:air', 1));
+                    if (scrollArray.includes(selectedItem?.typeId)) {
+                        equipment.setEquipment(`Mainhand`, new ItemStack('minecraft:air', 1));
+                    };
+                    if (tomeArray.includes(selectedItem?.typeId)) {
+                        equipment.setEquipment(`Offhand`, new ItemStack('minecraft:air', 1));
+                    }
                 }
             }
         }

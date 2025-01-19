@@ -19,12 +19,13 @@
 					"render_method": "opaque"
 				}
 			},
-			"minecraft:destructible_by_mining": {
-				"seconds_to_destroy": 2.5
-			},
-			"minecraft:destructible_by_explosion": {
-				"explosion_resistance": 3
-			},
+			// hardness: 5
+            "minecraft:destructible_by_mining": {
+                "seconds_to_destroy": 25
+            },
+            "minecraft:destructible_by_explosion": {
+                "explosion_resistance": 6
+            },
 			// single loot table since all of em will drop scraps unless you got silk touch
 			// "minecraft:loot": "loot_tables/blocks/outsider_metal_scraps.json",
 			"minecraft:map_color": "#8499B0"

@@ -1,0 +1,31 @@
+{
+    "format_version": "1.20.30",
+    "minecraft:recipe_shapeless": {
+        "description": {
+            "identifier": "terra:rune_umbra"
+        },
+        "tags": [
+            "arcane_table"
+        ],
+        "ingredients": [
+            {
+                "item": "terra:rune"
+            },
+            {
+                "item": "minecraft:ender_eye"
+            },
+            {
+                "item": "terra:reverion_dust"
+            }
+        ],
+        "unlock": [
+            {
+                "item": "terra:supreme_wand"
+            }
+        ],
+        "result": {
+            "item": "terra:rune_umbra",
+            "count": 1
+        }
+    }
+}

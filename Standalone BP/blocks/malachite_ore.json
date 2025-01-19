@@ -18,8 +18,9 @@
 					"render_method": "opaque"
 				}
 			},
+			// hardness: 1.5
 			"minecraft:destructible_by_mining": {
-				"seconds_to_destroy": 2.5
+				"seconds_to_destroy": 7.5
 			},
 			"minecraft:map_color": "#2F6145",
 			"minecraft:loot": "loot_tables/blocks/malachite_ore.json"

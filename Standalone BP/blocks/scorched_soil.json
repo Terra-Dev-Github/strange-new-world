@@ -19,6 +19,7 @@
 					"render_method": "opaque"
 				}
 			},
+			// hardness: 2
 			"minecraft:destructible_by_mining": {
 				"seconds_to_destroy": 3
 			},

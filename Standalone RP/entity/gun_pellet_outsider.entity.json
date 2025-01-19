@@ -16,7 +16,7 @@
 			},
 			"animations": {
 				"face_player": "animation.actor.billboard",
-				"particle": "animation.gun_pellet.particle"
+				"particle": "animation.particle.path"
 			},
 			"scripts": {
 				"scale": 0.5,
@@ -28,6 +28,9 @@
 			"render_controllers": [
 				"controller.render.fireball"
 			],
+			"particle_emitters": {
+				"path": "terra:gun_pellet_path_particle"
+			},
 			"particle_effects": {
 				"path": "terra:gun_pellet_path_particle"
 			}

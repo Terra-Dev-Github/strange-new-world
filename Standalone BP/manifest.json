@@ -4,6 +4,7 @@
 		"authors": [
 			"TERRA Team :: README.txt"
 		],
+		"license": "SEE LICENSE IN LICENSE.txt",
 		"url": "https://discord.gg/2pVaeESEDF",
 		"generated_with": {
 			"bridge": [
@@ -47,22 +48,22 @@
 				0,
 				0
 			],
+			"description": "ScriptAPI",
 			"language": "javascript",
-			"entry": "scripts/main.js"
+			"entry": "main.js"
 		}
 	],
 	"dependencies": [
-		{
-			"uuid": "a597c6be-4744-4abd-a754-bf20a9fa70f1",
-			"version": [
-				1,
-				0,
-				0
-			]
-		},
+		//{
+		//	"uuid": "a597c6be-4744-4abd-a754-bf20a9fa70f1",
+		//		1,
+		//		0,
+		//		0
+		//	]
+		//},
 		{
 			"module_name": "@minecraft/server",
-			"version": "1.16.0"
+			"version": "1.17.0-beta" // change to 1.18.0-beta upon 1.21.60 drop
 		}
 	]
 }

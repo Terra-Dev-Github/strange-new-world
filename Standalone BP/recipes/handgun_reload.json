@@ -2,14 +2,14 @@
     "format_version": "1.20.10",
     "minecraft:recipe_shaped": {
         "description": {
-            "identifier": "terra:handgun_reload"
+            "identifier": "terra:blaster_reload"
         },
         "tags": [
             "crafting_table"
         ],
         "unlock": [
             {
-                "item": "terra:handgun_unloaded"
+                "item": "terra:blaster_unloaded"
             }
         ],
         "pattern": [
@@ -18,7 +18,7 @@
         ],
         "key": {
             "G": {
-                "item": "terra:handgun_unloaded"
+                "item": "terra:blaster_unloaded"
             },
             "V": {
                 "item": "terra:vial_radioactive"
@@ -26,7 +26,7 @@
         },
         "result": [
             {
-                "item": "terra:handgun",
+                "item": "terra:blaster",
                 "count": 1
             },
             {

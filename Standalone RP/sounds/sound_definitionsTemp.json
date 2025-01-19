@@ -1,0 +1,31 @@
+{
+    "format_version": "1.20.20",
+    "sound_definitions": {
+        "dig.outsider_metal": {
+            "category": "block",
+            "sounds": [
+                {
+                    "load_on_low_memory": true,
+                    "name": "sounds/dig/outermetal1"
+                },
+                "sounds/dig/outermetal2",
+                "sounds/dig/outermetal3",
+                "sounds/dig/outermetal4"
+            ]
+        },
+        "step.outsider_metal": {
+            "category": "block",
+            "sounds": [
+                "sounds/step/outermetal1",
+                "sounds/step/outermetal2",
+                {
+                    "load_on_low_memory": true,
+                    "name": "sounds/step/outermetal3"
+                },
+                "sounds/step/outermetal4",
+                "sounds/step/outermetal5",
+                "sounds/step/outermetal6"
+            ]
+        }
+    }
+}
