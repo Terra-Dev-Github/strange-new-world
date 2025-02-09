@@ -6,8 +6,8 @@
     },
     "trunk": {
       "trunk_height": {
-        "range_max": 7,
-        "range_min": 3
+        "range_max": 9,
+        "range_min": 5
       },
       "trunk_block": {
         "name": "terra:yellowheart_log"

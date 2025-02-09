@@ -5,24 +5,17 @@
 			"states": {
 				"default": {
 					"animations": [
-						"timid",
+						{"timid": "!q.is_shaking"},
 						"look_at_target"
 					],
 					"transitions": [
-						{
-							"stare": "q.is_shaking"
-						}
+						{"stare": "q.is_shaking"}
 					]
 				},
 				"stare": {
-					"animations": [
-						"stare",
-						"look_at_target"
-					],
+					"animations": ["stare", "look_at_target"],
 					"transitions": [
-						{
-							"default": "!q.is_shaking"
-						}
+						{"default": "!q.is_shaking"}
 					],
 					"blend_transition": 0.2
 				}

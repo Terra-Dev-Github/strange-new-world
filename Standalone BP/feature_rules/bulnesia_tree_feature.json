@@ -44,7 +44,7 @@
       ]
     },
     "distribution": {
-      "iterations": 5,
+      "iterations": 1,
       "x": {
         "distribution": "uniform",
         "extent": [

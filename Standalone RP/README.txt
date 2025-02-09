@@ -37,3 +37,4 @@ Spanish Translations
 Special Thanks
 - To Kaiōga (@Kaioga5) for their curated block templates made with scripting.
 - To Poggy (@XxPoggyisLitxX) for the taxicab leaves decay script.
+- To MajestikButter for their entity raycasting function templates.

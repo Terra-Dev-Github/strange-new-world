@@ -111,7 +111,7 @@ world.beforeEvents.worldInitialize.subscribe(eventData => {
             const belowBlock = block.below();
 
             // to prevent messy code shenanigans
-            if (!block.typeId === 'terra:grape_vine') return;
+            if (block.typeId !== 'terra:grape_vine') return;
 
             // update block states based on the block below
             if (aboveBlock?.typeId === block.typeId) block.setPermutation(block.permutation.withState('terra:vine_body_stage', aboveBlock ? 1 : 0));

@@ -22,15 +22,15 @@
 			// placeholder textures
 			"minecraft:material_instances": {
 				"*": {
-					"texture": "mt_front",
+					"texture": "arcane_table_side",
 					"render_method": "opaque"
 				},
 				"up": {
-					"texture": "mt_top",
+					"texture": "arcane_table_top",
 					"render_method": "opaque"
 				},
 				"down": {
-					"texture": "mt_bottom",
+					"texture": "arcane_table_bottom",
 					"render_method": "opaque"
 				}
 			},

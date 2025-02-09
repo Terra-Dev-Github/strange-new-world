@@ -7,7 +7,7 @@
 			"identifier": "terra:bulnesia_sapling_item",
 			"menu_category": {
 				"category": "nature",
-				"group": "itemGroup.name.seed"
+				"group": "itemGroup.name.sapling"
 			}
 		},
 		"components": {

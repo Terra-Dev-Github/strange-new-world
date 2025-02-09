@@ -74,6 +74,7 @@ world.beforeEvents.worldInitialize.subscribe(eventData => {
                 'minecraft:cherry_trapdoor',
                 'minecraft:bamboo_trapdoor',
                 'minecraft:trapdoor',
+                // custom excluded blocks from other add-ons
                 'terra:poplar_trapdoor',
                 'terra:lab_trapdoor'
                 // Add other block types you want to exclude

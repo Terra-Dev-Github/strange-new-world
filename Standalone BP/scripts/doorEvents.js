@@ -387,7 +387,10 @@ world.afterEvents.playerBreakBlock.subscribe(eventData => {
 
     // Define an array of doors
     const doorArray = [
-        'terra:poplar_door'
+        'terra:blue_mahoe_door',
+        'terra:bulnesia_door',
+        'terra:poplar_door',
+        'terra:yellowheart_door'
     ];
     
     if (doorArray.includes(belowBlock?.typeId)) {
@@ -403,7 +406,10 @@ world.beforeEvents.playerPlaceBlock.subscribe(event => {
     const { block } = event;
     const aboveBlock = block.above();
     const doorArray = [
-        'terra:poplar_door'
+        'terra:blue_mahoe_door',
+        'terra:bulnesia_door',
+        'terra:poplar_door',
+        'terra:yellowheart_door'
     ];
 
     if (doorArray.includes(block?.typeId) && aboveBlock.typeId !== 'minecraft:air') {

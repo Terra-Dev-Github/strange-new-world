@@ -35,11 +35,6 @@
                 {
                   "test": "has_biome_tag",
                   "operator": "==",
-                  "value": "beach"
-                },
-                {
-                  "test": "has_biome_tag",
-                  "operator": "==",
                   "value": "grove"
                 },
                 {
@@ -59,7 +54,7 @@
       ]
     },
     "distribution": {
-      "iterations": 8,
+      "iterations": 3,
       "x": {
         "distribution": "uniform",
         "extent": [

@@ -5,19 +5,19 @@
 	"num_mip_levels": 1,
 	"texture_data": {
 		// placeholders
-		"mt_bottom": {
+		"arcane_table_bottom": {
 			"textures": [
-				"textures/blocks/mt_bottom"
+				"textures/blocks/arcane_table_bottom"
 			]
 		},
-		"mt_front": {
+		"arcane_table_side": {
 			"textures": [
-				"textures/blocks/mt_front"
+				"textures/blocks/arcane_table_side"
 			]
 		},
-		"mt_top": {
+		"arcane_table_top": {
 			"textures": [
-				"textures/blocks/mt_top"
+				"textures/blocks/arcane_table_top"
 			]
 		},
 		//
