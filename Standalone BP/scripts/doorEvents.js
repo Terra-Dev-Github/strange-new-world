@@ -390,7 +390,8 @@ world.afterEvents.playerBreakBlock.subscribe(eventData => {
         'terra:blue_mahoe_door',
         'terra:bulnesia_door',
         'terra:poplar_door',
-        'terra:yellowheart_door'
+        'terra:yellowheart_door',
+        'terra:laboratory_door'
     ];
     
     if (doorArray.includes(belowBlock?.typeId)) {
@@ -409,7 +410,8 @@ world.beforeEvents.playerPlaceBlock.subscribe(event => {
         'terra:blue_mahoe_door',
         'terra:bulnesia_door',
         'terra:poplar_door',
-        'terra:yellowheart_door'
+        'terra:yellowheart_door',
+        'terra:laboratory_door'
     ];
 
     if (doorArray.includes(block?.typeId) && aboveBlock.typeId !== 'minecraft:air') {

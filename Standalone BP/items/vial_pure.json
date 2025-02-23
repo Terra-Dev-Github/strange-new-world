@@ -1,13 +1,13 @@
 // This file was made, modified and compiled by Heavenly (@heavenly7493) for TERRA.
 // Do not distribute without permission.
 {
-	"format_version": "1.20.30",
+	"format_version": "1.21.60",
 	"minecraft:item": {
 		"description": {
 			"identifier": "terra:vial_pure",
 			"menu_category": {
 				"category": "items",
-				"group": "itemGroup.name.none"
+				"group": "terra:itemGroup.name.vials"
 			}
 		},
 		"components": {

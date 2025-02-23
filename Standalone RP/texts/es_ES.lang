@@ -3,7 +3,7 @@
 pack.name=TERRA :: Mundo extraño - Recursos
 pack.description=Por Heavenly7493 | © 2025, TERRA
 
-terra.version.beta=TERRA - Mundo extraño 1.0.0 [BETA_02.10]
+terra.version.beta=TERRA - Mundo extraño 1.0.0 [BETA_03]
 
 ## MX > ES
 ## Tronco/Madera descortezada/o > Tronco/Madera sin corteza
@@ -56,6 +56,9 @@ tile.terra:reinforced_nethersteel_block.name=Reinforced Nethersteel Block
 tile.terra:jukebox_placeholder.name=Jukebox Placeholder
 
 ## Descripciones de items y localización
+item.terra.arcane_upgrade.name=Mejora arcana
+item.smithing_template.arcane_upgrade.applies_to=Varitas
+item.smithing_template.arcane_upgrade.ingredients=Reverion, malaquita purificada
 item.terra.nethersteel_upgrade.name=Mejora de acero inefable
 item.terra.record.name=§bDisco
 item.record_long_gone.desc=Louis Artell - long gone
@@ -70,6 +73,12 @@ terra.lunar_wrath.name= Ira lunar
 terra.puffborne.name= Mutación tetraodonta
 terra.umbra.name= Umbra
 terra.windwake.name= Ramalazo
+
+terra:itemGroup.name.runes=Runas
+terra:itemGroup.name.scrolls=Pergaminos
+terra:itemGroup.name.tomes=Tomos
+terra:itemGroup.name.vials=Frascos
+terra:itemGroup.name.wands=Varitas
 
 crate.is_locked.langcode=:: ¡El cofre está cerrado! ::
 gun.unloaded.langcode=:: Sin munición ::

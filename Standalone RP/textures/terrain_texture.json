@@ -41,6 +41,11 @@
 				"textures/blocks/autonetic_station_front"
 			]
 		},
+		"autonetic_station_side_off": {
+			"textures": [
+				"textures/blocks/autonetic_station_side_off"
+			]
+		},
 		"autonetic_station_side": {
 			"textures": [
 				"textures/blocks/autonetic_station_side"
@@ -49,6 +54,11 @@
 		"autonetic_station_side2": {
 			"textures": [
 				"textures/blocks/autonetic_station_side2"
+			]
+		},
+		"autonetic_station_top_off": {
+			"textures": [
+				"textures/blocks/autonetic_station_top_off"
 			]
 		},
 		"autonetic_station_top": {
@@ -256,19 +266,19 @@
 				"textures/blocks/hazardous_outsider_metal"
 			]
 		},
-		"lab_door_bottom": {
+		"laboratory_door_channels": {
 			"textures": [
-				"textures/blocks/lab_door_bottom"
+				"textures/blocks/laboratory_door_channels"
 			]
 		},
-		"lab_door_channels": {
+		"laboratory_door_bottom": {
 			"textures": [
-				"textures/blocks/lab_door_channels"
+				"textures/blocks/laboratory_door_bottom"
 			]
 		},
-		"lab_door_top": {
+		"laboratory_door_top": {
 			"textures": [
-				"textures/blocks/lab_door_top"
+				"textures/blocks/laboratory_door_top"
 			]
 		},
 		"laboratory_trapdoor": {
@@ -589,6 +599,16 @@
 		"salt_dust_vertical": {
 			"textures": [
 				"textures/blocks/salt_dust_vertical"
+			]
+		},
+		"salt_lamp_side": {
+			"textures": [
+				"textures/blocks/salt_lamp_side"
+			]
+		},
+		"salt_lamp_top": {
+			"textures": [
+				"textures/blocks/salt_lamp_top"
 			]
 		},
 		"salt_ore": {

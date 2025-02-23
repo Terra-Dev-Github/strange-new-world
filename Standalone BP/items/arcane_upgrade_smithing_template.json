@@ -1,0 +1,24 @@
+// This file was made, modified and compiled by Heavenly (@heavenly7493) for TERRA.
+// Do not distribute without permission.
+{
+	"format_version": "1.20.30",
+	"minecraft:item": {
+		"description": {
+			"identifier": "terra:arcane_upgrade_smithing_template",
+			"menu_category": {
+				"category": "items",
+				"group": "itemGroup.name.smithing_templates"
+			}
+		},
+		"components": {
+			"minecraft:icon": {
+				"texture": "arcane_upgrade_smithing_template"
+			},
+			"minecraft:hand_equipped": false,
+			// trickery to preserve localization
+			"minecraft:display_name": {
+				"value": "§e%item.terra.arcane_upgrade.name\n§7%item.smithing_template.name\n\n§7%item.smithing_template.applies_to\n §9%item.smithing_template.arcane_upgrade.applies_to\n§7%item.smithing_template.ingredients\n §9%item.smithing_template.arcane_upgrade.ingredients"
+			}
+		}
+	}
+}

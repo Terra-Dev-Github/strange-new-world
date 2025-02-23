@@ -8,7 +8,7 @@
 		"url": "https://discord.gg/2pVaeESEDF",
 		"generated_with": {
 			"bridge": [
-				"2.7.42"
+				"2.7.43"
 			],
 			"dash": [
 				"0.11.7"
@@ -21,7 +21,7 @@
 		"min_engine_version": [
 			1,
 			21,
-			50
+			60
 		],
 		"uuid": "d70ebad0-7e67-4cff-9a36-5ff835c53dcd",
 		"version": [
@@ -54,16 +54,9 @@
 		}
 	],
 	"dependencies": [
-		//{
-		//	"uuid": "a597c6be-4744-4abd-a754-bf20a9fa70f1",
-		//		1,
-		//		0,
-		//		0
-		//	]
-		//},
 		{
 			"module_name": "@minecraft/server",
-			"version": "1.17.0-beta" // change to 1.18.0-beta upon 1.21.60 drop
+			"version": "1.17.0-beta"
 		}
 	]
 }

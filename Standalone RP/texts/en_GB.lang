@@ -3,7 +3,7 @@
 pack.name=TERRA :: Strange New World - Resources
 pack.description=By Heavenly7493 | © 2025, TERRA
 
-terra.version.beta=TERRA - Strange New World v1.0.0 [BETA_02.10]
+terra.version.beta=TERRA - Strange New World v1.0.0 [BETA_03]
 
 ## US > GB
 ## Chiseled > Chiselled
@@ -54,6 +54,9 @@ tile.terra:reinforced_nethersteel_block.name=Reinforced Nethersteel Block
 tile.terra:jukebox_placeholder.name=Jukebox Placeholder
 
 ## Item Descriptions & Localization
+item.terra.arcane_upgrade.name=Arcane Upgrade
+item.smithing_template.arcane_upgrade.applies_to=Wands
+item.smithing_template.arcane_upgrade.ingredients=Reverion, Purified Malachite
 item.terra.nethersteel_upgrade.name=Nethersteel Upgrade
 item.terra.record.name=§bMusic Disc
 item.record_long_gone.desc=Louis Artell - long gone
@@ -68,6 +71,12 @@ terra.lunar_wrath.name= Lunar Wrath
 terra.puffborne.name= Puffborne
 terra.umbra.name= Umbra
 terra.windwake.name= Windwake
+
+terra:itemGroup.name.runes=Runes
+terra:itemGroup.name.scrolls=Scrolls
+terra:itemGroup.name.tomes=Tomes
+terra:itemGroup.name.vials=Vials
+terra:itemGroup.name.wands=Wands
 
 crate.is_locked.langcode=:: This crate is locked! ::
 gun.unloaded.langcode=:: Out of ammo ::

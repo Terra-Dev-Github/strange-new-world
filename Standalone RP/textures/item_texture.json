@@ -18,6 +18,12 @@
 				"textures/blocks/steel_lattice_frame"
 			]
 		},
+		//
+		"arcane_upgrade_smithing_template": {
+			"textures": [
+				"textures/items/arcane_upgrade_smithing_template"
+			]
+		},
 		"blue_mahoe_sapling": {
 			"textures": [
 				"textures/blocks/blue_mahoe_sapling"
@@ -89,9 +95,9 @@
 				"textures/items/grapes"
 			]
 		},
-		"lab_door": {
+		"laboratory_door": {
 			"textures": [
-				"textures/items/lab_door"
+				"textures/items/laboratory_door"
 			]
 		},
 		"lemon": {

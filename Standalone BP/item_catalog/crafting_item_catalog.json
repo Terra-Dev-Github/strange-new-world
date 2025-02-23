@@ -1,0 +1,96 @@
+{
+    "format_version": "1.21.60",
+    "minecraft:crafting_items_catalog": {
+        "categories": [
+            {
+                "category_name": "equipment",
+                "groups": [
+                    {
+                        "group_identifier": {
+                            "icon": "terra:druidic_wand",
+                            "name": "terra:itemGroup.name.wands"
+                        },
+                        "items": [
+                            "terra:druidic_wand",
+                            "terra:reinforced_wand",
+                            "terra:ancient_wand",
+                            "terra:archimage_wand",
+                            "terra:supreme_wand"
+                        ]
+                    },
+                    {
+                        "group_identifier": {
+                            "icon": "terra:scroll",
+                            "name": "terra:itemGroup.name.scrolls"
+                        },
+                        "items": [
+                            "terra:scroll",
+                            "terra:scroll_ignis",
+                            "terra:scroll_blizzard",
+                            "terra:scroll_cloudscape",
+                            "terra:scroll_lunar_wrath",
+                            "terra:scroll_windwake",
+                            "terra:scroll_puffborne",
+                            "terra:scroll_deathsong",
+                            "terra:scroll_coagulate",
+                            "terra:scroll_umbra"
+                        ]
+                    },
+                    {
+                        "group_identifier": {
+                            "icon": "terra:tome",
+                            "name": "terra:itemGroup.name.tomes"
+                        },
+                        "items": [
+                            "terra:tome",
+                            "terra:tome_ignis",
+                            "terra:tome_blizzard",
+                            "terra:tome_cloudscape",
+                            "terra:tome_lunar_wrath",
+                            "terra:tome_windwake",
+                            "terra:tome_puffborne",
+                            "terra:tome_deathsong",
+                            "terra:tome_coagulate",
+                            "terra:tome_umbra"
+                        ]
+                    },
+                    {
+                        "group_identifier": {
+                            "icon": "terra:rune",
+                            "name": "terra:itemGroup.name.runes"
+                        },
+                        "items": [
+                            "terra:rune",
+                            "terra:rune_ignis",
+                            "terra:rune_blizzard",
+                            "terra:rune_cloudscape",
+                            "terra:rune_lunar_wrath",
+                            "terra:rune_windwake",
+                            "terra:rune_puffborne",
+                            "terra:rune_deathsong",
+                            "terra:rune_coagulate",
+                            "terra:rune_umbra"
+                        ]
+                    }
+                ]
+            },
+            {
+                "category_name": "items",
+                "groups": [
+                    {
+                        "group_identifier": {
+                            "icon": "terra:vial_pure",
+                            "name": "terra:itemGroup.name.vials"
+                        },
+                        "items": [
+                            "terra:vial_pure",
+                            "terra:vial_shimmering",
+                            "terra:vial_waste",
+                            "terra:vial_radioactive"
+                        ]
+                    }
+                ]
+            }
+        ]
+    }
+}

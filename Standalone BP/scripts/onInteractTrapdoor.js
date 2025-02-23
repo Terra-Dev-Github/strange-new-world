@@ -104,7 +104,7 @@ world.beforeEvents.worldInitialize.subscribe(eventData => {
             block.setPermutation(newPermutation);
 
             // Determine the sound effect to play based on the current state of the trapdoor
-            const sound = currentState ? 'open.lab_door' : 'close.lab_door';
+            const sound = currentState ? 'open.laboratory_door' : 'close.laboratory_door';
 
             // Play the corresponding sound effect for opening or closing the trapdoor
             player.playSound(sound);

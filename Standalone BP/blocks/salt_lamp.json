@@ -1,0 +1,71 @@
+// This file was made, modified and compiled by Heavenly (@heavenly7493) for TERRA.
+// Do not distribute without permission.
+{
+    "format_version": "1.20.80",
+    "minecraft:block": {
+        "description": {
+            "identifier": "terra:salt_lamp",
+            "menu_category": {
+                "category": "items",
+                "group": "itemGroup.name.none"
+            }
+        },
+        "components": {
+            "tag:metal": {},
+            "tag:minecraft:is_pickaxe_item_destructible": {},
+            "minecraft:light_emission": 15,
+            "minecraft:geometry": "geometry.salt_lamp",
+            "minecraft:material_instances": {
+                "*": {
+                    "texture": "salt_lamp_side",
+                    "render_method": "alpha_test"
+                },
+                "up": {
+                    "texture": "salt_lamp_top",
+                    "render_method": "alpha_test"
+                },
+                "down": {
+                    "texture": "steel_block",
+                    "render_method": "alpha_test"
+                }
+            },
+            "minecraft:collision_box": {
+                "origin": [
+                    -1,
+                    0,
+                    -1
+                ],
+                "size": [
+                    2,
+                    16,
+                    2
+                ]
+            },
+            "minecraft:selection_box": {
+                "origin": [
+                    -1,
+                    0,
+                    -1
+                ],
+                "size": [
+                    2,
+                    16,
+                    2
+                ]
+            },
+            "minecraft:placement_filter": {
+                "allowed_faces": [
+                    "up"
+                ]
+            },
+            "minecraft:destructible_by_mining": {
+                "seconds_to_destroy": 2.5
+            },
+            "minecraft:destructible_by_explosion": {
+                "explosion_resistance": 3
+            },
+            // "minecraft:loot": "loot_tables/blocks/salt_lamp.json",
+            "minecraft:map_color": "#4E5766"
+        }
+    }
+}

@@ -1,13 +1,13 @@
 // This file was made, modified and compiled by Heavenly (@heavenly7493) for TERRA.
 // Do not distribute without permission.
 {
-	"format_version": "1.20.80",
+	"format_version": "1.21.60",
 	"minecraft:item": {
 		"description": {
 			"identifier": "terra:rune_windwake",
 			"menu_category": {
-				"category": "equipment",
-				"group": "itemGroup.name.none"
+				"category": "equipment"
+				// "group": "terra:itemGroup.name.runes"
 			}
 		},
 		"components": {
@@ -19,7 +19,7 @@
 			"minecraft:max_stack_size": 16,
 			"minecraft:hand_equipped": false,
 			"minecraft:display_name": {
-				"value": "%item.terra.rune\n§7%terra.spell.windwake"
+				"value": "%item.terra.rune\n§7%terra.windwake.name"
 			}
 		}
 	}

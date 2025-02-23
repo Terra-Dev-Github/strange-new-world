@@ -1,0 +1,33 @@
+{
+	"format_version": "1.20.30",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "terra:salt_lamp"
+		},
+		"tags": [
+			"crafting_table"
+		],
+		"key": {
+			"G": {
+				"item": "minecraft:glowstone"
+			},
+			"S": {
+				"item": "terra:salt"
+			}
+		},
+		"pattern": [
+			" S ",
+			"SGS",
+			" S "
+		],
+        "unlock": [
+            {
+                "item": "minecraft:glowstone"
+            }
+        ],
+		"result": {
+			"item": "terra:salt_lamp",
+			"count": 1
+		}
+	}
+}

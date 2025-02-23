@@ -1,0 +1,39 @@
+{
+    "format_version": "1.20.30",
+    "minecraft:recipe_shaped": {
+        "description": {
+            "identifier": "terra:ancient_wand"
+        },
+        "tags": [
+            "arcane_table"
+        ],
+        "pattern": [
+            "TMT",
+            "RWR",
+            "TMT"
+        ],
+        "key": {
+            "T": {
+                "item": "terra:arcane_upgrade_smithing_template"
+            },
+            "M": {
+                "item": "terra:purified_malachite"
+            },
+            "R": {
+                "item": "terra:reverion"
+            },
+            "W": {
+                "item": "terra:reinforced_wand"
+            }
+        },
+        "unlock": [
+            {
+                "item": "terra:arcane_upgrade_smithing_template"
+            }
+        ],
+        "result": {
+            "item": "terra:ancient_wand",
+            "count": 1
+        }
+    }
+}

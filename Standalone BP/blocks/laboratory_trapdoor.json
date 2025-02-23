@@ -227,7 +227,7 @@
 			},
 			"minecraft:material_instances": {
 				"*": {
-					"texture": "lab_door_channels",
+					"texture": "laboratory_door_channels",
 					"render_method": "alpha_test"
 				},
 				"trapdoor": {
