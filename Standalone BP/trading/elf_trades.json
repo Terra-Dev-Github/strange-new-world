@@ -1,0 +1,140 @@
+{
+   "tiers": [
+      {
+         "groups": [
+            {
+               "trades": [
+                  {
+                     "max_uses": 5,
+                     "wants": [
+                        {
+                           "item": "minecraft:emerald",
+                           "quantity": {
+                              "min": 3,
+                              "max": 4
+                           }
+                        }
+                     ],
+                     "gives": [
+                        {
+                           "item": "minecraft:arrow",
+                           "quantity": {
+                              "min": 8,
+                              "max": 32
+                           }
+                        }
+                     ]
+                  },
+                  {
+                     "max_uses": 5,
+                     "wants": [
+                        {
+                           "item": "terra:platinum_ingot",
+                           "quantity": {
+                              "min": 12,
+                              "max": 24
+                           }
+                        }
+                     ],
+                     "gives": [
+                        {
+                           "item": "minecraft:torch",
+                           "quantity": {
+                              "min": 12,
+                              "max": 24
+                           }
+                        }
+                     ]
+                  },
+                  {
+                     "max_uses": 5,
+                     "wants": [
+                        {
+                           "item": "terra:tanzanite",
+                           "quantity": {
+                              "min": 6,
+                              "max": 8
+                           }
+                        }
+                     ],
+                     "gives": [
+                        {
+                           "item": "minecraft:soul_torch",
+                           "quantity": {
+                              "min": 10,
+                              "max": 16
+                           }
+                        }
+                     ]
+                  },
+                  {
+                     "max_uses": 5,
+                     "wants": [
+                        {
+                           "item": "terra:platinum_ingot",
+                           "quantity": {
+                              "min": 7,
+                              "max": 9
+                           }
+                        }
+                     ],
+                     "gives": [
+                        {
+                           "item": "minecraft:crossbow",
+                           "quantity": 1
+                        }
+                     ]
+                  }
+               ]
+            },
+            {
+               "trades": [
+                  {
+                     "wants": [
+                        {
+                           "item": "minecraft:emerald",
+                           "quantity": {
+                              "min": 1,
+                              "max": 2
+                           },
+                           "price_multiplier": 0.05
+                        }
+                     ],
+                     "gives": [
+                        {
+                           "item": "minecraft:bow",
+                           "quantity": 1
+                        }
+                     ],
+                     "trader_exp": 1,
+                     "max_uses": 6,
+                     "reward_exp": true
+                  },
+                  {
+                     "wants": [
+                        {
+                           "item": "terra:ruby",
+                           "quantity": {
+                              "min": 1,
+                              "max": 2
+                           },
+                           "price_multiplier": 0.05
+                        }
+                     ],
+                     "gives": [
+                        {
+                           "item": "minecraft:bow",
+                           "quantity": 1
+                        }
+                     ],
+                     "trader_exp": 1,
+                     "max_uses": 6,
+                     "reward_exp": true
+                  }
+               ],
+               "num_to_select": 1
+            }
+         ]
+      }
+   ]
+}

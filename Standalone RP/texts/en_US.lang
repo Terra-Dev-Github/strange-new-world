@@ -3,7 +3,7 @@
 pack.name=TERRA :: Strange New World - Resources
 pack.description=By Heavenly7493 | © 2025, TERRA
 
-terra.version.beta=TERRA - Strange New World v1.0.0 [BETA_03]
+terra.version.beta=TERRA - Strange New World v1.0.0 [BETA_04]
 
 ## US > GB
 ## Chiseled > Chiselled
@@ -245,6 +245,7 @@ tile.terra:ruby_block.name=Block of Ruby
 tile.terra:ruby_ore.name=Ruby Ore
 tile.terra:salt_block.name=Salt Block
 tile.terra:salt_dust.name=Salt Dust
+tile.terra:salt_lamp.name=Salt Lamp
 tile.terra:salt_ore.name=Salt Ore
 tile.terra:sandy_soil.name=Sandy Soil
 tile.terra:scorched_soil.name=Scorched Soil
@@ -261,6 +262,8 @@ tile.terra:tomato_crop.name=Tomato Crop
 tile.terra:vial_rod_empty.name=Vial Rod
 tile.terra:vial_rod_radioactive.name=Radioactive Vial Rod
 tile.terra:vial_rod_shimmering.name=Shimmering Vial Rod
+tile.terra:wavy_red_sand.name=Wavy Red Sand
+tile.terra:wavy_sand.name=Wavy Sand
 tile.terra:wired_outsider_metal.name=Wired Outsider Metal
 tile.terra:yellowheart_door.name=Yellowheart Door
 tile.terra:yellowheart_leaves.name=Yellowheart Leaves
@@ -284,6 +287,8 @@ entity.terra:chesthound_outsider.name=Outsider Chesthound
 item.spawn_egg.entity.terra:chesthound_outsider.name=Spawn Outsider Chesthound
 entity.terra:cobblestone_golem.name=Cobblestone Golem
 item.spawn_egg.entity.terra:cobblestone_golem.name=Spawn Cobblestone Golem
+entity.terra:elf.name=Elf
+item.spawn_egg.entity.terra:elf.name=Spawn Elf
 entity.terra:eyecletch.name=Eyecletch
 item.spawn_egg.entity.terra:eyecletch.name=Spawn Eyecletch
 entity.terra:outsider.name=Outsider
@@ -292,6 +297,8 @@ entity.terra:possum.name=Possum
 item.spawn_egg.entity.terra:possum.name=Spawn Possum
 entity.terra:rarthrabby.name=Rarthrabby
 item.spawn_egg.entity.terra:rarthrabby.name=Spawn Rarthrabby
+entity.terra:sage.name=Sage
+item.spawn_egg.entity.terra:sage.name=Spawn Sage
 entity.terra:sentry.name=Sentry
 item.spawn_egg.entity.terra:sentry.name=Spawn Sentry
 entity.terra:stalker.name=Stalker

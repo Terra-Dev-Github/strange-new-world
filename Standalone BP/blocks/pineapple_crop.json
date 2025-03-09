@@ -14,7 +14,10 @@
 				"terra:growth_stage": [
 					0,
 					1,
-					2
+					2,
+					3,
+					4,
+					5
 				]
 			}
 		},
@@ -30,7 +33,7 @@
 				"terra:crop_properties"
 			],
 			"tag:minecraft:crop": {},
-			"minecraft:geometry": "geometry.crop.cross",
+			"minecraft:geometry": "minecraft:geometry.cross",
 			"minecraft:collision_box": false,
 			"minecraft:selection_box": {
 				"origin": [

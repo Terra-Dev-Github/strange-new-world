@@ -3,7 +3,7 @@
 pack.name=TERRA :: Mundo extraño - Recursos
 pack.description=Por Heavenly7493 | © 2025, TERRA
 
-terra.version.beta=TERRA - Mundo extraño 1.0.0 [BETA_03]
+terra.version.beta=TERRA - Mundo extraño 1.0.0 [BETA_04]
 
 ## MX > ES
 ## Tronco/Madera descortezada/o > Tronco/Madera sin corteza
@@ -247,6 +247,7 @@ tile.terra:ruby_block.name=Bloque de rubí
 tile.terra:ruby_ore.name=Mineral de rubí
 tile.terra:salt_block.name=Bloque de sal
 tile.terra:salt_dust.name=Polvo de sal
+tile.terra:salt_lamp.name=Lámpara de sal
 tile.terra:salt_ore.name=Mineral de sal
 tile.terra:sandy_soil.name=Fango arenoso
 tile.terra:scorched_soil.name=Fango chamuscado
@@ -263,6 +264,8 @@ tile.terra:tomato_crop.name=Cultivo de tomate
 tile.terra:vial_rod_empty.name=Columna de vial
 tile.terra:vial_rod_radioactive.name=Columna de vial radioactiva
 tile.terra:vial_rod_shimmering.name=Columna de vial resplandeciente
+tile.terra:wavy_red_sand.name=Ola de arena roja
+tile.terra:wavy_sand.name=Ola de arena
 tile.terra:wired_outsider_metal.name=Metal forastero cableado
 tile.terra:yellowheart_door.name=Puerta de palo amarillo
 tile.terra:yellowheart_leaves.name=Hojas de palo amarillo
@@ -286,6 +289,8 @@ entity.terra:chesthound_outsider.name=Mímico de metal forastero
 item.spawn_egg.entity.terra:chesthound_outsider.name=Generador de mímico de metal forastero
 entity.terra:cobblestone_golem.name=Gólem de adoquín
 item.spawn_egg.entity.terra:cobblestone_golem.name=Generador de gólem de adoquín
+entity.terra:elf.name=Elfo
+item.spawn_egg.entity.terra:elf.name=Generador de elfo
 entity.terra:eyecletch.name=Corneópodo
 item.spawn_egg.entity.terra:eyecletch.name=Generador de corneópodo
 entity.terra:outsider.name=Invasor
@@ -294,6 +299,8 @@ entity.terra:possum.name=Zarigüeya
 item.spawn_egg.entity.terra:possum.name=Generador de zarigüeya
 entity.terra:rarthrabby.name=Rarthrabby
 item.spawn_egg.entity.terra:rarthrabby.name=Generador de rarthrabby
+entity.terra:sage.name=Sabio
+item.spawn_egg.entity.terra:sage.name=Generador de sabio
 entity.terra:sentry.name=Centinela
 item.spawn_egg.entity.terra:sentry.name=Generador de centinela
 entity.terra:stalker.name=Gracílico

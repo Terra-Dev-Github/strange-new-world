@@ -14,7 +14,8 @@
 				"terra:growth_stage": [
 					0,
 					1,
-					2
+					2,
+					3
 				]
 			}
 		},
@@ -25,7 +26,20 @@
 					3
 				]
 			},
-			"minecraft:geometry": "geometry.crop.cross",
+			// adds block functionality
+			"minecraft:custom_components": [
+				"terra:crop_properties"
+			],
+			"tag:minecraft:crop": {},
+			"minecraft:geometry": {
+				"identifier": "geometry.crop_orange",
+				"bone_visibility": {
+					"cross": true,
+					"stage_1": "q.block_state('terra:growth_stage') == 1",
+					"stage_2": "q.block_state('terra:growth_stage') == 2",
+					"stage_3": "q.block_state('terra:growth_stage') == 3"
+				}
+			},
 			"minecraft:collision_box": false,
 			"minecraft:selection_box": {
 				"origin": [
@@ -50,12 +64,24 @@
 				"conditions": [
 					{
 						"allowed_faces": [
-							"up"
+							"down"
 						],
 						"block_filter": [
-							"farmland",
-							"podzol",
-							"terra:soil"
+							"oak_leaves",
+							"spruce_leaves",
+							"birch_leaves",
+							"jungle_leaves",
+							"acacia_leaves",
+							"dark_oak_leaves",
+							"mangrove_leaves",
+							"cherry_leaves",
+							"pale_oak_leaves",
+							"azalea_leaves",
+							"azalea_leaves_flowered",
+							// custom leaves
+							{
+								"tags": "q.any_tag('leaves')"
+							}
 						]
 					}
 				]
@@ -83,6 +109,7 @@
 							10
 						]
 					},
+					"minecraft:collision_box": false,
 					"minecraft:loot": "loot_tables/blocks/orange_seeds.json"
 				}
 			},
@@ -97,14 +124,26 @@
 					},
 					"minecraft:selection_box": {
 						"origin": [
-							-5,
-							0,
-							-5
+							-2.5,
+							10,
+							-2.5
 						],
 						"size": [
-							10,
 							5,
-							10
+							5,
+							5
+						]
+					},
+					"minecraft:collision_box": {
+						"origin": [
+							-2.5,
+							10,
+							-2.5
+						],
+						"size": [
+							5,
+							5,
+							5
 						]
 					},
 					"minecraft:loot": "loot_tables/blocks/orange_seeds.json"
@@ -116,6 +155,42 @@
 					"minecraft:material_instances": {
 						"*": {
 							"texture": "orange_crop_2",
+							"render_method": "alpha_test"
+						}
+					},
+					"minecraft:selection_box": {
+						"origin": [
+							-4,
+							6,
+							-4
+						],
+						"size": [
+							8,
+							8,
+							8
+						]
+					},
+					"minecraft:collision_box": {
+						"origin": [
+							-4,
+							6,
+							-4
+						],
+						"size": [
+							8,
+							8,
+							8
+						]
+					},
+					"minecraft:loot": "loot_tables/blocks/orange_seeds.json"
+				}
+			},
+			{
+				"condition": "query.block_state('terra:growth_stage') == 3",
+				"components": {
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "orange_crop_3",
 							"render_method": "alpha_test"
 						}
 					},

@@ -23,8 +23,8 @@ world.beforeEvents.worldInitialize.subscribe(eventData => {
             // define crops and their growth limit (since not all will be the same)
             const crops = [
                 { id: 'terra:grape_vine', max: 2 },
-                { id: 'terra:lemon_crop', max: 2 },
-                { id: 'terra:orange_crop', max: 2 },
+                { id: 'terra:lemon_crop', max: 3 },
+                { id: 'terra:orange_crop', max: 3 },
                 { id: 'terra:pineapple_crop', max: 5 },
                 { id: 'terra:tomato_crop', max: 5 }
             ];
@@ -57,8 +57,8 @@ world.beforeEvents.worldInitialize.subscribe(eventData => {
             // define crops and their growth limit (since not all will be the same)
             const crops = [
                 { id: 'terra:grape_vine', max: 2 },
-                { id: 'terra:lemon_crop', max: 2 },
-                { id: 'terra:orange_crop', max: 2 },
+                { id: 'terra:lemon_crop', max: 3 },
+                { id: 'terra:orange_crop', max: 3 },
                 { id: 'terra:pineapple_crop', max: 5 },
                 { id: 'terra:tomato_crop', max: 5 }
             ];

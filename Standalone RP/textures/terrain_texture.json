@@ -4,7 +4,16 @@
 	"padding": 8,
 	"num_mip_levels": 1,
 	"texture_data": {
-		// placeholders
+		"anorthosite_side": {
+			"textures": [
+				"textures/blocks/anorthosite_side"
+			]
+		},
+		"anorthosite_top": {
+			"textures": [
+				"textures/blocks/anorthosite_top"
+			]
+		},
 		"arcane_table_bottom": {
 			"textures": [
 				"textures/blocks/arcane_table_bottom"
@@ -18,17 +27,6 @@
 		"arcane_table_top": {
 			"textures": [
 				"textures/blocks/arcane_table_top"
-			]
-		},
-		//
-		"anorthosite_side": {
-			"textures": [
-				"textures/blocks/anorthosite_side"
-			]
-		},
-		"anorthosite_top": {
-			"textures": [
-				"textures/blocks/anorthosite_top"
 			]
 		},
 		"autonetic_station_bottom": {
@@ -266,9 +264,9 @@
 				"textures/blocks/hazardous_outsider_metal"
 			]
 		},
-		"laboratory_door_channels": {
+		"lab_door_channels": {
 			"textures": [
-				"textures/blocks/laboratory_door_channels"
+				"textures/blocks/lab_door_channels"
 			]
 		},
 		"laboratory_door_bottom": {
@@ -299,6 +297,11 @@
 		"lemon_crop_2": {
 			"textures": [
 				"textures/blocks/crops/lemon_stage_2"
+			]
+		},
+		"lemon_crop_3": {
+			"textures": [
+				"textures/blocks/crops/lemon_stage_3"
 			]
 		},
 		"malachite_block": {
@@ -339,6 +342,11 @@
 		"orange_crop_2": {
 			"textures": [
 				"textures/blocks/crops/orange_stage_2"
+			]
+		},
+		"orange_crop_3": {
+			"textures": [
+				"textures/blocks/crops/orange_stage_3"
 			]
 		},
 		"outsider_crate": {
@@ -754,6 +762,16 @@
 		"vial_rod_radioactive": {
 			"textures": [
 				"textures/blocks/vial_rod_radioactive"
+			]
+		},
+		"wavy_red_sand": {
+			"textures": [
+				"textures/blocks/wavy_red_sand"
+			]
+		},
+		"wavy_sand": {
+			"textures": [
+				"textures/blocks/wavy_sand"
 			]
 		},
 		"wired_outsider_metal": {

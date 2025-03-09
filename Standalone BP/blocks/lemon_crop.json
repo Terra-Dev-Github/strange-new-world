@@ -14,7 +14,8 @@
 				"terra:growth_stage": [
 					0,
 					1,
-					2
+					2,
+					3
 				]
 			}
 		},
@@ -30,7 +31,15 @@
 				"terra:crop_properties"
 			],
 			"tag:minecraft:crop": {},
-			"minecraft:geometry": "geometry.crop.cross",
+			"minecraft:geometry": {
+				"identifier": "geometry.crop_lemon",
+				"bone_visibility": {
+					"cross": true,
+					"stage_1": "q.block_state('terra:growth_stage') == 1",
+					"stage_2": "q.block_state('terra:growth_stage') == 2",
+					"stage_3": "q.block_state('terra:growth_stage') == 3"
+				}
+			},
 			"minecraft:collision_box": false,
 			"minecraft:selection_box": {
 				"origin": [
@@ -55,12 +64,24 @@
 				"conditions": [
 					{
 						"allowed_faces": [
-							"up"
+							"down"
 						],
 						"block_filter": [
-							"farmland",
-							"podzol",
-							"terra:soil"
+							"oak_leaves",
+							"spruce_leaves",
+							"birch_leaves",
+							"jungle_leaves",
+							"acacia_leaves",
+							"dark_oak_leaves",
+							"mangrove_leaves",
+							"cherry_leaves",
+							"pale_oak_leaves",
+							"azalea_leaves",
+							"azalea_leaves_flowered",
+							// custom leaves
+							{
+								"tags": "q.any_tag('leaves')"
+							}
 						]
 					}
 				]
@@ -88,6 +109,7 @@
 							10
 						]
 					},
+					"minecraft:collision_box": false,
 					"minecraft:loot": "loot_tables/blocks/lemon_seeds.json"
 				}
 			},
@@ -102,14 +124,26 @@
 					},
 					"minecraft:selection_box": {
 						"origin": [
-							-5,
-							0,
-							-5
+							-1.5,
+							11,
+							-1.5
 						],
 						"size": [
-							10,
-							5,
-							10
+							3,
+							4,
+							3
+						]
+					},
+					"minecraft:collision_box": {
+						"origin": [
+							-1.5,
+							11,
+							-1.5
+						],
+						"size": [
+							3,
+							4,
+							3
 						]
 					},
 					"minecraft:loot": "loot_tables/blocks/lemon_seeds.json"
@@ -121,6 +155,42 @@
 					"minecraft:material_instances": {
 						"*": {
 							"texture": "lemon_crop_2",
+							"render_method": "alpha_test"
+						}
+					},
+					"minecraft:selection_box": {
+						"origin": [
+							-2.5,
+							8,
+							-2.5
+						],
+						"size": [
+							5,
+							6,
+							5
+						]
+					},
+					"minecraft:collision_box": {
+						"origin": [
+							-2.5,
+							8,
+							-2.5
+						],
+						"size": [
+							5,
+							6,
+							5
+						]
+					},
+					"minecraft:loot": "loot_tables/blocks/lemon_seeds.json"
+				}
+			},
+			{
+				"condition": "query.block_state('terra:growth_stage') == 3",
+				"components": {
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "lemon_crop_3",
 							"render_method": "alpha_test"
 						}
 					},
