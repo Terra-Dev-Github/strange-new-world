@@ -41,8 +41,7 @@
                 ]
             },
             "spawn_egg": {
-                "base_color": "#A47227",
-                "overlay_color": "#392600"
+                "texture": "spawn_egg_chesthound"
             },
             "render_controllers": [
                 "controller.render.default"

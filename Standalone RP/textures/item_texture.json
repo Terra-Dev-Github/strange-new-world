@@ -2,9 +2,15 @@
 	"resource_pack_name": "vanilla",
 	"texture_name": "atlas.items",
 	"texture_data": {
+		// placeholders
 		"placeholder": {
 			"textures": [
 				"textures/items/missing_item"
+			]
+		},
+		"spawn_egg_placeholder": {
+			"textures": [
+				"textures/items/spawn_eggs/spawn_egg_heisenblock"
 			]
 		},
 		// item textures found in the blocks folder
@@ -365,11 +371,6 @@
 				"textures/items/scroll"
 			]
 		},
-		"starfloat_spawn": {
-			"textures": [
-				"textures/items/starfloat_spawn"
-			]
-		},
 		"steel_ingot": {
 			"textures": [
 				"textures/items/steel_ingot"
@@ -378,6 +379,91 @@
 		"steel_nugget": {
 			"textures": [
 				"textures/items/steel_nugget"
+			]
+		},
+		"spawn_egg_beeper": {
+			"textures": [
+				"textures/items/spawn_eggs/spawn_egg_beeper"
+			]
+		},
+		"spawn_egg_chesthound": {
+			"textures": [
+				"textures/items/spawn_eggs/spawn_egg_chesthound"
+			]
+		},
+		"spawn_egg_cobblestone_golem": {
+			"textures": [
+				"textures/items/spawn_eggs/spawn_egg_cobblestone_golem"
+			]
+		},
+		"spawn_egg_deepslate_chesthound": {
+			"textures": [
+				"textures/items/spawn_eggs/spawn_egg_deepslate_chesthound"
+			]
+		},
+		"spawn_egg_elf": {
+			"textures": [
+				"textures/items/spawn_eggs/spawn_egg_elf"
+			]
+		},
+		"spawn_egg_eyecletch": {
+			"textures": [
+				"textures/items/spawn_eggs/spawn_egg_eyecletch"
+			]
+		},
+		"spawn_egg_outsider_chesthound": {
+			"textures": [
+				"textures/items/spawn_eggs/spawn_egg_outsider_chesthound"
+			]
+		},
+		"spawn_egg_outsider": {
+			"textures": [
+				"textures/items/spawn_eggs/spawn_egg_outsider"
+			]
+		},
+		"spawn_egg_possum": {
+			"textures": [
+				"textures/items/spawn_eggs/spawn_egg_possum"
+			]
+		},
+		"spawn_egg_rarthrabby": {
+			"textures": [
+				"textures/items/spawn_eggs/spawn_egg_rarthrabby"
+			]
+		},
+		"spawn_egg_sage": {
+			"textures": [
+				"textures/items/spawn_eggs/spawn_egg_sage"
+			]
+		},
+		"spawn_egg_sentry": {
+			"textures": [
+				"textures/items/spawn_eggs/spawn_egg_sentry"
+			]
+		},
+		"spawn_egg_stalker": {
+			"textures": [
+				"textures/items/spawn_eggs/spawn_egg_stalker"
+			]
+		},
+		"spawn_egg_starfloat": {
+			"textures": [
+				"textures/items/spawn_eggs/spawn_egg_starfloat"
+			]
+		},
+		"spawn_egg_tank_outsider": {
+			"textures": [
+				"textures/items/spawn_eggs/spawn_egg_tank_outsider"
+			]
+		},
+		"spawn_egg_warlock": {
+			"textures": [
+				"textures/items/spawn_eggs/spawn_egg_warlock"
+			]
+		},
+		"spawn_egg_wildderglide": {
+			"textures": [
+				"textures/items/spawn_eggs/spawn_egg_wildderglide"
 			]
 		},
 		"supreme_wand": {

@@ -201,6 +201,21 @@
             }
         },
         "components": {
+            "minecraft:behavior.avoid_mob_type": {
+                "priority": 1,
+                "entity_types": [
+                    {
+                        "filters": {
+                            "test": "is_family",
+                            "subject": "other",
+                            "value": "creaking"
+                        },
+                        "max_dist": 6,
+                        "walk_speed_multiplier": 1.2,
+                        "sprint_speed_multiplier": 1.2
+                    }
+                ]
+            },
             "minecraft:loot": {
                 "table": "loot_tables/entities/outsider.json"
             },

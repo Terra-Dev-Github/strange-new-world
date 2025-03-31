@@ -1,0 +1,13 @@
+{
+  "format_version": "1.21.50",
+  "minecraft:recipe_furnace": {
+    "description": {
+      "identifier": "terra:furnace_blue_mahoe_leaves"
+    },
+    "tags": [
+      "furnace"
+    ],
+    "input": "terra:blue_mahoe_leaves",
+    "output": "minecraft:leaf_litter"
+  }
+}

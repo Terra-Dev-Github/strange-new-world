@@ -38,8 +38,7 @@
       ],
       "enable_attachables": false,
       "spawn_egg": {
-        "base_color": "#B7896C",
-        "overlay_color": "#7C9FA1"
+        "texture": "spawn_egg_stalker"
       }
     }
   }

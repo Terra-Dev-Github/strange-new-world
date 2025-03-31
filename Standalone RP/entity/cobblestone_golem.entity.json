@@ -48,8 +48,7 @@
 			],
 			"enable_attachables": false,
 			"spawn_egg": {
-				"base_color": "#888788",
-				"overlay_color": "#7A8F55"
+				"texture": "spawn_egg_cobblestone_golem"
 			}
 		}
 	}

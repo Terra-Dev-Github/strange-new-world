@@ -35,8 +35,7 @@
 			],
 			"enable_attachables": false,
 			"spawn_egg": {
-				"base_color": "#fbf4ec",
-				"overlay_color": "#342928"
+				"texture": "spawn_egg_possum"
 			}
 		}
 	}

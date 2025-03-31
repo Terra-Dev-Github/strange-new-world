@@ -32,8 +32,7 @@
         "controller.render.spider"
       ],
       "spawn_egg": {
-        "base_color": "#955757",
-        "overlay_color": "#3B1D1D"
+        "texture": "spawn_egg_eyecletch"
       }
     }
   }

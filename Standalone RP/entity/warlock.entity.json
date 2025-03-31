@@ -40,8 +40,7 @@
         "controller.render.evoker"
       ],
       "spawn_egg": {
-        "base_color": "#66171C",
-        "overlay_color": "#424C4E"
+        "texture": "spawn_egg_warlock"
       }
     }
   }
