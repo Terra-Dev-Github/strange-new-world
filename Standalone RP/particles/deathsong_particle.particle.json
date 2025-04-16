@@ -4,7 +4,7 @@
 		"description": {
 			"identifier": "terra:deathsong_particle",
 			"basic_render_parameters": {
-				"material": "particles_alpha",
+				"material": "particles_add",
 				"texture": "textures/particle/particles"
 			}
 		},
@@ -37,7 +37,7 @@
 			},
 			"minecraft:particle_appearance_billboard": {
 				"size": [0.25, 0.25],
-				"facing_camera_mode": "rotate_xyz",
+				"facing_camera_mode": "lookat_y",
 				"uv": {
 					"texture_width": 128,
 					"texture_height": 128,

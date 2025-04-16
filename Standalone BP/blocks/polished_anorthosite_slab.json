@@ -114,15 +114,15 @@
 			},
 			"minecraft:material_instances": {
 				"*": {
-					"texture": "polished_anorthosite_side",
+					"texture": "polished_anorthosite_slab_side",
 					"render_method": "opaque"
 				},
 				"up": {
-					"texture": "polished_anorthosite_top",
+					"texture": "polished_anorthosite",
 					"render_method": "opaque"
 				},
 				"down": {
-					"texture": "polished_anorthosite_top",
+					"texture": "polished_anorthosite",
 					"render_method": "opaque"
 				}
 			},

@@ -6,14 +6,16 @@
 		"description": {
 			"identifier": "terra:vial_radioactive",
 			"menu_category": {
-				"category": "items",
-				"group": "terra:itemGroup.name.vials"
+				"category": "items"
+				// "group": "terra:itemGroup.name.vials"
 			}
 		},
 		"components": {
 			"minecraft:glint": true,
 			"minecraft:icon": {
-				"texture": "vial_radioactive"
+				"textures": {
+                    "default": "vial_radioactive"
+                }
 			},
 			"minecraft:hand_equipped": false,
 			"minecraft:allow_off_hand": true,

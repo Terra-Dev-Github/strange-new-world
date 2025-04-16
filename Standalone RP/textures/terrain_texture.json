@@ -206,7 +206,7 @@
 		},
 		"duskstone_bricks": {
 			"textures": [
-				"textures/blocks/duskstone"
+				"textures/blocks/duskstone_bricks"
 			]
 		},
 		"duskstone": {

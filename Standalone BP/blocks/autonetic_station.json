@@ -6,8 +6,7 @@
 		"description": {
 			"identifier": "terra:autonetic_station",
 			"menu_category": {
-				"category": "items",
-				"group": "itemGroup.name.none"
+				"category": "items"
 			},
 			"states": {
 				"terra:redstone_powered": [
@@ -18,7 +17,7 @@
 		},
 		"permutations": [
 			{
-				"condition": "!q.block_state('terra:redstone_conductivity')",
+				"condition": "!q.block_state('terra:redstone_powered')",
 				"components": {
 					"minecraft:material_instances": {
 						"up": {
@@ -49,7 +48,7 @@
 				}
 			},
 			{
-				"condition": "q.block_state('terra:redstone_conductivity')",
+				"condition": "q.block_state('terra:redstone_powered')",
 				"components": {
 					"minecraft:crafting_table": {
 						"table_name": "tile.terra:autonetic_station.name",
@@ -95,7 +94,8 @@
 				]
 			},
 			"minecraft:redstone_conductivity": {
-				"redstone_conductor": true
+				"redstone_conductor": true,
+                "allows_wire_to_step_down": false
 			},
 			"minecraft:geometry": "minecraft:geometry.full_block",
 			"minecraft:material_instances": {

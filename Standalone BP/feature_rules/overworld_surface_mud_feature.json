@@ -42,6 +42,11 @@
 							"test": "has_biome_tag",
 							"operator": "==",
 							"value": "savanna"
+						},
+                        {
+							"test": "has_biome_tag",
+							"operator": "==",
+							"value": "swampland"
 						}
 					]
 				}

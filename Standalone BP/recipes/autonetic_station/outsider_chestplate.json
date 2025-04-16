@@ -1,5 +1,5 @@
 {
-    "format_version": "1.20.10",
+    "format_version": "1.20.30",
     "minecraft:recipe_shaped": {
         "description": {
             "identifier": "terra:outsider_chestplate"
@@ -17,6 +17,11 @@
                 "item": "terra:outsider_metal_ingot"
             }
         },
+        "unlock": [
+            {
+                "item": "terra:outsider_metal_ingot"
+            }
+        ],
         "result": {
             "item": "terra:outsider_chestplate",
             "count": 1

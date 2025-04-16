@@ -1,0 +1,22 @@
+{
+	"format_version": "1.13.0",
+	"minecraft:weighted_random_feature": {
+		"description": {
+			"identifier": "terra:rock_feature_weight"
+		},
+		"features": [
+			[
+				"terra:stone_rock_feature",
+				1
+			],
+			[
+				"terra:cobblestone_rock_feature",
+				1
+			],
+			[
+				"terra:andesite_rock_feature",
+				1
+			]
+		]
+	}
+}

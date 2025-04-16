@@ -14,9 +14,6 @@
       "is_summonable": true
     },
     "component_groups": {
-      "managed": {
-        "minecraft:managed_sage": {}
-      },
       "despawning": {
         "minecraft:type_family": {
           "family": [
@@ -393,13 +390,6 @@
       "minecraft:nameable": {}
     },
     "events": {
-      "minecraft:scheduled": {
-        "add": {
-          "component_groups": [
-            "managed"
-          ]
-        }
-      },
       "minecraft:start_despawn": {
         "add": {
           "component_groups": [

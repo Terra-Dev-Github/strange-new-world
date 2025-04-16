@@ -28,7 +28,7 @@ world.afterEvents.dataDrivenEntityTrigger.subscribe(eventData => {
 system.runInterval(() => {
     const entity = world.getEntity();
     if (!entity) return;
-    if (!entity.typeId === 'terra:stalker') return;
+    if (entity.typeId !== 'terra:stalker') return;
 
     const startStare = entity.hasComponent('minecraft:is_shaking')
     if (startStare) {

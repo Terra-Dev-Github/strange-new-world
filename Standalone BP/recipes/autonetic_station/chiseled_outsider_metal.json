@@ -16,6 +16,11 @@
                 "item": "terra:outsider_metal_slab"
             }
         },
+        "unlock": [
+            {
+                "item": "terra:outsider_metal_slab"
+            }
+        ],
         "result": {
             "item": "terra:chiseled_outsider_metal",
             "count": 1

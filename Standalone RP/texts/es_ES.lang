@@ -3,7 +3,7 @@
 pack.name=TERRA :: Mundo extraño - Recursos
 pack.description=Por Heavenly7493 | © 2025, TERRA
 
-terra.version.beta=TERRA - Mundo extraño 1.0.0 [BETA_05]
+terra.version.beta=TERRA - Mundo extraño 1.0.0 [BETA_07]
 
 ## MX > ES
 ## Tronco/Madera descortezada/o > Tronco/Madera sin corteza
@@ -311,6 +311,8 @@ entity.terra:tank_outsider.name=Invasor tanque
 item.spawn_egg.entity.terra:tank_outsider.name=Generador de invasor tanque
 entity.terra:warlock.name=Hechicero
 item.spawn_egg.entity.terra:warlock.name=Generador de hechicero
+entity.terra:wildderglide.name=Wildderglide
+item.spawn_egg.entity.terra:wildderglide.name=Generador de wildderglide
 
 entity.terra:blizzard_projectile.name=Proyectil de ventisca
 entity.terra:coagulate_projectile.name=Proyectil de hematoma

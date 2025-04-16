@@ -6,8 +6,7 @@
     "description": {
       "identifier": "terra:eyecletch",
       "materials": {
-        "default": "spider",
-        "invisible": "spider_invisible"
+        "default": "spider"
       },
       "textures": {
         "default": "textures/entity/eyecletch"
@@ -29,7 +28,7 @@
         }
       ],
       "render_controllers": [
-        "controller.render.spider"
+        "controller.render.skeleton"
       ],
       "spawn_egg": {
         "texture": "spawn_egg_eyecletch"

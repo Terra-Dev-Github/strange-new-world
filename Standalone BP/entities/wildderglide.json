@@ -1,0 +1,275 @@
+{
+  "format_version": "1.21.70",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "terra:wildderglide",
+      "spawn_category": "monster",
+      "is_spawnable": true,
+      "is_summonable": true
+    },
+    "component_groups": {
+      "terra:wildderglide_neutral": {
+        "minecraft:rideable": {
+          "seat_count": 1,
+          "interact_text": "action.interact.ride.horse",
+          "family_types": [
+            "player"
+          ],
+          "seats": {
+            "position": [
+              0.0,
+              0.63,
+              0.0
+            ]
+          }
+        },
+        "minecraft:behavior.controlled_by_player": {
+          "priority": 0
+        },
+        "minecraft:environment_sensor": {
+          "triggers": {
+            "filters": {
+              "all_of": [
+                {
+                  "subject": "player",
+                  "test": "is_riding",
+                  "operator": "==",
+                  "value": true
+                },
+                {
+                  "subject": "self",
+                  "test": "rider_count",
+                  "operator": "==",
+                  "value": 1
+                }
+              ]
+            },
+            "event": "minecraft:become_panicked",
+            "target": "self"
+          }
+        },
+        "minecraft:on_target_acquired": {
+          "event": "minecraft:become_panicked"
+        }
+      },
+      "terra:wildderglide_panicking": {
+        "minecraft:rideable": {
+          "seat_count": 1,
+          "interact_text": "action.interact.ride.horse",
+          "family_types": [
+            "player"
+          ],
+          "seats": {
+            "position": [
+              0.0,
+              0.63,
+              0.0
+            ]
+          }
+        },
+        "minecraft:can_fly": {},
+        "minecraft:behavior.float": {
+          "priority": 0
+        },
+        "minecraft:navigation.float": {
+          "can_float": true,
+          "can_path_from_air": true,
+          "can_walk": false
+        },
+        "minecraft:behavior.panic": {
+          "force": true,
+          "speed_multiplier": 5
+        },
+        "minecraft:out_of_control": {}
+      }
+    },
+    "components": {
+      "minecraft:is_hidden_when_invisible": {},
+      "minecraft:renders_when_invisible": {},
+      "minecraft:experience_reward": {
+        "on_death": "query.last_hit_by_player ? 5 : 0"
+      },
+      "minecraft:nameable": {},
+      "minecraft:type_family": {
+        "family": [
+          "wildderglide",
+          "monster",
+          "mob",
+          "arthropod"
+        ]
+      },
+      "minecraft:breathable": {
+        "total_supply": 15,
+        "suffocate_time": 0
+      },
+      // loot
+      "minecraft:loot": {
+        "table": "loot_tables/empty.json"
+      },
+      "minecraft:collision_box": {
+        "width": 1.4,
+        "height": 0.9
+      },
+      "minecraft:health": {
+        "value": 16,
+        "max": 16
+      },
+      "minecraft:hurt_on_condition": {
+        "damage_conditions": [
+          {
+            "filters": {
+              "test": "in_lava",
+              "subject": "self"
+            },
+            "cause": "lava",
+            "damage_per_tick": 4
+          }
+        ]
+      },
+      "minecraft:on_hurt": {
+        "event": "minecraft:become_panicked",
+        "target": "self"
+      },
+      "minecraft:movement": {
+        "value": 0.3
+      },
+      "minecraft:navigation.climb": {
+        "can_path_over_water": false
+      },
+      // the wildderglide avoids salt too
+      "minecraft:behavior.avoid_block": {
+        "priority": 3,
+        "search_range": 4,
+        "search_height": 4,
+        "sprint_speed_modifier": 1.1,
+        "target_selection_method": "nearest",
+        "target_blocks": [
+          "terra:salt_lamp",
+          "terra:salt_block",
+          "terra:salt_ore",
+          "terra:salt_dust"
+        ]
+      },
+      "minecraft:movement.basic": {},
+      "minecraft:jump.static": {},
+      "minecraft:can_climb": {},
+      "minecraft:despawn": {
+        "despawn_from_distance": {}
+      },
+      "minecraft:behavior.float": {
+        "priority": 1
+      },
+      "minecraft:behavior.random_stroll": {
+        "priority": 6,
+        "speed_multiplier": 0.8
+      },
+      "minecraft:behavior.look_at_player": {
+        "priority": 7,
+        "look_distance": 6.0,
+        "probability": 0.02
+      },
+      "minecraft:behavior.random_look_around": {
+        "priority": 7
+      },
+      "minecraft:behavior.hurt_by_target": {
+        "priority": 1,
+        "entity_types": [
+          {
+            "filters": {
+              "test": "is_family",
+              "subject": "other",
+              "operator": "!=",
+              "value": "breeze"
+            }
+          }
+        ]
+      },
+      "minecraft:physics": {},
+      "minecraft:pushable": {
+        "is_pushable": true,
+        "is_pushable_by_piston": true
+      },
+      "minecraft:conditional_bandwidth_optimization": {}
+    },
+    "events": {
+      "minecraft:entity_spawned": {
+        "randomize": [
+          {
+            "weight": 1,
+            "randomize": [
+              {
+                "weight": 80,
+                "filters": {
+                  "all_of": [
+                    {
+                      "test": "is_daytime",
+                      "value": false
+                    },
+                    {
+                      "test": "is_snow_covered",
+                      "value": true
+                    },
+                    {
+                      "test": "is_underground",
+                      "value": false
+                    }
+                  ]
+                },
+                "remove": {},
+                "add": {
+                  "component_groups": [
+                    "terra:wildderglide_neutral"
+                  ]
+                }
+              },
+              {
+                "weight": 20,
+                "filters": {
+                  "any_of": [
+                    {
+                      "test": "is_daytime",
+                      "value": false
+                    },
+                    {
+                      "test": "is_underground",
+                      "value": true
+                    }
+                  ]
+                },
+                "remove": {},
+                "add": {
+                  "component_groups": [
+                    "terra:wildderglide_neutral"
+                  ]
+                }
+              }
+            ]
+          },
+          {
+            "weight": 99,
+            "remove": {},
+            "add": {
+              "component_groups": [
+                "terra:wildderglide_neutral"
+              ]
+            }
+          }
+        ]
+      },
+      "minecraft:become_panicked": {
+        "add": {
+          "component_groups": [
+            "terra:wildderglide_panicking"
+          ]
+        }
+      },
+      "minecraft:become_calm": {
+        "remove": {
+          "component_groups": [
+            "terra:wildderglide_panicking"
+          ]
+        }
+      }
+    }
+  }
+}

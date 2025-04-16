@@ -369,6 +369,14 @@ world.beforeEvents.worldInitialize.subscribe(eventData => {
             if (destroyableBlocks) {
                 block.dimension.runCommand(`/setblock ${x} ${y + 1} ${z} air destroy`);
             }
+        },
+
+        beforeOnPlayerPlace: (e) => {
+            const { block } = e;
+            const aboveBlock = block.above();
+            if (aboveBlock.typeId !== 'minecraft:air') {
+                e.cancel = true;
+            }
         }
     });
 });
@@ -400,21 +408,5 @@ world.afterEvents.playerBreakBlock.subscribe(eventData => {
     } else if (doorArray.includes(aboveBlock?.typeId)) {
         aboveBlock.setType('minecraft:air');
         processedBlocks.delete(`${x},${y + 1},${z}`); // Remove the above block's entry
-    }
-});
-
-world.beforeEvents.playerPlaceBlock.subscribe(event => {
-    const { block } = event;
-    const aboveBlock = block.above();
-    const doorArray = [
-        'terra:blue_mahoe_door',
-        'terra:bulnesia_door',
-        'terra:poplar_door',
-        'terra:yellowheart_door',
-        'terra:laboratory_door'
-    ];
-
-    if (doorArray.includes(block?.typeId) && aboveBlock.typeId !== 'minecraft:air') {
-        event.cancel = true;
     }
 });

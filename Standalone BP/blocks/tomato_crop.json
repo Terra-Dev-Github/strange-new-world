@@ -28,7 +28,12 @@
 					3
 				]
 			},
-			"minecraft:geometry": "geometry.crop.cross",
+			// adds block functionality
+			"minecraft:custom_components": [
+				"terra:crop_properties"
+			],
+			"tag:minecraft:crop": {},
+			"minecraft:geometry": "minecraft:geometry.cross",
 			"minecraft:collision_box": false,
 			"minecraft:selection_box": {
 				"origin": [

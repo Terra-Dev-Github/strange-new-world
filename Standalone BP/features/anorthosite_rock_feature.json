@@ -1,0 +1,33 @@
+{
+	"format_version": "1.16.0",
+	"minecraft:structure_template_feature": {
+		"description": {
+			"identifier": "terra:anorthosite_rock_feature"
+		},
+		"structure_name": "rocks:anorthosite_rock",
+		"adjustment_radius": 1,
+		"facing_direction": "random",
+		"constraints": {
+			"grounded": {},
+			"block_intersection": {
+				"block_whitelist": [
+                    {
+                        "name": "minecraft:snow_layer"
+                    },
+                    {
+                        "name": "terra:soil"
+                    },
+					{
+						"name": "minecraft:stone"
+					},
+					{
+						"name": "minecraft:air"
+					},
+					{
+						"name": "minecraft:dirt"
+					}
+				]
+			}
+		}
+	}
+}

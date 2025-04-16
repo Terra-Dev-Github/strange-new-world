@@ -1,5 +1,5 @@
 {
-	"format_version": "1.16.100",
+	"format_version": "1.20.30",
 	"minecraft:recipe_shaped": {
 		"description": {
 			"identifier": "terra:outsider_metal_ingot"
@@ -16,6 +16,11 @@
 				"item": "terra:outsider_metal_scrap"
 			}
 		},
+		"unlock": [
+			{
+				"item": "terra:outsider_metal_scrap"
+			}
+		],
 		"result": {
 			"item": "terra:outsider_metal_ingot",
 			"count": 1

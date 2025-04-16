@@ -4,19 +4,21 @@
 	"format_version": "1.21.60",
 	"minecraft:item": {
 		"description": {
-			"identifier": "terra:vial_waste",
+			"identifier": "terra:vial_pure",
 			"menu_category": {
-				"category": "items",
-				"group": "terra:itemGroup.name.vials"
+				"category": "items"
+				// "group": "terra:itemGroup.name.vials"
 			}
 		},
 		"components": {
 			"minecraft:icon": {
-				"texture": "vial_waste"
+				"textures": {
+                    "default": "vial_pure"
+                }
 			},
 			"minecraft:hand_equipped": false,
 			"minecraft:display_name": {
-				"value": "item.terra:vial_waste"
+				"value": "item.terra:vial_pure"
 			}
 		}
 	}

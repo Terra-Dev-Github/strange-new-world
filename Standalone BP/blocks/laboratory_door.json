@@ -80,61 +80,9 @@
                 }
             },
             {
-                "condition": "q.block_state('terra:open_bit') && !q.block_state('terra:door_hinge_bit')",
+                "condition": "q.block_state('terra:open_bit')",
                 "components": {
-                    "minecraft:collision_box": {
-                        "origin": [
-                            5,
-                            0,
-                            -8
-                        ],
-                        "size": [
-                            3,
-                            16,
-                            16
-                        ]
-                    },
-                    "minecraft:selection_box": {
-                        "origin": [
-                            5,
-                            0,
-                            -8
-                        ],
-                        "size": [
-                            3,
-                            16,
-                            16
-                        ]
-                    }
-                }
-            },
-            {
-                "condition": "q.block_state('terra:open_bit') && q.block_state('terra:door_hinge_bit')",
-                "components": {
-                    "minecraft:collision_box": {
-                        "origin": [
-                            -8,
-                            0,
-                            -8
-                        ],
-                        "size": [
-                            3,
-                            16,
-                            16
-                        ]
-                    },
-                    "minecraft:selection_box": {
-                        "origin": [
-                            -8,
-                            0,
-                            -8
-                        ],
-                        "size": [
-                            3,
-                            16,
-                            16
-                        ]
-                    }
+                    "minecraft:collision_box": false
                 }
             },
             // bottom door

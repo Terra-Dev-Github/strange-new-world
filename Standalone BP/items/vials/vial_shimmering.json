@@ -6,13 +6,15 @@
 		"description": {
 			"identifier": "terra:vial_shimmering",
 			"menu_category": {
-				"category": "items",
-				"group": "terra:itemGroup.name.vials"
+				"category": "items"
+				// "group": "terra:itemGroup.name.vials"
 			}
 		},
 		"components": {
 			"minecraft:icon": {
-				"texture": "vial_shimmering"
+				"textures": {
+                    "default": "vial_shimmering"
+                }
 			},
 			"minecraft:hand_equipped": false,
 			"minecraft:display_name": {

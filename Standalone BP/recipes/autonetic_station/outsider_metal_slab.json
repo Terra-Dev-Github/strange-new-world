@@ -1,5 +1,5 @@
 {
-    "format_version": "1.20.10",
+    "format_version": "1.20.30",
     "minecraft:recipe_shaped": {
         "description": {
             "identifier": "terra:outsider_metal_slab"
@@ -15,6 +15,11 @@
                 "item": "terra:outsider_metal_block"
             }
         },
+        "unlock": [
+            {
+                "item": "terra:outsider_metal_block"
+            }
+        ],
         "result": {
             "item": "terra:outsider_metal_slab",
             "count": 6

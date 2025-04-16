@@ -1,0 +1,39 @@
+{
+	"format_version": "1.21.50",
+	"minecraft:feature_rules": {
+		"description": {
+			"identifier": "terra:overworld_surface_anorthosite_rock_feature_rule",
+			"places_feature": "terra:anorthosite_rock_feature"
+		},
+		"conditions": {
+			"placement_pass": "surface_pass",
+			"minecraft:biome_filter": {
+				"any_of": [
+                    
+					{
+						"test": "has_biome_tag",
+						"operator": "==",
+						"value": "mountain"
+					},
+					{
+						"test": "has_biome_tag",
+						"operator": "==",
+						"value": "stone"
+					},
+					{
+						"test": "has_biome_tag",
+						"operator": "==",
+						"value": "cold"
+					}
+				]
+			}
+		},
+		"distribution": {
+			"iterations": 1,
+			"x": 0,
+			"y": "query.heightmap(variable.worldx, variable.worldz) - 1",
+			"z": 0,
+			"scatter_chance": 5
+		}
+	}
+}

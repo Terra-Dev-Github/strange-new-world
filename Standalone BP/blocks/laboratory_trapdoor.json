@@ -181,7 +181,7 @@
 		],
 		"components": {
 			"tag:metal": {},
-            "tag:minecraft:is_pickaxe_item_destructible": {},
+			"tag:minecraft:is_pickaxe_item_destructible": {},
 			"minecraft:collision_box": {
 				"origin": [
 					-8,
@@ -227,7 +227,7 @@
 			},
 			"minecraft:material_instances": {
 				"*": {
-					"texture": "laboratory_door_channels",
+					"texture": "lab_door_channels",
 					"render_method": "alpha_test"
 				},
 				"trapdoor": {

@@ -3,7 +3,7 @@
 pack.name=TERRA :: Strange New World - Resources
 pack.description=By Heavenly7493 | © 2025, TERRA
 
-terra.version.beta=TERRA - Strange New World v1.0.0 [BETA_05]
+terra.version.beta=TERRA - Strange New World v1.0.0 [BETA_07]
 
 ## US > GB
 ## Chiseled > Chiselled
@@ -309,6 +309,8 @@ entity.terra:tank_outsider.name=Tank Outsider
 item.spawn_egg.entity.terra:tank_outsider.name=Spawn Tank Outsider
 entity.terra:warlock.name=Warlock
 item.spawn_egg.entity.terra:warlock.name=Spawn Warlock
+entity.terra:wildderglide.name=Wildderglide
+item.spawn_egg.entity.terra:wildderglide.name=Spawn Wildderglide
 
 entity.terra:blizzard_projectile.name=Blizzard Projectile
 entity.terra:coagulate_projectile.name=Coagulate Projectile

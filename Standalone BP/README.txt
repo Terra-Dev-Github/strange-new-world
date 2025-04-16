@@ -22,17 +22,17 @@ Any further inquires about terms and conditions must be consulted with both the 
 :: Credits
 
 Art & Design
-- Heavenly/Henderson (@heavenly7493)
+- Heavenly/Louis Artell (@heavenly7493)
 
 Coding & Compiling
-- Heavenly/Henderson (@heavenly7493)
+- Heavenly/Louis Artell (@heavenly7493)
 
 Sound Mix & Music
-- Louis Artell (@heavenly7493)
+- Heavenly/Louis Artell (@heavenly7493)
 - Kevin MacLeod ('Vanes' under Creative Commons by Attribution License)
 
 Spanish Translations
-- Heavenly/Henderson (@heavenly7493)
+- Heavenly/Louis Artell (@heavenly7493)
 
 Special Thanks
 - To Kaiōga (@Kaioga5) for their curated block templates made with scripting.

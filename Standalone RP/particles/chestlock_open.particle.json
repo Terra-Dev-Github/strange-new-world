@@ -29,35 +29,19 @@
 			},
 			"minecraft:particle_initial_speed": 7,
 			"minecraft:particle_motion_dynamic": {
-				"linear_acceleration": [
-					2,
-					4,
-					2
-				],
+				"linear_acceleration": [2, 4, 2],
 				"linear_drag_coefficient": 4
 			},
 			"minecraft:particle_appearance_billboard": {
-				"size": [
-					0.3,
-					0.3
-				],
+				"size": [0.4, 0.4],
 				"facing_camera_mode": "lookat_xyz",
 				"uv": {
 					"texture_width": 8,
 					"texture_height": 64,
 					"flipbook": {
-						"base_UV": [
-							0,
-							0
-						],
-						"size_UV": [
-							8,
-							8
-						],
-						"step_UV": [
-							0,
-							8
-						],
+						"base_UV": [0, 0],
+						"size_UV": [8, 8],
+						"step_UV": [0, 8],
 						"frames_per_second": 12,
 						"max_frame": 8,
 						"stretch_to_lifetime": true
@@ -70,12 +54,7 @@
 			},
 			"minecraft:particle_appearance_lighting": {},
 			"minecraft:particle_appearance_tinting": {
-				"color": [
-					1,
-					1,
-					1,
-					1
-				]
+				"color": [1, 1, 1, 1]
 			}
 		}
 	}

@@ -11,7 +11,18 @@
     "description": {
       "identifier": "terra:stalker",
       "is_spawnable": true,
-      "is_summonable": true
+      "is_summonable": true,
+      "properties": {
+        "terra:stalker_state": {
+          "type": "enum",
+          "values": [
+            "observed",
+            "unobserved"
+          ],
+          "default": "unobserved",
+          "client_sync": true
+        }
+      }
     },
     "component_groups": {
       // shenanigans; actual thing made on a script
@@ -41,7 +52,6 @@
       },
       "terra:panic_countdown": {
         "minecraft:timer": {
-          "random_interval": true,
           "time": [
             0.5,
             1
@@ -73,13 +83,16 @@
         }
       },
       "terra:panic": {
+        "minecraft:behavior.flee_sun": {
+          "priority": 0,
+          "speed_multiplier": 0
+        },
         "minecraft:behavior.panic": {
           "speed_multiplier": 0,
           "force": true,
           "priority": 0
         },
         "minecraft:behavior.avoid_mob_type": {
-          "remove_target": true,
           "entity_types": "player",
           "on_escape_event": {
             "event": "terra:stop_panic",
@@ -88,8 +101,8 @@
         },
         "minecraft:timer": {
           "time": [
-            10,
-            30
+            5,
+            10
           ],
           "time_down_event": {
             "event": "terra:stop_panic",
@@ -97,7 +110,6 @@
           }
         }
       },
-      //
       "terra:stalker_baby": {
         "minecraft:is_baby": {},
         "minecraft:scale": {
@@ -143,6 +155,41 @@
             "target": "self"
           }
         },
+        //
+        "minecraft:environment_sensor": {
+          "triggers": {
+            "filters": {
+              "all_of": [
+                {
+                  "any_of": [
+                    {
+                      "test": "enum_property",
+                      "domain": "terra:stalker_state",
+                      "value": "observed"
+                    },
+                    {
+                      "test": "enum_property",
+                      "domain": "terra:stalker_state",
+                      "value": "unobserved"
+                    }
+                  ]
+                },
+                {
+                  "any_of": [
+                    {
+                      "test": "trusts",
+                      "subject": "player",
+                      "operator": "==",
+                      "value": false
+                    }
+                  ]
+                }
+              ]
+            },
+            "event": "terra:panic_countdown",
+            "target": "self"
+          }
+        },
         "minecraft:trusting": {
           "probability": 0.33,
           "trust_items": [
@@ -176,7 +223,7 @@
           "scale_fov_by_distance": false,
           "line_of_sight_obstruction_type": "collision_for_camera",
           "looked_at_event": {
-            "event": "terra:stop_staring",
+            "event": "terra:panic_countdown",
             "target": "self"
           }
         },
@@ -234,7 +281,7 @@
         "subsensors": [
           {
             "range": [
-              0,
+              1,
               24
             ],
             "event_filters": {
@@ -342,6 +389,11 @@
         }
       },
       "terra:panic_countdown": {
+        "filters": {
+          "test": "enum_property",
+          "domain": "terra:stalker_state",
+          "value": "observed"
+        },
         "add": {
           "component_groups": [
             "terra:panic_countdown",
@@ -352,6 +404,9 @@
           "component_groups": [
             "terra:stalker_effect_apply"
           ]
+        },
+        "set_property": {
+          "terra:stalker_state": "observed"
         }
       },
       "terra:start_panicking": {
@@ -367,6 +422,9 @@
           "component_groups": [
             "terra:panic"
           ]
+        },
+        "set_property": {
+          "terra:stalker_state": "unobserved"
         }
       },
       "terra:entity_spawned": {

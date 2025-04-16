@@ -1,0 +1,18 @@
+{
+	"format_version": "1.13.0",
+	"minecraft:weighted_random_feature": {
+		"description": {
+			"identifier": "terra:monolith_feature_weight"
+		},
+		"features": [
+			[
+				"terra:monolith_feature1",
+				1
+			],
+			[
+				"terra:monolith_feature2",
+				1
+			]
+		]
+	}
+}

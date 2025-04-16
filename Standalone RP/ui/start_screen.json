@@ -1,0 +1,16 @@
+{
+    "namespace": "start",
+    "start_screen": {
+        "$screen_bg_content": "start.background",
+        "$screen_content": "start.start_screen_content"
+    },
+    "background": {
+        "type": "image",
+        "fill": true,
+        "texture": "textures/ui/static_panorama",
+        "size": [
+            "100%",
+            "100%"
+        ]
+    }
+}
