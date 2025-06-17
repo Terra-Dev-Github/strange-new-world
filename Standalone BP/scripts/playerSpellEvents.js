@@ -39,7 +39,7 @@ world.beforeEvents.worldInitialize.subscribe(eventData => {
 
             // blizzard
             if (selectedItem?.typeId === 'terra:scroll_blizzard' || (selectedItem?.typeId === 'terra:tome_blizzard' && (offhandWand?.typeId === 'terra:druidic_wand' || 'terra:supreme_wand'))) {
-                player.playSound('entity.blaze.shoot');
+                player.playSound('item.spell_blizzard.use');
                 // define and adjust spawn location
                 const { x, y, z } = player.getHeadLocation();
                 const spawnLoc = { x: x, y: y, z: z }
@@ -65,7 +65,7 @@ world.beforeEvents.worldInitialize.subscribe(eventData => {
 
             // puffborne
             if (selectedItem?.typeId === 'terra:scroll_puffborne' || (selectedItem?.typeId === 'terra:tome_puffborne' && (offhandWand?.typeId === 'terra:reinforced_wand' || 'terra:supreme_wand'))) {
-                // missing sfx
+                player.playSound('item.spell_puffborne.use');
                 player.runCommandAsync(`particle terra:puffborne_player_particle ${player.location.x} ${player.location.y} ${player.location.z}`);
                 // get all entities in a 12 block radius from the player
                 const infestingRadius = player.dimension.getEntities({ location: player.location, maxDistance: 12, });
@@ -93,7 +93,7 @@ world.beforeEvents.worldInitialize.subscribe(eventData => {
 
             // lunar wrath
             if (selectedItem?.typeId === 'terra:scroll_lunar_wrath' || (selectedItem?.typeId === 'terra:tome_lunar_wrath' && (offhandWand?.typeId === 'terra:ancient_wand' || 'terra:supreme_wand'))) {
-                // missing sfx
+                player.playSound('item.spell_lunar_wrath.use');
                 if (dimension === 'minecraft:overworld') {
                     if (TimeOfDay.Night || TimeOfDay.Midnight) {
                         player.runCommandAsync("effect @s strength 4 300 false ");
@@ -105,7 +105,7 @@ world.beforeEvents.worldInitialize.subscribe(eventData => {
                 };
                 if (dimension === 'minecraft:nether' || 'minecraft:the_end') {
                     player.runCommandAsync("effect @s strength 4 300 false ");
-                        player.runCommandAsync("effect @s resistance 4 300 false ");
+                    player.runCommandAsync("effect @s resistance 4 300 false ");
                 };
                 // start cooldown
                 selectedItem.getComponent('cooldown').startCooldown(player);
@@ -113,7 +113,7 @@ world.beforeEvents.worldInitialize.subscribe(eventData => {
 
             // windwake
             if (selectedItem?.typeId === 'terra:scroll_windwake' || (selectedItem?.typeId === 'terra:tome_windwake' && (offhandWand?.typeId === 'terra:ancient_wand' || 'terra:supreme_wand'))) {
-                // missing sfx
+                player.playSound('item.spell_windwake.use');
                 player.runCommandAsync(`particle terra:windwake_particle ${player.location.x} ${player.location.y} ${player.location.z}`);
                 player.applyKnockback(0, 0, 0, 1.5);
                 player.runCommandAsync("effect @s slow_falling 7 3 false");
@@ -135,7 +135,7 @@ world.beforeEvents.worldInitialize.subscribe(eventData => {
             const random = Math.floor(Math.random() * deathsongMobs.length)
 
             if (selectedItem?.typeId === 'terra:scroll_deathsong' || (selectedItem?.typeId === 'terra:tome_deathsong' && (offhandWand?.typeId === 'terra:archimage_wand' || 'terra:supreme_wand'))) {
-                // missing sfx
+                player.playSound('item.spell_deathsong.use');
                 player.runCommandAsync(`particle terra:deathsong_particle ${player.location.x} ${player.location.y} ${player.location.z}`);
                 // summon four entities on the player's dimension
                 player.dimension.spawnEntity(deathsongMobs[random], player.location).triggerEvent('terra:deathsong_binding');

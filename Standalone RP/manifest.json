@@ -8,7 +8,7 @@
 		"url": "https://discord.gg/2pVaeESEDF",
 		"generated_with": {
 			"bridge": [
-				"2.7.45"
+				"2.7.46"
 			],
 			"dash": [
 				"0.11.7"
@@ -21,7 +21,7 @@
 		"min_engine_version": [
 			1,
 			21,
-			70
+			90
 		],
 		"uuid": "a597c6be-4744-4abd-a754-bf20a9fa70f1",
 		"version": [

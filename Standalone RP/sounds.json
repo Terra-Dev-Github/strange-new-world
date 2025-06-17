@@ -38,28 +38,68 @@
                 "step": {
                     "sound": "step.outsider_metal",
                     "volume": 0.35
+                },
+                "door.close": {
+                    "pitch": [
+                        0.90,
+                        1.0
+                    ],
+                    "sound": "close.laboratory_door"
+                },
+                "door.open": {
+                    "pitch": [
+                        0.90,
+                        1.0
+                    ],
+                    "sound": "open.laboratory_door"
+                },
+                "trapdoor.close": {
+                    "pitch": [
+                        0.90,
+                        1.0
+                    ],
+                    "sound": "close.laboratory_door"
+                },
+                "trapdoor.open": {
+                    "pitch": [
+                        0.90,
+                        1.0
+                    ],
+                    "sound": "open.laboratory_door"
                 }
             },
             "pitch": 1.5,
             "volume": 1
         }
     },
-    */
+    "interactive_sounds": {
+        "block_sounds": {
+            "outsider_metal": {
+                "events": {
+                    "fall": {
+                        "sound": "step.outsider_metal",
+                        "volume": 0.4
+                    },
+                    "jump": {
+                        "sound": "step.outsider_metal",
+                        "volume": 0.12
+                    },
+                    "land": {
+                        "sound": "step.outsider_metal",
+                        "volume": 0.22
+                    },
+                    "step": {
+                        "sound": "step.outsider_metal",
+                        "volume": 0.35
+                    }
+                },
+                "pitch": 1.5,
+                "volume": 1
+            }
+        }
+    },
     "entity_sounds": {
         "entities": {
-            "terra:chesthound": {
-                "events": {
-                    "ambient": "random.chestopen",
-                    "attack": "random.chestclosed",
-                    "death": "random.chestclosed",
-                    "hurt": "random.chestopen"
-                },
-                "pitch": [
-                    0.8,
-                    1.2
-                ],
-                "volume": 1
-            },
             "terra:beeper": {
                 "events": {
                     "ambient": "mob.beeper.idle",
@@ -76,11 +116,108 @@
                     1.2
                 ],
                 "volume": 1
+            },
+            "terra:chesthound": {
+                "events": {
+                    "ambient": "random.chestopen",
+                    "attack": "random.chestclosed",
+                    "death": "random.chestclosed",
+                    "hurt": "random.chestopen"
+                },
+                "pitch": [
+                    0.8,
+                    1.2
+                ],
+                "volume": 1
+            },
+            "terra:outsider": {
+                "events": {
+                    "ambient": "mob.outsider.idle",
+                    // "attack": "mob.outsider.attack",
+                    // "target": "mob.outsider.target",
+                    "hurt": "mob.outsider.hurt",
+                    "death": "mob.outsider.death"
+                },
+                "pitch": [
+                    0.8,
+                    1.2
+                ],
+                "volume": 1
+            },
+            "terra:rarthrabby": {
+                "events": {
+                    "ambient": "mob.rarthrabby.idle",
+                    "attack": "mob.rarthrabby.attack",
+                    // "target": "mob.rarthrabby.target",
+                    "hurt": "mob.rarthrabby.hurt"
+                    // "death": "mob.rarthrabby.death"
+                },
+                "pitch": [
+                    0.8,
+                    1.2
+                ],
+                "volume": 1
+            },
+            "terra:sentry": {
+                "events": {
+                    "ambient": "mob.sentry.idle",
+                    "death": "mob.sentry.death",
+                    // "target": "mob.sentry.target",
+                    "hurt": "mob.beeper.hurt"
+                },
+                "pitch": [
+                    0.8,
+                    1.2
+                ],
+                "volume": 1
+            },
+            "terra:stalker": {
+                "events": {
+                    "ambient": "mob.stalker.groan",
+                    "death": "mob.stalker.death",
+                    "stare": "mob.stalker.stare"
+                    // "hurt": "mob.stalker.hurt"
+                },
+                "pitch": [
+                    0.8,
+                    1.2
+                ],
+                "volume": 1
+            },
+            "terra:tank_outsider": {
+                "events": {
+                    "ambient": "mob.tank_outsider.idle",
+                    // "attack": "mob.outsider.attack",
+                    // "target": "mob.outsider.target",
+                    "hurt": "mob.outsider.hurt",
+                    "death": "mob.tank_outsider.death"
+                },
+                "pitch": [
+                    0.8,
+                    1.2
+                ],
+                "volume": 1
             }
         }
     },
     "individual_event_sounds": {
         "events": {
+            // lab door sounds were added here briefly; not sure the ones defined in block_sounds work by themselves
+            "open.laboratory_door": {
+                "sound": "open.laboratory_door",
+                "pitch": 1.0,
+                "volume": 1.0
+            },
+            "close.laboratory_door": {
+                "sound": "close.laboratory_door",
+                "pitch": 1.0,
+                "volume": 1.0
+            },
+            "item.anchor.launch": {
+                "sound": "item.anchor.launch",
+                "pitch": 1.0,
+                "volume": 1.0
+            },
             "item.blaster.recharge": {
                 "sound": "item.blaster.recharge",
                 "pitch": 1.0,
@@ -93,6 +230,31 @@
             },
             "item.blaster.unloaded": {
                 "sound": "item.blaster.unloaded",
+                "pitch": 1.0,
+                "volume": 1.0
+            },
+            "item.spell_blizzard.use": {
+                "sound": "item.spell_blizzard.use",
+                "pitch": 1.0,
+                "volume": 1.0
+            },
+            "item.spell_deathsong.use": {
+                "sound": "item.spell_deathsong.use",
+                "pitch": 1.0,
+                "volume": 1.0
+            },
+            "item.spell_lunar_wrath.use": {
+                "sound": "item.spell_lunar_wrath.use",
+                "pitch": 1.0,
+                "volume": 1.0
+            },
+            "item.spell_puffborne.use": {
+                "sound": "item.spell_puffborne.use",
+                "pitch": 1.0,
+                "volume": 1.0
+            },
+            "item.spell_windwake.use": {
+                "sound": "item.spell_windwake.use",
                 "pitch": 1.0,
                 "volume": 1.0
             }

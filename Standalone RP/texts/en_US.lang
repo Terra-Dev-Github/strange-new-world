@@ -3,7 +3,7 @@
 pack.name=TERRA :: Strange New World - Resources
 pack.description=By Heavenly7493 | © 2025, TERRA
 
-terra.version.beta=TERRA - Strange New World v1.0.0 [BETA_07]
+terra.version.beta=TERRA - Strange New World v1.0.0 [rc_1]
 
 ## US > GB
 ## Chiseled > Chiselled
@@ -13,6 +13,7 @@ item.spawn_egg.entity.terra:blizzard_projectile.name=Spawn Blizzard Projectile
 item.spawn_egg.entity.terra:coagulate_projectile.name=Spawn Coagulate Projectile
 item.spawn_egg.entity.terra:gun_pellet_outsider.name=Spawn Gun Pellet Outsider
 item.spawn_egg.entity.terra:gun_pellet.name=Spawn Gun Pellet
+item.spawn_egg.entity.terra:homing_ignis_projectile.name=Spawn Homing Ignis Projectile
 item.spawn_egg.entity.terra:ignis_projectile.name=Spawn Ignis Projectile
 item.spawn_egg.entity.terra:umbra_projectile.name=Spawn Umbra Projectile
 item.spawn_egg.entity.terra:thrown_tomato.name=Spawn Thrown Tomato
@@ -59,8 +60,12 @@ item.smithing_template.arcane_upgrade.applies_to=Wands
 item.smithing_template.arcane_upgrade.ingredients=Reverion, Purified Malachite
 item.terra.nethersteel_upgrade.name=Nethersteel Upgrade
 item.terra.record.name=§bMusic Disc
+item.terra.disc_fragment.name=§bDisc Fragment
+item.disc_fragment_wtb.desc=Music Disc - War-Torn Born / long gone
 item.record_long_gone.desc=Louis Artell - long gone
 item.record_wtb.desc=Louis Artell - War-Torn Born
+
+terra.spell.compatibility=Compatible Spells:
 terra.spell.empty= No Spells Applied
 terra.blizzard.name= Blizzard
 terra.cloudscape.name= Cloudscape
@@ -97,11 +102,14 @@ gun.reloading.langcode=:: Recharging... ::
 
 ## Items
 item.terra:anchor=Anchor
+item.terra:ancient_robe=Ancient Robe
 item.terra.ancient_wand=Ancient Wand
 item.terra.archimage_wand=Archimage Wand
 item.terra:blaster=Blaster
+item.terra:dark_mage_robe=Dark Mage Robe
 item.terra:deepslate_key=Deepslate Key
 item.terra.druidic_wand=Druidic Wand
+item.terra:gilded_robe=Gilded Robe
 item.terra:grapes=Grapes
 item.terra:lemon_seeds=Lemon Seeds
 item.terra:lemon=Lemon
@@ -130,6 +138,7 @@ item.terra:raw_malachite=Raw Malachite
 item.terra:raw_platinum=Raw Platinum
 item.terra.reinforced_wand=Reinforced Wand
 item.terra:reverion_dust=Reverion Dust
+item.terra:rotten_garb=Rotten Garb
 item.terra:ruby=Ruby
 item.terra.rune=Rune
 item.terra:salt=Salt
@@ -147,6 +156,7 @@ item.terra:vial_pure=Pure Vial
 item.terra:vial_radioactive=Radioactive Vial
 item.terra:vial_shimmering=Shimmering Vial
 item.terra:vial_waste=Waste Vial
+item.terra:woven_robe=Woven Robe
 
 ## Blocks
 tile.terra:anorthosite_slab.name=Anorthosite Slab
@@ -249,6 +259,7 @@ tile.terra:salt_lamp.name=Salt Lamp
 tile.terra:salt_ore.name=Salt Ore
 tile.terra:sandy_soil.name=Sandy Soil
 tile.terra:scorched_soil.name=Scorched Soil
+tile.terra:shale.name=Shale
 tile.terra:soil.name=Soil
 tile.terra:steel_block.name=Block of Steel
 tile.terra:steel_grate_block.name=Steel Grate Block
@@ -291,6 +302,8 @@ entity.terra:elf.name=Elf
 item.spawn_egg.entity.terra:elf.name=Spawn Elf
 entity.terra:eyecletch.name=Eyecletch
 item.spawn_egg.entity.terra:eyecletch.name=Spawn Eyecletch
+entity.terra:honey_slime.name=Honey Slime
+item.spawn_egg.entity.terra:honey_slime.name=Spawn Honey Slime
 entity.terra:outsider.name=Outsider
 item.spawn_egg.entity.terra:outsider.name=Spawn Outsider
 entity.terra:possum.name=Possum
@@ -301,10 +314,16 @@ entity.terra:sage.name=Sage
 item.spawn_egg.entity.terra:sage.name=Spawn Sage
 entity.terra:sentry.name=Sentry
 item.spawn_egg.entity.terra:sentry.name=Spawn Sentry
+entity.terra:soul_blaze.name=Soul Blaze
+item.spawn_egg.entity.terra:soul_blaze.name=Spawn Soul Blaze
+entity.terra:spiked_slime.name=Spiked Slime
+item.spawn_egg.entity.terra:spiked_slime.name=Spawn Spiked Slime
 entity.terra:stalker.name=Stalker
 item.spawn_egg.entity.terra:stalker.name=Spawn Stalker
 entity.terra:starfloat.name=Starfloat
 item.spawn_egg.entity.terra:starfloat.name=Spawn Starfloat
+entity.terra:synapsid.name=Synapsid
+item.spawn_egg.entity.terra:synapsid.name=Spawn Synapsid
 entity.terra:tank_outsider.name=Tank Outsider
 item.spawn_egg.entity.terra:tank_outsider.name=Spawn Tank Outsider
 entity.terra:warlock.name=Warlock
@@ -314,6 +333,7 @@ item.spawn_egg.entity.terra:wildderglide.name=Spawn Wildderglide
 
 entity.terra:blizzard_projectile.name=Blizzard Projectile
 entity.terra:coagulate_projectile.name=Coagulate Projectile
+entity.terra:homing_ignis_projectile.name=Ignis Projectile
 entity.terra:ignis_projectile.name=Ignis Projectile
 entity.terra:gun_pellet_outsider.name=Gun Pellet
 entity.terra:gun_pellet.name=Gun Pellet

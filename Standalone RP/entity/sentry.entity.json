@@ -42,7 +42,13 @@
             },
             "render_controllers": [
                 "controller.render.default"
-            ]
+            ],
+            "sound_effects": {
+                "ambient": "mob.sentry.idle",
+                "hurt": "mob.beeper.hurt",
+                // "target": "mob.sentry.target",
+                "death": "mob.sentry.death"
+            }
         }
     }
 }

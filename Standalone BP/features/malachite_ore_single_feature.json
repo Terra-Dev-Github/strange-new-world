@@ -1,0 +1,21 @@
+{
+    "format_version": "1.18.0",
+    "minecraft:single_block_feature": {
+        "description": {
+            "identifier": "terra:malachite_ore_single_feature"
+        },
+        "places_block": "terra:malachite_ore",
+        "enforce_placement_rules": false,
+        "enforce_survivability_rules": false,
+        "may_replace": [
+            "minecraft:copper_ore"
+        ],
+        "may_attach_to": {
+            "all": [
+                "minecraft:copper_ore"
+            ],
+            "min_sides_must_attach": 2,
+            "auto_rotate": true
+        }
+    }
+}

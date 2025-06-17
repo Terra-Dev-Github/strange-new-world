@@ -1,6 +1,62 @@
 {
     "format_version": "1.20.20",
     "sound_definitions": {
+        // blocks
+        "dig.outsider_metal": {
+            "category": "block",
+            "sounds": [
+                {
+                    "load_on_low_memory": true,
+                    "name": "sounds/dig/outermetal1"
+                },
+                "sounds/dig/outermetal2",
+                "sounds/dig/outermetal3",
+                "sounds/dig/outermetal4"
+            ]
+        },
+        "step.outsider_metal": {
+            "category": "block",
+            "sounds": [
+                "sounds/step/outermetal1",
+                "sounds/step/outermetal2",
+                {
+                    "load_on_low_memory": true,
+                    "name": "sounds/step/outermetal3"
+                },
+                "sounds/step/outermetal4",
+                "sounds/step/outermetal5",
+                "sounds/step/outermetal6"
+            ]
+        },
+        "close.laboratory_trapdoor": {
+            "category": "block",
+            "sounds": [
+                {
+                    "name": "sounds/block/laboratory_trapdoor/close",
+                    "volume": 0.90
+                }
+            ]
+        },
+        "open.laboratory_trapdoor": {
+            "sounds": [
+                {
+                    "name": "sounds/block/laboratory_trapdoor/open",
+                    "volume": 0.90
+                }
+            ]
+        },
+        // items
+        "item.anchor.launch": {
+            "category": "neutral",
+            "sounds": [
+                {
+                    "load_on_low_memory": true,
+                    "name": "sounds/item/anchor/launch1"
+                },
+                "sounds/item/anchor/launch2",
+                "sounds/item/anchor/launch3"
+            ]
+        },
         "item.blaster.recharge": {
             "category": "player",
             "sounds": [
@@ -11,7 +67,7 @@
             ]
         },
         "item.blaster.shoot": {
-            "category": "player",
+            "category": "neutral",
             "sounds": [
                 {
                     "load_on_low_memory": true,
@@ -29,6 +85,210 @@
                 }
             ]
         },
+        "item.spell_blizzard.use": {
+            "category": "neutral",
+            "sounds": [
+                {
+                    "load_on_low_memory": true,
+                    "name": "sounds/item/spells/blizzard"
+                }
+            ]
+        },
+        "item.spell_deathsong.use": {
+            "category": "neutral",
+            "sounds": [
+                {
+                    "load_on_low_memory": true,
+                    "name": "sounds/item/spells/deathsong"
+                }
+            ]
+        },
+        "item.spell_lunar_wrath.use": {
+            "category": "neutral",
+            "sounds": [
+                {
+                    "load_on_low_memory": true,
+                    "name": "sounds/item/spells/lunar_wrath"
+                }
+            ]
+        },
+        "item.spell_puffborne.use": {
+            "category": "neutral",
+            "sounds": [
+                {
+                    "load_on_low_memory": true,
+                    "name": "sounds/item/spells/puffborne"
+                }
+            ]
+        },
+        "item.spell_windwake.use": {
+            "category": "neutral",
+            "sounds": [
+                {
+                    "load_on_low_memory": true,
+                    "name": "sounds/item/spells/windwake"
+                }
+            ]
+        },
+        // mobs
+        "mob.beeper.idle": {
+            "category": "neutral",
+            "sounds": [
+                {
+                    "load_on_low_memory": true,
+                    "name": "sounds/mob/beeper/idle"
+                }
+            ]
+        },
+        "mob.beeper.alarm": {
+            "category": "neutral",
+            "sounds": [
+                {
+                    "load_on_low_memory": true,
+                    "name": "sounds/mob/beeper/alarm"
+                }
+            ]
+        },
+        "mob.beeper.hurt": {
+            "category": "neutral",
+            "sounds": [
+                {
+                    "load_on_low_memory": true,
+                    "name": "sounds/mob/beeper/hurt"
+                }
+            ]
+        },
+        "mob.beeper.death": {
+            "category": "neutral",
+            "sounds": [
+                {
+                    "load_on_low_memory": true,
+                    "name": "sounds/mob/beeper/death"
+                }
+            ]
+        },
+        "mob.outsider.idle": {
+            "category": "neutral",
+            "sounds": [
+                {
+                    "load_on_low_memory": true,
+                    "name": "sounds/mob/outsider/idle1"
+                },
+                "sounds/mob/outsider/idle2",
+                "sounds/mob/outsider/idle3f",
+                "sounds/mob/outsider/idle3m"
+            ]
+        },
+        "mob.outsider.hurt": {
+            "category": "neutral",
+            "sounds": [
+                {
+                    "load_on_low_memory": true,
+                    "name": "sounds/mob/outsider/hurt"
+                }
+            ]
+        },
+        "mob.outsider.death": {
+            "category": "neutral",
+            "sounds": [
+                {
+                    "load_on_low_memory": true,
+                    "name": "sounds/mob/outsider/death"
+                }
+            ]
+        },
+        "mob.rarthrabby.idle": {
+            "category": "neutral",
+            "sounds": [
+                {
+                    "load_on_low_memory": true,
+                    "name": "sounds/mob/rarthrabby/idle1"
+                },
+                "sounds/mob/rarthrabby/idle2"
+            ]
+        },
+        "mob.rarthrabby.hurt": {
+            "category": "neutral",
+            "sounds": [
+                {
+                    "load_on_low_memory": true,
+                    "name": "sounds/mob/rarthrabby/hurt"
+                }
+            ]
+        },
+        "mob.rarthrabby.attack": {
+            "category": "neutral",
+            "sounds": [
+                {
+                    "load_on_low_memory": true,
+                    "name": "sounds/mob/rarthrabby/attack"
+                }
+            ]
+        },
+        "mob.sentry.idle": {
+            "category": "neutral",
+            "sounds": [
+                {
+                    "load_on_low_memory": true,
+                    "name": "sounds/mob/sentry/idle"
+                }
+            ]
+        },
+        "mob.sentry.death": {
+            "category": "neutral",
+            "sounds": [
+                {
+                    "load_on_low_memory": true,
+                    "name": "sounds/mob/sentry/death"
+                }
+            ]
+        },
+        "mob.stalker.groan": {
+            "category": "neutral",
+            "sounds": [
+                {
+                    "load_on_low_memory": true,
+                    "name": "sounds/mob/stalker/groan"
+                }
+            ]
+        },
+        "mob.stalker.stare": {
+            "category": "neutral",
+            "sounds": [
+                {
+                    "load_on_low_memory": true,
+                    "name": "sounds/mob/stalker/stare"
+                }
+            ]
+        },
+        "mob.stalker.death": {
+            "category": "neutral",
+            "sounds": [
+                {
+                    "load_on_low_memory": true,
+                    "name": "sounds/mob/stalker/death"
+                }
+            ]
+        },
+        "mob.tank_outsider.idle": {
+            "category": "neutral",
+            "sounds": [
+                {
+                    "load_on_low_memory": true,
+                    "name": "sounds/mob/tank_outsider/idle"
+                }
+            ]
+        },
+        "mob.tank_outsider.death": {
+            "category": "neutral",
+            "sounds": [
+                {
+                    "load_on_low_memory": true,
+                    "name": "sounds/mob/tank_outsider/death"
+                }
+            ]
+        },
+        // music
         "music.menu": {
             "__use_legacy_max_distance": "true",
             "category": "music",
@@ -41,12 +301,23 @@
                     "stream": true,
                     "volume": 0.30
                 },
-                // 'vanes' to be removed upon stable release
                 {
                     "load_on_low_memory": true,
-                    "name": "sounds/terra_music/vanes",
+                    "name": "sounds/terra_music/echelon",
                     "stream": true,
-                    "volume": 0.25
+                    "volume": 0.30
+                },
+                {
+                    "load_on_low_memory": true,
+                    "name": "sounds/terra_music/citadel",
+                    "stream": true,
+                    "volume": 0.30
+                },
+                {
+                    "load_on_low_memory": true,
+                    "name": "sounds/terra_music/all_we_are",
+                    "stream": true,
+                    "volume": 0.30
                 }
             ]
         },
@@ -204,6 +475,18 @@
                 },
                 {
                     "load_on_low_memory": true,
+                    "name": "sounds/terra_music/echelon",
+                    "stream": true,
+                    "volume": 0.30
+                },
+                {
+                    "load_on_low_memory": true,
+                    "name": "sounds/terra_music/all_we_are",
+                    "stream": true,
+                    "volume": 0.30
+                },
+                {
+                    "load_on_low_memory": true,
                     "name": "sounds/music/game/nether/so_below",
                     "stream": true,
                     "volume": 0.50,
@@ -320,6 +603,18 @@
             "sounds": [
                 {
                     "load_on_low_memory": true,
+                    "name": "sounds/terra_music/echelon",
+                    "stream": true,
+                    "volume": 0.30
+                },
+                {
+                    "load_on_low_memory": true,
+                    "name": "sounds/terra_music/all_we_are",
+                    "stream": true,
+                    "volume": 0.30
+                },
+                {
+                    "load_on_low_memory": true,
                     "name": "sounds/music/game/nether/chrysopoeia",
                     "stream": true,
                     "volume": 0.50,
@@ -384,6 +679,13 @@
                 },
                 {
                     "load_on_low_memory": true,
+                    "name": "sounds/terra_music/echelon",
+                    "stream": true,
+                    "volume": 0.30,
+                    "weight": 3
+                },
+                {
+                    "load_on_low_memory": true,
                     "name": "sounds/music/game/wending",
                     "stream": true,
                     "volume": 0.40,
@@ -442,6 +744,24 @@
                 },
                 {
                     "load_on_low_memory": true,
+                    "name": "sounds/terra_music/echelon",
+                    "stream": true,
+                    "volume": 0.30
+                },
+                {
+                    "load_on_low_memory": true,
+                    "name": "sounds/terra_music/all_we_are",
+                    "stream": true,
+                    "volume": 0.30
+                },
+                {
+                    "load_on_low_memory": true,
+                    "name": "sounds/terra_music/true_calling",
+                    "stream": true,
+                    "volume": 0.30
+                },
+                {
+                    "load_on_low_memory": true,
                     "name": "sounds/music/game/end/end",
                     "stream": true,
                     "volume": 0.20
@@ -460,6 +780,7 @@
                     "stream": true,
                     "volume": 0.30
                 }
+                // TRACK TEN
             ]
         },
         "music.game.frozen_peaks": {
@@ -774,6 +1095,18 @@
                 },
                 {
                     "load_on_low_memory": true,
+                    "name": "sounds/terra_music/echelon",
+                    "stream": true,
+                    "volume": 0.30
+                },
+                {
+                    "load_on_low_memory": true,
+                    "name": "sounds/terra_music/all_we_are",
+                    "stream": true,
+                    "volume": 0.30
+                },
+                {
+                    "load_on_low_memory": true,
                     "name": "sounds/music/game/nether/nether1",
                     "stream": true,
                     "volume": 0.150
@@ -809,6 +1142,12 @@
                     "stream": true,
                     "volume": 0.30,
                     "weight": 6
+                },
+                {
+                    "load_on_low_memory": true,
+                    "name": "sounds/terra_music/echelon",
+                    "stream": true,
+                    "volume": 0.30
                 },
                 {
                     "load_on_low_memory": true,
@@ -848,6 +1187,13 @@
             "max_distance": null,
             "min_distance": null,
             "sounds": [
+                {
+                    "load_on_low_memory": true,
+                    "name": "sounds/terra_music/echelon",
+                    "stream": true,
+                    "volume": 0.30,
+                    "weight": 3
+                },
                 {
                     "load_on_low_memory": true,
                     "name": "sounds/music/game/an_ordinary_day",
@@ -903,6 +1249,12 @@
                 },
                 {
                     "load_on_low_memory": true,
+                    "name": "sounds/terra_music/echelon",
+                    "stream": true,
+                    "volume": 0.30
+                },
+                {
+                    "load_on_low_memory": true,
                     "name": "sounds/music/game/nether/so_below",
                     "stream": true,
                     "volume": 0.50,
@@ -944,6 +1296,19 @@
                     "name": "sounds/terra_music/ursprung",
                     "stream": true,
                     "volume": 0.30
+                },
+                {
+                    "load_on_low_memory": true,
+                    "name": "sounds/terra_music/echelon",
+                    "stream": true,
+                    "volume": 0.30
+                },
+                {
+                    "load_on_low_memory": true,
+                    "name": "sounds/terra_music/true_calling",
+                    "stream": true,
+                    "volume": 0.30,
+                    "weight": 1
                 },
                 {
                     "load_on_low_memory": true,
@@ -1047,6 +1412,13 @@
             "max_distance": null,
             "min_distance": null,
             "sounds": [
+                {
+                    "load_on_low_memory": true,
+                    "name": "sounds/terra_music/echelon",
+                    "stream": true,
+                    "volume": 0.30,
+                    "weight": 3
+                },
                 {
                     "load_on_low_memory": true,
                     "name": "sounds/music/game/water/axolotl",
@@ -1293,6 +1665,13 @@
             "min_distance": null,
             "sounds": [
                 {
+                    "load_on_low_memory": true,
+                    "name": "sounds/terra_music/efterord",
+                    "stream": true,
+                    "volume": 0.30,
+                    "weight": 1
+                },
+                {
                     "name": "music/game/bromeliad",
                     "stream": true,
                     "volume": 0.40,
@@ -1347,6 +1726,20 @@
             "min_distance": null,
             "sounds": [
                 {
+                    "load_on_low_memory": true,
+                    "name": "sounds/terra_music/efterord",
+                    "stream": true,
+                    "volume": 0.30,
+                    "weight": 3
+                },
+                {
+                    "load_on_low_memory": true,
+                    "name": "sounds/terra_music/citadel",
+                    "stream": true,
+                    "volume": 0.30,
+                    "weight": 2
+                },
+                {
                     "name": "sounds/music/game/bromeliad",
                     "stream": true,
                     "volume": 0.40,
@@ -1389,6 +1782,12 @@
             "min_distance": null,
             "sounds": [
                 {
+                    "load_on_low_memory": true,
+                    "name": "sounds/terra_music/ursprung",
+                    "stream": true,
+                    "volume": 0.30
+                },
+                {
                     "name": "sounds/music/game/ancestry",
                     "stream": true
                 },
@@ -1404,6 +1803,13 @@
             "max_distance": null,
             "min_distance": null,
             "sounds": [
+                {
+                    "load_on_low_memory": true,
+                    "name": "sounds/terra_music/efterord",
+                    "stream": true,
+                    "volume": 0.30,
+                    "weight": 1
+                },
                 {
                     "name": "sounds/music/game/crescent_dunes",
                     "stream": true,
@@ -1521,6 +1927,20 @@
             "min_distance": null,
             "sounds": [
                 {
+                    "load_on_low_memory": true,
+                    "name": "sounds/terra_music/efterord",
+                    "stream": true,
+                    "volume": 0.30,
+                    "weight": 3
+                },
+                {
+                    "load_on_low_memory": true,
+                    "name": "sounds/terra_music/citadel",
+                    "stream": true,
+                    "volume": 0.30,
+                    "weight": 1
+                },
+                {
                     "name": "sounds/music/game/bromeliad",
                     "stream": true,
                     "volume": 0.40
@@ -1572,6 +1992,20 @@
             "max_distance": null,
             "min_distance": null,
             "sounds": [
+                {
+                    "load_on_low_memory": true,
+                    "name": "sounds/terra_music/efterord",
+                    "stream": true,
+                    "volume": 0.30,
+                    "weight": 1
+                },
+                {
+                    "load_on_low_memory": true,
+                    "name": "sounds/terra_music/citadel",
+                    "stream": true,
+                    "volume": 0.30,
+                    "weight": 1
+                },
                 {
                     "load_on_low_memory": true,
                     "name": "sounds/music/game/comforting_memories",
@@ -1656,6 +2090,12 @@
             "sounds": [
                 {
                     "load_on_low_memory": true,
+                    "name": "sounds/terra_music/efterord",
+                    "stream": true,
+                    "volume": 0.30
+                },
+                {
+                    "load_on_low_memory": true,
                     "name": "sounds/music/game/floating_dream",
                     "stream": true,
                     "volume": 0.40
@@ -1733,6 +2173,13 @@
             "min_distance": null,
             "sounds": [
                 {
+                    "load_on_low_memory": true,
+                    "name": "sounds/terra_music/efterord",
+                    "stream": true,
+                    "volume": 0.30,
+                    "weight": 3
+                },
+                {
                     "name": "sounds/music/game/bromeliad",
                     "stream": true,
                     "volume": 0.40,
@@ -1785,6 +2232,13 @@
             "max_distance": null,
             "min_distance": null,
             "sounds": [
+                {
+                    "load_on_low_memory": true,
+                    "name": "sounds/terra_music/efterord",
+                    "stream": true,
+                    "volume": 0.30,
+                    "weight": 3
+                },
                 {
                     "name": "sounds/music/game/bromeliad",
                     "stream": true,
@@ -1839,6 +2293,20 @@
             "max_distance": null,
             "min_distance": null,
             "sounds": [
+                {
+                    "load_on_low_memory": true,
+                    "name": "sounds/terra_music/efterord",
+                    "stream": true,
+                    "volume": 0.30,
+                    "weight": 3
+                },
+                {
+                    "load_on_low_memory": true,
+                    "name": "sounds/terra_music/citadel",
+                    "stream": true,
+                    "volume": 0.30,
+                    "weight": 3
+                },
                 {
                     "name": "sounds/music/game/an_ordinary_day",
                     "stream": true,
@@ -1912,6 +2380,13 @@
             "min_distance": null,
             "sounds": [
                 {
+                    "load_on_low_memory": true,
+                    "name": "sounds/terra_music/efterord",
+                    "stream": true,
+                    "volume": 0.30,
+                    "weight": 3
+                },
+                {
                     "name": "sounds/music/game/crescent_dunes",
                     "stream": true,
                     "volume": 0.40,
@@ -1977,6 +2452,20 @@
             "sounds": [
                 {
                     "load_on_low_memory": true,
+                    "name": "sounds/terra_music/efterord",
+                    "stream": true,
+                    "volume": 0.30,
+                    "weight": 1
+                },
+                {
+                    "load_on_low_memory": true,
+                    "name": "sounds/terra_music/echelon",
+                    "stream": true,
+                    "volume": 0.30,
+                    "weight": 3
+                },
+                {
+                    "load_on_low_memory": true,
                     "name": "sounds/music/game/an_ordinary_day",
                     "stream": true,
                     "volume": 0.40,
@@ -2027,6 +2516,13 @@
             "max_distance": null,
             "min_distance": null,
             "sounds": [
+                {
+                    "load_on_low_memory": true,
+                    "name": "sounds/terra_music/efterord",
+                    "stream": true,
+                    "volume": 0.30,
+                    "weight": 1
+                },
                 {
                     "load_on_low_memory": true,
                     "name": "sounds/music/game/stand_tall",

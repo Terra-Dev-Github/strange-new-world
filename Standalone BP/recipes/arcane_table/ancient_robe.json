@@ -1,0 +1,33 @@
+{
+    "format_version": "1.20.30",
+    "minecraft:recipe_shaped": {
+        "description": {
+            "identifier": "terra:ancient_robe"
+        },
+        "tags": [
+            "arcane_table"
+        ],
+        "pattern": [
+            "WWW",
+            "WLW",
+            "WWW"
+        ],
+        "key": {
+            "L": {
+                "item": "minecraft:leather_tunic"
+            },
+            "W": {
+                "item": "minecraft:wool"
+            }
+        },
+        "unlock": [
+            {
+                "item": "terra:woven_robe"
+            }
+        ],
+        "result": {
+            "item": "terra:ancient_robe",
+            "count": 1
+        }
+    }
+}

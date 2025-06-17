@@ -44,7 +44,14 @@
       ],
       "render_controllers": [
         "controller.render.hoglin"
-      ]
+      ],
+      "sound_effects": {
+        "ambient": "mob.rarthrabby.idle",
+        "hurt": "mob.rarthrabby.hurt",
+        // "target": "mob.rarthrabby.target",
+        "attack": "mob.rarthrabby.attack"
+        // "death": "mob.rarthrabby.death"
+      }
     }
   }
 }

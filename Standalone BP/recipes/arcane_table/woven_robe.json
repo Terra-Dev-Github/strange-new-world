@@ -1,0 +1,36 @@
+{
+    "format_version": "1.20.30",
+    "minecraft:recipe_shaped": {
+        "description": {
+            "identifier": "terra:woven_robe"
+        },
+        "tags": [
+            "arcane_table"
+        ],
+        "pattern": [
+            "WSW",
+            "SLS",
+            "WSW"
+        ],
+        "key": {
+            "L": {
+                "item": "minecraft:leather"
+            },
+            "S": {
+                "item": "minecraft:string"
+            },
+            "W": {
+                "item": "minecraft:wool"
+            }
+        },
+        "unlock": [
+            {
+                "item": "terra:rotten_garb"
+            }
+        ],
+        "result": {
+            "item": "terra:woven_robe",
+            "count": 1
+        }
+    }
+}

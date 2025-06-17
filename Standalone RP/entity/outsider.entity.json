@@ -91,6 +91,13 @@
 			"enable_attachables": false,
 			"spawn_egg": {
 				"texture": "spawn_egg_outsider"
+			},
+			"sound_effects": {
+				"ambient": "mob.outsider.idle",
+				"hurt": "mob.outsider.hurt",
+				// "target": "mob.outsider.target",
+				// "attack": "mob.outsider.attack",
+				"death": "mob.outsider.death"
 			}
 		}
 	}

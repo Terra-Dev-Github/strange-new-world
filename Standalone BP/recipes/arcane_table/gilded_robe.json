@@ -1,0 +1,36 @@
+{
+    "format_version": "1.20.30",
+    "minecraft:recipe_shaped": {
+        "description": {
+            "identifier": "terra:gilded_robe"
+        },
+        "tags": [
+            "arcane_table"
+        ],
+        "pattern": [
+            "WWW",
+            "GRG",
+            "WWW"
+        ],
+        "key": {
+            "G": {
+                "item": "minecraft:gold_ingot"
+            },
+            "R": {
+                "item": "terra:ancient_robe"
+            },
+            "W": {
+                "item": "minecraft:wool"
+            }
+        },
+        "unlock": [
+            {
+                "item": "terra:ancient_robe"
+            }
+        ],
+        "result": {
+            "item": "terra:gilded_robe",
+            "count": 1
+        }
+    }
+}

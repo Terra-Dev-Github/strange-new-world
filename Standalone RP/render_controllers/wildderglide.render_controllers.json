@@ -1,0 +1,28 @@
+{
+    "format_version": "1.8.0",
+    "render_controllers": {
+        "controller.render.wildderglide": {
+            "arrays": {
+                "materials": {
+                    "Array.materials": [
+                        "Material.default",
+                        "Material.invisible"
+                    ],
+                    "Array.base": [
+                        "Texture.default",
+                        "Texture.saddled"
+                    ]
+                }
+            },
+            "geometry": "Geometry.default",
+            "materials": [
+                {
+                    "*": "Array.materials[query.is_invisible]"
+                }
+            ],
+            "textures": [
+                "Array.base[query.is_saddled]"
+            ]
+        }
+    }
+}

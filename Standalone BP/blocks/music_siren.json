@@ -65,11 +65,11 @@
                     12
                 ]
             },
-            "minecraft:map_color": "#2D1A60",
+            "minecraft:map_color": "#2D1A60"
             // adds block functionality
-            "minecraft:custom_components": [
-                "terra:jukebox_properties"
-            ]
+            // "minecraft:custom_components": [
+            //    "terra:jukebox_properties"
+            // ]
         },
         "permutations": [
             {

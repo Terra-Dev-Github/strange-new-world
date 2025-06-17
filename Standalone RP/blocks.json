@@ -3,8 +3,8 @@
 {
 	"format_version": [
 		1,
-		1,
-		0
+		21,
+		40
 	],
 	"terra:anorthosite": {
 		"textures": {
@@ -22,7 +22,7 @@
 			"east": "autonetic_station_side2",
 			"west": "autonetic_station_side"
 		},
-		"sound": "metal"
+		"sound": "outsider_metal"
 	},
 	"terra:blue_mahoe_leaves": {
 		"textures": "blue_mahoe_leaves",
@@ -82,7 +82,7 @@
 	},
 	"terra:brittle_outsider_metal": {
 		"textures": "brittle_outsider_metal",
-		"sound": "metal"
+		"sound": "outsider_metal"
 	},
 	"terra:brittle_reverion_slab": {
 		"textures": "brittle_reverion",
@@ -102,7 +102,7 @@
 	},
 	"terra:chiseled_outsider_metal": {
 		"textures": "chiseled_outsider_metal",
-		"sound": "metal"
+		"sound": "outsider_metal"
 	},
 	"terra:cut_malachite_block": {
 		"textures": "cut_polished_malachite",
@@ -110,7 +110,7 @@
 	},
 	"terra:cut_outsider_metal": {
 		"textures": "cut_outsider_metal",
-		"sound": "metal"
+		"sound": "outsider_metal"
 	},
 	"terra:cobbled_regolith_slab": {
 		"textures": "cobbled_regolith",
@@ -162,11 +162,11 @@
 	},
 	"terra:hazard_block": {
 		"textures": "hazard_block",
-		"sound": "metal"
+		"sound": "outsider_metal"
 	},
 	"terra:hazard_pillar": {
 		// skipping textures so it doesn't glitch out
-		"sound": "metal"
+		"sound": "outsider_metal"
 	},
 	"terra:hazardous_outsider_metal": {
 		"textures": {
@@ -174,11 +174,11 @@
 			"up": "outsider_metal_block",
 			"down": "outsider_metal_block"
 		},
-		"sound": "metal"
+		"sound": "outsider_metal"
 	},
 	"terra:laboratory_trapdoor": {
 		// skipping textures so it doesn't glitch out
-		"sound": "metal"
+		"sound": "outsider_metal"
 	},
 	"terra:lemon_crop": {
 		"textures": "lemon_crop_2",
@@ -206,19 +206,19 @@
 	},
 	"terra:outsider_crate_empty": {
 		"textures": "outsider_crate",
-		"sound": "metal"
+		"sound": "outsider_metal"
 	},
 	"terra:outsider_crate_locked": {
 		"textures": "outsider_crate",
-		"sound": "metal"
+		"sound": "outsider_metal"
 	},
 	"terra:outsider_metal_block": {
 		"textures": "outsider_metal_block",
-		"sound": "metal"
+		"sound": "outsider_metal"
 	},
 	"terra:outsider_metal_pillar": {
 		// skipping textures so it doesn't glitch out
-		"sound": "metal"
+		"sound": "outsider_metal"
 	},
 	"terra:outsider_metal_slab": {
 		"textures": {
@@ -226,7 +226,7 @@
 			"up": "outsider_metal_block",
 			"down": "outsider_metal_block"
 		},
-		"sound": "metal"
+		"sound": "outsider_metal"
 	},
 	"terra:pineapple_crop": {
 		"textures": "pineapple_crop_5",
@@ -398,19 +398,19 @@
 	},
 	"terra:vial_rod_empty": {
 		"textures": "vial_rod_empty",
-		"sound": "metal"
+		"sound": "outsider_metal"
 	},
 	"terra:vial_rod_shimmering": {
 		"textures": "vial_rod_shimmering",
-		"sound": "metal"
+		"sound": "outsider_metal"
 	},
 	"terra:vial_rod_radioactive": {
 		"textures": "vial_rod_radioactive",
-		"sound": "metal"
+		"sound": "outsider_metal"
 	},
 	"terra:wired_outsider_metal": {
 		"textures": "wired_outsider_metal",
-		"sound": "metal"
+		"sound": "outsider_metal"
 	},
 	"terra:yellowheart_leaves": {
 		"textures": "yellowheart_leaves",

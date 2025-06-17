@@ -39,6 +39,12 @@
       "enable_attachables": false,
       "spawn_egg": {
         "texture": "spawn_egg_stalker"
+      },
+      "sound_effects": {
+        "ambient": "mob.stalker.groan",
+        // "hurt": "mob.stalker.hurt",
+        "stare": "mob.stalker.stare",
+        "death": "mob.stalker.death"
       }
     }
   }

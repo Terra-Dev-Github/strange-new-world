@@ -96,6 +96,18 @@
       "minecraft:behavior.float": {
         "priority": 0
       },
+      "minecraft:shooter": {
+                    // projectile to shoot
+                    "def": "terra:homing_ignis_projectile",
+                    // placeholder sound
+                    "sound": "entity.blaze.shoot"
+                },
+                "minecraft:behavior.ranged_attack": {
+                    "priority": 3,
+                    "speed_multiplier": 1.75,
+                    "attack_interval": 0.25,
+                    "attack_radius": 24.0
+                },
       "minecraft:behavior.summon_entity": {
         "priority": 2,
         "summon_choices": [
@@ -128,27 +140,6 @@
                 "entity_type": "minecraft:vex",
                 "size": 2.5,
                 "entity_lifespan": 1.1
-              }
-            ]
-          },
-          {
-            "min_activation_range": 5.0,
-            "weight": 3,
-            "cooldown_time": 5.0,
-            "cast_duration": 2.0,
-            "particle_color": "#FF664D59",
-            "start_sound_event": "cast.spell",
-            "sequence": [
-              {
-                "shape": "circle",
-                "target": "target",
-                "base_delay": 1.0,
-                "delay_per_summon": 0.25,
-                "summon_cap": 4,
-                "summon_cap_radius": 1,
-                "num_entities_spawned": 8,
-                "entity_type": "terra:ignis_projectile",
-                "entity_lifespan": -1.0
               }
             ]
           },
@@ -194,7 +185,7 @@
         ]
       },
       "minecraft:behavior.avoid_mob_type": {
-        "priority": 5,
+        "priority": 1,
         "entity_types": [
           {
             "filters": {

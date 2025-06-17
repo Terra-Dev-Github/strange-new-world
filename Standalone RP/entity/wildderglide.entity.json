@@ -9,7 +9,8 @@
         "default": "bee"
       },
       "textures": {
-        "default": "textures/entity/wildderglide"
+        "default": "textures/entity/wildderglide/wildderglide",
+        "saddled": "textures/entity/wildderglide/wildderglide_saddled"
       },
       "geometry": {
         "default": "geometry.wildderglide"
@@ -27,7 +28,7 @@
         }
       ],
       "render_controllers": [
-        "controller.render.spider"
+        "controller.render.wildderglide"
       ],
       "spawn_egg": {
         "texture": "spawn_egg_wildderglide"

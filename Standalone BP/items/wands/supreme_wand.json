@@ -20,7 +20,7 @@
 			"minecraft:max_stack_size": 1,
 			"minecraft:hand_equipped": true,
 			"minecraft:display_name": {
-				"value": "%item.terra.supreme_wand\n"
+				"value": "%item.terra.supreme_wand\n§7%terra.spell.compatibility\n\n\n"
 				// adds item functionality
 			},
 			"minecraft:custom_components": [

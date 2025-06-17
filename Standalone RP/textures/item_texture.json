@@ -25,6 +25,11 @@
 			]
 		},
 		//
+		"ancient_robe": {
+			"textures": [
+				"textures/items/robes/ancient_robe"
+			]
+		},
 		"arcane_upgrade_smithing_template": {
 			"textures": [
 				"textures/items/arcane_upgrade_smithing_template"
@@ -86,14 +91,29 @@
 				"textures/items/bulnesia_door"
 			]
 		},
+		"dark_mage_robe": {
+			"textures": [
+				"textures/items/robes/dark_mage_robe"
+			]
+		},
 		"deepslate_crate_key": {
 			"textures": [
 				"textures/items/deepslate_crate_key"
 			]
 		},
+		"disc_fragment_wtb": {
+			"textures": [
+				"textures/items/disc_fragment_wtb"
+			]
+		},
 		"druidic_wand": {
 			"textures": [
 				"textures/items/druidic_wand"
+			]
+		},
+		"gilded_robe": {
+			"textures": [
+				"textures/items/robes/gilded_robe"
 			]
 		},
 		"grapes": {
@@ -256,6 +276,11 @@
 				"textures/items/reverion_dust"
 			]
 		},
+		"rotten_garb": {
+			"textures": [
+				"textures/items/robes/rotten_garb"
+			]
+		},
 		"ruby": {
 			"textures": [
 				"textures/items/ruby"
@@ -411,6 +436,11 @@
 				"textures/items/spawn_eggs/spawn_egg_eyecletch"
 			]
 		},
+		"spawn_egg_honey_slime": {
+			"textures": [
+				"textures/items/spawn_eggs/spawn_egg_honey_slime"
+			]
+		},
 		"spawn_egg_outsider_chesthound": {
 			"textures": [
 				"textures/items/spawn_eggs/spawn_egg_outsider_chesthound"
@@ -441,6 +471,16 @@
 				"textures/items/spawn_eggs/spawn_egg_sentry"
 			]
 		},
+		"spawn_egg_soul_blaze": {
+			"textures": [
+				"textures/items/spawn_eggs/spawn_egg_soul_blaze"
+			]
+		},
+		"spawn_egg_spiked_slime": {
+			"textures": [
+				"textures/items/spawn_eggs/spawn_egg_spiked_slime"
+			]
+		},
 		"spawn_egg_stalker": {
 			"textures": [
 				"textures/items/spawn_eggs/spawn_egg_stalker"
@@ -449,6 +489,11 @@
 		"spawn_egg_starfloat": {
 			"textures": [
 				"textures/items/spawn_eggs/spawn_egg_starfloat"
+			]
+		},
+		"spawn_egg_synapsid": {
+			"textures": [
+				"textures/items/spawn_eggs/spawn_egg_synapsid"
 			]
 		},
 		"spawn_egg_tank_outsider": {
@@ -559,6 +604,11 @@
 		"vial_radioactive": {
 			"textures": [
 				"textures/items/vial_radioactive"
+			]
+		},
+		"woven_robe": {
+			"textures": [
+				"textures/items/robes/woven_robe"
 			]
 		},
 		"yellowheart_door": {

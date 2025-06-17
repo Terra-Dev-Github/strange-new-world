@@ -3,18 +3,20 @@
 pack.name=TERRA :: Mundo extraño - Recursos
 pack.description=Por Heavenly7493 | © 2025, TERRA
 
-terra.version.beta=TERRA - Mundo extraño 1.0.0 [BETA_07]
+terra.version.beta=TERRA - Mundo extraño 1.0.0 [rc_1]
 
 ## MX > ES
 ## Tronco/Madera descortezada/o > Tronco/Madera sin corteza
 ## Gracílico > Mirón
 ## Retoño > Brote
+## Slime puntiagudo > Slime con púas
 
 ## Sin usar (o el pto programa suelta error)
 item.spawn_egg.entity.terra:blizzard_projectile.name=Spawn Blizzard Projectile
 item.spawn_egg.entity.terra:coagulate_projectile.name=Spawn Coagulate Projectile
 item.spawn_egg.entity.terra:gun_pellet_outsider.name=Spawn Gun Pellet Outsider
 item.spawn_egg.entity.terra:gun_pellet.name=Spawn Gun Pellet
+item.spawn_egg.entity.terra:homing_ignis_projectile.name=Homing Ignis Projectile
 item.spawn_egg.entity.terra:ignis_projectile.name=Spawn Ignis Projectile
 item.spawn_egg.entity.terra:umbra_projectile.name=Spawn Umbra Projectile
 item.spawn_egg.entity.terra:thrown_tomato.name=Spawn Thrown Tomato
@@ -61,8 +63,12 @@ item.smithing_template.arcane_upgrade.applies_to=Varitas
 item.smithing_template.arcane_upgrade.ingredients=Reverion, malaquita purificada
 item.terra.nethersteel_upgrade.name=Mejora de acero inefable
 item.terra.record.name=§bDisco
+item.terra.disc_fragment.name=§bFragmento de disco
+item.disc_fragment_wtb.desc=Disco - War-Torn Born / long gone
 item.record_long_gone.desc=Louis Artell - long gone
 item.record_wtb.desc=Louis Artell - War-Torn Born
+
+terra.spell.compatibility=Hechizos compatibles:
 terra.spell.empty= Sin hechizos asignados
 terra.blizzard.name= Ventisca
 terra.cloudscape.name= Cúmulos
@@ -99,11 +105,14 @@ gun.reloading.langcode=:: Recargando... ::
 
 ## Items
 item.terra:anchor=Ancla
+item.terra:ancient_robe=Túnica antigua
 item.terra.ancient_wand=Varita antigua
 item.terra.archimage_wand=Varita de archimago
 item.terra:blaster=Bláster
+item.terra:dark_mage_robe=Túnica de hechicero oscuro
 item.terra:deepslate_key=Llave de cofre de pizarra abismal
 item.terra.druidic_wand=Varita druida
+item.terra:gilded_robe=Túnica dorada
 item.terra:grapes=Uvas
 item.terra:lemon_seeds=Semillas de limón
 item.terra:lemon=Limón
@@ -132,6 +141,7 @@ item.terra:raw_malachite=Malaquita cruda
 item.terra:raw_platinum=Platino crudo
 item.terra.reinforced_wand=Varita reforzada
 item.terra:reverion_dust=Polvo de reverion
+item.terra:rotten_garb=Ropaje podrido
 item.terra:ruby=Rubí
 item.terra.rune=Runa
 item.terra:salt=Sal
@@ -149,6 +159,7 @@ item.terra:vial_pure=Frasco puro
 item.terra:vial_radioactive=Frasco radioactivo
 item.terra:vial_shimmering=Frasco resplandeciente
 item.terra:vial_waste=Frasco de residuos
+item.terra:woven_robe=Túnica entrelazada
 
 ## Bloques
 tile.terra:anorthosite_slab.name=Losa de anortosita
@@ -251,6 +262,7 @@ tile.terra:salt_lamp.name=Lámpara de sal
 tile.terra:salt_ore.name=Mineral de sal
 tile.terra:sandy_soil.name=Fango arenoso
 tile.terra:scorched_soil.name=Fango chamuscado
+tile.terra:shale.name=Lutolita
 tile.terra:soil.name=Fango
 tile.terra:steel_block.name=Bloque de acero
 tile.terra:steel_grate_block.name=Bloque de enrejado de acero
@@ -293,6 +305,8 @@ entity.terra:elf.name=Elfo
 item.spawn_egg.entity.terra:elf.name=Generador de elfo
 entity.terra:eyecletch.name=Corneópodo
 item.spawn_egg.entity.terra:eyecletch.name=Generador de corneópodo
+entity.terra:honey_slime.name=Slime de miel
+item.spawn_egg.entity.terra:honey_slime.name=Generador de slime de miel
 entity.terra:outsider.name=Invasor
 item.spawn_egg.entity.terra:outsider.name=Generador de invasor
 entity.terra:possum.name=Zarigüeya
@@ -303,10 +317,16 @@ entity.terra:sage.name=Sabio
 item.spawn_egg.entity.terra:sage.name=Generador de sabio
 entity.terra:sentry.name=Centinela
 item.spawn_egg.entity.terra:sentry.name=Generador de centinela
+entity.terra:soul_blaze.name=Blaze de almas
+item.spawn_egg.entity.terra:soul_blaze.name=Generador de blaze de almas
+entity.terra:spiked_slime.name=Slime puntiagudo
+item.spawn_egg.entity.terra:spiked_slime.name=Generador de slime puntiagudo
 entity.terra:stalker.name=Gracílico
 item.spawn_egg.entity.terra:stalker.name=Generador de gracílico
 entity.terra:starfloat.name=Estelar
 item.spawn_egg.entity.terra:starfloat.name=Generador de estelar
+entity.terra:synapsid.name=Sinápsido
+item.spawn_egg.entity.terra:synapsid.name=Generador de sinápsido
 entity.terra:tank_outsider.name=Invasor tanque
 item.spawn_egg.entity.terra:tank_outsider.name=Generador de invasor tanque
 entity.terra:warlock.name=Hechicero

@@ -1,3 +1,5 @@
+// This file was modified and compiled by Heavenly (@heavenly7493) for TERRA.
+// Do not distribute without permission.
 {
   "format_version": "1.21.70",
   "minecraft:entity": {
@@ -9,7 +11,13 @@
     },
     "component_groups": {
       "terra:wildderglide_neutral": {
+        "minecraft:on_target_acquired": {
+          "event": "minecraft:become_panicked"
+        }
+      },
+      "terra:wildderglide_saddled": {
         "minecraft:rideable": {
+          "crouching_skip_interact": true,
           "seat_count": 1,
           "interact_text": "action.interact.ride.horse",
           "family_types": [
@@ -22,6 +30,13 @@
               0.0
             ]
           }
+        },
+        "minecraft:input_air_controlled": {
+          "strafe_speed_modifier": 2.0,
+          "backwards_movement_modifier": 3.0
+        },
+        "minecraft:item_controllable": {
+          "control_items": "warped_fungus_on_a_stick"
         },
         "minecraft:behavior.controlled_by_player": {
           "priority": 0
@@ -52,21 +67,27 @@
           "event": "minecraft:become_panicked"
         }
       },
+      "terra:wildderglide_unsaddled": {
+        "minecraft:interact": {
+          "interactions": [
+            {
+              "on_interact": {
+                "filters": {
+                  "test": "has_equipment",
+                  "subject": "other",
+                  "domain": "hand",
+                  "value": "saddle"
+                },
+                "event": "minecraft:on_saddled"
+              },
+              "use_item": true,
+              "play_sounds": "saddle",
+              "interact_text": "action.interact.saddle"
+            }
+          ]
+        }
+      },
       "terra:wildderglide_panicking": {
-        "minecraft:rideable": {
-          "seat_count": 1,
-          "interact_text": "action.interact.ride.horse",
-          "family_types": [
-            "player"
-          ],
-          "seats": {
-            "position": [
-              0.0,
-              0.63,
-              0.0
-            ]
-          }
-        },
         "minecraft:can_fly": {},
         "minecraft:behavior.float": {
           "priority": 0
@@ -79,8 +100,7 @@
         "minecraft:behavior.panic": {
           "force": true,
           "speed_multiplier": 5
-        },
-        "minecraft:out_of_control": {}
+        }
       }
     },
     "components": {
@@ -255,6 +275,18 @@
             }
           }
         ]
+      },
+      "minecraft:on_saddled": {
+        "remove": {
+          "component_groups": [
+            "terra:wildderglide_unsaddled"
+          ]
+        },
+        "add": {
+          "component_groups": [
+            "terra:wildderglide_saddled"
+          ]
+        }
       },
       "minecraft:become_panicked": {
         "add": {

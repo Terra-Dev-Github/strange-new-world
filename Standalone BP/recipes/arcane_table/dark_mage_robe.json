@@ -1,0 +1,36 @@
+{
+    "format_version": "1.20.30",
+    "minecraft:recipe_shaped": {
+        "description": {
+            "identifier": "terra:dark_mage_robe"
+        },
+        "tags": [
+            "arcane_table"
+        ],
+        "pattern": [
+            "WAW",
+            "ARA",
+            "WAW"
+        ],
+        "key": {
+            "A": {
+                "item": "minecraft:amethyst_block"
+            },
+            "R": {
+                "item": "terra:gilded_robe"
+            },
+            "W": {
+                "item": "minecraft:wool"
+            }
+        },
+        "unlock": [
+            {
+                "item": "terra:gilded_robe"
+            }
+        ],
+        "result": {
+            "item": "terra:dark_mage_robe",
+            "count": 1
+        }
+    }
+}
