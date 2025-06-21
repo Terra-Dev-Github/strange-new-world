@@ -10,11 +10,6 @@
 //
 // © 2025, TERRA
 
-:: 'Vanes' by Kevin MacLeod (incompetech.com)
-
-Licensed under Creative Commons: By Attribution 3.0 License
-http://creativecommons.org/licenses/by/3.0/
-
 :: Creative Commons Attribution 4.0 International License (CC BY 4.0)
 
 Entity raycasting function template by MajestikButter, licensed under CC BY 4.0.

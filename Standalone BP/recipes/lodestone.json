@@ -17,13 +17,13 @@
                 "item": "minecraft:chiseled_stone_bricks"
             },
             "#": {
-                "item": "minecraft:iron_ingot"
+                "item": "minecraft:netherite_ingot"
             }
         },
         "unlock": [
-          {
-            "item": "minecraft:iron_ingot"
-          }
+            {
+                "item": "minecraft:netherite_ingot"
+            }
         ],
         "result": {
             "item": "minecraft:lodestone",

@@ -1,14 +1,14 @@
 // This file was made, modified and compiled by Heavenly (@heavenly7493) for TERRA.
 // Do not distribute without permission.
 {
-	"format_version": "1.20.80",
+	"format_version": "1.21.60",
 	"minecraft:item": {
 		"description": {
 			"identifier": "terra:blaster",
 			"menu_category": {
 				// this is the charged variant
-				"category": "none",
-				"group": "itemGroup.name.none"
+				"category": "none"
+				// "group": "itemGroup.name.none"
 			}
 		},
 		"components": {
@@ -30,8 +30,8 @@
 				"value": "item.terra:blaster"
 			},
 			"minecraft:cooldown": {
-				"category": "blaster",
-				"duration": 1.2
+				"category": "tech",
+				"duration": 1.5
 			},
 			// adds item functionality
 			"minecraft:custom_components": [

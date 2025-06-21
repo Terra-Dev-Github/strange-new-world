@@ -104,11 +104,6 @@
                 "events": {
                     "ambient": "mob.beeper.idle",
                     "death": "mob.beeper.death",
-                    "beeper_alarm": {
-                        "pitch": 0.50,
-                        "sound": "mob.beeper.alarm",
-                        "volume": 1.0
-                    },
                     "hurt": "mob.beeper.hurt"
                 },
                 "pitch": [
@@ -197,66 +192,6 @@
                     1.2
                 ],
                 "volume": 1
-            }
-        }
-    },
-    "individual_event_sounds": {
-        "events": {
-            // lab door sounds were added here briefly; not sure the ones defined in block_sounds work by themselves
-            "open.laboratory_door": {
-                "sound": "open.laboratory_door",
-                "pitch": 1.0,
-                "volume": 1.0
-            },
-            "close.laboratory_door": {
-                "sound": "close.laboratory_door",
-                "pitch": 1.0,
-                "volume": 1.0
-            },
-            "item.anchor.launch": {
-                "sound": "item.anchor.launch",
-                "pitch": 1.0,
-                "volume": 1.0
-            },
-            "item.blaster.recharge": {
-                "sound": "item.blaster.recharge",
-                "pitch": 1.0,
-                "volume": 1.0
-            },
-            "item.blaster.shoot": {
-                "sound": "item.blaster.shoot",
-                "pitch": 1.0,
-                "volume": 1.0
-            },
-            "item.blaster.unloaded": {
-                "sound": "item.blaster.unloaded",
-                "pitch": 1.0,
-                "volume": 1.0
-            },
-            "item.spell_blizzard.use": {
-                "sound": "item.spell_blizzard.use",
-                "pitch": 1.0,
-                "volume": 1.0
-            },
-            "item.spell_deathsong.use": {
-                "sound": "item.spell_deathsong.use",
-                "pitch": 1.0,
-                "volume": 1.0
-            },
-            "item.spell_lunar_wrath.use": {
-                "sound": "item.spell_lunar_wrath.use",
-                "pitch": 1.0,
-                "volume": 1.0
-            },
-            "item.spell_puffborne.use": {
-                "sound": "item.spell_puffborne.use",
-                "pitch": 1.0,
-                "volume": 1.0
-            },
-            "item.spell_windwake.use": {
-                "sound": "item.spell_windwake.use",
-                "pitch": 1.0,
-                "volume": 1.0
             }
         }
     }

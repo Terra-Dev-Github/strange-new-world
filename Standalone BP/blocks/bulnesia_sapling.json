@@ -1,13 +1,13 @@
 // This file was made, modified and compiled by Heavenly (@heavenly7493) for TERRA.
 // Do not distribute without permission.
 {
-	"format_version": "1.21.50",
+	"format_version": "1.21.60",
 	"minecraft:block": {
 		"description": {
 			"identifier": "terra:bulnesia_sapling",
 			"menu_category": {
 				"category": "none",
-				"group": "none",
+				// "group": "none",
 				"is_hidden_in_commands": true
 			},
 			"states": {

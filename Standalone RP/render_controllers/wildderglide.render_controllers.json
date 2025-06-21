@@ -3,11 +3,7 @@
     "render_controllers": {
         "controller.render.wildderglide": {
             "arrays": {
-                "materials": {
-                    "Array.materials": [
-                        "Material.default",
-                        "Material.invisible"
-                    ],
+                "textures": {
                     "Array.base": [
                         "Texture.default",
                         "Texture.saddled"
@@ -17,7 +13,7 @@
             "geometry": "Geometry.default",
             "materials": [
                 {
-                    "*": "Array.materials[query.is_invisible]"
+                    "*": "Material.default"
                 }
             ],
             "textures": [

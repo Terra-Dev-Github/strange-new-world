@@ -1,13 +1,13 @@
 // This file was made, modified and compiled by Heavenly (@heavenly7493) for TERRA.
 // Do not distribute without permission.
 {
-	"format_version": "1.20.80",
+	"format_version": "1.21.60",
 	"minecraft:block": {
 		"description": {
 			"identifier": "terra:blue_mahoe_leaves",
 			"menu_category": {
 				"category": "nature",
-				"group": "itemGroup.name.leaves"
+				"group": "minecraft:itemGroup.name.leaves"
 			},
 			"states": {
 				// distance in blocks to find the log
@@ -47,9 +47,7 @@
 				"explosion_resistance": 1
 			},
 			// adds block functionality
-			"minecraft:custom_components": [
-				"terra:leaves_decay"
-			]
+			"minecraft:custom_components": [ "terra:leaves_decay" ]
 		},
 		"permutations": [
 			{

@@ -29,7 +29,6 @@ Coding & Compiling
 
 Sound Mix & Music
 - Heavenly/Louis Artell (@heavenly7493)
-- Kevin MacLeod ('Vanes' under Creative Commons by Attribution License)
 
 Spanish Translations
 - Heavenly/Louis Artell (@heavenly7493)

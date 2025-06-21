@@ -28,19 +28,20 @@
                 "sounds/step/outermetal6"
             ]
         },
-        "close.laboratory_trapdoor": {
+        "close.laboratory_door": {
             "category": "block",
             "sounds": [
                 {
-                    "name": "sounds/block/laboratory_trapdoor/close",
+                    "name": "sounds/block/laboratory_door/close",
                     "volume": 0.90
                 }
             ]
         },
-        "open.laboratory_trapdoor": {
+        "open.laboratory_door": {
+            "category": "block",
             "sounds": [
                 {
-                    "name": "sounds/block/laboratory_trapdoor/open",
+                    "name": "sounds/block/laboratory_door/open",
                     "volume": 0.90
                 }
             ]

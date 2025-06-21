@@ -16,6 +16,10 @@
 					"default": "tome_lunar_wrath"
 				}
 			},
+			"minecraft:cooldown": {
+				"category": "spells",
+				"duration": 316
+			},
 			"minecraft:max_stack_size": 1,
 			"minecraft:hand_equipped": false,
 			"minecraft:display_name": {

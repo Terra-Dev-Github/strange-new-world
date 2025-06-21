@@ -1,13 +1,13 @@
 // This file was made, modified and compiled by Heavenly (@heavenly7493) for TERRA.
 // Do not distribute without permission.
 {
-	"format_version": "1.20.80",
+	"format_version": "1.21.60",
 	"minecraft:item": {
 		"description": {
 			"identifier": "terra:anchor",
 			"menu_category": {
-				"category": "equipment",
-				"group": "itemGroup.name.none"
+				"category": "equipment"
+				// "group": "itemGroup.name.none"
 			}
 		},
 		"components": {
@@ -23,8 +23,8 @@
 				"value": "item.terra:anchor"
 			},
 			"minecraft:cooldown": {
-				"category": "anchor",
-				"duration": 3
+				"category": "tech",
+				"duration": 10
 			},
 			// adds item functionality
 			"minecraft:custom_components": [

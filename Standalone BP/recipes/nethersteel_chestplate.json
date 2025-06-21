@@ -15,7 +15,7 @@
 				"item": "minecraft:diamond_chestplate"
 			},
 			{
-				"item": "terra:nethersteel_ingot"
+				"item": "terra:reinforced_nethersteel_block"
 			}
 		],
 		"result": {

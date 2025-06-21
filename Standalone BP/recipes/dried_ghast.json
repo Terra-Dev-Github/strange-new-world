@@ -1,0 +1,33 @@
+{
+    "format_version": "1.21.90",
+    "minecraft:recipe_shaped": {
+        "description": {
+            "identifier": "minecraft:dried_ghast"
+        },
+        "tags": [
+            "deprecated"
+        ],
+        "pattern": [
+            "TTT",
+            "T#T",
+            "TTT"
+        ],
+        "key": {
+            "T": {
+                "item": "minecraft:ghast_tear"
+            },
+            "#": {
+                "item": "minecraft:soul_sand"
+            }
+        },
+        "unlock": [
+            {
+                "item": "minecraft:end_gateway"
+            }
+        ],
+        "result": {
+            "item": "minecraft:poisonous_potato",
+            "count": 1
+        }
+    }
+}
