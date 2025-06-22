@@ -1,0 +1,226 @@
+{
+    "format_version": "1.12.0",
+    "minecraft:geometry": [
+        {
+            "description": {
+                "identifier": "geometry.beeper",
+                "texture_width": 64,
+                "texture_height": 64,
+                "visible_bounds_width": 2,
+                "visible_bounds_height": 1.5,
+                "visible_bounds_offset": [
+                    0,
+                    0.25,
+                    0
+                ]
+            },
+            "bones": [
+                {
+                    "name": "bone",
+                    "pivot": [
+                        0,
+                        0,
+                        0
+                    ],
+                    "cubes": [
+                        {
+                            "origin": [
+                                -3,
+                                2,
+                                -3
+                            ],
+                            "size": [
+                                6,
+                                3,
+                                6
+                            ],
+                            "uv": [
+                                0,
+                                11
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name": "body",
+                    "parent": "bone",
+                    "pivot": [
+                        0,
+                        1,
+                        0
+                    ],
+                    "cubes": [
+                        {
+                            "origin": [
+                                -4,
+                                3,
+                                -4
+                            ],
+                            "size": [
+                                8,
+                                3,
+                                8
+                            ],
+                            "uv": [
+                                0,
+                                0
+                            ]
+                        },
+                        {
+                            "origin": [
+                                -4,
+                                4.9,
+                                -4
+                            ],
+                            "size": [
+                                8,
+                                0,
+                                8
+                            ],
+                            "uv": [
+                                0,
+                                24
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name": "crystal",
+                    "parent": "body",
+                    "pivot": [
+                        0,
+                        6,
+                        0
+                    ],
+                    "cubes": [
+                        {
+                            "origin": [
+                                -4,
+                                6,
+                                -4
+                            ],
+                            "size": [
+                                8,
+                                1,
+                                8
+                            ],
+                            "inflate": -1,
+                            "uv": [
+                                16,
+                                12
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name": "leg0",
+                    "parent": "bone",
+                    "pivot": [
+                        -3.5,
+                        2.5,
+                        2
+                    ],
+                    "cubes": [
+                        {
+                            "origin": [
+                                -4,
+                                0,
+                                2
+                            ],
+                            "size": [
+                                2,
+                                2,
+                                2
+                            ],
+                            "uv": [
+                                8,
+                                20
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name": "leg1",
+                    "parent": "bone",
+                    "pivot": [
+                        4.5,
+                        2.5,
+                        2
+                    ],
+                    "cubes": [
+                        {
+                            "origin": [
+                                2,
+                                0,
+                                2
+                            ],
+                            "size": [
+                                2,
+                                2,
+                                2
+                            ],
+                            "uv": [
+                                0,
+                                20
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name": "leg2",
+                    "parent": "bone",
+                    "pivot": [
+                        -3.5,
+                        2.5,
+                        -3
+                    ],
+                    "cubes": [
+                        {
+                            "origin": [
+                                -4,
+                                0,
+                                -4
+                            ],
+                            "size": [
+                                2,
+                                2,
+                                2
+                            ],
+                            "uv": [
+                                0,
+                                4
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name": "leg3",
+                    "parent": "bone",
+                    "pivot": [
+                        4.5,
+                        2.5,
+                        -2
+                    ],
+                    "cubes": [
+                        {
+                            "origin": [
+                                2,
+                                0,
+                                -4
+                            ],
+                            "size": [
+                                2,
+                                2,
+                                2
+                            ],
+                            "uv": [
+                                0,
+                                0
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

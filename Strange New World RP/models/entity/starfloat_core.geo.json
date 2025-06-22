@@ -1,0 +1,64 @@
+{
+    "format_version": "1.12.0",
+    "minecraft:geometry": [
+        {
+            "description": {
+                "identifier": "geometry.starfloat_core",
+                "texture_width": 16,
+                "texture_height": 16,
+                "visible_bounds_width": 2,
+                "visible_bounds_height": 2.5,
+                "visible_bounds_offset": [
+                    0,
+                    0.75,
+                    0
+                ]
+            },
+            "bones": [
+                {
+                    "name": "body",
+                    "pivot": [
+                        0,
+                        4,
+                        0
+                    ]
+                },
+                {
+                    "name": "body",
+                    "parent": "body",
+                    "pivot": [
+                        0,
+                        4,
+                        0
+                    ],
+                    "cubes": [
+                        {
+                            "origin": [
+                                -8,
+                                -4,
+                                0
+                            ],
+                            "size": [
+                                16,
+                                16,
+                                0
+                            ],
+                            "uv": {
+                                "south": {
+                                    "uv": [
+                                        0,
+                                        0
+                                    ],
+                                    "uv_size": [
+                                        16,
+                                        16
+                                    ]
+                                }
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

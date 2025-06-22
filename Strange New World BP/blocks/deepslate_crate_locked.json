@@ -1,0 +1,124 @@
+// This file was made, modified and compiled by Heavenly (@heavenly7493) for TERRA.
+// Do not distribute without permission.
+{
+    "format_version": "1.20.80",
+    "minecraft:block": {
+        "description": {
+            "identifier": "terra:deepslate_crate_locked",
+            "menu_category": {
+                "category": "items",
+                "group": "itemGroup.name.chest"
+            },
+            "traits": {
+                "minecraft:placement_direction": {
+                    "enabled_states": [
+                        "minecraft:cardinal_direction"
+                    ],
+                    "y_rotation_offset": 180 // face towards player
+                }
+            },
+            "states": {
+                "terra:is_unlocked": [
+                    0,
+                    1
+                ]
+            }
+        },
+        "components": {
+            "minecraft:material_instances": {
+                "*": {
+                    "texture": "deepslate_crate",
+                    "render_method": "opaque",
+                    "ambient_occlusion": false,
+                    "face_dimming": true
+                }
+            },
+            "minecraft:geometry": "geometry.chest_decorative",
+            "minecraft:light_dampening": 0,
+            "minecraft:collision_box": {
+                "origin": [
+                    -7.5,
+                    0,
+                    -7.5
+                ],
+                "size": [
+                    15,
+                    15,
+                    15
+                ]
+            },
+            "minecraft:selection_box": {
+                "origin": [
+                    -7.5,
+                    0,
+                    -7.5
+                ],
+                "size": [
+                    15,
+                    15,
+                    15
+                ]
+            },
+            "minecraft:destructible_by_mining": false,
+            // loot is defined inside the script
+            "minecraft:loot": "loot_tables/empty.json",
+            // according to map item data on the mc wiki
+            "minecraft:map_color": "#646464",
+            "minecraft:destructible_by_explosion": false,
+            // adds block functionality
+            "minecraft:custom_components": [
+                "terra:on_locked_chest_interact"
+            ]
+        },
+        "permutations": [
+            {
+                "condition": "q.block_state('minecraft:cardinal_direction') == 'north'",
+                "components": {
+                    "minecraft:transformation": {
+                        "rotation": [
+                            0,
+                            0,
+                            0
+                        ]
+                    }
+                }
+            },
+            {
+                "condition": "q.block_state('minecraft:cardinal_direction') == 'south'",
+                "components": {
+                    "minecraft:transformation": {
+                        "rotation": [
+                            0,
+                            180,
+                            0
+                        ]
+                    }
+                }
+            },
+            {
+                "condition": "q.block_state('minecraft:cardinal_direction') == 'east'",
+                "components": {
+                    "minecraft:transformation": {
+                        "rotation": [
+                            0,
+                            -90,
+                            0
+                        ]
+                    }
+                }
+            },
+            {
+                "condition": "q.block_state('minecraft:cardinal_direction') == 'west'",
+                "components": {
+                    "minecraft:transformation": {
+                        "rotation": [
+                            0,
+                            90,
+                            0
+                        ]
+                    }
+                }
+            }
+        ]
+    }
+}

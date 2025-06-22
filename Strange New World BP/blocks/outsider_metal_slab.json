@@ -1,0 +1,145 @@
+// This file was made, modified and compiled by Heavenly (@heavenly7493) for TERRA.
+// Do not distribute without permission.
+{
+    "format_version": "1.20.80",
+    "minecraft:block": {
+        "description": {
+            "identifier": "terra:outsider_metal_slab",
+            "menu_category": {
+                "category": "construction",
+                "group": "itemGroup.name.slab"
+            },
+            "traits": {
+                "minecraft:placement_position": {
+                    "enabled_states": [
+                        "minecraft:vertical_half"
+                    ]
+                }
+            },
+            "states": {
+                "terra:double": [
+                    false,
+                    true
+                ],
+                "terra:waterlogged": [
+                    false,
+                    true
+                ]
+            }
+        },
+        "permutations": [
+            // bottom slab
+            {
+                "condition": "q.block_state('minecraft:vertical_half') == 'bottom' && !q.block_state('terra:double')",
+                "components": {
+                    "minecraft:collision_box": {
+                        "origin": [
+                            -8,
+                            0,
+                            -8
+                        ],
+                        "size": [
+                            16,
+                            8,
+                            16
+                        ]
+                    },
+                    "minecraft:selection_box": {
+                        "origin": [
+                            -8,
+                            0,
+                            -8
+                        ],
+                        "size": [
+                            16,
+                            8,
+                            16
+                        ]
+                    }
+                }
+            },
+            // top slab
+            {
+                "condition": "q.block_state('minecraft:vertical_half') == 'top' && !q.block_state('terra:double')",
+                "components": {
+                    "minecraft:collision_box": {
+                        "origin": [
+                            -8,
+                            8,
+                            -8
+                        ],
+                        "size": [
+                            16,
+                            8,
+                            16
+                        ]
+                    },
+                    "minecraft:selection_box": {
+                        "origin": [
+                            -8,
+                            8,
+                            -8
+                        ],
+                        "size": [
+                            16,
+                            8,
+                            16
+                        ]
+                    }
+                }
+            },
+            // double slab
+            {
+                "condition": "q.block_state('terra:double')",
+                "components": {
+                    "minecraft:geometry": "minecraft:geometry.full_block",
+                    // twice the loot of the default
+                    "minecraft:loot": "loot_tables/blocks/outsider_metal_slab.json"
+                }
+            }
+        ],
+        "components": {
+            "tag:metal": {},
+            "tag:minecraft:is_pickaxe_item_destructible": {},
+            // hardness: 5
+            "minecraft:destructible_by_mining": {
+                "seconds_to_destroy": 25
+            },
+            "minecraft:destructible_by_explosion": {
+                "explosion_resistance": 6
+            },
+            "minecraft:map_color": "#8499B0",
+            "minecraft:flammable": {
+                "catch_chance_modifier": 5,
+                "destroy_chance_modifier": 5
+            },
+            "minecraft:geometry": {
+                "identifier": "geometry.slab",
+                "bone_visibility": {
+                    "bottom_slab": "q.block_state('minecraft:vertical_half') == 'bottom'",
+                    "top_slab": "q.block_state('minecraft:vertical_half') == 'top'"
+                }
+            },
+            // single loot table since all of em will drop scraps unless you got silk touch
+            "minecraft:loot": "loot_tables/blocks/outsider_metal_scraps.json",
+            "minecraft:material_instances": {
+                "*": {
+                    "texture": "outsider_metal_slab_side",
+                    "render_method": "opaque"
+                },
+                "up": {
+                    "texture": "outsider_metal_block",
+                    "render_method": "opaque"
+                },
+                "down": {
+                    "texture": "outsider_metal_block",
+                    "render_method": "opaque"
+                }
+            },
+            // adds block functionality
+            "minecraft:custom_components": [
+                "terra:on_slab_interact"
+            ]
+        }
+    }
+}

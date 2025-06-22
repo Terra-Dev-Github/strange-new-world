@@ -1,0 +1,13 @@
+{
+    "format_version": "1.12",
+    "minecraft:recipe_furnace": {
+        "description": {
+            "identifier": "terra:furnace_brittle_outsider_metal"
+        },
+        "tags": [
+            "furnace"
+        ],
+        "input": "terra:outsider_metal_block",
+        "output": "terra:brittle_outsider_metal"
+    }
+}

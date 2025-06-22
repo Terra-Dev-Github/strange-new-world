@@ -1,0 +1,541 @@
+{
+    "format_version": "1.21.0",
+    "minecraft:geometry": [
+        {
+            "description": {
+                "identifier": "geometry.lab_trapdoor",
+                "texture_width": 16,
+                "texture_height": 16,
+                "visible_bounds_width": 2,
+                "visible_bounds_height": 2.5,
+                "visible_bounds_offset": [
+                    0,
+                    0.75,
+                    0
+                ]
+            },
+            "bones": [
+                {
+                    "name": "channel",
+                    "pivot": [
+                        0,
+                        8,
+                        0
+                    ],
+                    "cubes": [
+                        {
+                            "origin": [
+                                -8,
+                                6,
+                                -8
+                            ],
+                            "size": [
+                                16,
+                                4,
+                                2
+                            ],
+                            "uv": {
+                                "north": {
+                                    "uv": [
+                                        0,
+                                        0
+                                    ],
+                                    "uv_size": [
+                                        16,
+                                        4
+                                    ],
+                                    "material_instance": "channel"
+                                },
+                                "east": {
+                                    "uv": [
+                                        14,
+                                        0
+                                    ],
+                                    "uv_size": [
+                                        2,
+                                        4
+                                    ],
+                                    "material_instance": "channel"
+                                },
+                                "south": {
+                                    "uv": [
+                                        0,
+                                        0
+                                    ],
+                                    "uv_size": [
+                                        16,
+                                        4
+                                    ],
+                                    "material_instance": "channel"
+                                },
+                                "west": {
+                                    "uv": [
+                                        0,
+                                        0
+                                    ],
+                                    "uv_size": [
+                                        2,
+                                        4
+                                    ],
+                                    "material_instance": "channel"
+                                },
+                                "up": {
+                                    "uv": [
+                                        0,
+                                        14
+                                    ],
+                                    "uv_size": [
+                                        16,
+                                        2
+                                    ],
+                                    "material_instance": "trapdoor"
+                                },
+                                "down": {
+                                    "uv": [
+                                        16,
+                                        0
+                                    ],
+                                    "uv_size": [
+                                        -16,
+                                        2
+                                    ],
+                                    "material_instance": "trapdoor"
+                                }
+                            }
+                        },
+                        {
+                            "origin": [
+                                6,
+                                6,
+                                -6
+                            ],
+                            "size": [
+                                2,
+                                4,
+                                12
+                            ],
+                            "uv": {
+                                "north": {
+                                    "uv": [
+                                        0,
+                                        0
+                                    ],
+                                    "uv_size": [
+                                        2,
+                                        4
+                                    ],
+                                    "material_instance": "channel"
+                                },
+                                "east": {
+                                    "uv": [
+                                        2,
+                                        0
+                                    ],
+                                    "uv_size": [
+                                        12,
+                                        4
+                                    ],
+                                    "material_instance": "channel"
+                                },
+                                "south": {
+                                    "uv": [
+                                        0,
+                                        0
+                                    ],
+                                    "uv_size": [
+                                        2,
+                                        4
+                                    ],
+                                    "material_instance": "channel"
+                                },
+                                "west": {
+                                    "uv": [
+                                        2,
+                                        0
+                                    ],
+                                    "uv_size": [
+                                        12,
+                                        4
+                                    ],
+                                    "material_instance": "channel"
+                                },
+                                "up": {
+                                    "uv": [
+                                        14,
+                                        14
+                                    ],
+                                    "uv_size": [
+                                        2,
+                                        -12
+                                    ],
+                                    "material_instance": "trapdoor"
+                                },
+                                "down": {
+                                    "uv": [
+                                        14,
+                                        14
+                                    ],
+                                    "uv_size": [
+                                        2,
+                                        -12
+                                    ],
+                                    "material_instance": "trapdoor"
+                                }
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "trapdoor",
+                    "pivot": [
+                        0,
+                        0,
+                        0
+                    ],
+                    "cubes": [
+                        {
+                            "origin": [
+                                -6,
+                                7,
+                                -6
+                            ],
+                            "size": [
+                                12,
+                                2,
+                                12
+                            ],
+                            "uv": {
+                                "north": {
+                                    "uv": [
+                                        2,
+                                        12
+                                    ],
+                                    "uv_size": [
+                                        12,
+                                        2
+                                    ],
+                                    "material_instance": "trapdoor"
+                                },
+                                "east": {
+                                    "uv": [
+                                        2,
+                                        12
+                                    ],
+                                    "uv_size": [
+                                        12,
+                                        2
+                                    ],
+                                    "material_instance": "trapdoor"
+                                },
+                                "south": {
+                                    "uv": [
+                                        2,
+                                        12
+                                    ],
+                                    "uv_size": [
+                                        12,
+                                        2
+                                    ],
+                                    "material_instance": "trapdoor"
+                                },
+                                "west": {
+                                    "uv": [
+                                        2,
+                                        12
+                                    ],
+                                    "uv_size": [
+                                        12,
+                                        2
+                                    ],
+                                    "material_instance": "trapdoor"
+                                },
+                                "up": {
+                                    "uv": [
+                                        14,
+                                        14
+                                    ],
+                                    "uv_size": [
+                                        -12,
+                                        -12
+                                    ],
+                                    "material_instance": "trapdoor"
+                                },
+                                "down": {
+                                    "uv": [
+                                        14,
+                                        2
+                                    ],
+                                    "uv_size": [
+                                        -12,
+                                        12
+                                    ],
+                                    "material_instance": "trapdoor"
+                                }
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "channel2",
+                    "pivot": [
+                        0,
+                        0,
+                        0
+                    ],
+                    "cubes": [
+                        {
+                            "origin": [
+                                -8,
+                                6,
+                                -6
+                            ],
+                            "size": [
+                                2,
+                                4,
+                                12
+                            ],
+                            "uv": {
+                                "north": {
+                                    "uv": [
+                                        0,
+                                        0
+                                    ],
+                                    "uv_size": [
+                                        2,
+                                        4
+                                    ],
+                                    "material_instance": "channel"
+                                },
+                                "east": {
+                                    "uv": [
+                                        2,
+                                        0
+                                    ],
+                                    "uv_size": [
+                                        12,
+                                        4
+                                    ],
+                                    "material_instance": "channel"
+                                },
+                                "south": {
+                                    "uv": [
+                                        0,
+                                        0
+                                    ],
+                                    "uv_size": [
+                                        2,
+                                        4
+                                    ],
+                                    "material_instance": "channel"
+                                },
+                                "west": {
+                                    "uv": [
+                                        2,
+                                        0
+                                    ],
+                                    "uv_size": [
+                                        12,
+                                        4
+                                    ],
+                                    "material_instance": "channel"
+                                },
+                                "up": {
+                                    "uv": [
+                                        0,
+                                        14
+                                    ],
+                                    "uv_size": [
+                                        2,
+                                        -12
+                                    ],
+                                    "material_instance": "trapdoor"
+                                },
+                                "down": {
+                                    "uv": [
+                                        0,
+                                        14
+                                    ],
+                                    "uv_size": [
+                                        2,
+                                        -12
+                                    ],
+                                    "material_instance": "trapdoor"
+                                }
+                            }
+                        },
+                        {
+                            "origin": [
+                                -8,
+                                6,
+                                6
+                            ],
+                            "size": [
+                                16,
+                                4,
+                                2
+                            ],
+                            "uv": {
+                                "north": {
+                                    "uv": [
+                                        0,
+                                        0
+                                    ],
+                                    "uv_size": [
+                                        16,
+                                        4
+                                    ],
+                                    "material_instance": "channel"
+                                },
+                                "east": {
+                                    "uv": [
+                                        0,
+                                        0
+                                    ],
+                                    "uv_size": [
+                                        2,
+                                        4
+                                    ],
+                                    "material_instance": "channel"
+                                },
+                                "south": {
+                                    "uv": [
+                                        0,
+                                        0
+                                    ],
+                                    "uv_size": [
+                                        16,
+                                        4
+                                    ],
+                                    "material_instance": "channel"
+                                },
+                                "west": {
+                                    "uv": [
+                                        14,
+                                        0
+                                    ],
+                                    "uv_size": [
+                                        2,
+                                        4
+                                    ],
+                                    "material_instance": "channel"
+                                },
+                                "up": {
+                                    "uv": [
+                                        16,
+                                        0
+                                    ],
+                                    "uv_size": [
+                                        -16,
+                                        2
+                                    ],
+                                    "material_instance": "trapdoor"
+                                },
+                                "down": {
+                                    "uv": [
+                                        16,
+                                        14
+                                    ],
+                                    "uv_size": [
+                                        -16,
+                                        2
+                                    ],
+                                    "material_instance": "trapdoor"
+                                }
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "trapdoor_open",
+                    "pivot": [
+                        0,
+                        0,
+                        0
+                    ],
+                    "cubes": [
+                        {
+                            "origin": [
+                                -6,
+                                7,
+                                4
+                            ],
+                            "size": [
+                                12,
+                                2,
+                                2
+                            ],
+                            "uv": {
+                                "north": {
+                                    "uv": [
+                                        2,
+                                        12
+                                    ],
+                                    "uv_size": [
+                                        12,
+                                        2
+                                    ],
+                                    "material_instance": "trapdoor_open"
+                                },
+                                "east": {
+                                    "uv": [
+                                        2,
+                                        12
+                                    ],
+                                    "uv_size": [
+                                        12,
+                                        2
+                                    ],
+                                    "material_instance": "trapdoor_open"
+                                },
+                                "south": {
+                                    "uv": [
+                                        2,
+                                        12
+                                    ],
+                                    "uv_size": [
+                                        12,
+                                        2
+                                    ],
+                                    "material_instance": "trapdoor_open"
+                                },
+                                "west": {
+                                    "uv": [
+                                        2,
+                                        12
+                                    ],
+                                    "uv_size": [
+                                        12,
+                                        2
+                                    ],
+                                    "material_instance": "trapdoor_open"
+                                },
+                                "up": {
+                                    "uv": [
+                                        14,
+                                        14
+                                    ],
+                                    "uv_size": [
+                                        -12,
+                                        -2
+                                    ],
+                                    "material_instance": "trapdoor_open"
+                                },
+                                "down": {
+                                    "uv": [
+                                        14,
+                                        12
+                                    ],
+                                    "uv_size": [
+                                        -12,
+                                        2
+                                    ],
+                                    "material_instance": "trapdoor_open"
+                                }
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,14 @@
+{
+    "format_version": "1.16.100",
+    "minecraft:recipe_furnace": {
+        "description": {
+            "identifier": "terra:raw_platinum"
+        },
+        "tags": [
+            "blast_furnace",
+            "furnace"
+        ],
+        "input": "terra:raw_platinum",
+        "output": "terra:platinum_ingot"
+    }
+}

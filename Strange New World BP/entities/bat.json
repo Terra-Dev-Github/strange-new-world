@@ -1,0 +1,198 @@
+// This file was modified and compiled by Heavenly (@heavenly7493) for TERRA.
+// Do not distribute without permission.
+// **
+// NOTE :: 'DEATHSONG' COMP GROUP
+// :: VEXES, SKELETONS, WITHER SKELETONS, DROWNED, BOGGED, BATS, SILVERFISH
+// **
+{
+    "format_version": "1.16.0",
+    "minecraft:entity": {
+        "description": {
+            "identifier": "minecraft:bat",
+            "spawn_category": "ambient",
+            "is_spawnable": true,
+            "is_summonable": true,
+            "is_experimental": false
+        },
+        "component_groups": {
+            // deathsong
+            "terra:deathsong_bound": {
+                "minecraft:type_family": {
+                    "family": [
+                        "undead",
+                        "mob",
+                        "player",
+                        "villager"
+                    ]
+                },
+                "minecraft:health": {
+                    "value": 15,
+                    "max": 15
+                },
+                "minecraft:is_tamed": {},
+                "minecraft:behavior.owner_hurt_target": {
+                    "priority": 1
+                },
+                "minecraft:behavior.follow_owner": {
+                    "priority": 6,
+                    "speed_multiplier": 1,
+                    "start_distance": 8,
+                    "stop_distance": 4
+                },
+                "minecraft:behavior.owner_hurt_by_target": {
+                    "priority": 1
+                },
+                "minecraft:movement": {
+                    "value": 0.3
+                },
+                "minecraft:equipment": {
+                    "table": "loot_tables/empty.json"
+                },
+                "minecraft:attack": {
+                    "damage": 3
+                },
+                "minecraft:behavior.ranged_attack": {
+                    "priority": 0,
+                    "attack_interval_min": 1,
+                    "attack_interval_max": 3.5,
+                    "attack_radius": 20
+                },
+                "minecraft:shooter": {
+                    "def": "minecraft:arrow",
+                    "sound": "bow",
+                    "aux_val": 23
+                },
+                "minecraft:timer": {
+                    "time": [
+                        60,
+                        60
+                    ],
+                    "looping": false,
+                    "time_down_event": {
+                        "event": "despawn"
+                    }
+                },
+                "minecraft:loot": {
+                    "table": "loot_tables/entities/bogged.json"
+                },
+                "minecraft:behavior.nearest_attackable_target": {
+                    "priority": 2,
+                    "must_see": true,
+                    "reselect_targets": true,
+                    "within_radius": 25,
+                    "must_see_forget_duration": 30,
+                    "entity_types": [
+                        {
+                            "filters": {
+                                "any_of": [
+                                    {
+                                        "test": "is_family",
+                                        "subject": "other",
+                                        "value": "monster"
+                                    }
+                                ]
+                            },
+                            "max_dist": 35
+                        }
+                    ]
+                }
+            },
+            "despawn": {
+                "minecraft:instant_despawn": {
+                    "remove_child_entities": true
+                }
+            }
+            //
+        },
+        "components": {
+            "minecraft:is_hidden_when_invisible": {},
+            "minecraft:type_family": {
+                "family": [
+                    "bat",
+                    "mob"
+                ]
+            },
+            "minecraft:breathable": {
+                "total_supply": 15,
+                "suffocate_time": 0
+            },
+            "minecraft:collision_box": {
+                "width": 0.5,
+                "height": 0.9
+            },
+            "minecraft:damage_sensor": {
+                "triggers": {
+                    "cause": "fall",
+                    "deals_damage": false
+                }
+            },
+            "minecraft:hurt_on_condition": {
+                "damage_conditions": [
+                    {
+                        "filters": {
+                            "test": "in_lava",
+                            "subject": "self",
+                            "operator": "==",
+                            "value": true
+                        },
+                        "cause": "lava",
+                        "damage_per_tick": 4
+                    }
+                ]
+            },
+            "minecraft:movement": {
+                "value": 0.1
+            },
+            "minecraft:navigation.float": {
+                "can_path_over_water": true
+            },
+            "minecraft:movement.basic": {},
+            "minecraft:jump.static": {},
+            "minecraft:despawn": {
+                "despawn_from_distance": {}
+            },
+            "minecraft:behavior.float": {
+                "priority": 0
+            },
+            "minecraft:behavior.float_wander": {
+                "xz_dist": 10,
+                "y_dist": 7,
+                "y_offset": -2.0,
+                "random_reselect": true,
+                "float_duration": [
+                    0.1,
+                    0.35
+                ]
+            },
+            "minecraft:can_fly": {},
+            "minecraft:health": {
+                "value": 6,
+                "max": 6
+            },
+            "minecraft:nameable": {},
+            "minecraft:physics": {},
+            "minecraft:conditional_bandwidth_optimization": {},
+            "minecraft:game_event_movement_tracking": {
+                "emit_flap": true
+            }
+        },
+        "events": {
+            // deathsong
+            "terra:deathsong_binding": {
+                "add": {
+                    "component_groups": [
+                        "terra:deathsong_bound"
+                    ]
+                }
+            },
+            "despawn": {
+                "add": {
+                    "component_groups": [
+                        "despawn"
+                    ]
+                }
+            }
+            //
+        }
+    }
+}

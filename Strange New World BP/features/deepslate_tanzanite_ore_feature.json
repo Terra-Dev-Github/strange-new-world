@@ -1,0 +1,19 @@
+{
+    "format_version": "1.17.0",
+    "minecraft:ore_feature": {
+        "description": {
+            "identifier": "terra:deepslate_tanzanite_ore_feature"
+        },
+        "count": 8,
+        "replace_rules": [
+            {
+                "places_block": {
+                    "name": "terra:deepslate_tanzanite_ore"
+                },
+                "may_replace": [
+                    "minecraft:deepslate"
+                ]
+            }
+        ]
+    }
+}

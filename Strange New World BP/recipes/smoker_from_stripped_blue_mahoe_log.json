@@ -1,0 +1,27 @@
+{
+    "format_version": "1.12",
+    "minecraft:recipe_shaped": {
+        "description": {
+            "identifier": "terra:smoker_from_stripped_blue_mahoe_log"
+        },
+        "tags": [
+            "crafting_table"
+        ],
+        "pattern": [
+            " # ",
+            "#F#",
+            " # "
+        ],
+        "key": {
+            "F": {
+                "item": "minecraft:furnace"
+            },
+            "#": {
+                "item": "terra:blue_mahoe_log_stripped"
+            }
+        },
+        "result": {
+            "item": "minecraft:smoker"
+        }
+    }
+}

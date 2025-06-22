@@ -1,0 +1,37 @@
+{
+    "format_version": "1.10.0",
+    "animation_controllers": {
+        "controller.animation.beeper.swelling": {
+            "initial_state": "default",
+            "states": {
+                "default": {
+                    "transitions": [
+                        {
+                            "beeper_alarm": "q.is_shaking"
+                        }
+                    ],
+                    "blend_transition": 0.5,
+                    "animations": [
+                        "beeper_alarm"
+                    ]
+                },
+                "beeper_alarm": {
+                    "animations": [
+                        "beeper_alarm"
+                    ],
+                    "transitions": [
+                        {
+                            "default": "!q.is_shaking"
+                        }
+                    ],
+                    "sound_effects": [
+                        {
+                            "effect": "beeper_alarm"
+                        }
+                    ],
+                    "blend_transition": 0.5
+                }
+            }
+        }
+    }
+}

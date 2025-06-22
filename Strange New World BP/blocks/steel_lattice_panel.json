@@ -1,0 +1,536 @@
+// This file was made, modified and compiled by Heavenly (@heavenly7493) for TERRA.
+// Do not distribute without permission.
+{
+    "format_version": "1.20.30",
+    "minecraft:block": {
+        "description": {
+            "identifier": "terra:steel_lattice_panel",
+            "menu_category": {
+                // block is placed with the steel lattice panel item
+                "category": "none",
+                "group": "none"
+            },
+            "states": {
+                "terra:pivot": [
+                    0,
+                    1
+                ],
+                "terra:north": [
+                    0,
+                    1
+                ],
+                "terra:south": [
+                    0,
+                    1
+                ],
+                "terra:east": [
+                    0,
+                    1
+                ],
+                "terra:west": [
+                    0,
+                    1
+                ]
+            }
+        },
+        "permutations": [
+            {
+                "condition": "q.block_state('terra:north') && !q.block_state('terra:south') && !q.block_state('terra:west') && q.block_state('terra:east')",
+                "components": {
+                    "minecraft:collision_box": {
+                        "origin": [
+                            -8,
+                            0,
+                            -8
+                        ],
+                        "size": [
+                            10,
+                            16,
+                            10
+                        ]
+                    },
+                    "minecraft:selection_box": {
+                        "origin": [
+                            -8,
+                            0,
+                            -8
+                        ],
+                        "size": [
+                            10,
+                            16,
+                            10
+                        ]
+                    }
+                }
+            },
+            {
+                "condition": "q.block_state('terra:north') && !q.block_state('terra:south') && q.block_state('terra:west') && !q.block_state('terra:east')",
+                "components": {
+                    "minecraft:collision_box": {
+                        "origin": [
+                            -2,
+                            0,
+                            -8
+                        ],
+                        "size": [
+                            10,
+                            16,
+                            10
+                        ]
+                    },
+                    "minecraft:selection_box": {
+                        "origin": [
+                            -2,
+                            0,
+                            -8
+                        ],
+                        "size": [
+                            10,
+                            16,
+                            10
+                        ]
+                    }
+                }
+            },
+            {
+                "condition": "!q.block_state('terra:north') && q.block_state('terra:south') && !q.block_state('terra:west') && q.block_state('terra:east')",
+                "components": {
+                    "minecraft:collision_box": {
+                        "origin": [
+                            -8,
+                            0,
+                            -2
+                        ],
+                        "size": [
+                            10,
+                            16,
+                            10
+                        ]
+                    },
+                    "minecraft:selection_box": {
+                        "origin": [
+                            -8,
+                            0,
+                            -2
+                        ],
+                        "size": [
+                            10,
+                            16,
+                            10
+                        ]
+                    }
+                }
+            },
+            {
+                "condition": "!q.block_state('terra:north') && q.block_state('terra:south') && q.block_state('terra:west') && !q.block_state('terra:east')",
+                "components": {
+                    "minecraft:collision_box": {
+                        "origin": [
+                            -2,
+                            0,
+                            -2
+                        ],
+                        "size": [
+                            10,
+                            16,
+                            10
+                        ]
+                    },
+                    "minecraft:selection_box": {
+                        "origin": [
+                            -2,
+                            0,
+                            -2
+                        ],
+                        "size": [
+                            10,
+                            16,
+                            10
+                        ]
+                    }
+                }
+            },
+            {
+                "condition": "q.block_state('terra:north') && q.block_state('terra:south') && q.block_state('terra:west') && q.block_state('terra:east')",
+                "components": {
+                    "minecraft:collision_box": {
+                        "origin": [
+                            -2,
+                            0,
+                            -2
+                        ],
+                        "size": [
+                            8,
+                            16,
+                            8
+                        ]
+                    },
+                    "minecraft:selection_box": {
+                        "origin": [
+                            -8,
+                            0,
+                            -8
+                        ],
+                        "size": [
+                            16,
+                            16,
+                            16
+                        ]
+                    }
+                }
+            },
+            {
+                "condition": "!q.block_state('terra:north') && !q.block_state('terra:south') && !q.block_state('terra:west') && !q.block_state('terra:east')",
+                "components": {
+                    "minecraft:collision_box": {
+                        "origin": [
+                            -2,
+                            0,
+                            2
+                        ],
+                        "size": [
+                            4,
+                            16,
+                            4
+                        ]
+                    },
+                    "minecraft:selection_box": {
+                        "origin": [
+                            -2,
+                            0,
+                            -2
+                        ],
+                        "size": [
+                            4,
+                            16,
+                            4
+                        ]
+                    }
+                }
+            },
+            {
+                "condition": "q.block_state('terra:north') && q.block_state('terra:south') && q.block_state('terra:west') && !q.block_state('terra:east')",
+                "components": {
+                    "minecraft:collision_box": {
+                        "origin": [
+                            -2,
+                            0,
+                            -4
+                        ],
+                        "size": [
+                            7,
+                            16,
+                            8
+                        ]
+                    },
+                    "minecraft:selection_box": {
+                        "origin": [
+                            -2,
+                            0,
+                            -8
+                        ],
+                        "size": [
+                            10,
+                            16,
+                            16
+                        ]
+                    }
+                }
+            },
+            {
+                "condition": "q.block_state('terra:north') && q.block_state('terra:south') && !q.block_state('terra:west') && q.block_state('terra:east')",
+                "components": {
+                    "minecraft:collision_box": {
+                        "origin": [
+                            -4,
+                            0,
+                            -4
+                        ],
+                        "size": [
+                            6,
+                            16,
+                            8
+                        ]
+                    },
+                    "minecraft:selection_box": {
+                        "origin": [
+                            -8,
+                            0,
+                            -8
+                        ],
+                        "size": [
+                            10,
+                            16,
+                            16
+                        ]
+                    }
+                }
+            },
+            {
+                "condition": "q.block_state('terra:north') && !q.block_state('terra:south') && q.block_state('terra:west') && q.block_state('terra:east')",
+                "components": {
+                    "minecraft:collision_box": {
+                        "origin": [
+                            -4,
+                            0,
+                            -4
+                        ],
+                        "size": [
+                            8,
+                            16,
+                            6
+                        ]
+                    },
+                    "minecraft:selection_box": {
+                        "origin": [
+                            -8,
+                            0,
+                            -8
+                        ],
+                        "size": [
+                            16,
+                            16,
+                            10
+                        ]
+                    }
+                }
+            },
+            {
+                "condition": "!q.block_state('terra:north') && q.block_state('terra:south') && q.block_state('terra:west') && q.block_state('terra:east')",
+                "components": {
+                    "minecraft:collision_box": {
+                        "origin": [
+                            -4,
+                            0,
+                            -2
+                        ],
+                        "size": [
+                            8,
+                            16,
+                            7
+                        ]
+                    },
+                    "minecraft:selection_box": {
+                        "origin": [
+                            -8,
+                            0,
+                            -2
+                        ],
+                        "size": [
+                            16,
+                            16,
+                            10
+                        ]
+                    }
+                }
+            },
+            {
+                "condition": "q.block_state('terra:north') && !q.block_state('terra:south') && !q.block_state('terra:west') && !q.block_state('terra:east')",
+                "components": {
+                    "minecraft:collision_box": {
+                        "origin": [
+                            -2,
+                            0,
+                            -8
+                        ],
+                        "size": [
+                            4,
+                            16,
+                            10
+                        ]
+                    },
+                    "minecraft:selection_box": {
+                        "origin": [
+                            -2,
+                            0,
+                            -8
+                        ],
+                        "size": [
+                            4,
+                            16,
+                            10
+                        ]
+                    }
+                }
+            },
+            {
+                "condition": "q.block_state('terra:south') && !q.block_state('terra:north') && !q.block_state('terra:west') && !q.block_state('terra:east')",
+                "components": {
+                    "minecraft:collision_box": {
+                        "origin": [
+                            -2,
+                            0,
+                            -2
+                        ],
+                        "size": [
+                            4,
+                            16,
+                            10
+                        ]
+                    },
+                    "minecraft:selection_box": {
+                        "origin": [
+                            -2,
+                            0,
+                            -2
+                        ],
+                        "size": [
+                            4,
+                            16,
+                            10
+                        ]
+                    }
+                }
+            },
+            {
+                "condition": "q.block_state('terra:east') && !q.block_state('terra:west') && !q.block_state('terra:north') && !q.block_state('terra:south')",
+                "components": {
+                    "minecraft:collision_box": {
+                        "origin": [
+                            -8,
+                            0,
+                            -2
+                        ],
+                        "size": [
+                            10,
+                            16,
+                            4
+                        ]
+                    },
+                    "minecraft:selection_box": {
+                        "origin": [
+                            -8,
+                            0,
+                            -2
+                        ],
+                        "size": [
+                            10,
+                            16,
+                            4
+                        ]
+                    }
+                }
+            },
+            {
+                "condition": "q.block_state('terra:west') && !q.block_state('terra:east') && !q.block_state('terra:north') && !q.block_state('terra:south')",
+                "components": {
+                    "minecraft:collision_box": {
+                        "origin": [
+                            -2,
+                            0,
+                            -2
+                        ],
+                        "size": [
+                            10,
+                            16,
+                            4
+                        ]
+                    },
+                    "minecraft:selection_box": {
+                        "origin": [
+                            -2,
+                            0,
+                            -2
+                        ],
+                        "size": [
+                            10,
+                            16,
+                            4
+                        ]
+                    }
+                }
+            },
+            {
+                "condition": "q.block_state('terra:north') && q.block_state('terra:south') && !q.block_state('terra:west') && !q.block_state('terra:east')",
+                "components": {
+                    "minecraft:collision_box": {
+                        "origin": [
+                            -2,
+                            0,
+                            -8
+                        ],
+                        "size": [
+                            4,
+                            16,
+                            16
+                        ]
+                    },
+                    "minecraft:selection_box": {
+                        "origin": [
+                            -2,
+                            0,
+                            -8
+                        ],
+                        "size": [
+                            4,
+                            16,
+                            16
+                        ]
+                    }
+                }
+            },
+            {
+                "condition": "!q.block_state('terra:north') && !q.block_state('terra:south') && q.block_state('terra:west') && q.block_state('terra:east')",
+                "components": {
+                    "minecraft:collision_box": {
+                        "origin": [
+                            -8,
+                            0,
+                            -2
+                        ],
+                        "size": [
+                            16,
+                            16,
+                            4
+                        ]
+                    },
+                    "minecraft:selection_box": {
+                        "origin": [
+                            -8,
+                            0,
+                            -2
+                        ],
+                        "size": [
+                            16,
+                            16,
+                            4
+                        ]
+                    }
+                }
+            }
+        ],
+        "components": {
+            "minecraft:geometry": {
+                "identifier": "geometry.panel",
+                "bone_visibility": {
+                    "pivot": "!q.block_state('terra:pivot')",
+                    "north": "q.block_state('terra:north')",
+                    "south": "q.block_state('terra:south')",
+                    "east": "q.block_state('terra:east')",
+                    "west": "q.block_state('terra:west')"
+                }
+            },
+            "minecraft:loot": "loot_tables/blocks/steel_lattice_panel.json",
+            "minecraft:tick": {
+                "interval_range": [
+                    3,
+                    3
+                ]
+            },
+            // adds block functionality
+            "minecraft:custom_components": [
+                "terra:panel_connect"
+            ],
+            // hardness: 2
+            "minecraft:destructible_by_mining": {
+                "seconds_to_destroy": 3
+            },
+            "minecraft:material_instances": {
+                "*": {
+                    "texture": "steel_lattice_panel",
+                    "render_method": "blend"
+                }
+            }
+        }
+    }
+}

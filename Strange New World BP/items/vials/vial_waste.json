@@ -1,0 +1,25 @@
+// This file was made, modified and compiled by Heavenly (@heavenly7493) for TERRA.
+// Do not distribute without permission.
+{
+    "format_version": "1.21.60",
+    "minecraft:item": {
+        "description": {
+            "identifier": "terra:vial_waste",
+            "menu_category": {
+                "category": "items"
+                // "group": "terra:itemGroup.name.vials"
+            }
+        },
+        "components": {
+            "minecraft:icon": {
+                "textures": {
+                    "default": "vial_waste"
+                }
+            },
+            "minecraft:hand_equipped": false,
+            "minecraft:display_name": {
+                "value": "item.terra:vial_waste"
+            }
+        }
+    }
+}

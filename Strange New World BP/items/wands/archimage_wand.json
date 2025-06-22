@@ -1,0 +1,31 @@
+// This file was made, modified and compiled by Heavenly (@heavenly7493) for TERRA.
+// Do not distribute without permission.
+{
+    "format_version": "1.21.60",
+    "minecraft:item": {
+        "description": {
+            "identifier": "terra:archimage_wand",
+            "menu_category": {
+                "category": "equipment"
+                // "group": "terra:itemGroup.name.wands"
+            }
+        },
+        "components": {
+            "minecraft:icon": {
+                "textures": {
+                    "default": "archimage_wand"
+                }
+            },
+            "minecraft:allow_off_hand": true,
+            "minecraft:max_stack_size": 1,
+            "minecraft:hand_equipped": true,
+            "minecraft:display_name": {
+                "value": "%item.terra.archimage_wand\n§7%terra.spell.compatibility\n"
+            },
+            // adds item functionality
+            "minecraft:custom_components": [
+                "terra:spell_events"
+            ]
+        }
+    }
+}

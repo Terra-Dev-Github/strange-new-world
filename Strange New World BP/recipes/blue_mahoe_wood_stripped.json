@@ -1,0 +1,30 @@
+{
+    "format_version": "1.20.10",
+    "minecraft:recipe_shaped": {
+        "description": {
+            "identifier": "terra:blue_mahoe_wood_stripped"
+        },
+        "tags": [
+            "crafting_table"
+        ],
+        "group": "wood",
+        "pattern": [
+            "##",
+            "##"
+        ],
+        "key": {
+            "#": {
+                "item": "terra:blue_mahoe_log_stripped"
+            }
+        },
+        "unlock": [
+            {
+                "item": "terra:blue_mahoe_log_stripped"
+            }
+        ],
+        "result": {
+            "item": "terra:blue_mahoe_wood_stripped",
+            "count": 3
+        }
+    }
+}

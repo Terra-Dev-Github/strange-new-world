@@ -1,0 +1,29 @@
+// This file was made, modified and compiled by Heavenly (@heavenly7493) for TERRA.
+// Do not distribute without permission.
+{
+    "format_version": "1.20.80",
+    "minecraft:block": {
+        "description": {
+            "identifier": "terra:wavy_sand",
+            "menu_category": {
+                "category": "nature",
+                "group": "itemGroup.name.none"
+            }
+        },
+        "components": {
+            "tag:sand": {},
+            "minecraft:geometry": "minecraft:geometry.full_block",
+            "minecraft:material_instances": {
+                "*": {
+                    "texture": "wavy_sand",
+                    "render_method": "opaque"
+                }
+            },
+            "minecraft:destructible_by_mining": {
+                "seconds_to_destroy": 0.15
+            },
+            // according to map item data on the mc wiki
+            "minecraft:map_color": "#F7E9A3"
+        }
+    }
+}

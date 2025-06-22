@@ -1,0 +1,25 @@
+// This file was made, modified and compiled by Heavenly (@heavenly7493) for TERRA.
+// Do not distribute without permission.
+{
+    "format_version": "1.20.30",
+    "minecraft:item": {
+        "description": {
+            "identifier": "terra:record_long_gone",
+            "menu_category": {
+                "category": "items",
+                "group": "itemGroup.name.record"
+            }
+        },
+        "components": {
+            "minecraft:max_stack_size": 1,
+            "minecraft:hand_equipped": false,
+            // trickery to preserve localization
+            "minecraft:display_name": {
+                "value": "%item.terra.record.name\n§7%item.record_long_gone.desc"
+            },
+            "minecraft:icon": {
+                "texture": "record_long_gone"
+            }
+        }
+    }
+}

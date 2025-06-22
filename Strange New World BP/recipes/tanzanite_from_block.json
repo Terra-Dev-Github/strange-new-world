@@ -1,0 +1,22 @@
+{
+    "format_version": "1.17.0",
+    "minecraft:recipe_shapeless": {
+        "description": {
+            "identifier": "terra:tanzanite_from_block"
+        },
+        "tags": [
+            "crafting_table"
+        ],
+        "ingredients": [
+            {
+                "item": "terra:tanzanite_block"
+            }
+        ],
+        "result": [
+            {
+                "item": "terra:tanzanite",
+                "count": 9
+            }
+        ]
+    }
+}

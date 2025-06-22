@@ -1,0 +1,31 @@
+// This file was made, modified and compiled by Heavenly (@heavenly7493) for TERRA.
+// Do not distribute without permission.
+{
+    "format_version": "1.20.80",
+    "minecraft:block": {
+        "description": {
+            "identifier": "terra:nethersteel_block",
+            "menu_category": {
+                "category": "construction",
+                "group": "itemGroup.name.none"
+            }
+        },
+        "components": {
+            "tag:metal": {},
+            "tag:minecraft:is_pickaxe_item_destructible": {},
+            "minecraft:geometry": "minecraft:geometry.full_block",
+            "minecraft:material_instances": {
+                "*": {
+                    "texture": "nethersteel_block",
+                    "render_method": "opaque"
+                }
+            },
+            // hardness: 1.5
+            "minecraft:destructible_by_mining": {
+                "seconds_to_destroy": 7.5
+            },
+            "minecraft:map_color": "#707675"
+            // "minecraft:loot": "loot_tables/blocks/nethersteel_block.json"
+        }
+    }
+}

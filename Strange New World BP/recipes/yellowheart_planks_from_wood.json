@@ -1,0 +1,29 @@
+{
+    "format_version": "1.20.10",
+    "minecraft:recipe_shaped": {
+        "description": {
+            "identifier": "terra:yellowheart_planks_from_wood"
+        },
+        "tags": [
+            "crafting_table"
+        ],
+        "group": "planks",
+        "pattern": [
+            "#"
+        ],
+        "key": {
+            "#": {
+                "item": "terra:yellowheart_wood"
+            }
+        },
+        "unlock": [
+            {
+                "item": "terra:yellowheart_wood"
+            }
+        ],
+        "result": {
+            "item": "terra:yellowheart_planks",
+            "count": 4
+        }
+    }
+}

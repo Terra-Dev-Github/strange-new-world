@@ -1,0 +1,143 @@
+// This file was made, modified and compiled by Heavenly (@heavenly7493) for TERRA.
+// Do not distribute without permission.
+{
+    "format_version": "1.21.60",
+    "minecraft:block": {
+        "description": {
+            "identifier": "terra:autonetic_station",
+            "menu_category": {
+                "category": "items"
+            },
+            "states": {
+                "terra:redstone_powered": [
+                    0, // off
+                    1 // on
+                ]
+            }
+        },
+        "permutations": [
+            {
+                "condition": "!q.block_state('terra:redstone_powered')",
+                "components": {
+                    "minecraft:material_instances": {
+                        "up": {
+                            "texture": "autonetic_station_top_off",
+                            "render_method": "opaque"
+                        },
+                        "down": {
+                            "texture": "autonetic_station_bottom",
+                            "render_method": "opaque"
+                        },
+                        "north": {
+                            "texture": "autonetic_station_front",
+                            "render_method": "opaque"
+                        },
+                        "south": {
+                            "texture": "autonetic_station_front",
+                            "render_method": "opaque"
+                        },
+                        "east": {
+                            "texture": "autonetic_station_side2",
+                            "render_method": "opaque"
+                        },
+                        "west": {
+                            "texture": "autonetic_station_side_off",
+                            "render_method": "opaque"
+                        }
+                    }
+                }
+            },
+            {
+                "condition": "q.block_state('terra:redstone_powered')",
+                "components": {
+                    "minecraft:crafting_table": {
+                        "table_name": "tile.terra:autonetic_station.name",
+                        "crafting_tags": [
+                            "autonetic_station"
+                        ],
+                        "grid_size": 3
+                    },
+                    "minecraft:material_instances": {
+                        "up": {
+                            "texture": "autonetic_station_top",
+                            "render_method": "opaque"
+                        },
+                        "down": {
+                            "texture": "autonetic_station_bottom",
+                            "render_method": "opaque"
+                        },
+                        "north": {
+                            "texture": "autonetic_station_front",
+                            "render_method": "opaque"
+                        },
+                        "south": {
+                            "texture": "autonetic_station_front",
+                            "render_method": "opaque"
+                        },
+                        "east": {
+                            "texture": "autonetic_station_side2",
+                            "render_method": "opaque"
+                        },
+                        "west": {
+                            "texture": "autonetic_station_side",
+                            "render_method": "opaque"
+                        }
+                    }
+                }
+            }
+        ],
+        "components": {
+            "minecraft:tick": {
+                "interval_range": [
+                    3,
+                    3
+                ]
+            },
+            "minecraft:redstone_conductivity": {
+                "redstone_conductor": true,
+                "allows_wire_to_step_down": false
+            },
+            "minecraft:geometry": "minecraft:geometry.full_block",
+            "minecraft:material_instances": {
+                "up": {
+                    "texture": "autonetic_station_top",
+                    "render_method": "opaque"
+                },
+                "down": {
+                    "texture": "autonetic_station_bottom",
+                    "render_method": "opaque"
+                },
+                "north": {
+                    "texture": "autonetic_station_front",
+                    "render_method": "opaque"
+                },
+                "south": {
+                    "texture": "autonetic_station_front",
+                    "render_method": "opaque"
+                },
+                "east": {
+                    "texture": "autonetic_station_side2",
+                    "render_method": "opaque"
+                },
+                "west": {
+                    "texture": "autonetic_station_side",
+                    "render_method": "opaque"
+                }
+            },
+            // hardness: 1.5
+            "minecraft:destructible_by_mining": {
+                "seconds_to_destroy": 7.5
+            },
+            "minecraft:destructible_by_explosion": {
+                "explosion_resistance": 3
+            },
+            // single loot table since all of em will drop scraps unless you got silk touch
+            "minecraft:loot": "loot_tables/blocks/outsider_metal_scraps.json",
+            "minecraft:map_color": "#8499B0",
+            // adds block functionality
+            "minecraft:custom_components": [
+                "terra:redstone_events"
+            ]
+        }
+    }
+}

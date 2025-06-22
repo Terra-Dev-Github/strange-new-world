@@ -1,0 +1,14 @@
+{
+    "format_version": "1.12",
+    "minecraft:recipe_brewing_mix": {
+        "description": {
+            "identifier": "terra:vial_radioactive"
+        },
+        "tags": [
+            "brewing_stand"
+        ],
+        "input": "terra:vial_waste",
+        "reagent": "minecraft:ghast_tear",
+        "output": "terra:vial_radioactive"
+    }
+}

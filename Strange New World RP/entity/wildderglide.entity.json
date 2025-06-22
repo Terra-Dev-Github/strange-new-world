@@ -1,0 +1,38 @@
+// This file was made, modified and compiled by Heavenly (@heavenly7493) for TERRA.
+// Do not distribute without permission.
+{
+    "format_version": "1.8.0",
+    "minecraft:client_entity": {
+        "description": {
+            "identifier": "terra:wildderglide",
+            "materials": {
+                "default": "bee"
+            },
+            "textures": {
+                "default": "textures/entity/wildderglide/wildderglide",
+                "saddled": "textures/entity/wildderglide/wildderglide_saddled"
+            },
+            "geometry": {
+                "default": "geometry.wildderglide"
+            },
+            "animations": {
+                "flying": "animation.wildderglide.flying",
+                "fly_bobbing": "animation.bee.fly.bobbing",
+                "default_leg_pose": "animation.spider.default_leg_pose",
+                "look_at_target": "animation.spider.look_at_target",
+                "walk": "animation.spider.walk"
+            },
+            "animation_controllers": [
+                {
+                    "move": "controller.animation.wildderglide.move"
+                }
+            ],
+            "render_controllers": [
+                "controller.render.wildderglide"
+            ],
+            "spawn_egg": {
+                "texture": "spawn_egg_wildderglide"
+            }
+        }
+    }
+}

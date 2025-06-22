@@ -1,0 +1,13 @@
+{
+    "format_version": "1.12",
+    "minecraft:recipe_furnace": {
+        "description": {
+            "identifier": "terra:furnace_yellowheart_wood"
+        },
+        "tags": [
+            "furnace"
+        ],
+        "input": "terra:yellowheart_wood",
+        "output": "minecraft:coal:1"
+    }
+}

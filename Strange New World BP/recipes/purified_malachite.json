@@ -1,0 +1,47 @@
+{
+    "format_version": "1.12",
+    "minecraft:recipe_shaped": {
+        "description": {
+            "identifier": "terra:purified_malachite"
+        },
+        "tags": [
+            "crafting_table"
+        ],
+        "pattern": [
+            "NBS",
+            "LMW"
+        ],
+        "key": {
+            "M": {
+                "item": "terra:raw_malachite"
+            },
+            "N": {
+                "item": "terra:salt"
+            },
+            "B": {
+                "item": "minecraft:blaze_powder"
+            },
+            "S": {
+                "item": "minecraft:slime_ball"
+            },
+            "L": {
+                "item": "minecraft:bucket",
+                "data": 10
+            },
+            "W": {
+                "item": "minecraft:bucket",
+                "data": 8
+            }
+        },
+        "result": [
+            {
+                "item": "terra:purified_malachite",
+                "count": 1
+            },
+            {
+                "item": "minecraft:bucket",
+                "count": 2
+            }
+        ]
+    }
+}

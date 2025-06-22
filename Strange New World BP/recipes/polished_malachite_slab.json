@@ -1,0 +1,23 @@
+{
+    "format_version": "1.12",
+    "minecraft:recipe_shaped": {
+        "description": {
+            "identifier": "terra:polished_malachite_slab"
+        },
+        "tags": [
+            "crafting_table"
+        ],
+        "pattern": [
+            "###"
+        ],
+        "key": {
+            "#": {
+                "item": "terra:polished_malachite_block"
+            }
+        },
+        "result": {
+            "item": "terra:polished_malachite_slab",
+            "count": 3
+        }
+    }
+}

@@ -1,0 +1,31 @@
+// This file was made, modified and compiled by Heavenly (@heavenly7493) for TERRA.
+// Do not distribute without permission.
+{
+    "format_version": "1.20.80",
+    "minecraft:block": {
+        "description": {
+            "identifier": "terra:steel_lattice_block",
+            "menu_category": {
+                "category": "construction",
+                "group": "itemGroup.name.none"
+            }
+        },
+        "components": {
+            "tag:metal": {},
+            "tag:minecraft:is_pickaxe_item_destructible": {},
+            // "minecraft:geometry": "minecraft:geometry.full_block",
+            "minecraft:material_instances": {
+                "*": {
+                    "render_method": "blend"
+                }
+            },
+            // hardness: 1.5
+            "minecraft:destructible_by_mining": {
+                "seconds_to_destroy": 7.5
+            },
+            "minecraft:light_dampening": 0,
+            "minecraft:map_color": "#4E5766",
+            "minecraft:loot": "loot_tables/blocks/steel_lattice_block.json"
+        }
+    }
+}

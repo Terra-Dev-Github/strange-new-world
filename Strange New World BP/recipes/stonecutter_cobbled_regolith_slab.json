@@ -1,0 +1,20 @@
+{
+    "format_version": "1.12",
+    "minecraft:recipe_shapeless": {
+        "description": {
+            "identifier": "terra:stonecutter_cobbled_regolith_slab"
+        },
+        "tags": [
+            "stonecutter"
+        ],
+        "ingredients": [
+            {
+                "item": "terra:cobbled_regolith"
+            }
+        ],
+        "result": {
+            "item": "terra:cobbled_regolith_slab",
+            "count": 2
+        }
+    }
+}

@@ -1,0 +1,27 @@
+{
+    "format_version": "1.16.100",
+    "minecraft:recipe_shaped": {
+        "description": {
+            "identifier": "terra:steel_ingot"
+        },
+        "tags": [
+            "crafting_table"
+        ],
+        "pattern": [
+            "###",
+            "###",
+            "###"
+        ],
+        "key": {
+            "#": {
+                "item": "terra:steel_nugget"
+            }
+        },
+        "result": [
+            {
+                "item": "terra:steel_ingot",
+                "count": 1
+            }
+        ]
+    }
+}

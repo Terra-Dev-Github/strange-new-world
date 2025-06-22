@@ -1,0 +1,69 @@
+{
+    "format_version": "1.10.0",
+    "animation_controllers": {
+        "controller.animation.cloud_system": {
+            "initial_state": "state_picker",
+            "states": {
+                "state_picker": {
+                    // do day and night trickery
+                    "transitions": [
+                        {
+                            "day": "q.time_of_day >= 0.25 && q.time_of_day <= 0.75"
+                        },
+                        {
+                            "night": "q.time_of_day <= 0.24 || q.time_of_day >= 0.76"
+                        }
+                    ]
+                },
+                // spawn clouds
+                "day": {
+                    "transitions": [
+                        {
+                            "state_picker": "q.time_of_day <= 0.24 || q.time_of_day >= 0.76"
+                        }
+                    ],
+                    "on_entry": [
+                        "/function sky_day"
+                    ]
+                },
+                "night": {
+                    "transitions": [
+                        {
+                            "state_picker": "q.time_of_day >= 0.25 && q.time_of_day <= 0.75"
+                        },
+                        // do 1/10 chance of a shooting star
+                        {
+                            "shooting_star": "math.random(0, 10) == 10"
+                        },
+                        {
+                            "no_shooting_star": "math.random(0, 10) <= 9"
+                        }
+                    ],
+                    // spawn clouds and stars
+                    "on_entry": [
+                        "/function sky_night"
+                    ]
+                },
+                // spawn a shooting star and loop back to night
+                "shooting_star": {
+                    "on_entry": [
+                        "/function shooting_star"
+                    ],
+                    "transitions": [
+                        {
+                            "night": "(1.0)"
+                        }
+                    ]
+                },
+                // do absolutely nothing
+                "no_shooting_star": {
+                    "transitions": [
+                        {
+                            "night": "(1.0)"
+                        }
+                    ]
+                }
+            }
+        }
+    }
+}

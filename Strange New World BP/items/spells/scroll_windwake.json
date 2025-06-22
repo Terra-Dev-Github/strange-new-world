@@ -1,0 +1,34 @@
+// This file was made, modified and compiled by Heavenly (@heavenly7493) for TERRA.
+// Do not distribute without permission.
+{
+    "format_version": "1.21.60",
+    "minecraft:item": {
+        "description": {
+            "identifier": "terra:scroll_windwake",
+            "menu_category": {
+                "category": "equipment"
+                // "group": "terra:itemGroup.name.scrolls"
+            }
+        },
+        "components": {
+            "minecraft:icon": {
+                "textures": {
+                    "default": "scroll_windwake"
+                }
+            },
+            "minecraft:cooldown": {
+                "category": "spells",
+                "duration": 10
+            },
+            "minecraft:max_stack_size": 1,
+            "minecraft:hand_equipped": false,
+            "minecraft:display_name": {
+                "value": "%item.terra.scroll\n§7%terra.windwake.name"
+            },
+            // adds item functionality
+            "minecraft:custom_components": [
+                "terra:spell_events"
+            ]
+        }
+    }
+}
