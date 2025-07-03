@@ -9,7 +9,7 @@
                 "category": "items"
             },
             "states": {
-                "terra:redstone_powered": [
+                "terra:is_powered": [
                     0, // off
                     1 // on
                 ]
@@ -17,7 +17,7 @@
         },
         "permutations": [
             {
-                "condition": "!q.block_state('terra:redstone_powered')",
+                "condition": "!q.block_state('terra:is_powered')",
                 "components": {
                     "minecraft:material_instances": {
                         "up": {
@@ -48,7 +48,7 @@
                 }
             },
             {
-                "condition": "q.block_state('terra:redstone_powered')",
+                "condition": "q.block_state('terra:is_powered')",
                 "components": {
                     "minecraft:crafting_table": {
                         "table_name": "tile.terra:autonetic_station.name",
@@ -87,16 +87,6 @@
             }
         ],
         "components": {
-            "minecraft:tick": {
-                "interval_range": [
-                    3,
-                    3
-                ]
-            },
-            "minecraft:redstone_conductivity": {
-                "redstone_conductor": true,
-                "allows_wire_to_step_down": false
-            },
             "minecraft:geometry": "minecraft:geometry.full_block",
             "minecraft:material_instances": {
                 "up": {
@@ -136,7 +126,7 @@
             "minecraft:map_color": "#8499B0",
             // adds block functionality
             "minecraft:custom_components": [
-                "terra:redstone_events"
+                "terra:autonetic_station_powering"
             ]
         }
     }

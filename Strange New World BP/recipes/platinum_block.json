@@ -1,5 +1,5 @@
 {
-    "format_version": "1.16.100",
+    "format_version": "1.20.30",
     "minecraft:recipe_shaped": {
         "description": {
             "identifier": "terra:platinum_block"
@@ -17,6 +17,11 @@
                 "item": "terra:platinum_ingot"
             }
         },
+        "unlock": [
+            {
+                "item": "terra:platinum_ingot"
+            }
+        ],
         "result": [
             {
                 "item": "terra:platinum_block",

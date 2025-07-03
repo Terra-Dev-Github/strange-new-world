@@ -1,5 +1,5 @@
 {
-    "format_version": "1.12",
+    "format_version": "1.20.30",
     "minecraft:recipe_shaped": {
         "description": {
             "identifier": "terra:raw_malachite_from_block"
@@ -15,6 +15,11 @@
                 "item": "terra:raw_malachite_block"
             }
         },
+        "unlock": [
+            {
+                "item": "terra:raw_malachite_block"
+            }
+        ],
         "result": {
             "item": "terra:raw_malachite",
             "count": 9

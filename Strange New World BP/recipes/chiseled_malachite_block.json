@@ -1,5 +1,5 @@
 {
-    "format_version": "1.16.100",
+    "format_version": "1.20.30",
     "minecraft:recipe_shaped": {
         "description": {
             "identifier": "terra:chiseled_malachite_block"
@@ -16,6 +16,11 @@
                 "item": "terra:polished_malachite_slab"
             }
         },
+        "unlock": [
+            {
+                "item": "terra:polished_malachite_slab"
+            }
+        ],
         "result": {
             "item": "terra:chiseled_malachite_block",
             "count": 1

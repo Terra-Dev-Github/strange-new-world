@@ -1,5 +1,5 @@
 {
-    "format_version": "1.17.0",
+    "format_version": "1.20.30",
     "minecraft:recipe_shapeless": {
         "description": {
             "identifier": "terra:tanzanite_from_block"
@@ -8,6 +8,11 @@
             "crafting_table"
         ],
         "ingredients": [
+            {
+                "item": "terra:tanzanite_block"
+            }
+        ],
+        "unlock": [
             {
                 "item": "terra:tanzanite_block"
             }

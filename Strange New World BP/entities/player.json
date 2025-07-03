@@ -142,12 +142,10 @@
             "minecraft:insomnia": {
                 "days_until_insomnia": 3
             },
-            // eyecletch trickery
             "minecraft:rideable": {
                 "seat_count": 2,
                 "family_types": [
-                    "parrot_tame",
-                    "eyecletch"
+                    "parrot_tame"
                 ],
                 "pull_in_entities": true,
                 "seats": [

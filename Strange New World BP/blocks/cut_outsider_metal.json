@@ -1,17 +1,17 @@
 // This file was made, modified and compiled by Heavenly (@heavenly7493) for TERRA.
 // Do not distribute without permission.
 {
-    "format_version": "1.20.80",
+    "format_version": "1.21.60",
     "minecraft:block": {
         "description": {
             "identifier": "terra:cut_outsider_metal",
             "menu_category": {
-                "category": "construction",
-                // idk yet
-                "group": "itemGroup.name.none"
+                "category": "construction"
+                // "group": "terra:itemGroup.name.outsider_blocks"
             }
         },
         "components": {
+            "tag:metal": {},
             "minecraft:geometry": "minecraft:geometry.full_block",
             "minecraft:material_instances": {
                 "*": {

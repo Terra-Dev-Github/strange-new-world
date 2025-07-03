@@ -123,7 +123,6 @@
                 }
             },
             "terra:ranged_mode": {
-                "minecraft:is_shaking": {},
                 "minecraft:shooter": {
                     // projectile to shoot
                     "def": "terra:gun_pellet_outsider",
@@ -138,6 +137,7 @@
                 }
             },
             "minecraft:hunter_mode": {
+                "minecraft:is_shaking": {},
                 "minecraft:navigation.generic": {
                     "is_amphibious": false,
                     "can_path_over_water": false,

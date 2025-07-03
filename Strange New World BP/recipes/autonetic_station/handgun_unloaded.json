@@ -1,5 +1,5 @@
 {
-    "format_version": "1.12",
+    "format_version": "1.20.30",
     "minecraft:recipe_shaped": {
         "description": {
             "identifier": "terra:blaster_unloaded"
@@ -29,6 +29,11 @@
                 "item": "terra:outsider_metal_ingot"
             }
         },
+        "unlock": [
+            {
+                "item": "terra:outsider_core"
+            }
+        ],
         "result": {
             "item": "terra:blaster_unloaded",
             "count": 1

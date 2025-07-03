@@ -1,5 +1,5 @@
 {
-    "format_version": "1.16.100",
+    "format_version": "1.20.30",
     "minecraft:recipe_shaped": {
         "description": {
             "identifier": "terra:steel_ingot"
@@ -17,6 +17,11 @@
                 "item": "terra:steel_nugget"
             }
         },
+        "unlock": [
+            {
+                "item": "terra:steel_nugget"
+            }
+        ],
         "result": [
             {
                 "item": "terra:steel_ingot",

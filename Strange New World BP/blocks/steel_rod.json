@@ -1,13 +1,13 @@
 // This file was made, modified and compiled by Heavenly (@heavenly7493) for TERRA.
 // Do not distribute without permission.
 {
-    "format_version": "1.20.80",
+    "format_version": "1.21.60",
     "minecraft:block": {
         "description": {
             "identifier": "terra:steel_rod",
             "menu_category": {
-                "category": "construction",
-                "group": "itemGroup.name.none"
+                "category": "construction"
+                // "group": "terra:itemGroup.name.steel"
             },
             "traits": {
                 "minecraft:placement_position": {

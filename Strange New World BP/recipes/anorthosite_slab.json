@@ -1,5 +1,5 @@
 {
-    "format_version": "1.12",
+    "format_version": "1.20.30",
     "minecraft:recipe_shaped": {
         "description": {
             "identifier": "terra:anorthosite_slab"
@@ -15,6 +15,11 @@
                 "item": "terra:anorthosite"
             }
         },
+        "unlock": [
+            {
+                "item": "terra:anorthosite"
+            }
+        ],
         "result": {
             "item": "terra:anorthosite_slab",
             "count": 6

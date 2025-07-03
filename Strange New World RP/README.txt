@@ -10,12 +10,14 @@
 //
 // © 2025, TERRA
 
-:: BETA DISCLOSURE
+:: Permission
 
-Any and all products given on this pack version have not been publicly released, and are instead offered for internal testing purposes and non-commercial evaluation.
-The software is still undergoing heavy changes, so it may not run as expected and might suffer from changes prior to its release.
-As a Beta Tester, you agree to evaluate said material and report any and all errors that are present in the software, as well as to give out any feedback that you personally deem best.
-This piece of software CANNOT be redistributed as is, or any modified version of them in any form.
+As long as you give credit back, you are allowed to use these packs for private use.
+- (eg. personal modpacks, YT, tinkering with code to learn about the process).
+
+You are *not* allowed to redistribute these packs or any modified version of them in any form...
+- (including but not limited to public modpacks, unwanted websites, repackaging as your own creation)
+...and for any and all purposes -specially to profit off of it-.
 
 Any further inquires about terms and conditions must be consulted with both the Lead Developer and the TERRA Team privately.
 

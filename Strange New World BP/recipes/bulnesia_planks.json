@@ -1,29 +1,27 @@
 {
-    "format_version": "1.20.10",
-    "minecraft:recipe_shaped": {
-        "description": {
-            "identifier": "terra:bulnesia_planks"
-        },
-        "tags": [
-            "crafting_table"
-        ],
-        "group": "planks",
-        "pattern": [
-            "#"
-        ],
-        "key": {
-            "#": {
-                "item": "terra:bulnesia_log"
-            }
-        },
-        "unlock": [
-            {
-                "item": "terra:bulnesia_log"
-            }
-        ],
-        "result": {
-            "item": "terra:bulnesia_planks",
-            "count": 4
+  "format_version": "1.20.30",
+  "minecraft:recipe_shaped": {
+    "description": {
+    "identifier": "terra:bulnesia_planks"
+    },
+    "tags": [ "crafting_table" ],
+    "group": "planks",
+    "pattern": [
+      "#"
+    ],
+    "key": {
+      "#": {
+        "item": "terra:bulnesia_log"
+      }
+    },
+	"unlock": [
+        {
+          "item": "terra:bulnesia_log"
         }
+    ],
+    "result": {
+      "item": "terra:bulnesia_planks",
+      "count": 4
     }
+  }
 }

@@ -1,31 +1,31 @@
 {
-    "format_version": "1.20.10",
-    "minecraft:recipe_shaped": {
-        "description": {
-            "identifier": "terra:yellowheart_door"
-        },
-        "tags": [
-            "crafting_table"
-        ],
-        "group": "door",
-        "pattern": [
-            "##",
-            "##",
-            "##"
-        ],
-        "key": {
-            "#": {
-                "item": "terra:yellowheart_planks"
-            }
-        },
-        "unlock": [
-            {
-                "item": "terra:yellowheart_planks"
-            }
-        ],
-        "result": {
-            "item": "terra:yellowheart_door",
-            "count": 3
+  "format_version": "1.20.30",
+  "minecraft:recipe_shaped": {
+    "description": {
+    "identifier": "terra:yellowheart_trapdoor"
+    },
+    "tags": [ 
+      "crafting_table" 
+    ],
+    "group": "wooden_door",
+    "pattern": [
+      "##",
+      "##",
+      "##"
+    ],
+    "key": {
+      "#": {
+        "item": "terra:yellowheart_planks"
+      }
+    },
+	"unlock": [
+        {
+          "item": "terra:yellowheart_planks"
         }
+    ],
+    "result": {
+      "item": "terra:yellowheart_door_item",
+      "count": 3
     }
+  }
 }

@@ -1,29 +1,27 @@
 {
-    "format_version": "1.20.10",
-    "minecraft:recipe_shaped": {
-        "description": {
-            "identifier": "terra:yellowheart_slab"
-        },
-        "tags": [
-            "crafting_table"
-        ],
-        "group": "wooden_slab",
-        "pattern": [
-            "###"
-        ],
-        "key": {
-            "#": {
-                "item": "terra:yellowheart_planks"
-            }
-        },
-        "unlock": [
-            {
-                "item": "terra:yellowheart_planks"
-            }
-        ],
-        "result": {
-            "item": "terra:yellowheart_slab",
-            "count": 6
+  "format_version": "1.20.30",
+  "minecraft:recipe_shaped": {
+    "description": {
+    "identifier": "terra:yellowheart_slab"
+    },
+    "tags": [ "crafting_table" ],
+    "group": "wooden_slab",
+    "pattern": [
+      "###"
+    ],
+    "key": {
+      "#": {
+        "item": "terra:yellowheart_planks"
+      }
+    },
+	"unlock": [
+        {
+          "item": "terra:yellowheart_planks"
         }
+    ],
+    "result": {
+      "item": "terra:yellowheart_slab",
+      "count": 6
     }
+  }
 }

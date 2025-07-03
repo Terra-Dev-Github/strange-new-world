@@ -1,5 +1,5 @@
 {
-    "format_version": "1.12",
+    "format_version": "1.20.30",
     "minecraft:recipe_shaped": {
         "description": {
             "identifier": "terra:salt_from_block"
@@ -15,6 +15,11 @@
                 "item": "terra:salt_block"
             }
         },
+        "unlock": [
+            {
+                "item": "terra:salt"
+            }
+        ],
         "result": {
             "item": "terra:salt",
             "count": 9

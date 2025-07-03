@@ -1,5 +1,5 @@
 {
-    "format_version": "1.12",
+    "format_version": "1.20.30",
     "minecraft:recipe_shaped": {
         "description": {
             "identifier": "terra:ruby_from_block"
@@ -15,6 +15,11 @@
                 "item": "terra:ruby_block"
             }
         },
+        "unlock": [
+            {
+                "item": "terra:ruby_block"
+            }
+        ],
         "result": {
             "item": "terra:ruby",
             "count": 9

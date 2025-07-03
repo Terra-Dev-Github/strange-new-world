@@ -7,7 +7,7 @@
             "identifier": "terra:dark_mage_robe",
             "menu_category": {
                 "category": "equipment",
-                "group": "itemGroup.name.helmet"
+                "group": "itemGroup.name.chestplate"
             }
         },
         "components": {

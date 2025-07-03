@@ -1,0 +1,36 @@
+{
+  "format_version": "1.20.30",
+  "minecraft:recipe_shapeless": {
+    "description": {
+      "identifier": "terra:salt_bottle"
+    },
+
+    "tags": [ "crafting_table" ],
+    "ingredients": [
+      {
+        "item": "terra:salt_block"
+      },
+      {
+        "item": "minecraft:glass_bottle"
+      },
+      {
+        "item": "minecraft:glass_bottle"
+      },
+      {
+        "item": "minecraft:glass_bottle"
+      },
+      {
+        "item": "minecraft:glass_bottle"
+      }
+    ],
+	"unlock": [
+      {
+        "item": "terra:salt_block"
+      }
+    ],
+    "result": {
+      "item": "terra:salt_bottle",
+      "count": 4
+    }
+  }
+}

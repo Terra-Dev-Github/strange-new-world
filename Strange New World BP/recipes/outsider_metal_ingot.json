@@ -5,7 +5,7 @@
             "identifier": "terra:outsider_metal_ingot"
         },
         "tags": [
-            "crafting_table"
+            "crafting_table", "autonetic_station"
         ],
         "pattern": [
             "AA",

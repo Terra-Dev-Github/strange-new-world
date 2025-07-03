@@ -1,29 +1,27 @@
 {
-    "format_version": "1.20.10",
-    "minecraft:recipe_shaped": {
-        "description": {
-            "identifier": "terra:blue_mahoe_planks_from_stripped_wood"
-        },
-        "tags": [
-            "crafting_table"
-        ],
-        "group": "planks",
-        "pattern": [
-            "#"
-        ],
-        "key": {
-            "#": {
-                "item": "terra:blue_mahoe_wood_stripped"
-            }
-        },
-        "unlock": [
-            {
-                "item": "terra:blue_mahoe_wood_stripped"
-            }
-        ],
-        "result": {
-            "item": "terra:blue_mahoe_planks",
-            "count": 4
+  "format_version": "1.20.30",
+  "minecraft:recipe_shaped": {
+    "description": {
+    "identifier": "terra:blue_mahoe_planks_from_stripped_wood"
+    },
+    "tags": [ "crafting_table" ],
+    "group": "planks",
+    "pattern": [
+      "#"
+    ],
+    "key": {
+      "#": {
+        "item": "terra:stripped_blue_mahoe_wood"
+      }
+    },
+	"unlock": [
+        {
+          "item": "terra:stripped_blue_mahoe_wood"
         }
+    ],
+    "result": {
+      "item": "terra:blue_mahoe_planks",
+      "count": 4
     }
+  }
 }

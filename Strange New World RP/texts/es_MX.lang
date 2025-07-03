@@ -3,7 +3,7 @@
 pack.name=TERRA :: Mundo extraño - Recursos
 pack.description=Un mundo de peligro, fantasía y alta tecnología. | © 2025, TERRA
 
-terra.version.beta=TERRA - Mundo extraño 1.0.0 [ESTABLE]
+terra.version.beta=TERRA - Mundo extraño 1.0.1 [ESTABLE]
 
 ## MX > ES
 ## Tronco/Madera descortezada/o > Tronco/Madera sin corteza
@@ -69,7 +69,7 @@ item.record_long_gone.desc=Louis Artell - long gone
 item.record_wtb.desc=Louis Artell - War-Torn Born
 
 terra.spell.compatibility=Hechizos compatibles:
-terra.spell.empty= Sin hechizos asignados
+terra.spell.empty= Sin hechizos
 terra.blizzard.name= Ventisca
 terra.cloudscape.name= Cúmulos
 terra.coagulate.name= Hematoma
@@ -92,16 +92,16 @@ gun.reloading.langcode=:: Recargando... ::
 
 ## Íconos de hechizos
 
-## ranura de hechizo vacío =  | seleccionado (SIN USAR) = 
-## 1. ignis =  | seleccionado = 
-## 2. ventisca (blizzard) =  | seleccionado = 
-## 3. cúmulos (cloudscape) =  | seleccionado = 
-## 4. mutación tetraodonta (puffborne) =  | seleccionado = 
-## 5. ira lunar (lunar wrath) =  | seleccionado = 
-## 6. ramalazo (windwake) =  | seleccionado = 
-## 7. himno mortal (deathsong) =  | seleccionado = 
-## 8. hematoma (coagulate) =  | seleccionado = 
-## 9. umbra =  | seleccionado = 
+## ranura de hechizo vacío =  | ranura sin usar vacía = 
+## 1. ignis = 
+## 2. ventisca (blizzard) = 
+## 3. cúmulos (cloudscape) = 
+## 4. mutación tetraodonta (puffborne) = 
+## 5. ira lunar (lunar wrath) = 
+## 6. ramalazo (windwake) = 
+## 7. himno mortal (deathsong) = 
+## 8. hematoma (coagulate) = 
+## 9. umbra = 
 
 ## Items
 item.terra:anchor=Ancla
@@ -209,6 +209,7 @@ tile.terra:grape_vine.name=Enredadera de uvas
 tile.terra:hazard_block.name=Bloque de peligro
 tile.terra:hazard_pillar.name=Pilar de peligro
 tile.terra:hazardous_outsider_metal.name=Metal forastero con marca de peligro
+tile.terra:laboratory_door.name=Puerta de laboratorio
 tile.terra:laboratory_trapdoor.name=Escotilla de laboratorio
 tile.terra:lemon_crop.name=Cultivo de limón
 tile.terra:malachite_block.name=Bloque de malaquita
@@ -292,47 +293,47 @@ tile.terra:yellowheart_wood_stripped.name=Madera descortezada de palo amarillo
 
 ## Entidades
 entity.terra:beeper.name=Bíper
-item.spawn_egg.entity.terra:beeper.name=Generador de bíper
+item.spawn_egg.entity.terra:beeper.name=Huevo generador de bíper
 entity.terra:chesthound.name=Mímico
-item.spawn_egg.entity.terra:chesthound.name=Generador de mímico
+item.spawn_egg.entity.terra:chesthound.name=Huevo generador de mímico
 entity.terra:chesthound_deepslate.name=Mímico de pizarra abismal
-item.spawn_egg.entity.terra:chesthound_deepslate.name=Generador de mímico de pizarra abismal
+item.spawn_egg.entity.terra:chesthound_deepslate.name=Huevo generador de mímico de pizarra abismal
 entity.terra:chesthound_outsider.name=Mímico de metal forastero
-item.spawn_egg.entity.terra:chesthound_outsider.name=Generador de mímico de metal forastero
+item.spawn_egg.entity.terra:chesthound_outsider.name=Huevo generador de mímico de metal forastero
 entity.terra:cobblestone_golem.name=Gólem de adoquín
-item.spawn_egg.entity.terra:cobblestone_golem.name=Generador de gólem de adoquín
+item.spawn_egg.entity.terra:cobblestone_golem.name=Huevo generador de gólem de adoquín
 entity.terra:elf.name=Elfo
-item.spawn_egg.entity.terra:elf.name=Generador de elfo
+item.spawn_egg.entity.terra:elf.name=Huevo generador de elfo
 entity.terra:eyecletch.name=Corneópodo
-item.spawn_egg.entity.terra:eyecletch.name=Generador de corneópodo
+item.spawn_egg.entity.terra:eyecletch.name=Huevo generador de corneópodo
 entity.terra:honey_slime.name=Slime de miel
-item.spawn_egg.entity.terra:honey_slime.name=Generador de slime de miel
+item.spawn_egg.entity.terra:honey_slime.name=Huevo generador de slime de miel
 entity.terra:outsider.name=Invasor
-item.spawn_egg.entity.terra:outsider.name=Generador de invasor
+item.spawn_egg.entity.terra:outsider.name=Huevo generador de invasor
 entity.terra:possum.name=Zarigüeya
-item.spawn_egg.entity.terra:possum.name=Generador de zarigüeya
+item.spawn_egg.entity.terra:possum.name=Huevo generador de zarigüeya
 entity.terra:rarthrabby.name=Rarthrabby
-item.spawn_egg.entity.terra:rarthrabby.name=Generador de rarthrabby
+item.spawn_egg.entity.terra:rarthrabby.name=Huevo generador de rarthrabby
 entity.terra:sage.name=Sabio
-item.spawn_egg.entity.terra:sage.name=Generador de sabio
+item.spawn_egg.entity.terra:sage.name=Huevo generador de sabio
 entity.terra:sentry.name=Centinela
-item.spawn_egg.entity.terra:sentry.name=Generador de centinela
+item.spawn_egg.entity.terra:sentry.name=Huevo generador de centinela
 entity.terra:soul_blaze.name=Blaze de almas
-item.spawn_egg.entity.terra:soul_blaze.name=Generador de blaze de almas
+item.spawn_egg.entity.terra:soul_blaze.name=Huevo generador de blaze de almas
 entity.terra:spiked_slime.name=Slime puntiagudo
-item.spawn_egg.entity.terra:spiked_slime.name=Generador de slime puntiagudo
+item.spawn_egg.entity.terra:spiked_slime.name=Huevo generador de slime puntiagudo
 entity.terra:stalker.name=Gracílico
-item.spawn_egg.entity.terra:stalker.name=Generador de gracílico
+item.spawn_egg.entity.terra:stalker.name=Huevo generador de gracílico
 entity.terra:starfloat.name=Estelar
-item.spawn_egg.entity.terra:starfloat.name=Generador de estelar
+item.spawn_egg.entity.terra:starfloat.name=Huevo generador de estelar
 entity.terra:synapsid.name=Sinápsido
-item.spawn_egg.entity.terra:synapsid.name=Generador de sinápsido
+item.spawn_egg.entity.terra:synapsid.name=Huevo generador de sinápsido
 entity.terra:tank_outsider.name=Invasor tanque
-item.spawn_egg.entity.terra:tank_outsider.name=Generador de invasor tanque
+item.spawn_egg.entity.terra:tank_outsider.name=Huevo generador de invasor tanque
 entity.terra:warlock.name=Hechicero
-item.spawn_egg.entity.terra:warlock.name=Generador de hechicero
+item.spawn_egg.entity.terra:warlock.name=Huevo generador de hechicero
 entity.terra:wildderglide.name=Wildderglide
-item.spawn_egg.entity.terra:wildderglide.name=Generador de wildderglide
+item.spawn_egg.entity.terra:wildderglide.name=Huevo generador de wildderglide
 
 entity.terra:blizzard_projectile.name=Proyectil de ventisca
 entity.terra:coagulate_projectile.name=Proyectil de hematoma

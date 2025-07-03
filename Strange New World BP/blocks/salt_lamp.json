@@ -55,7 +55,7 @@
             },
             "minecraft:placement_filter": {
                 "allowed_faces": [
-                    "up"
+                    "down"
                 ]
             },
             "minecraft:destructible_by_mining": {

@@ -3,20 +3,20 @@
 pack.name=TERRA :: Strange New World - Resources
 pack.description=A world of dangers, fantasy and advanced technology. | © 2025, TERRA
 
-terra.version.beta=TERRA - Strange New World v1.0.0 [STABLE]
+terra.version.beta=TERRA - Strange New World v1.0.1 [STABLE]
 
 ## US > GB
 ## Chiseled > Chiselled
 
 ## Unused (otherwise bridge keeps throwing errors ffs)
-item.spawn_egg.entity.terra:blizzard_projectile.name=Spawn Blizzard Projectile
-item.spawn_egg.entity.terra:coagulate_projectile.name=Spawn Coagulate Projectile
-item.spawn_egg.entity.terra:gun_pellet_outsider.name=Spawn Gun Pellet Outsider
-item.spawn_egg.entity.terra:gun_pellet.name=Spawn Gun Pellet
-item.spawn_egg.entity.terra:homing_ignis_projectile.name=Spawn Homing Ignis Projectile
-item.spawn_egg.entity.terra:ignis_projectile.name=Spawn Ignis Projectile
-item.spawn_egg.entity.terra:umbra_projectile.name=Spawn Umbra Projectile
-item.spawn_egg.entity.terra:thrown_tomato.name=Spawn Thrown Tomato
+item.spawn_egg.entity.terra:blizzard_projectile.name=Blizzard Projectile
+item.spawn_egg.entity.terra:coagulate_projectile.name=Coagulate Projectile
+item.spawn_egg.entity.terra:gun_pellet_outsider.name=Gun Pellet Outsider
+item.spawn_egg.entity.terra:gun_pellet.name=Gun Pellet
+item.spawn_egg.entity.terra:homing_ignis_projectile.name=Homing Ignis Projectile
+item.spawn_egg.entity.terra:ignis_projectile.name=Ignis Projectile
+item.spawn_egg.entity.terra:umbra_projectile.name=Umbra Projectile
+item.spawn_egg.entity.terra:thrown_tomato.name=Thrown Tomato
 item.terra:blaster_unloaded=Blaster Unloaded
 item.terra:blue_mahoe_door=Blue Mahoe Door
 item.terra:blue_mahoe_sapling_item=Blue Mahoe Sapling Item
@@ -66,7 +66,7 @@ item.record_long_gone.desc=Louis Artell - long gone
 item.record_wtb.desc=Louis Artell - War-Torn Born
 
 terra.spell.compatibility=Compatible Spells:
-terra.spell.empty= No Spells Applied
+terra.spell.empty= No Spells
 terra.blizzard.name= Blizzard
 terra.cloudscape.name= Cloudscape
 terra.coagulate.name= Coagulate
@@ -89,16 +89,16 @@ gun.reloading.langcode=:: Recharging... ::
 
 ## Spell Icons
 
-## empty spell slot =  | selected (UNUSED) = 
-## 1. ignis =  | selected = 
-## 2. blizzard =  | selected = 
-## 3. cloudscape =  | selected = 
-## 4. puffborne =  | selected = 
-## 5. lunar wrath =  | selected = 
-## 6. windwake =  | selected = 
-## 7. deathsong =  | selected = 
-## 8. coagulate =  | selected = 
-## 9. umbra =  | selected = 
+## empty spell slot =  | unused slot icon = 
+## 1. ignis = 
+## 2. blizzard = 
+## 3. cloudscape = 
+## 4. puffborne = 
+## 5. lunar wrath = 
+## 6. windwake = 
+## 7. deathsong = 
+## 8. coagulate = 
+## 9. umbra = 
 
 ## Items
 item.terra:anchor=Anchor
@@ -206,6 +206,7 @@ tile.terra:grape_vine.name=Grape Vine
 tile.terra:hazard_block.name=Hazard Block
 tile.terra:hazard_pillar.name=Hazard Pillar
 tile.terra:hazardous_outsider_metal.name=Hazardous Outsider Metal
+tile.terra:laboratory_door.name=Laboratory Door
 tile.terra:laboratory_trapdoor.name=Laboratory Trapdoor
 tile.terra:lemon_crop.name=Lemon Crop
 tile.terra:malachite_block.name=Block of Malachite
@@ -289,47 +290,47 @@ tile.terra:yellowheart_wood_stripped.name=Yellowheart Wood Stripped
 
 ## Entities
 entity.terra:beeper.name=Beeper
-item.spawn_egg.entity.terra:beeper.name=Spawn Beeper
+item.spawn_egg.entity.terra:beeper.name=Beeper Spawn Egg
 entity.terra:chesthound.name=Chesthound
-item.spawn_egg.entity.terra:chesthound.name=Spawn Chesthound
+item.spawn_egg.entity.terra:chesthound.name=Chesthound Spawn Egg
 entity.terra:chesthound_deepslate.name=Deepslate Chesthound
-item.spawn_egg.entity.terra:chesthound_deepslate.name=Spawn Deepslate Chesthound
+item.spawn_egg.entity.terra:chesthound_deepslate.name=Deepslate Chesthound Spawn Egg
 entity.terra:chesthound_outsider.name=Outsider Chesthound
-item.spawn_egg.entity.terra:chesthound_outsider.name=Spawn Outsider Chesthound
+item.spawn_egg.entity.terra:chesthound_outsider.name=Outsider Chesthound Spawn Egg
 entity.terra:cobblestone_golem.name=Cobblestone Golem
-item.spawn_egg.entity.terra:cobblestone_golem.name=Spawn Cobblestone Golem
+item.spawn_egg.entity.terra:cobblestone_golem.name=Cobblestone Golem Spawn Egg
 entity.terra:elf.name=Elf
-item.spawn_egg.entity.terra:elf.name=Spawn Elf
+item.spawn_egg.entity.terra:elf.name=Elf Spawn Egg
 entity.terra:eyecletch.name=Eyecletch
-item.spawn_egg.entity.terra:eyecletch.name=Spawn Eyecletch
+item.spawn_egg.entity.terra:eyecletch.name=Eyecletch Spawn Egg
 entity.terra:honey_slime.name=Honey Slime
-item.spawn_egg.entity.terra:honey_slime.name=Spawn Honey Slime
+item.spawn_egg.entity.terra:honey_slime.name=Honey Slime Spawn Egg
 entity.terra:outsider.name=Outsider
-item.spawn_egg.entity.terra:outsider.name=Spawn Outsider
+item.spawn_egg.entity.terra:outsider.name=Outsider Spawn Egg
 entity.terra:possum.name=Possum
-item.spawn_egg.entity.terra:possum.name=Spawn Possum
+item.spawn_egg.entity.terra:possum.name=Possum Spawn Egg
 entity.terra:rarthrabby.name=Rarthrabby
-item.spawn_egg.entity.terra:rarthrabby.name=Spawn Rarthrabby
+item.spawn_egg.entity.terra:rarthrabby.name=Rarthrabby Spawn Egg
 entity.terra:sage.name=Sage
-item.spawn_egg.entity.terra:sage.name=Spawn Sage
+item.spawn_egg.entity.terra:sage.name=Sage Spawn Egg
 entity.terra:sentry.name=Sentry
-item.spawn_egg.entity.terra:sentry.name=Spawn Sentry
+item.spawn_egg.entity.terra:sentry.name=Sentry Spawn Egg
 entity.terra:soul_blaze.name=Soul Blaze
-item.spawn_egg.entity.terra:soul_blaze.name=Spawn Soul Blaze
+item.spawn_egg.entity.terra:soul_blaze.name=Soul Blaze Spawn Egg
 entity.terra:spiked_slime.name=Spiked Slime
-item.spawn_egg.entity.terra:spiked_slime.name=Spawn Spiked Slime
+item.spawn_egg.entity.terra:spiked_slime.name=Spiked Slime Spawn Egg
 entity.terra:stalker.name=Stalker
-item.spawn_egg.entity.terra:stalker.name=Spawn Stalker
+item.spawn_egg.entity.terra:stalker.name=Stalker Spawn Egg
 entity.terra:starfloat.name=Starfloat
-item.spawn_egg.entity.terra:starfloat.name=Spawn Starfloat
+item.spawn_egg.entity.terra:starfloat.name=Starfloat Spawn Egg
 entity.terra:synapsid.name=Synapsid
-item.spawn_egg.entity.terra:synapsid.name=Spawn Synapsid
+item.spawn_egg.entity.terra:synapsid.name=Synapsid Spawn Egg
 entity.terra:tank_outsider.name=Tank Outsider
-item.spawn_egg.entity.terra:tank_outsider.name=Spawn Tank Outsider
+item.spawn_egg.entity.terra:tank_outsider.name=Tank Outsider Spawn Egg
 entity.terra:warlock.name=Warlock
-item.spawn_egg.entity.terra:warlock.name=Spawn Warlock
+item.spawn_egg.entity.terra:warlock.name=Warlock Spawn Egg
 entity.terra:wildderglide.name=Wildderglide
-item.spawn_egg.entity.terra:wildderglide.name=Spawn Wildderglide
+item.spawn_egg.entity.terra:wildderglide.name=Wildderglide Spawn Egg
 
 entity.terra:blizzard_projectile.name=Blizzard Projectile
 entity.terra:coagulate_projectile.name=Coagulate Projectile

@@ -1,0 +1,28 @@
+{
+  "format_version": "1.20.30",
+  "minecraft:recipe_shaped": {
+    "description": {
+    "identifier": "terra:stripped_poplar_wood"
+    },
+    "tags": [ "deprecated" ],
+    "group": "wood",
+    "pattern": [
+      "##",
+      "##"
+    ],
+    "key": {
+      "#": {
+        "item": "terra:stripped_poplar_log"
+      }
+    },
+	"unlock": [
+      {
+        "item": "terra:stripped_poplar_log"
+      }
+    ],
+    "result": {
+      "item": "terra:stripped_poplar_wood",
+      "count": 3
+    }
+  }
+}

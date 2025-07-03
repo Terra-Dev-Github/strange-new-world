@@ -1,5 +1,5 @@
 {
-    "format_version": "1.16.100",
+    "format_version": "1.20.30",
     "minecraft:recipe_shaped": {
         "description": {
             "identifier": "terra:salt_from_bottle"
@@ -15,14 +15,19 @@
                 "item": "terra:salt_bottle"
             }
         },
+        "unlock": [
+            {
+                "item": "terra:salt_bottle"
+            }
+        ],
         "result": [
             {
-                "item": "terra:salt",
+                "item": "terra:salt_block",
                 "count": 1
             },
             {
                 "item": "minecraft:glass_bottle",
-                "count": 1
+                "count": 4
             }
         ]
     }

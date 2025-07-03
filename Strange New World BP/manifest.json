@@ -1,70 +1,70 @@
 {
-    "format_version": 2,
-    "metadata": {
-        "authors": [
-            "TERRA Team :: README.txt"
-        ],
-        "license": "SEE LICENSE IN LICENSE.txt",
-        "url": "https://discord.gg/2pVaeESEDF",
-        "generated_with": {
-            "bridge": [
-                "2.7.47"
-            ],
-            "dash": [
-                "0.11.7"
-            ]
-        }
-    },
-    "header": {
-        "name": "pack.name",
-        "description": "pack.description",
-        "min_engine_version": [
-            1,
-            21,
-            90
-        ],
-        "uuid": "d70ebad0-7e67-4cff-9a36-5ff835c53dcd",
-        "version": [
-            1,
-            0,
-            0
-        ]
-    },
-    "modules": [
-        {
-            "type": "data",
-            "uuid": "3958c19c-3a57-4ac5-9505-7e9f78ef9fc6",
-            "version": [
-                1,
-                0,
-                0
-            ]
-        },
-        {
-            "type": "script",
-            "uuid": "cb4976f5-d7b7-4eaa-9ba3-c603abfa000f",
-            "version": [
-                1,
-                0,
-                0
-            ],
-            "description": "ScriptAPI",
-            "language": "javascript",
-            "entry": "main.js"
-        }
-    ],
-    "dependencies": [
-        {
-            "module_name": "@minecraft/server",
-            "version": "1.18.0"
-        },
-        {
-            "uuid": "a597c6be-4744-4abd-a754-bf20a9fa70f1",
-            "version": [
-                1,
-                0,
-                0
-            ]
-        }
-    ]
+	"format_version": 2,
+	"metadata": {
+		"authors": [
+			"TERRA Team :: README.txt"
+		],
+		"license": "SEE LICENSE IN LICENSE.txt",
+		"url": "https://discord.gg/2pVaeESEDF",
+		"generated_with": {
+			"bridge": [
+				"2.7.48"
+			],
+			"dash": [
+				"0.11.7"
+			]
+		}
+	},
+	"header": {
+		"name": "pack.name",
+		"description": "pack.description",
+		"min_engine_version": [
+			1,
+			21,
+			90
+		],
+		"uuid": "d70ebad0-7e67-4cff-9a36-5ff835c53dcd",
+		"version": [
+			1,
+			0,
+			0
+		]
+	},
+	"modules": [
+		{
+			"type": "data",
+			"uuid": "3958c19c-3a57-4ac5-9505-7e9f78ef9fc6",
+			"version": [
+				1,
+				0,
+				0
+			]
+		},
+		{
+			"type": "script",
+			"uuid": "cb4976f5-d7b7-4eaa-9ba3-c603abfa000f",
+			"version": [
+				1,
+				0,
+				0
+			],
+			"description": "ScriptAPI",
+			"language": "javascript",
+			"entry": "main.js"
+		}
+	],
+	"dependencies": [
+		{
+			"module_name": "@minecraft/server",
+			"version": "1.18.0"
+		},
+		{
+			"uuid": "a597c6be-4744-4abd-a754-bf20a9fa70f1",
+			"version": [
+				1,
+				0,
+				0
+			]
+		}
+	]
 }

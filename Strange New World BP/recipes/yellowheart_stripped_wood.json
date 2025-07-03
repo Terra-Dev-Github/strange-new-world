@@ -1,0 +1,28 @@
+{
+  "format_version": "1.20.30",
+  "minecraft:recipe_shaped": {
+    "description": {
+    "identifier": "terra:stripped_yellowheart_wood"
+    },
+    "tags": [ "deprecated" ],
+    "group": "wood",
+    "pattern": [
+      "##",
+      "##"
+    ],
+    "key": {
+      "#": {
+        "item": "terra:stripped_yellowheart_log"
+      }
+    },
+	"unlock": [
+      {
+        "item": "terra:stripped_yellowheart_log"
+      }
+    ],
+    "result": {
+      "item": "terra:stripped_yellowheart_wood",
+      "count": 3
+    }
+  }
+}

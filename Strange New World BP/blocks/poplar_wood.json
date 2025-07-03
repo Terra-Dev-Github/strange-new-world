@@ -69,6 +69,8 @@
         ],
         "components": {
             "tag:wood": {},
+            "tag:minecraft:logs": {},
+            "tag:minecraft:logs_that_burn": {},
             "tag:minecraft:is_axe_item_destructible": {},
             "minecraft:geometry": "minecraft:geometry.full_block",
             "minecraft:material_instances": {

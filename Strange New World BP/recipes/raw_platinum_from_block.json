@@ -1,5 +1,5 @@
 {
-    "format_version": "1.16.100",
+    "format_version": "1.20.30",
     "minecraft:recipe_shapeless": {
         "description": {
             "identifier": "terra:raw_platinum_from_block"
@@ -8,6 +8,11 @@
             "crafting_table"
         ],
         "ingredients": [
+            {
+                "item": "terra:raw_platinum_block"
+            }
+        ],
+        "unlock": [
             {
                 "item": "terra:raw_platinum_block"
             }

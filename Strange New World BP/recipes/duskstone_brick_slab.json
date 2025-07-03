@@ -1,5 +1,5 @@
 {
-    "format_version": "1.12",
+    "format_version": "1.20.30",
     "minecraft:recipe_shaped": {
         "description": {
             "identifier": "terra:duskstone_brick_slab"
@@ -15,6 +15,11 @@
                 "item": "terra:duskstone_bricks"
             }
         },
+        "unlock": [
+            {
+                "item": "terra:duskstone_bricks"
+            }
+        ],
         "result": {
             "item": "terra:duskstone_brick_slab",
             "count": 6

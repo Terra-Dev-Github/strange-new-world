@@ -1,0 +1,37 @@
+	{
+  "materials": {
+    "version": "1.0.0",
+    "outline_base:entity_alphatest": {
+      "+states": [ "EnableStencilTest", "StencilWrite" ],
+      "frontFace": {
+        "stencilFunc": "Always",
+        "stencilFailOp": "Replace",
+        "stencilDepthFailOp": "Replace",
+        "stencilPassOp": "Replace"
+      },
+      "backFace": {
+        "stencilFunc": "Always",
+        "stencilFailOp": "Replace",
+        "stencilDepthFailOp": "Replace",
+        "stencilPassOp": "Replace"
+      },
+      "stencilRef": 2
+    },
+    "outline:entity_static": {
+      "+states": [ "InvertCulling", "EnableStencilTest", "DisableDepthWrite", "Blending" ],
+      "+defines": [ "USE_OVERLAY" ],
+      "-defines": [ "FANCY" ],
+      // "depthFunc": "Always",
+      // ^ Uncomment if you want the outline to be
+      //   rendered behind the block.
+      "frontFace": {
+        "stencilFunc": "NotEqual"
+      },
+      "backFace": {
+        "stencilFunc": "Equal"
+      },
+      "stencilRef": 2,
+      "stencilReadMark": 2
+    }
+  }
+}

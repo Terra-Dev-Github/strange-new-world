@@ -1,5 +1,5 @@
 {
-    "format_version": "1.12",
+    "format_version": "1.20.30",
     "minecraft:recipe_shaped": {
         "description": {
             "identifier": "terra:polished_duskstone_slab"
@@ -15,6 +15,11 @@
                 "item": "terra:polished_duskstone"
             }
         },
+        "unlock": [
+            {
+                "item": "terra:polished_duskstone"
+            }
+        ],
         "result": {
             "item": "terra:polished_duskstone_slab",
             "count": 6

@@ -1,5 +1,5 @@
 {
-    "format_version": "1.12",
+    "format_version": "1.20.30",
     "minecraft:recipe_shaped": {
         "description": {
             "identifier": "terra:brittle_reverion"
@@ -17,6 +17,11 @@
                 "item": "terra:reverion_dust"
             }
         },
+        "unlock": [
+            {
+                "item": "terra:reverion_dust"
+            }
+        ],
         "result": {
             "item": "terra:brittle_reverion",
             "count": 4

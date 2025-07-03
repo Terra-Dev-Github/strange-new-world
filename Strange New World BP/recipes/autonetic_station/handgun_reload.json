@@ -1,0 +1,38 @@
+{
+    "format_version": "1.20.30",
+    "minecraft:recipe_shaped": {
+        "description": {
+            "identifier": "terra:blaster_reload"
+        },
+        "tags": [
+            "autonetic_station"
+        ],
+        "unlock": [
+            {
+                "item": "terra:blaster_unloaded"
+            }
+        ],
+        "pattern": [
+            "V",
+            "G"
+        ],
+        "key": {
+            "G": {
+                "item": "terra:blaster_unloaded"
+            },
+            "V": {
+                "item": "terra:vial_radioactive"
+            }
+        },
+        "result": [
+            {
+                "item": "terra:blaster",
+                "count": 1
+            },
+            {
+                "item": "terra:vial_empty",
+                "count": 1
+            }
+        ]
+    }
+}

@@ -1,29 +1,27 @@
 {
-    "format_version": "1.20.10",
-    "minecraft:recipe_shaped": {
-        "description": {
-            "identifier": "terra:poplar_planks_from_wood"
-        },
-        "tags": [
-            "crafting_table"
-        ],
-        "group": "planks",
-        "pattern": [
-            "#"
-        ],
-        "key": {
-            "#": {
-                "item": "terra:poplar_wood"
-            }
-        },
-        "unlock": [
-            {
-                "item": "terra:poplar_wood"
-            }
-        ],
-        "result": {
-            "item": "terra:poplar_planks",
-            "count": 4
+  "format_version": "1.20.30",
+  "minecraft:recipe_shaped": {
+    "description": {
+    "identifier": "terra:poplar_planks_from_wood"
+    },
+    "tags": [ "crafting_table" ],
+    "group": "planks",
+    "pattern": [
+      "#"
+    ],
+    "key": {
+      "#": {
+        "item": "terra:poplar_wood"
+      }
+    },
+	"unlock": [
+        {
+          "item": "terra:poplar_wood"
         }
+    ],
+    "result": {
+      "item": "terra:poplar_planks",
+      "count": 4
     }
+  }
 }

@@ -7,7 +7,7 @@
             "identifier": "terra:ancient_robe",
             "menu_category": {
                 "category": "equipment",
-                "group": "itemGroup.name.helmet"
+                "group": "itemGroup.name.chestplate"
             }
         },
         "components": {

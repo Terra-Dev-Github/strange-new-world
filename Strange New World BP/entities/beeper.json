@@ -2,8 +2,7 @@
 // Do not distribute without permission.
 // **
 // NOTE :: MISSING FEATURES
-// * DEFUSAL
-// :: SHEARING WILL TURN IT OFF AND INTO A BLOCK OR PET
+// * CURRENT VERSION IS NOT FINAL MOB BEHAVIOR
 // **
 {
     "format_version": "1.20.10",
@@ -20,7 +19,9 @@
                 "minecraft:explode": {
                     "fuse_length": 1,
                     "fuse_lit": true,
-                    "power": 5,
+                    "allow_damage_underwater": true,
+                    "breaks_blocks": false,
+                    "power": 1,
                     "causes_fire": false,
                     "destroy_affected_by_griefing": false
                 }
@@ -31,9 +32,11 @@
                 "minecraft:explode": {
                     "fuse_length": 1,
                     "fuse_lit": true,
-                    "power": 5,
+                    "allow_damage_underwater": true,
+                    "breaks_blocks": false,
+                    "power": 1,
                     "causes_fire": false,
-                    "destroy_affected_by_griefing": true
+                    "destroy_affected_by_griefing": false
                 },
                 "minecraft:on_target_escape": {}
             }
@@ -57,8 +60,8 @@
             },
             "minecraft:nameable": {},
             "minecraft:collision_box": {
-                "width": 0.7,
-                "height": 0.8
+                "width": 1,
+                "height": 1
             },
             "minecraft:movement": {
                 "value": 0.4
@@ -213,6 +216,7 @@
                 "persist_time": 0.5,
                 "entity_types": [
                     // if player has any outsider gear, they won't be attacked
+                    // * THIS ONE IS BOUND TO CHANGE
                     {
                         "filters": {
                             "all_of": [
