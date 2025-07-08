@@ -123,24 +123,24 @@
                 "origin": [
                     -8,
                     0,
-                    5
+                    -1
                 ],
                 "size": [
                     16,
                     16,
-                    3
+                    2
                 ]
             },
             "minecraft:selection_box": {
                 "origin": [
                     -8,
                     0,
-                    5
+                    -2
                 ],
                 "size": [
                     16,
                     16,
-                    3
+                    4
                 ]
             },
             "minecraft:tick": {

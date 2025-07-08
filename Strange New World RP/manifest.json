@@ -16,8 +16,8 @@
 		}
 	},
 	"header": {
-		"name": "pack.name",
-		"description": "pack.description",
+		"name": "TERRA :: Strange New World - RES",
+		"description": "A world of dangers, fantasy and advanced technology. | © 2025, TERRA",
 		"min_engine_version": [
 			1,
 			21,
@@ -27,7 +27,7 @@
 		"version": [
 			1,
 			0,
-			0
+			2
 		]
 	},
 	"modules": [
