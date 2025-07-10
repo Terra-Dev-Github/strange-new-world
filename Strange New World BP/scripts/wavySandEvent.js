@@ -11,7 +11,12 @@ world.afterEvents.itemUseOn.subscribe(eventData2 => {
     const equipment = player.getComponent(`equippable`);
 
     const hoeArray = [
-        'minecraft:wooden_hoe', 'minecraft:stone_hoe', 'minecraft:golden_hoe', 'minecraft:iron_hoe', 'minecraft:diamond_hoe', 'minecraft:netherite_hoe'
+        'minecraft:wooden_hoe',
+        'minecraft:stone_hoe',
+        'minecraft:golden_hoe',
+        'minecraft:iron_hoe',
+        'minecraft:diamond_hoe',
+        'minecraft:netherite_hoe'
     ]
 
     if (block?.typeId === 'minecraft:sand') {

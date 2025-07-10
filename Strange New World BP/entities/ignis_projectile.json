@@ -89,7 +89,7 @@
                 "sequence": [
                     {
                         "queue_command": {
-                            "target": "target",
+                            "target": "other",
                             "command": [
                                 "particle terra:ignis_blast_particle ~~~",
                                 "fill ~-1 ~ ~-1 ~1 ~2 ~1 fire 0 replace air 0",

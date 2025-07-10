@@ -5,7 +5,8 @@
             "identifier": "terra:outsider_metal_block"
         },
         "tags": [
-            "autonetic_table"
+            "crafting_table",
+            "autonetic_station"
         ],
         "pattern": [
             "###",

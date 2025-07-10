@@ -261,7 +261,7 @@
                 ]
             },
             "minecraft:movement": {
-                "value": 0.4
+                "value": 0.3
             },
             "minecraft:breathable": {
                 "total_supply": 20,

@@ -4,7 +4,7 @@
 // import necessary modules from Minecraft server API
 import { system, world } from "@minecraft/server";
 
-// run code block every second (20 ticks)
+// run code block every four seconds (1s = 20 ticks)
 system.runInterval(() => {
     let players = world.getAllPlayers();
     for (let player of players) {
@@ -17,8 +17,8 @@ system.runInterval(() => {
 
         // effect manager if conditions are met
         if (helmet?.typeId === 'terra:nethersteel_helmet' && chestplate?.typeId === 'terra:nethersteel_chestplate' && leggings?.typeId === 'terra:nethersteel_leggings' && boots?.typeId === 'terra:nethersteel_boots') {
-            player.addEffect('strength', 40, { amplifier: 2, showParticles: true });
-            player.addEffect('slowness', 40, { amplifier: 2, showParticles: true });
+            player.addEffect('strength', 100, { amplifier: 2, showParticles: true });
+            player.addEffect('slowness', 100, { amplifier: 2, showParticles: true });
         }
     }
-}, 20);
+}, 80);

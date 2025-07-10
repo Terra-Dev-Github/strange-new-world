@@ -93,7 +93,7 @@
                 "sequence": [
                     {
                         "queue_command": {
-                            "target": "target",
+                            "target": "other",
                             "command": [
                                 "particle terra:umbra_blast_particle ~~~",
                                 "effect @s instant_damage 1 2 true",

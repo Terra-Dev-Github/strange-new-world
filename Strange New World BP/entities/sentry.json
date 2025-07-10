@@ -132,7 +132,7 @@
                 "minecraft:behavior.ranged_attack": {
                     "priority": 3,
                     "speed_multiplier": 1.75,
-                    "attack_interval": 0.25,
+                    "attack_interval": 0.5,
                     "attack_radius": 24.0
                 }
             },

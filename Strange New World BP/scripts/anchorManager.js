@@ -27,19 +27,9 @@ world.beforeEvents.worldInitialize.subscribe(eventData => {
                 const viewDir = player.getViewDirection();
                 const sprintMultiplier = player.isSprinting ? 4 : 1.5;
                 // apply the knockback
-                player.applyKnockback(viewDir.x, viewDir.z, sprintMultiplier, viewDir.y * 2);
-                /*
-                if (viewDir.y >= 0.5) {
-                    if (player.isSprinting) {
-                        player.applyKnockback(viewDir.x, viewDir.z, 3, 0.75)
-                    } else player.applyKnockback(viewDir.x, viewDir.z, 1.5, 0.5);
-                };
-                if (viewDir.y >= 0.5) {
-                    if (player.isSprinting) {
-                        player.applyKnockback(viewDir.x, viewDir.z, 4.5, 1.25)
-                    } else player.applyKnockback(viewDir.x, viewDir.z, 3, 0.75);
-                }
-                */
+                player.applyKnockback(viewDir.x, viewDir.z, sprintMultiplier, viewDir.y * 2)
+                // start cooldown
+                selectedItem.getComponent('cooldown').startCooldown(player);
             };
 
             // get the durability component and decrease it unless the player is in creative

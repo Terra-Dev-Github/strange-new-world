@@ -6,7 +6,7 @@
         "description": {
             "identifier": "terra:starfloat",
             "materials": {
-                "default": "skeleton",
+                "default": "fireball",
                 "emissive": "entity_emissive_alpha"
             },
             "textures": {

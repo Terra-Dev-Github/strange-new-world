@@ -32,7 +32,7 @@
             "x": 0,
             "y": "query.heightmap(variable.worldx, variable.worldz) + -1",
             "z": 0,
-            "scatter_chance": "1 / 250"
+            "scatter_chance": "1 / 20"
         }
     }
 }

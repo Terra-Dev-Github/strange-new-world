@@ -89,7 +89,7 @@
                 "sequence": [
                     {
                         "queue_command": {
-                            "target": "target",
+                            "target": "other",
                             "command": [
                                 "particle terra:blizzard_blast_particle ~~~",
                                 "effect @s slowness 10 5 true",
