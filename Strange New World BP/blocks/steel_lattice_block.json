@@ -12,6 +12,24 @@
         },
         "components": {
             "tag:metal": {},
+            // can be waterlogged and will hold liquid
+            "minecraft:liquid_detection": {
+                "detection_rules": [
+                    {
+                        "can_contain_liquid": true,
+                        "liquid_type": "water",
+                        "on_liquid_touches": "blocking",
+                        "stops_liquid_flowing_from_direction": [
+                            "up",
+                            "down",
+                            "north",
+                            "south",
+                            "east",
+                            "west"
+                        ]
+                    }
+                ]
+            },
             "tag:minecraft:is_pickaxe_item_destructible": {},
             "minecraft:geometry": {
                 "identifier": "geometry.custom_glass",

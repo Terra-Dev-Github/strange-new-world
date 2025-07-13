@@ -72,7 +72,7 @@ world.beforeEvents.worldInitialize.subscribe(eventData => {
 
                 // play sound effect & spawn particles
                 dimension.playSound('block.sweet_berry_bush.pick', location);
-                dimension.runCommandAsync(`loot spawn ${location.x} ${location.y} ${location.z} loot "blocks/grape_vine"`);
+                dimension.runCommand(`loot spawn ${location.x} ${location.y} ${location.z} loot "blocks/grape_vine"`);
             };
 
             // cap the crop growth if current stage and max stage match
@@ -100,7 +100,7 @@ world.beforeEvents.worldInitialize.subscribe(eventData => {
 
                 // play sound effect & spawn particles
                 dimension.playSound('item.bone_meal.use', location);
-                dimension.runCommandAsync(`particle minecraft:crop_growth_emitter ${location.x} ${location.y} ${location.z}`);
+                dimension.runCommand(`particle minecraft:crop_growth_emitter ${location.x} ${location.y} ${location.z}`);
             }
         },
         // small grape vine manager
@@ -115,10 +115,10 @@ world.beforeEvents.worldInitialize.subscribe(eventData => {
 
             // update block states based on the block below
             if (aboveBlock?.typeId === block.typeId) block.setPermutation(block.permutation.withState('terra:vine_body_stage', aboveBlock ? 1 : 0));
-            else block.setPermutation(block.permutation.withState('terra:vine_body_type', 1));
+            else block.setPermutation(block.permutation.withState('terra:vine_body_stage', 1));
 
             if (belowBlock?.typeId === block.typeId) block.setPermutation(block.permutation.withState('terra:vine_body_stage', belowBlock ? 0 : 1));
-            else block.setPermutation(block.permutation.withState('terra:vine_body_type', 1));
+            else block.setPermutation(block.permutation.withState('terra:vine_body_stage', 1));
         }
     });
 });

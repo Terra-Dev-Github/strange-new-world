@@ -1,0 +1,30 @@
+{
+    "format_version": "1.20.30",
+    "minecraft:recipe_shaped": {
+        "description": {
+            "identifier": "terra:nethersteel_block"
+        },
+        "tags": [
+            "crafting_table"
+        ],
+        "pattern": [
+            "NNN",
+            "NNN",
+            "NNN"
+        ],
+        "key": {
+            "N": {
+                "item": "terra:nethersteel_ingot"
+            }
+        },
+        "unlock": [
+            {
+                "item": "terra:nethersteel_ingot"
+            }
+        ],
+        "result": {
+            "item": "terra:nethersteel_block",
+            "count": 1
+        }
+    }
+}

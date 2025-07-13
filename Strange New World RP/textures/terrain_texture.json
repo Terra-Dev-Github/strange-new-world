@@ -4,6 +4,17 @@
     "padding": 8,
     "num_mip_levels": 1,
     "texture_data": {
+        // block variations
+        "dirt": {
+            "textures": {
+                "variations": [
+                    { "path": "textures/blocks/dirt", "weight": 60 },
+                    { "path": "textures/blocks/variants/dusty_dirt", "weight": 20 },
+                    { "path": "textures/blocks/variants/rocky_dirt", "weight": 20 }
+                ]
+            }
+        },
+        //
         "anorthosite_side": {
             "textures": [
                 "textures/blocks/anorthosite_side"

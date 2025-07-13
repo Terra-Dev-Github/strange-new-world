@@ -48,7 +48,7 @@ world.beforeEvents.worldInitialize.subscribe(eventData => {
                     // does not accept value of 0, so i gotta really slim it down
                     dimension.playSound(`record.long_gone`, location, { volume: 0.0000000000000000001 })
                     // drop the disc
-                    dimension.runCommandAsync(`loot spawn ${location.x} ${location.y} ${location.z} loot "music_siren/long_gone"`);
+                    dimension.runCommand(`loot spawn ${location.x} ${location.y} ${location.z} loot "music_siren/long_gone"`);
                 }
             };
 
@@ -63,14 +63,14 @@ world.beforeEvents.worldInitialize.subscribe(eventData => {
                     // does not accept value of 0, so i gotta really slim it down
                     dimension.playSound(`record.long_gone`, location, { volume: 0.0000000000000000001 })
                     // drop the disc
-                    dimension.runCommandAsync(`loot spawn ${location.x} ${location.y} ${location.z} loot "music_siren/wtb"`);
+                    dimension.runCommand(`loot spawn ${location.x} ${location.y} ${location.z} loot "music_siren/wtb"`);
                 };
                 if (hasDisc === 2) {
                     block.setPermutation(BlockPermutation.resolve('minecraft:jukebox'))
                     // does not accept value of 0, so i gotta really slim it down
                     dimension.playSound(`record.long_gone`, location, { volume: 0.0000000000000000001 })
                     // drop the disc
-                    dimension.runCommandAsync(`loot spawn ${location.x} ${location.y} ${location.z} loot "music_siren/long_gone"`);
+                    dimension.runCommand(`loot spawn ${location.x} ${location.y} ${location.z} loot "music_siren/long_gone"`);
                 }
             };
         },
@@ -84,19 +84,19 @@ world.beforeEvents.worldInitialize.subscribe(eventData => {
                 // does not accept value of 0, so i gotta really slim it down
                 dimension.playSound(`record.long_gone`, location, { volume: 0.0000000000000000001 })
                 // drop the disc
-                dimension.runCommandAsync(`loot spawn ${location.x} ${location.y} ${location.z} loot "music_siren/long_gone"`);
+                dimension.runCommand(`loot spawn ${location.x} ${location.y} ${location.z} loot "music_siren/long_gone"`);
             };
             if (block?.typeId === 'terra:jukebox_placeholder' && hasDisc === 1) {
                 // does not accept value of 0, so i gotta really slim it down
                 dimension.playSound(`record.wtb`, location, { volume: 0.0000000000000000001 })
                 // drop the disc
-                dimension.runCommandAsync(`loot spawn ${location.x} ${location.y} ${location.z} loot "music_siren/wtb"`);
+                dimension.runCommand(`loot spawn ${location.x} ${location.y} ${location.z} loot "music_siren/wtb"`);
             };
             if (block?.typeId === 'terra:jukebox_placeholder' && hasDisc === 2) {
                 // does not accept value of 0, so i gotta really slim it down
                 dimension.playSound(`record.long_gone`, location, { volume: 0.0000000000000000001 })
                 // drop the disc
-                dimension.runCommandAsync(`loot spawn ${location.x} ${location.y} ${location.z} loot "music_siren/long_gone"`);
+                dimension.runCommand(`loot spawn ${location.x} ${location.y} ${location.z} loot "music_siren/long_gone"`);
             };
         },
         // particle manager

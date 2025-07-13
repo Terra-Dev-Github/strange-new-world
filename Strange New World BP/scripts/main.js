@@ -1,6 +1,5 @@
 import 'anchorManager'
 import 'armorEffects'
-import 'autoneticStationPowering'
 import 'blasterManager'
 import 'blockConnectEvents'
 import 'cropProperties'

@@ -21,8 +21,8 @@ world.beforeEvents.worldInitialize.subscribe(eventData => {
             // behavior for anchor usage
             if (selectedItem?.typeId === 'terra:anchor') {
                 player.playSound('anchor.launch');
-                player.runCommandAsync(`particle terra:chestlock_open ${location.x} ${location.y} ${location.z}`);
-                player.runCommandAsync(`particle terra:anchor_use_particle ${location.x} ${location.y} ${location.z}`);
+                player.spawnParticle("terra:chestlock_open", location);
+                player.spawnParticle("terra:anchor_use_particle", location);
                 // define and get view direction and player velocuty
                 const viewDir = player.getViewDirection();
                 const sprintMultiplier = player.isSprinting ? 4 : 1.5;

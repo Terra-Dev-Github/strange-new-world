@@ -11,7 +11,7 @@
             }
         },
         "components": {
-            "minecraft:glint": true,
+            // "minecraft:glint": true,
             "minecraft:icon": {
                 "textures": {
                     "default": "vial_radioactive"

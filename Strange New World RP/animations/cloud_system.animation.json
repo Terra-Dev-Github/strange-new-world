@@ -1,0 +1,14 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.player.cloud_system": {
+			"loop": true,
+			"animation_length": 1,
+			"particle_effects": {
+				"0.0": [
+					{ "effect": "cloud_system_detect" }
+				]
+			}
+		}
+	}
+}

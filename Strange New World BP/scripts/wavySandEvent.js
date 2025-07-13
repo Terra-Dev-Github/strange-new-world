@@ -21,7 +21,7 @@ world.afterEvents.itemUseOn.subscribe(eventData2 => {
 
     if (block?.typeId === 'minecraft:sand') {
         switch (itemStack?.typeId) {
-            case (hoeArray.includes(itemStack.typeId)):
+            case hoeArray.includes(itemStack?.typeId):
                 // get the durability component of the selected item
                 const durability = selectedItem.getComponent('durability');
                 // check if the item has a durability component and if its damage is less than the maximum durability
@@ -43,7 +43,7 @@ world.afterEvents.itemUseOn.subscribe(eventData2 => {
     };
     if (block?.typeId === 'minecraft:red_sand') {
         switch (itemStack?.typeId) {
-            case (hoeArray.includes(itemStack.typeId)):
+            case hoeArray.includes(itemStack?.typeId):
                 // get the durability component of the selected item
                 const durability = selectedItem.getComponent('durability');
                 // check if the item has a durability component and if its damage is less than the maximum durability

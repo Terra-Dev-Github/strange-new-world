@@ -366,19 +366,19 @@
     },
     "terra:steel_grate_block": {
         "textures": "steel_grate_frame",
-        "sound": "metal"
+        "sound": "copper_grate"
     },
     "terra:steel_grate_panel": {
         "textures": "steel_grate_panel",
-        "sound": "metal"
+        "sound": "copper_grate"
     },
     "terra:steel_lattice_block": {
         "textures": "steel_lattice_frame",
-        "sound": "metal"
+        "sound": "copper_grate"
     },
     "terra:steel_lattice_panel": {
         "textures": "steel_lattice_panel",
-        "sound": "metal"
+        "sound": "copper_grate"
     },
     "terra:steel_rod": {
         "textures": "steel_rod",

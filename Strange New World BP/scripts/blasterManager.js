@@ -28,13 +28,13 @@ world.beforeEvents.worldInitialize.subscribe(eventData => {
                         if (item?.typeId === 'terra:vial_radioactive') {
                             // if true, reload the blaster automatically
                             player.playSound('item.blaster.recharge');
-                            player.runCommandAsync("function notif/gun_reloading")
-                            player.runCommandAsync("function notif/gun_reloading")
+                            player.runCommand("function notif/gun_reloading")
+                            player.runCommand("function notif/gun_reloading")
                             equipment.setEquipment(`Mainhand`, new ItemStack('terra:blaster', 1));
                             selectedItem.getComponent('cooldown').startCooldown(player);
                         } else { // else, notify the player if their blaster is unloaded (if they somehow haven't noticed)
                             player.dimension.playSound('item.blaster.unloaded', player.location);
-                            player.runCommandAsync("function notif/gun_unloaded")
+                            player.runCommand("function notif/gun_unloaded")
                         }
                     }
                 }

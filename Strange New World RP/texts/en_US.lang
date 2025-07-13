@@ -3,7 +3,7 @@
 pack.name=TERRA :: Strange New World - Resources
 pack.description=A world of dangers, fantasy and advanced technology. | © 2025, TERRA
 
-terra.version.beta=TERRA - Strange New World v1.0.2 [STABLE]
+terra.version.beta=TERRA - Strange New World v1.0.4 [STABLE]
 
 ## US > GB
 ## Chiseled > Chiselled
@@ -53,6 +53,24 @@ item.terra:yellowheart_door=Yellowheart Door
 item.terra:yellowheart_sapling_item=Yellowheart Sapling Item
 tile.terra:reinforced_nethersteel_block.name=Reinforced Nethersteel Block
 tile.terra:jukebox_placeholder.name=Jukebox Placeholder
+record.lava_chicken.desc=C418 - death
+item.record_blocks.desc=C418 - blocks
+item.record_cat.desc=C418 - cat
+item.record_chirp.desc=C418 - chirp
+item.record_far.desc=C418 - far
+item.record_mall.desc=C418 - mall
+item.record_mellohi.desc=C418 - mellohi
+item.record_stal.desc=C418 - stal
+item.record_strad.desc=C418 - strad
+item.record_wait.desc=C418 - wait
+item.record_ward.desc=C418 - ward
+item.record_pigstep.desc=Lena Raine - Pigstep
+item.record_otherside.desc=Lena Raine - otherside
+item.record_relic.desc=Aaron Cherof - Relic
+item.record_creator.desc=Lena Raine - Creator
+item.record_creator_music_box.desc=Lena Raine - Creator (Music Box)
+item.record_precipice.desc=Aaron Cherof - Precipice
+item.record_tears.desc=Amos Roddy - Tears 
 
 ## Item Descriptions & Localization
 item.terra.arcane_upgrade.name=Arcane Upgrade
@@ -247,14 +265,14 @@ tile.terra:raw_malachite_block.name=Block of Raw Malachite
 tile.terra:raw_platinum_block.name=Block of Raw Platinum
 tile.terra:regolith_slab.name=Regolith Slab
 tile.terra:regolith.name=Regolith
-tile.terra.reinforced_nethersteel_block.name=Reinforced Nethersteel Block
+tile.terra.reinforced_nethersteel_block.name=Block of Reinforced Nethersteel
 tile.terra:reverion_brick_slab.name=Reverion Brick Slab
 tile.terra:reverion_bricks.name=Reverion Bricks
 tile.terra:reverion_slab.name=Reverion Slab
 tile.terra:reverion.name=Reverion
 tile.terra:ruby_block.name=Block of Ruby
 tile.terra:ruby_ore.name=Ruby Ore
-tile.terra:salt_block.name=Salt Block
+tile.terra:salt_block.name=Block of Salt
 tile.terra:salt_dust.name=Salt Dust
 tile.terra:salt_lamp.name=Salt Lamp
 tile.terra:salt_ore.name=Salt Ore
@@ -263,7 +281,7 @@ tile.terra:scorched_soil.name=Scorched Soil
 tile.terra:shale.name=Shale
 tile.terra:soil.name=Soil
 tile.terra:steel_block.name=Block of Steel
-tile.terra:steel_grate_block.name=Steel Grate Block
+tile.terra:steel_grate_block.name=Steel Grate
 tile.terra:steel_grate_panel.name=Steel Grate Panel
 tile.terra:steel_lattice_block.name=Steel Lattice
 tile.terra:steel_lattice_panel.name=Steel Lattice Panel

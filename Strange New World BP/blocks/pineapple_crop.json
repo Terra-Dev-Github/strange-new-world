@@ -1,7 +1,7 @@
 // This file was made, modified and compiled by Heavenly (@heavenly7493) for TERRA.
 // Do not distribute without permission.
 {
-    "format_version": "1.20.80",
+    "format_version": "1.21.80",
     "minecraft:block": {
         "description": {
             "identifier": "terra:pineapple_crop",
@@ -11,49 +11,31 @@
                 "group": "none"
             },
             "states": {
-                "terra:growth_stage": [
-                    0,
-                    1,
-                    2,
-                    3,
-                    4,
-                    5
-                ]
+                "terra:growth_stage": {
+                    "values": {
+                        "min": 0,
+                        "max": 5
+                    }
+                }
             }
         },
         "components": {
-            "minecraft:tick": {
-                "interval_range": [
-                    3,
-                    3
-                ]
-            },
-            // adds block functionality
-            "minecraft:custom_components": [
-                "terra:crop_properties"
-            ],
             "tag:minecraft:crop": {},
             "minecraft:geometry": "minecraft:geometry.cross",
             "minecraft:collision_box": false,
-            "minecraft:selection_box": {
-                "origin": [
-                    -8,
-                    0,
-                    -8
-                ],
-                "size": [
-                    16,
-                    16,
-                    16
+            // "minecraft:breathability": "air",
+            "minecraft:liquid_detection": {
+                "detection_rules": [
+                    {
+                        "liquid_type": "water",
+                        "on_liquid_touches": "broken"
+                    }
                 ]
             },
-            // "minecraft:breathability": "air",
             "minecraft:destructible_by_mining": {
                 "seconds_to_destroy": 1
             },
-            // "minecraft:map_color": "#000000",
             "minecraft:light_dampening": 0,
-            "minecraft:loot": "loot_tables/blocks/pineapple_seeds.json",
             "minecraft:placement_filter": {
                 "conditions": [
                     {
@@ -71,14 +53,31 @@
         },
         "permutations": [
             {
+                "condition": "q.block_state('terra:growth_stage') < 5",
+                "components": {
+                    // adds block functionality
+                    "minecraft:custom_components": [
+                        "terra:crop_properties"
+                    ],
+                    // young crops drop the seeds
+                    "minecraft:loot": "loot_tables/blocks/pineapple_seeds.json"
+                }   
+            },
+            {
                 "condition": "query.block_state('terra:growth_stage') == 0",
                 "components": {
                     "minecraft:material_instances": {
                         "*": {
                             "texture": "pineapple_crop_0",
-                            "render_method": "alpha_test"
+                            "render_method": "alpha_test_single_sided"
                         }
-                    },
+                    }
+                }
+            },
+            // selection box for stages 0 and 1
+            {
+                "condition": "query.block_state('terra:growth_stage') >= 0",
+                "components": {
                     "minecraft:selection_box": {
                         "origin": [
                             -5,
@@ -87,11 +86,10 @@
                         ],
                         "size": [
                             10,
-                            5,
+                            6,
                             10
                         ]
-                    },
-                    "minecraft:loot": "loot_tables/blocks/pineapple_seeds.json"
+                    }
                 }
             },
             {
@@ -100,22 +98,27 @@
                     "minecraft:material_instances": {
                         "*": {
                             "texture": "pineapple_crop_1",
-                            "render_method": "alpha_test"
+                            "render_method": "alpha_test_single_sided"
                         }
-                    },
+                    }
+                }
+            },
+            // selection box for stages 2 and 3
+            {
+                "condition": "query.block_state('terra:growth_stage') >= 2",
+                "components": {
                     "minecraft:selection_box": {
                         "origin": [
-                            -5,
+                            -6,
                             0,
-                            -5
+                            -6
                         ],
                         "size": [
+                            12,
                             10,
-                            5,
-                            10
+                            12
                         ]
-                    },
-                    "minecraft:loot": "loot_tables/blocks/pineapple_seeds.json"
+                    }
                 }
             },
             {
@@ -124,22 +127,9 @@
                     "minecraft:material_instances": {
                         "*": {
                             "texture": "pineapple_crop_2",
-                            "render_method": "alpha_test"
+                            "render_method": "alpha_test_single_sided"
                         }
-                    },
-                    "minecraft:selection_box": {
-                        "origin": [
-                            -5,
-                            0,
-                            -5
-                        ],
-                        "size": [
-                            10,
-                            5,
-                            10
-                        ]
-                    },
-                    "minecraft:loot": "loot_tables/blocks/pineapple_seeds.json"
+                    }
                 }
             },
             {
@@ -148,57 +138,15 @@
                     "minecraft:material_instances": {
                         "*": {
                             "texture": "pineapple_crop_3",
-                            "render_method": "alpha_test"
+                            "render_method": "alpha_test_single_sided"
                         }
-                    },
-                    "minecraft:selection_box": {
-                        "origin": [
-                            -5,
-                            0,
-                            -5
-                        ],
-                        "size": [
-                            10,
-                            5,
-                            10
-                        ]
-                    },
-                    "minecraft:loot": "loot_tables/blocks/pineapple_seeds.json"
+                    }
                 }
             },
+            // selection box for stages 4 and 5
             {
-                "condition": "query.block_state('terra:growth_stage') == 4",
+                "condition": "query.block_state('terra:growth_stage') >= 4",
                 "components": {
-                    "minecraft:material_instances": {
-                        "*": {
-                            "texture": "pineapple_crop_4",
-                            "render_method": "alpha_test"
-                        }
-                    },
-                    "minecraft:selection_box": {
-                        "origin": [
-                            -5,
-                            0,
-                            -5
-                        ],
-                        "size": [
-                            10,
-                            5,
-                            10
-                        ]
-                    },
-                    "minecraft:loot": "loot_tables/blocks/pineapple_seeds.json"
-                }
-            },
-            {
-                "condition": "query.block_state('terra:growth_stage') == 5",
-                "components": {
-                    "minecraft:material_instances": {
-                        "*": {
-                            "texture": "pineapple_crop_5",
-                            "render_method": "alpha_test"
-                        }
-                    },
                     "minecraft:selection_box": {
                         "origin": [
                             -8,
@@ -210,7 +158,30 @@
                             16,
                             16
                         ]
+                    }
+                }
+            },
+            {
+                "condition": "query.block_state('terra:growth_stage') == 4",
+                "components": {
+                    "minecraft:material_instances": {
+                        "*": {
+                            "texture": "pineapple_crop_4",
+                            "render_method": "alpha_test_single_sided"
+                        }
+                    }
+                }
+            },
+            {
+                "condition": "query.block_state('terra:growth_stage') == 5",
+                "components": {
+                    "minecraft:material_instances": {
+                        "*": {
+                            "texture": "pineapple_crop_5",
+                            "render_method": "alpha_test_single_sided"
+                        }
                     },
+                    // final loot is added
                     "minecraft:loot": "loot_tables/blocks/pineapple_crop.json"
                 }
             }

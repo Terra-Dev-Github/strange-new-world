@@ -26,6 +26,10 @@ Any further inquires about terms and conditions must be consulted with both the 
 Art & Design
 - Heavenly/Louis Artell (@heavenly7493)
 
+Creative Direction
+- Heavenly/Louis Artell (@heavenly7493)
+- Marie/Noises (@marielikessoup)
+
 Coding & Compiling
 - Heavenly/Louis Artell (@heavenly7493)
 

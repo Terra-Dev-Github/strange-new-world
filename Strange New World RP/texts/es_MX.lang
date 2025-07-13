@@ -3,10 +3,9 @@
 pack.name=TERRA :: Mundo extraño - Recursos
 pack.description=Un mundo de peligro, fantasía y alta tecnología. | © 2025, TERRA
 
-terra.version.beta=TERRA - Mundo extraño 1.0.2 [ESTABLE]
+terra.version.beta=TERRA - Mundo extraño 1.0.4 [ESTABLE]
 
 ## MX > ES
-## Tronco/Madera descortezada/o > Tronco/Madera sin corteza
 ## Gracílico > Mirón
 ## Retoño > Brote
 ## Slime puntiagudo > Slime con púas
@@ -56,6 +55,24 @@ item.terra:yellowheart_door=Yellowheart Door
 item.terra:yellowheart_sapling_item=Yellowheart Sapling Item
 tile.terra:reinforced_nethersteel_block.name=Reinforced Nethersteel Block
 tile.terra:jukebox_placeholder.name=Jukebox Placeholder
+record.lava_chicken.desc=C418 - death
+item.record_blocks.desc=C418 - blocks
+item.record_cat.desc=C418 - cat
+item.record_chirp.desc=C418 - chirp
+item.record_far.desc=C418 - far
+item.record_mall.desc=C418 - mall
+item.record_mellohi.desc=C418 - mellohi
+item.record_stal.desc=C418 - stal
+item.record_strad.desc=C418 - strad
+item.record_wait.desc=C418 - wait
+item.record_ward.desc=C418 - ward
+item.record_pigstep.desc=Lena Raine - Pigstep
+item.record_otherside.desc=Lena Raine - otherside
+item.record_relic.desc=Aaron Cherof - Relic
+item.record_creator.desc=Lena Raine - Creator
+item.record_creator_music_box.desc=Lena Raine - Creator (caja de música)
+item.record_precipice.desc=Aaron Cherof - Precipice
+item.record_tears.desc=Amos Roddy - Tears 
 
 ## Descripciones de items y localización
 item.terra.arcane_upgrade.name=Mejora arcana
@@ -127,7 +144,7 @@ item.terra:orange=Naranja
 item.terra:orange_seeds=Semillas de naranja
 item.terra:outsider_boots=Botas de metal forastero
 item.terra:outsider_chestplate=Coraza de metal forastero
-item.terra:outsider_core=Núcelo de metal forastero
+item.terra:outsider_core=Núcleo de metal forastero
 item.terra:outsider_greaves=Rodilleras de metal forastero
 item.terra:outsider_helmet=Casco de metal forastero
 item.terra:outsider_key=Llave de cofre de metal forastero
@@ -169,23 +186,23 @@ tile.terra:autonetic_station.name=Estación autonética
 tile.terra:blue_mahoe_door.name=Puerta de majó azul
 tile.terra:blue_mahoe_leaves.name=Hojas de majó azul
 tile.terra:blue_mahoe_log.name=Tronco de majó azul
-tile.terra:blue_mahoe_log_stripped.name=Tronco descortezado de majó azul
+tile.terra:blue_mahoe_log_stripped.name=Tronco de majó azul sin corteza
 tile.terra:blue_mahoe_planks.name=Tablones de majó azul
 tile.terra:blue_mahoe_sapling.name=Retoño de majó azul
 tile.terra:blue_mahoe_slab.name=Losa de majó azul
 tile.terra:blue_mahoe_trapdoor.name=Escotilla de majó azul
 tile.terra:blue_mahoe_wood.name=Madera de majó azul
-tile.terra:blue_mahoe_wood_stripped.name=Madera descortezada de majó azul
+tile.terra:blue_mahoe_wood_stripped.name=Madera de majó azul sin corteza
 tile.terra:bulnesia_door.name=Puerta de bulnesia
 tile.terra:bulnesia_leaves.name=Hojas de bulnesia
 tile.terra:bulnesia_log.name=Tronco de bulnesia
-tile.terra:bulnesia_log_stripped.name=Tronco descortezado de bulnesia
+tile.terra:bulnesia_log_stripped.name=Tronco de bulnesia sin corteza
 tile.terra:bulnesia_planks.name=Tablones de bulnesia
 tile.terra:bulnesia_sapling.name=Retoño de bulnesia
 tile.terra:bulnesia_slab.name=Losa de bulnesia
 tile.terra:bulnesia_trapdoor.name=Escotilla de bulnesia
 tile.terra:bulnesia_wood.name=Madera de bulnesia
-tile.terra:bulnesia_wood_stripped.name=Madera descortezada de bulnesia
+tile.terra:bulnesia_wood_stripped.name=Madera de bulnesia sin corteza
 tile.terra:brittle_outsider_metal.name=Metal forastero frágil
 tile.terra:brittle_reverion_slab.name=Losa de reverion frágil
 tile.terra:brittle_reverion.name=Reverion frágil
@@ -238,13 +255,13 @@ tile.terra:polished_malachite_slab.name=Losa de malaquita pulida
 tile.terra:poplar_door.name=Puerta de álamo de tulipan
 tile.terra:poplar_leaves.name=Hojas de álamo de tulipan
 tile.terra:poplar_log.name=Tronco de álamo de tulipan
-tile.terra:poplar_log_stripped.name=Tronco descortezado de álamo de tulipan
+tile.terra:poplar_log_stripped.name=Tronco de álamo de tulipan sin corteza
 tile.terra:poplar_planks.name=Tablones de álamo de tulipan
 tile.terra:poplar_sapling.name=Retoño de álamo de tulipan
 tile.terra:poplar_slab.name=Losa de álamo de tulipan
 tile.terra:poplar_trapdoor.name=Escotilla de álamo de tulipan
 tile.terra:poplar_wood.name=Madera de álamo de tulipan
-tile.terra:poplar_wood_stripped.name=Madera descortezada de álamo de tulipan
+tile.terra:poplar_wood_stripped.name=Madera de álamo de tulipan sin corteza
 tile.terra:platinum_block.name=Bloque de platino
 tile.terra:raw_malachite_block.name=Bloque de malaquita cruda
 tile.terra:raw_platinum_block.name=Bloque de platino crudo
@@ -266,9 +283,9 @@ tile.terra:scorched_soil.name=Fango chamuscado
 tile.terra:shale.name=Lutolita
 tile.terra:soil.name=Fango
 tile.terra:steel_block.name=Bloque de acero
-tile.terra:steel_grate_block.name=Bloque de enrejado de acero
-tile.terra:steel_grate_panel.name=Panel de enrejado de acero
-tile.terra:steel_lattice_block.name=Bloque de celosía de acero
+tile.terra:steel_grate_block.name=Rejilla de acero
+tile.terra:steel_grate_panel.name=Panel de rejilla de acero
+tile.terra:steel_lattice_block.name=Celosía de acero
 tile.terra:steel_lattice_panel.name=Panel de celosía de acero
 tile.terra:steel_rod.name=Barra de acero
 tile.terra:tanzanite_block.name=Bloque de tanzanita
@@ -283,13 +300,13 @@ tile.terra:wired_outsider_metal.name=Metal forastero cableado
 tile.terra:yellowheart_door.name=Puerta de palo amarillo
 tile.terra:yellowheart_leaves.name=Hojas de palo amarillo
 tile.terra:yellowheart_log.name=Tronco de palo amarillo
-tile.terra:yellowheart_log_stripped.name=Tronco descortezado de palo amarillo
+tile.terra:yellowheart_log_stripped.name=Tronco de palo amarillo sin corteza
 tile.terra:yellowheart_planks.name=Tablones de palo amarillo
 tile.terra:yellowheart_sapling.name=Retoño de palo amarillo
 tile.terra:yellowheart_slab.name=Losa de palo amarillo
 tile.terra:yellowheart_trapdoor.name=Escotilla de palo amarillo
 tile.terra:yellowheart_wood.name=Madera de palo amarillo
-tile.terra:yellowheart_wood_stripped.name=Madera descortezada de palo amarillo
+tile.terra:yellowheart_wood_stripped.name=Madera de palo amarillo sin corteza
 
 ## Entidades
 entity.terra:beeper.name=Bíper

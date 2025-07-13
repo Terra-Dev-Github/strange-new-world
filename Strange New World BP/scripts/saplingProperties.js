@@ -237,7 +237,7 @@ world.beforeEvents.worldInitialize.subscribe(eventData => {
 
                 // play sound effect & spawn particles
                 dimension.playSound('item.bone_meal.use', location);
-                dimension.runCommandAsync(`particle minecraft:crop_growth_emitter ${location.x} ${location.y} ${location.z}`);
+                dimension.runCommand(`particle minecraft:crop_growth_emitter ${location.x} ${location.y} ${location.z}`);
             }
         }
     });

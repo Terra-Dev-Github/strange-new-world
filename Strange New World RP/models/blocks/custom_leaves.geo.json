@@ -1,0 +1,31 @@
+{
+  "format_version": "1.21.80",
+  "minecraft:geometry": [
+    {
+      "description": {
+        "identifier": "geometry.custom_leaves",
+        "texture_height": 16,
+        "texture_width": 16
+      },
+      "bones": [
+        {
+          "name": "root",
+          "cubes": [
+            {
+              "origin": [-8, 0, -8],
+              "size": [16, 16, 16],
+              "uv": {
+                "down": { "uv": [0, 0], "uv_size": [16, 16] },
+                "up": { "uv": [0, 0], "uv_size": [16, 16] },
+                "north": { "uv": [0, 0], "uv_size": [16, 16] },
+                "south": { "uv": [0, 0], "uv_size": [16, 16] },
+                "west": { "uv": [0, 0], "uv_size": [16, 16] },
+                "east": { "uv": [0, 0], "uv_size": [16, 16] }
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

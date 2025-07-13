@@ -1,6 +1,17 @@
 {
     "format_version": "1.20.20",
     "sound_definitions": {
+        "record.lava_chicken" : {
+         "max_distance" : 64.0,
+         "min_distance" : null,
+         "sounds" : [
+            {
+               "name" : "sounds/music/game/records/lava_chicken",
+               "stream" : true,
+               "volume" : 0.50
+            }
+         ]
+      },
         // blocks
         "dig.outsider_metal": {
             "category": "block",
@@ -42,7 +53,7 @@
             "sounds": [
                 {
                     "name": "sounds/block/laboratory_door/open",
-                    "volume": 0.90
+                    "volume": 1.20
                 }
             ]
         },

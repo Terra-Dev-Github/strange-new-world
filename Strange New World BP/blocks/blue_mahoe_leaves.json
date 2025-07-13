@@ -1,7 +1,7 @@
 // This file was made, modified and compiled by Heavenly (@heavenly7493) for TERRA.
 // Do not distribute without permission.
 {
-    "format_version": "1.21.60",
+    "format_version": "1.21.80",
     "minecraft:block": {
         "description": {
             "identifier": "terra:blue_mahoe_leaves",
@@ -30,14 +30,26 @@
             "minecraft:destructible_by_mining": {
                 "seconds_to_destroy": 0.3
             },
-            "minecraft:geometry": "minecraft:geometry.full_block",
+            "minecraft:geometry": {
+                "identifier": "geometry.custom_leaves"
+                // "culling": "terra:culling.custom_leaves",
+                // "culling_layer": "minecraft:culling_layer.leaves"
+            },
             "minecraft:material_instances": {
                 "*": {
                     "texture": "blue_mahoe_leaves",
-                    "render_method": "blend",
+                    "render_method": "alpha_test_to_opaque",
                     "ambient_occlusion": true,
                     "face_dimming": true
-                }
+                },
+                "down": {
+                    "texture": "blue_mahoe_leaves",
+                    "render_method": "alpha_test_to_opaque",
+                    "ambient_occlusion": true,
+                    "face_dimming": true,
+                    "isotropic": true
+                },
+                "up": "down"
             },
             // loot is specified on the script manager
             "minecraft:loot": "loot_tables/empty.json",

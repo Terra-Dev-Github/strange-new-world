@@ -25,8 +25,8 @@
         "components": {
             "minecraft:tick": {
                 "interval_range": [
-                    5,
-                    5
+                    10,
+                    10
                 ]
             },
             // adds block functionality

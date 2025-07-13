@@ -19,7 +19,7 @@ world.beforeEvents.worldInitialize.subscribe(eventData => {
             // define what happens when a specific item is consumed
             if (selectedItem?.typeId === 'terra:salt_bottle') {
                 player.dimension.spawnItem(new ItemStack('minecraft:bottle'), player.location)
-                player.runCommandAsync("effect @s hunger 3 10 true");
+                player.addEffect('hunger', 60, {amplifier: 10, showParticles: true})
             };
         }
     });
