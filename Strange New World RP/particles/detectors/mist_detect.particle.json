@@ -24,8 +24,9 @@
 				"active_time": 1
 			},
 			"minecraft:emitter_shape_disc": {
+				"offset": [0, "q.heightmap(v.worldx, v.worldz)", 0],
 				"radius": 32,
-				"surface_only": true,
+				"plane_normal": ["x", "y", "z"],
 				"direction": "outwards"
 			},
 			"minecraft:particle_lifetime_expression": {
