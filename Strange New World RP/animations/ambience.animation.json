@@ -1,9 +1,9 @@
 {
 	"format_version": "1.8.0",
 	"animations": {
-		"animation.player.dust": {
+		"animation.player.ambience": {
 			"loop": true,
-			"animation_length": 1,
+			"animation_length": 4,
 			"particle_effects": {
 				"0.0": [
 					{

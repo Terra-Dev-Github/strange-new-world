@@ -14,7 +14,7 @@
                     "max": "hard"
                 },
                 "minecraft:weight": {
-                    "default": 100
+                    "default": 10
                 },
                 "minecraft:biome_filter": {
                     "any_of": [

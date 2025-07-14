@@ -8,9 +8,62 @@
         "dirt": {
             "textures": {
                 "variations": [
-                    { "path": "textures/blocks/dirt", "weight": 60 },
-                    { "path": "textures/blocks/variants/dusty_dirt", "weight": 20 },
-                    { "path": "textures/blocks/variants/rocky_dirt", "weight": 20 }
+                    {
+                        "path": "textures/blocks/dirt",
+                        "weight": 60
+                    },
+                    {
+                        "path": "textures/blocks/variants/dusty_dirt",
+                        "weight": 20
+                    },
+                    {
+                        "path": "textures/blocks/variants/rocky_dirt",
+                        "weight": 20
+                    }
+                ]
+            }
+        },
+        "grass_path_top": {
+            "textures": {
+                "variations": [
+                    {
+                        "path": "textures/blocks/grass_path_top",
+                        "weight": 25
+                    },
+                    {
+                        "path": "textures/blocks/variants/grass_path_top2",
+                        "weight": 25
+                    },
+                    {
+                        "path": "textures/blocks/variants/grass_path_top3",
+                        "weight": 25
+                    },
+                    {
+                        "path": "textures/blocks/variants/grass_path_top4",
+                        "weight": 25
+                    }
+                ]
+            }
+        },
+        "grass_top": {
+            "textures": {
+                "variations": [
+                    {
+                        "path": "textures/blocks/grass_top",
+                        "weight": 25
+                    },
+                    {
+                        "path": "textures/blocks/variants/grass_top2",
+                        "weight": 25
+                    },
+                    {
+                        "path": "textures/blocks/variants/grass_top3",
+                        "weight": 25
+                    },
+                    {
+                        "path": "textures/blocks/variants/grass_top4",
+                        "weight": 25
+                    }
                 ]
             }
         },
@@ -50,11 +103,6 @@
                 "textures/blocks/autonetic_station_front"
             ]
         },
-        "autonetic_station_side_off": {
-            "textures": [
-                "textures/blocks/autonetic_station_side_off"
-            ]
-        },
         "autonetic_station_side": {
             "textures": [
                 "textures/blocks/autonetic_station_side"
@@ -63,11 +111,6 @@
         "autonetic_station_side2": {
             "textures": [
                 "textures/blocks/autonetic_station_side2"
-            ]
-        },
-        "autonetic_station_top_off": {
-            "textures": [
-                "textures/blocks/autonetic_station_top_off"
             ]
         },
         "autonetic_station_top": {

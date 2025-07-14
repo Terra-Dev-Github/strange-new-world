@@ -31,8 +31,8 @@
                             "terra:steel_block",
                             "terra:steel_grate_block",
                             "terra:steel_lattice_block",
-                            "terra:steel_grate_panel",
-                            "terra:steel_lattice_panel",
+                            "terra:steel_grate_panel_item",
+                            "terra:steel_lattice_panel_item",
                             "terra:steel_rod"
                         ]
                     }
