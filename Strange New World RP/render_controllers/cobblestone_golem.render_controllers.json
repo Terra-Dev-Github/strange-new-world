@@ -1,0 +1,16 @@
+{
+    "format_version": "1.10.0",
+    "render_controllers": {
+        "controller.render.cobblestone_golem": {
+            "geometry": "Geometry.default",
+            "materials": [
+                {
+                    "*": "Material.default"
+                }
+            ],
+            "textures": [
+                "query.is_baby ? Texture.cobblestone_golem_baby : Texture.default"
+            ]
+        }
+    }
+}

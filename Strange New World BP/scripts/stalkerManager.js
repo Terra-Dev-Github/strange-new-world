@@ -12,8 +12,8 @@ world.afterEvents.dataDrivenEntityTrigger.subscribe(eventData => {
     if (!entity.typeId === 'terra:stalker') return;
 
     if (startStare) {
-        const raycast = entity.getEntitiesFromViewDirection({ maxDistance: 12 });
-        const target = raycast[0].entity;
+
+        const target = entity.getEntitiesFromViewDirection({ maxDistance: 12 })[0].entity
         if (target.typeId === 'minecraft:player') {
             do {
                 system.runInterval(() => {
@@ -27,9 +27,17 @@ world.afterEvents.dataDrivenEntityTrigger.subscribe(eventData => {
 
 // run code block every two seconds (1s = 20 ticks)
 system.runInterval(() => {
-    let players = world.getAllPlayers();
-    for (let player of players) {
-        // replacement for tick.json; avoids lag spikes
-        player.runCommand('function raycast/initiate')
-    }
+    // get stalkers in the world
+    let entity = world.getEntity('terra:stalker')
+    if (!entity) return; // prevents code breaking
+    // get stalkers again, but only if they're 'staring at a player' through a dummy component
+    let stalker = world.getEntity('terra:stalker').getComponent('minecraft:is_shaking');
+    if (!stalker) return; // prevents code breaking
+
+    // get the player if found on view direction
+    const target = stalker.getEntitiesFromViewDirection({ maxDistance: 12 })[0]?.entity
+    if (!target) return; // prevents code breaking
+    if (target?.typeId === 'minecraft:player') {
+        target.addEffect('mining_fatigue', 60, { amplifier: 2, showParticles: true })
+    } else return;
 }, 40);

@@ -44,7 +44,10 @@
                 ]
             },
             "render_controllers": [
-                "controller.render.default"
+                "controller.render.cobblestone_golem",
+                {
+                    "controller.render.cobblestone_golem_baby": "query.is_baby"
+                }
             ],
             "enable_attachables": false,
             "spawn_egg": {

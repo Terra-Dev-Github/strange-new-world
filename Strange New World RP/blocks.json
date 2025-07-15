@@ -6,6 +6,18 @@
         21,
         40
     ],
+    // dirt variants specified here otherwise it doesn't work
+    "dirt": {
+        "isotropic": true,
+        "textures": "dirt",
+        "sound": "gravel"
+    },
+    "coarse_dirt": {
+        "isotropic": true,
+        "textures": "coarse_dirt",
+        "sound": "gravel"
+    },
+    //
     "terra:anorthosite": {
         "textures": {
             "side": "anorthosite_side",

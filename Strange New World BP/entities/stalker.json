@@ -30,7 +30,8 @@
                 "minecraft:behavior.look_at_player": {
                     "priority": 1
                 },
-                "minecraft:is_shaking": {},
+                "minecraft:angry": {}, // dummy
+                "minecraft:is_shaking": {}, // used to run the raycast event
                 "minecraft:damage_sensor": {
                     "triggers": [
                         {
@@ -86,6 +87,9 @@
                 "minecraft:behavior.flee_sun": {
                     "priority": 0,
                     "speed_multiplier": 0
+                },
+                "minecraft:behavior.look_at_player": {
+                    "probability": 0.01
                 },
                 "minecraft:behavior.panic": {
                     "speed_multiplier": 0,
@@ -162,6 +166,44 @@
                 }
             },
             "terra:stalker_wild": {
+                // ability to stare
+                "minecraft:entity_sensor": {
+                    "relative_range": true,
+                    "subsensors": [
+                        {
+                            "range": [
+                                1,
+                                24
+                            ],
+                            "event_filters": {
+                                "test": "is_family",
+                                "subject": "other",
+                                "value": "player"
+                            },
+                            "event": "terra:stare"
+                        }
+                    ]
+                },
+                // stare
+                "minecraft:on_target_acquired": {
+                    "filters": {
+                        "any_of": [
+                            {
+                                "test": "is_family",
+                                "subject": "other",
+                                "value": "player"
+                            }
+                        ]
+                    },
+                    "event": "terra:stare",
+                    "target": "self"
+                },
+                // stop staring
+                "minecraft:on_target_escape": {
+                    "event": "terra:stop_staring",
+                    "target": "self"
+                },
+                //
                 "minecraft:looked_at": {
                     "search_radius": 12.0,
                     "set_target": "once_and_keep_scanning",
@@ -234,23 +276,12 @@
                 }
             },
             "terra:stalker_trusting": {
-                "minecraft:trust": {},
-                "minecraft:looked_at": {
-                    "search_radius": 12.0,
-                    "set_target": "once_and_keep_scanning",
-                    "find_players_only": true,
-                    "looked_at_cooldown": [
-                        10,
-                        20
-                    ],
-                    "field_of_view": 120,
-                    "scale_fov_by_distance": false,
-                    "line_of_sight_obstruction_type": "collision_for_camera",
-                    "looked_at_event": {
-                        "event": "terra:panic_countdown",
-                        "target": "self"
-                    }
+                "minecraft:behavior.look_at_player": {
+                    "priority": 7,
+                    "look_distance": 8,
+                    "probability": 0.02
                 },
+                "minecraft:trust": {},
                 "minecraft:breedable": {
                     "require_tame": false,
                     "breeds_with": {
@@ -280,6 +311,11 @@
             }
         },
         "components": {
+            "minecraft:behavior.look_at_player": {
+                "priority": 7,
+                "look_distance": 8,
+                "probability": 0.02
+            },
             "minecraft:is_hidden_when_invisible": {},
             "minecraft:health": {
                 "value": 20,
@@ -298,43 +334,6 @@
                         "damage_per_tick": 4
                     }
                 ]
-            },
-            // ability to stare
-            "minecraft:entity_sensor": {
-                "relative_range": true,
-                "subsensors": [
-                    {
-                        "range": [
-                            1,
-                            24
-                        ],
-                        "event_filters": {
-                            "test": "is_family",
-                            "subject": "other",
-                            "value": "player"
-                        },
-                        "event": "terra:stare"
-                    }
-                ]
-            },
-            // stare
-            "minecraft:on_target_acquired": {
-                "filters": {
-                    "any_of": [
-                        {
-                            "test": "is_family",
-                            "subject": "other",
-                            "value": "player"
-                        }
-                    ]
-                },
-                "event": "terra:stare",
-                "target": "self"
-            },
-            // stop staring
-            "minecraft:on_target_escape": {
-                "event": "terra:stop_staring",
-                "target": "self"
             },
             "minecraft:nameable": {},
             "minecraft:type_family": {
@@ -381,9 +380,6 @@
             "minecraft:behavior.random_stroll": {
                 "priority": 8,
                 "speed_multiplier": 0.8
-            },
-            "minecraft:behavior.look_at_player": {
-                "priority": 0
             }
         },
         "events": {

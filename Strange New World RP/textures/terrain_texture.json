@@ -13,11 +13,29 @@
                         "weight": 60
                     },
                     {
-                        "path": "textures/blocks/variants/dusty_dirt",
+                        "path": "textures/blocks/variants/dirt2",
                         "weight": 20
                     },
                     {
-                        "path": "textures/blocks/variants/rocky_dirt",
+                        "path": "textures/blocks/variants/dirt3",
+                        "weight": 20
+                    }
+                ]
+            }
+        },
+        "coarse_dirt": {
+            "textures": {
+                "variations": [
+                    {
+                        "path": "textures/blocks/coarse_dirt",
+                        "weight": 60
+                    },
+                    {
+                        "path": "textures/blocks/variants/coarse_dirt2",
+                        "weight": 20
+                    },
+                    {
+                        "path": "textures/blocks/variants/coarse_dirt3",
                         "weight": 20
                     }
                 ]

@@ -24,7 +24,7 @@
 				"active_time": 1
 			},
 			"minecraft:emitter_shape_disc": {
-				"offset": [0, "q.heightmap(v.worldx, v.worldz)", 0],
+				"offset": [0, 0, 0],
 				"radius": 32,
 				"plane_normal": ["x", "y", "z"],
 				"direction": "outwards"

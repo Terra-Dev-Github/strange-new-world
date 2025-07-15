@@ -22,9 +22,6 @@
             },
             "terra:baby": {
                 "minecraft:is_baby": {},
-                "minecraft:scale": {
-                    "value": 0.4
-                },
                 "minecraft:tameable": {
                     "probability": 0.33,
                     "tame_items": "minecraft:rotten_flesh",
